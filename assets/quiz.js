@@ -59,8 +59,24 @@
     return cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
   }
 
-  function buildQuestion(cfg) {
-    var op = pick(cfg.ops);
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = randomInt(0, i);
+      var swap = arr[i]; arr[i] = arr[j]; arr[j] = swap;
+    }
+    return arr;
+  }
+
+  // Deal the ticked operations round by round, so every kind shows up
+  // before any of them comes round a second time.
+  function opSchedule(ops, count) {
+    var seq = [];
+    while (seq.length < count) seq = seq.concat(shuffle(ops.slice()));
+    return seq.slice(0, count);
+  }
+
+  function buildQuestion(cfg, op) {
+    op = op || pick(cfg.ops);
     var n = howManyParts(cfg);
     var parts = [];
     var i, rest, sum, product, result;
@@ -113,17 +129,18 @@
   }
 
   function makeQuestions(cfg) {
+    var schedule = opSchedule(cfg.ops, cfg.count);
     var made = [];
     var seen = {};
-    var guard = 0;
-    while (made.length < cfg.count && guard < cfg.count * 80) {
-      guard++;
-      var q = buildQuestion(cfg);
-      if (seen[q.text]) continue;
+
+    for (var i = 0; i < schedule.length; i++) {
+      var q = buildQuestion(cfg, schedule[i]);
+      for (var tries = 0; tries < 40 && seen[q.text]; tries++) {
+        q = buildQuestion(cfg, schedule[i]);       // tiny ranges: repeats are fine in the end
+      }
       seen[q.text] = true;
       made.push(q);
     }
-    while (made.length < cfg.count) made.push(buildQuestion(cfg));   // tiny ranges: repeats are fine
     return made;
   }
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mathly</title>
+<title>Chapter &middot; Mathly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,18 +12,21 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">🎈</span> Mathly</h1>
-    <p class="tagline">Fun practice, one number at a time!</p>
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">🎈 Mathly</a>
+    </nav>
+    <h1 class="brand" id="chapterTitle">Chapter</h1>
+    <p class="tagline" id="chapterText"></p>
   </div>
 </header>
 
 <main class="wrap">
-  <h2 class="section-title">Pick a chapter</h2>
-  <nav class="menu" id="chapterMenu"></nav>
+  <h2 class="section-title">Pick a game</h2>
+  <nav class="menu" id="gameMenu"></nav>
 </main>
 
 <footer class="wrap site-footer">
-  <p>Made for happy practice 🌈</p>
+  <p><a href="index.html">⬅ All chapters</a></p>
 </footer>
 
 <script src="assets/catalog.js"></script>

@@ -12,8 +12,11 @@
 <body>
 <header class="site-header">
   <div class="wrap wrap-wide">
-    <a class="back" href="index.html">⬅ Back to games</a>
-    <a class="back" href="quiz.html">⏱️ Try the quiz</a>
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">🎈 Mathly</a>
+      <a href="chapter.html?c=foundations" id="chapterCrumb">🧱 Foundations</a>
+      <span class="crumb-here">Multiplication Tables</span>
+    </nav>
     <h1 class="brand"><span class="brand-emoji" aria-hidden="true">✖️</span> Multiplication Tables</h1>
     <p class="tagline">Pick your tables, fill the boxes, then tap <strong>Check my answers</strong>!</p>
   </div>
@@ -76,9 +79,11 @@
 </main>
 
 <footer class="wrap wrap-wide site-footer">
-  <p><a href="index.html">⬅ Back to games</a></p>
+  <p><a href="chapter.html?c=foundations">⬅ Back to Foundations</a> &middot; <a href="quiz.html?from=foundations">⏱️ Try Quiz Time</a></p>
 </footer>
 
+<script src="assets/catalog.js"></script>
+<script src="assets/menu.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

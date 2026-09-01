@@ -417,3 +417,20 @@ body {
 .quiz-top { align-items: flex-start; }
 .quiz-top .timer { margin-top: .1rem; }
 
+
+/* ---------- Breadcrumbs ---------- */
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-bottom: .6rem; }
+.crumbs a, .crumb-here {
+  display: inline-block; padding: .35rem .85rem; border-radius: 999px;
+  font-size: .95rem; text-decoration: none;
+}
+.crumbs a { background: #fff; border: 2px solid var(--line); color: var(--ink-soft); }
+.crumbs a:hover { border-color: var(--accent); color: var(--accent); }
+.crumbs a:not(:last-child)::after { content: ''; }
+.crumb-here { background: var(--accent-soft); border: 2px solid #d3c6ff; color: #5a4a92; font-weight: 600; }
+
+/* before the first quiz is made there is no question panel — let the scores fill the row */
+@media (min-width: 1080px) {
+  .quiz-layout:has(#quizPanel[hidden]) { grid-template-columns: 1fr; }
+  .quiz-layout:has(#quizPanel[hidden]) #scorePanel { width: 100%; position: static; max-height: none; }
+}
