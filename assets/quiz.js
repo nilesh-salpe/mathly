@@ -49,7 +49,7 @@
 
   /* ---------- setting up ---------- */
 
-  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value' };
+  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value', addsub: 'Add & subtract', muldiv: 'Multiply & divide', fractions: 'Fractions' };
 
   function buildTopicChips() {
     var chapters = {};
@@ -174,6 +174,13 @@
       badge.className = 'quiz-badge';
       badge.innerHTML = '<span class="quiz-no">' + (index + 1) + '</span>';
       li.appendChild(badge);
+
+      if (q.picture) {
+        var art = document.createElement('span');
+        art.className = 'quiz-picture';
+        art.innerHTML = q.picture;
+        li.appendChild(art);
+      }
 
       var sum = document.createElement('span');
       sum.className = 'quiz-sum';

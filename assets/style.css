@@ -527,3 +527,7 @@ body {
 .test-table thead th { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
 .test-table tr.bad td { background: var(--wrong-bg); color: var(--wrong-ink); }
 .test-table tr.good td:nth-child(3) { color: var(--right-ink); font-weight: 600; }
+
+/* a drawing inside a question card */
+.quiz-picture { width: 100%; display: flex; justify-content: center; }
+.quiz-picture svg { width: 100%; max-width: 210px; height: auto; }

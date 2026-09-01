@@ -84,6 +84,13 @@
       badge.innerHTML = '<span class="quiz-no">' + (index + 1) + '</span>';
       li.appendChild(badge);
 
+      if (q.picture) {
+        var art = document.createElement('span');
+        art.className = 'quiz-picture';
+        art.innerHTML = q.picture;
+        li.appendChild(art);
+      }
+
       var sum = document.createElement('span');
       sum.className = 'quiz-sum';
       sum.textContent = q.prompt + (needsEquals(q) ? ' =' : '');

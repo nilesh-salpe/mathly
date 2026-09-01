@@ -93,7 +93,376 @@
     return svg(width, 132, body);
   }
 
+
+  /* A vertical sum with the carried digits written above, as it is taught in class */
+  function columnAddPicture(a, b) {
+    var A = String(a).split(''), B = String(b).split(''), total = String(a + b).split('');
+    var cols = Math.max(A.length, B.length, total.length);
+    var x0 = 120, step = 46, top = 52;
+    var body = '';
+
+    // work out the carries the same way a child would
+    var carries = [], carry = 0;
+    for (var i = 0; i < cols; i++) {
+      var da = Number(A[A.length - 1 - i] || 0), db = Number(B[B.length - 1 - i] || 0);
+      carries.unshift(carry);
+      carry = (da + db + carry) >= 10 ? 1 : 0;
+    }
+
+    function digitRow(chars, y, colour, prefix) {
+      var out = '';
+      for (var i = 0; i < chars.length; i++) {
+        var x = x0 + (cols - chars.length + i) * step;
+        out += '<text x="' + x + '" y="' + y + '" text-anchor="middle" fill="' + colour +
+          '" font-family="Fredoka, sans-serif" font-size="30" font-weight="600">' + chars[i] + '</text>';
+      }
+      if (prefix) out += '<text x="' + (x0 - step) + '" y="' + y + '" text-anchor="middle" fill="' + SOFT +
+        '" font-family="Fredoka, sans-serif" font-size="28" font-weight="600">' + prefix + '</text>';
+      return out;
+    }
+
+    for (var c = 0; c < cols; c++) {
+      if (carries[c] === 1) {
+        body += '<text x="' + (x0 + c * step - 14) + '" y="' + (top - 18) + '" text-anchor="middle" fill="' + PINK_D +
+          '" font-family="Fredoka, sans-serif" font-size="17" font-weight="700">1</text>';
+      }
+    }
+
+    body += digitRow(A, top, INK);
+    body += digitRow(B, top + 40, INK, '+');
+    body += '<line x1="' + (x0 - step - 14) + '" y1="' + (top + 54) + '" x2="' + (x0 + (cols - 1) * step + 18) +
+      '" y2="' + (top + 54) + '" stroke="' + SOFT + '" stroke-width="3" stroke-linecap="round"/>';
+    body += digitRow(total, top + 92, GREEN_D);
+    body += label(x0 + ((cols - 1) * step) / 2, top + 122, 'ones first, then tens, then hundreds', SOFT, 12);
+
+    return svg(x0 + cols * step + 80, top + 140, body);
+  }
+
+  /* Borrowing: each changed column shows its working value above the crossed-out digit */
+  function columnSubPicture(a, b) {
+    var A = String(a).split(''), B = String(b).split(''), answer = String(a - b).split('');
+    var cols = A.length, x0 = 120, step = 46, top = 62;
+    var working = A.map(Number);
+    var changed = [];
+
+    for (var i = cols - 1; i >= 0; i--) {
+      var db = Number(B[B.length - cols + i] || 0);
+      if (working[i] < db) {
+        working[i] += 10;
+        working[i - 1] -= 1;
+        changed[i] = true;
+        changed[i - 1] = true;
+      }
+    }
+
+    var body = '';
+    for (var c = 0; c < cols; c++) {
+      if (!changed[c]) continue;
+      var x = x0 + c * step;
+      body += '<text x="' + x + '" y="' + (top - 26) + '" text-anchor="middle" fill="' + BLUE_D +
+        '" font-family="Fredoka, sans-serif" font-size="18" font-weight="700">' + working[c] + '</text>';
+      body += '<line x1="' + (x - 14) + '" y1="' + (top + 2) + '" x2="' + (x + 14) + '" y2="' + (top - 22) +
+        '" stroke="' + BLUE_D + '" stroke-width="2.5" stroke-linecap="round"/>';
+    }
+
+    function row(chars, y, colour, prefix) {
+      var out = '';
+      for (var j = 0; j < chars.length; j++) {
+        var x = x0 + (cols - chars.length + j) * step;
+        out += '<text x="' + x + '" y="' + y + '" text-anchor="middle" fill="' + colour +
+          '" font-family="Fredoka, sans-serif" font-size="30" font-weight="600">' + chars[j] + '</text>';
+      }
+      if (prefix) out += '<text x="' + (x0 - step) + '" y="' + y + '" text-anchor="middle" fill="' + SOFT +
+        '" font-family="Fredoka, sans-serif" font-size="28" font-weight="600">' + prefix + '</text>';
+      return out;
+    }
+
+    body += row(A, top, INK);
+    body += row(B, top + 42, INK, '−');
+    body += '<line x1="' + (x0 - step - 14) + '" y1="' + (top + 56) + '" x2="' + (x0 + (cols - 1) * step + 18) +
+      '" y2="' + (top + 56) + '" stroke="' + SOFT + '" stroke-width="3" stroke-linecap="round"/>';
+    body += row(answer, top + 94, GREEN_D);
+    body += label(x0 + ((cols - 1) * step) / 2, top + 124, 'borrow a ten when the top digit is too small', SOFT, 12);
+
+    return svg(x0 + cols * step + 80, top + 142, body);
+  }
+
+  /* A story with its numbers picked out, and the sum it turns into */
+  function storyPicture(one, two, sign, total) {
+    var body = '<rect x="10" y="10" width="540" height="66" rx="16" fill="#fff" stroke="' + BLUE + '" stroke-width="3"/>';
+    body += '<text x="30" y="38" fill="' + INK + '" font-family="Fredoka, sans-serif" font-size="15">Meera had ' +
+      '<tspan fill="' + PINK_D + '" font-weight="700">' + one + '</tspan> stickers and Kabir gave her</text>';
+    body += '<text x="30" y="60" fill="' + INK + '" font-family="Fredoka, sans-serif" font-size="15">' +
+      '<tspan fill="' + PINK_D + '" font-weight="700">' + two + '</tspan> more. How many does she have now?</text>';
+    body += '<line x1="280" y1="82" x2="280" y2="98" stroke="' + SOFT + '" stroke-width="3" stroke-linecap="round"/>';
+    body += '<path d="M 272 98 L 288 98 L 280 110 z" fill="' + SOFT + '"/>';
+    body += '<rect x="170" y="112" width="220" height="52" rx="14" fill="' + GREEN + '" opacity=".35" stroke="' + GREEN_D + '" stroke-width="3"/>';
+    body += '<text x="280" y="146" text-anchor="middle" fill="' + GREEN_D +
+      '" font-family="Fredoka, sans-serif" font-size="26" font-weight="700">' + one + ' ' + sign + ' ' + two + ' = ' + total + '</text>';
+    return svg(560, 178, body);
+  }
+
+
+  /* Equal groups: plates of counters */
+  function groupsPicture(groups, each) {
+    var body = '', plateW = 108, gap = 18, x = 14;
+    for (var g = 0; g < groups; g++) {
+      body += '<rect x="' + x + '" y="14" width="' + plateW + '" height="76" rx="18" fill="' + PINK +
+        '" opacity=".3" stroke="' + PINK_D + '" stroke-width="3"/>';
+      for (var i = 0; i < each; i++) {
+        var cx = x + 26 + (i % 3) * 30;
+        var cy = 38 + Math.floor(i / 3) * 30;
+        body += '<circle cx="' + cx + '" cy="' + cy + '" r="10" fill="' + PINK_D + '"/>';
+      }
+      x += plateW + gap;
+    }
+    body += label(x / 2, 116, groups + ' groups of ' + each + ' = ' + groups + ' × ' + each + ' = ' + groups * each, INK, 17);
+    return svg(x + 4, 132, body);
+  }
+
+  /* Sharing with a remainder: counters dealt onto plates, the rest left outside */
+  function sharePicture(total, groups) {
+    var each = Math.floor(total / groups), left = total % groups;
+    var body = '', plateW = 96, gap = 14, x = 14;
+    for (var g = 0; g < groups; g++) {
+      body += '<rect x="' + x + '" y="14" width="' + plateW + '" height="70" rx="18" fill="' + BLUE +
+        '" opacity=".3" stroke="' + BLUE_D + '" stroke-width="3"/>';
+      for (var i = 0; i < each; i++) {
+        body += '<circle cx="' + (x + 24 + (i % 3) * 26) + '" cy="' + (38 + Math.floor(i / 3) * 26) + '" r="9" fill="' + BLUE_D + '"/>';
+      }
+      body += label(x + plateW / 2, 100, each + ' each', BLUE_D, 12);
+      x += plateW + gap;
+    }
+    x += 12;
+    body += '<rect x="' + x + '" y="14" width="' + (left * 26 + 22) + '" height="70" rx="18" fill="none" stroke="' + PINK_D +
+      '" stroke-width="3" stroke-dasharray="6 5"/>';
+    for (var j = 0; j < left; j++) {
+      body += '<circle cx="' + (x + 22 + j * 26) + '" cy="38" r="9" fill="' + PINK_D + '"/>';
+    }
+    body += label(x + (left * 26 + 22) / 2, 100, left + ' left over', PINK_D, 12);
+    var width = x + left * 26 + 40;
+    body += label(width / 2, 126, total + ' ÷ ' + groups + ' = ' + each + ' each, ' + left + ' left over', INK, 17);
+    return svg(width, 142, body);
+  }
+
+  /* Splitting a 2-digit number to multiply it */
+  function splitPicture(big, small) {
+    var tens = Math.floor(big / 10) * 10, ones = big % 10;
+    var wide = 360, narrow = Math.max(80, Math.round(wide * ones / tens));
+    var body = '<rect x="14" y="18" width="' + wide + '" height="58" rx="14" fill="' + PURPLE +
+      '" opacity=".35" stroke="' + PURPLE_D + '" stroke-width="3"/>';
+    body += '<text x="' + (14 + wide / 2) + '" y="55" text-anchor="middle" fill="' + PURPLE_D +
+      '" font-family="Fredoka, sans-serif" font-size="22" font-weight="700">' + tens + ' × ' + small + ' = ' + tens * small + '</text>';
+    body += '<rect x="' + (24 + wide) + '" y="18" width="' + narrow + '" height="58" rx="14" fill="' + GREEN +
+      '" opacity=".4" stroke="' + GREEN_D + '" stroke-width="3"/>';
+    body += '<text x="' + (24 + wide + narrow / 2) + '" y="55" text-anchor="middle" fill="' + GREEN_D +
+      '" font-family="Fredoka, sans-serif" font-size="20" font-weight="700">' + ones + ' × ' + small + ' = ' + ones * small + '</text>';
+    var width = 38 + wide + narrow;
+    body += label(width / 2, 104, tens * small + ' + ' + ones * small + ' = ' + big * small, INK, 18);
+    return svg(width, 120, body);
+  }
+
+
+  /* A shape cut into equal parts, some shaded */
+  function partsPicture(parts, shaded, caption) {
+    var w = 480, h = 70, step = w / parts, body = '';
+    for (var i = 0; i < parts; i++) {
+      body += '<rect x="' + (12 + i * step) + '" y="12" width="' + (step - 2) + '" height="' + h +
+        '" fill="' + (i < shaded ? PINK : '#fff') + '" stroke="' + PINK_D + '" stroke-width="3"/>';
+      body += label(12 + i * step + step / 2, 58, '1/' + parts, i < shaded ? PINK_D : SOFT, 15);
+    }
+    body += label(w / 2 + 12, 108, caption, INK, 17);
+    return svg(w + 24, 124, body);
+  }
+
+  /* A group of counters split into equal shares, one share ringed */
+  function groupFractionPicture(total, parts) {
+    var each = total / parts, body = '', x = 14, boxW = each * 30 + 20;
+    for (var g = 0; g < parts; g++) {
+      body += '<rect x="' + x + '" y="14" width="' + boxW + '" height="52" rx="16" fill="' +
+        (g === 0 ? BLUE : '#fff') + '" opacity="' + (g === 0 ? '.45' : '1') + '" stroke="' +
+        (g === 0 ? BLUE_D : '#e2d9ef') + '" stroke-width="3"/>';
+      for (var i = 0; i < each; i++) {
+        body += '<circle cx="' + (x + 20 + i * 30) + '" cy="40" r="10" fill="' + (g === 0 ? BLUE_D : SOFT) + '"/>';
+      }
+      x += boxW + 14;
+    }
+    body += label(x / 2, 92, 'One ' + (parts === 2 ? 'half' : parts === 3 ? 'third' : 'quarter') + ' of ' +
+      total + ' is ' + each, INK, 17);
+    return svg(x + 4, 108, body);
+  }
+
+  /* Three bars stacked, so bigger pieces are obvious */
+  function compareFractionsPicture() {
+    var w = 420, body = '', rows = [2, 3, 4], y = 14;
+    rows.forEach(function (parts) {
+      var step = w / parts;
+      for (var i = 0; i < parts; i++) {
+        body += '<rect x="' + (70 + i * step) + '" y="' + y + '" width="' + (step - 2) + '" height="36" fill="' +
+          (i === 0 ? PURPLE : '#fff') + '" stroke="' + PURPLE_D + '" stroke-width="2.5"/>';
+      }
+      body += '<text x="56" y="' + (y + 25) + '" text-anchor="end" fill="' + INK +
+        '" font-family="Fredoka, sans-serif" font-size="16" font-weight="600">1/' + parts + '</text>';
+      y += 46;
+    });
+    body += label((w + 80) / 2, y + 20, 'the fewer the pieces, the bigger each piece', SOFT, 13);
+    return svg(w + 90, y + 36, body);
+  }
+
   window.MATHLY_CONCEPTS = {
+    'equal-parts': {
+      chapter: 'fractions',
+      title: 'What a fraction is',
+      emoji: '🍫',
+      bigIdea: 'A fraction is what you get when a whole is cut into equal parts. The parts must be the same size.',
+      picture: partsPicture(4, 1, 'one quarter is shaded: 1 out of 4 equal parts'),
+      pictureCaption: '1/4 — the 4 says how many parts, the 1 says how many you take',
+      steps: [
+        { head: 'Cut into equal parts', text: 'This chocolate bar is cut into 4 parts, all the same size.' },
+        { head: 'The bottom number', text: 'The 4 goes underneath. It counts how many equal parts the whole was cut into.' },
+        { head: 'The top number', text: 'One part is shaded, so 1 goes on top. We write 1/4 and say one quarter.' },
+        { head: 'Watch out', text: 'If the parts are not the same size, it is not a fraction of the whole at all.' }
+      ],
+      tryTypes: ['fractions-shaded', 'fractions-whole'],
+      practice: 'quiz.html?topic=fractions-shaded&level=just'
+    },
+
+    'fraction-of-group': {
+      chapter: 'fractions',
+      title: 'A fraction of a group',
+      emoji: '🫘',
+      bigIdea: 'To find a fraction of a group, share the group into that many equal piles, then take the piles you need.',
+      picture: groupFractionPicture(12, 3),
+      pictureCaption: 'One third of 12 mangoes is 4',
+      steps: [
+        { head: 'Read the bottom number', text: 'For one third, the bottom number is 3, so make 3 equal piles.' },
+        { head: 'Share them out', text: '12 mangoes into 3 piles gives 4 in each pile.' },
+        { head: 'Take the top number of piles', text: 'One third means take 1 pile — that is 4 mangoes.' },
+        { head: 'More than one pile', text: 'Two thirds would be 2 piles, which is 8 mangoes.' }
+      ],
+      tryTypes: ['fractions-of-group', 'fractions-story'],
+      practice: 'quiz.html?topic=fractions-of-group&level=just'
+    },
+
+    'compare-fractions': {
+      chapter: 'fractions',
+      title: 'Which piece is bigger?',
+      emoji: '⚖️',
+      bigIdea: 'When the whole is the same, the fraction with fewer parts has the bigger pieces.',
+      picture: compareFractionsPicture(),
+      pictureCaption: '1/2 is bigger than 1/3, and 1/3 is bigger than 1/4',
+      steps: [
+        { head: 'Same whole', text: 'All three bars are the same length, so we can compare them fairly.' },
+        { head: 'Count the pieces', text: 'The first bar has 2 pieces, the next has 3, the last has 4.' },
+        { head: 'Look at one piece', text: 'The more pieces you cut a bar into, the smaller each piece becomes.' },
+        { head: 'The rule', text: 'So 1/2 > 1/3 > 1/4. A bigger bottom number means a smaller piece.' }
+      ],
+      tryTypes: ['fractions-compare', 'fractions-shaded'],
+      practice: 'quiz.html?topic=fractions-compare&level=just'
+    },
+
+    'equal-groups': {
+      chapter: 'muldiv',
+      title: 'Times means equal groups',
+      emoji: '✖️',
+      bigIdea: 'Multiplying is a fast way of adding the same number again and again.',
+      picture: groupsPicture(3, 4),
+      pictureCaption: '3 plates with 4 on each plate',
+      steps: [
+        { head: 'Count one group', text: 'Each plate has 4 laddoos.' },
+        { head: 'Count the groups', text: 'There are 3 plates.' },
+        { head: 'Add them up', text: '4 + 4 + 4 = 12.' },
+        { head: 'Write it as times', text: '3 groups of 4 is written 3 × 4 = 12. Swapping them gives the same answer: 4 × 3 = 12 too.' }
+      ],
+      tryTypes: ['muldiv-groups', 'muldiv-table'],
+      practice: 'quiz.html?topic=muldiv-table&level=just'
+    },
+
+    'sharing-left-over': {
+      chapter: 'muldiv',
+      title: 'Sharing with some left over',
+      emoji: '🍪',
+      bigIdea: 'Share out one for each person at a time. Whatever cannot be shared fairly is the remainder.',
+      picture: sharePicture(13, 4),
+      pictureCaption: '13 biscuits shared between 4 friends',
+      steps: [
+        { head: 'Deal them out', text: 'Give one biscuit to each friend, then go round again.' },
+        { head: 'Count each share', text: 'Every friend ends up with 3 biscuits. That is 4 × 3 = 12 biscuits used.' },
+        { head: 'What is left?', text: '13 − 12 = 1 biscuit is left over. It cannot be shared without breaking it.' },
+        { head: 'Say the answer', text: '13 ÷ 4 = 3 each, with 1 left over. The leftover is called the remainder.' }
+      ],
+      tryTypes: ['muldiv-remainder', 'muldiv-divide'],
+      practice: 'quiz.html?topic=muldiv-remainder&level=just'
+    },
+
+    'split-to-multiply': {
+      chapter: 'muldiv',
+      title: 'Multiplying a bigger number',
+      emoji: '🔢',
+      bigIdea: 'To multiply a 2-digit number, split it into tens and ones, multiply each part, then add.',
+      picture: splitPicture(34, 6),
+      pictureCaption: '34 × 6 = 180 + 24 = 204',
+      steps: [
+        { head: 'Split the number', text: '34 is 30 and 4.' },
+        { head: 'Multiply the tens', text: '30 × 6 = 180. (3 × 6 = 18, then add the zero.)' },
+        { head: 'Multiply the ones', text: '4 × 6 = 24.' },
+        { head: 'Add the two parts', text: '180 + 24 = 204. So 34 × 6 = 204.' }
+      ],
+      tryTypes: ['muldiv-two-digit', 'muldiv-story'],
+      practice: 'quiz.html?topic=muldiv-two-digit&level=just'
+    },
+
+    'add-regrouping': {
+      chapter: 'addsub',
+      title: 'Adding with carrying',
+      emoji: '➕',
+      bigIdea: 'Add the ones first. If they make ten or more, carry the ten over to the next column.',
+      picture: columnAddPicture(345, 278),
+      pictureCaption: '345 + 278 = 623',
+      steps: [
+        { head: 'Line up the columns', text: 'Ones under ones, tens under tens, hundreds under hundreds.' },
+        { head: 'Add the ones', text: '5 + 8 = 13. That is 1 ten and 3 ones. Write the 3 and carry the 1 above the tens.' },
+        { head: 'Add the tens', text: '4 + 7 = 11, plus the carried 1 makes 12 tens. Write 2 and carry 1 to the hundreds.' },
+        { head: 'Add the hundreds', text: '3 + 2 = 5, plus the carried 1 makes 6. The answer is 623.' }
+      ],
+      tryTypes: ['addsub-add', 'addsub-estimate'],
+      practice: 'quiz.html?topic=addsub-add&level=just'
+    },
+
+    'sub-regrouping': {
+      chapter: 'addsub',
+      title: 'Taking away with borrowing',
+      emoji: '➖',
+      bigIdea: 'If the top digit is too small to take from, borrow a ten from the column next door.',
+      picture: columnSubPicture(532, 147),
+      pictureCaption: '532 − 147 = 385',
+      steps: [
+        { head: 'Start at the ones', text: 'You cannot take 7 from 2, so borrow a ten from the tens column.' },
+        { head: 'Borrow', text: 'The 3 tens become 2 tens, and the 2 ones become 12 ones. Now 12 − 7 = 5.' },
+        { head: 'Now the tens', text: 'You cannot take 4 from 2, so borrow again: 5 hundreds become 4, and 2 tens become 12. 12 − 4 = 8.' },
+        { head: 'Finish the hundreds', text: '4 − 1 = 3. The answer is 385. Check it: 385 + 147 = 532.' }
+      ],
+      tryTypes: ['addsub-sub', 'addsub-inverse'],
+      practice: 'quiz.html?topic=addsub-sub&level=just'
+    },
+
+    'story-problems': {
+      chapter: 'addsub',
+      title: 'Turning a story into a sum',
+      emoji: '📖',
+      bigIdea: 'Every word problem hides a sum. Find the numbers, decide whether things are joining or leaving, then work it out.',
+      picture: storyPicture(126, 45, '+', 171),
+      pictureCaption: 'More stickers arriving means adding',
+      steps: [
+        { head: 'Read it twice', text: 'Once to hear the story, once to look for the numbers. Tap 🔊 if you would like it read to you.' },
+        { head: 'Find the numbers', text: 'Meera had 126 stickers. Kabir gave her 45 more.' },
+        { head: 'Joining or leaving?', text: 'Words like gave her, more, altogether and in total mean add. Words like gave away, sold, left and how many more mean take away.' },
+        { head: 'Do the sum and check', text: '126 + 45 = 171. Read the question again — does 171 stickers answer it? Yes.' }
+      ],
+      tryTypes: ['addsub-story', 'addsub-story-two'],
+      practice: 'quiz.html?topic=addsub-story&level=just'
+    },
+
     'place-value': {
       chapter: 'numbers',
       title: 'Hundreds, tens and ones',

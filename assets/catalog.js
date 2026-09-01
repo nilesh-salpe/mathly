@@ -71,6 +71,137 @@ window.MATHLY = {
       ]
     },
     {
+      id: 'addsub',
+      title: 'Add &amp; Subtract',
+      emoji: '➕',
+      tint: 3,
+      text: 'Carrying, borrowing, missing numbers, quick estimates and story problems.',
+      games: [
+        {
+          title: 'Adding with carrying',
+          emoji: '➕',
+          tint: 3,
+          kind: 'learn',
+          href: 'concept.html?c=addsub&t=add-regrouping',
+          text: 'Add the ones first, and carry the ten into the next column.'
+        },
+        {
+          title: 'Taking away with borrowing',
+          emoji: '➖',
+          tint: 4,
+          kind: 'learn',
+          href: 'concept.html?c=addsub&t=sub-regrouping',
+          text: 'Borrow a ten when the top digit is too small.'
+        },
+        {
+          title: 'Turning a story into a sum',
+          emoji: '📖',
+          tint: 2,
+          kind: 'learn',
+          href: 'concept.html?c=addsub&t=story-problems',
+          text: 'Find the numbers, decide add or take away, then solve it.'
+        },
+        {
+          title: 'Add &amp; Subtract Quiz',
+          emoji: '⏱️',
+          tint: 1,
+          kind: 'quiz',
+          href: 'quiz.html?chapter=addsub&level=just',
+          text: 'Sums, missing numbers, estimates, checking backwards and story problems.'
+        }
+      ]
+    },
+    {
+      id: 'muldiv',
+      title: 'Multiply &amp; Divide',
+      emoji: '✖️',
+      tint: 1,
+      text: 'Equal groups, times tables, bigger numbers, sharing fairly and what is left over.',
+      games: [
+        {
+          title: 'Times means equal groups',
+          emoji: '✖️',
+          tint: 1,
+          kind: 'learn',
+          href: 'concept.html?c=muldiv&t=equal-groups',
+          text: 'Why 3 × 4 is the same as 4 + 4 + 4.'
+        },
+        {
+          title: 'Sharing with some left over',
+          emoji: '🍪',
+          tint: 2,
+          kind: 'learn',
+          href: 'concept.html?c=muldiv&t=sharing-left-over',
+          text: 'Deal them out fairly and find the remainder.'
+        },
+        {
+          title: 'Multiplying a bigger number',
+          emoji: '🔢',
+          tint: 5,
+          kind: 'learn',
+          href: 'concept.html?c=muldiv&t=split-to-multiply',
+          text: 'Split 34 into 30 and 4, multiply each part, then add.'
+        },
+        {
+          title: 'Multiplication Tables',
+          emoji: '📋',
+          tint: 4,
+          kind: 'drill',
+          href: 'tables.html',
+          text: 'The full grid, filled in column by column with no clock.'
+        },
+        {
+          title: 'Multiply &amp; Divide Quiz',
+          emoji: '⏱️',
+          tint: 3,
+          kind: 'quiz',
+          href: 'quiz.html?chapter=muldiv&level=just',
+          text: 'Tables, 2-digit sums, sharing, remainders, missing numbers and stories.'
+        }
+      ]
+    },
+    {
+      id: 'fractions',
+      title: 'Fractions',
+      emoji: '🍕',
+      tint: 6,
+      text: 'Halves, thirds and quarters — of a shape and of a group of things.',
+      games: [
+        {
+          title: 'What a fraction is',
+          emoji: '🍫',
+          tint: 1,
+          kind: 'learn',
+          href: 'concept.html?c=fractions&t=equal-parts',
+          text: 'Equal parts, the top number and the bottom number.'
+        },
+        {
+          title: 'A fraction of a group',
+          emoji: '🫘',
+          tint: 2,
+          kind: 'learn',
+          href: 'concept.html?c=fractions&t=fraction-of-group',
+          text: 'Share into equal piles, then take the piles you need.'
+        },
+        {
+          title: 'Which piece is bigger?',
+          emoji: '⚖️',
+          tint: 5,
+          kind: 'learn',
+          href: 'concept.html?c=fractions&t=compare-fractions',
+          text: 'Why 1/2 is bigger than 1/4 of the same cake.'
+        },
+        {
+          title: 'Fractions Quiz',
+          emoji: '⏱️',
+          tint: 6,
+          kind: 'quiz',
+          href: 'quiz.html?chapter=fractions&level=just',
+          text: 'Shaded shapes, fractions of groups, comparing and story problems.'
+        }
+      ]
+    },
+    {
       id: 'shapes',
       title: 'Shapes &amp; Space',
       emoji: '📐',
