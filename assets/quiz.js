@@ -45,27 +45,80 @@
     return new Array(count + 1).join('⭐') + new Array(6 - count).join('☆');
   }
 
+  var OP_NAMES = { add: 'adding', sub: 'taking away', mul: 'times', div: 'sharing', pct: 'percentages', frac: 'fractions' };
+  var PERCENTS = [10, 20, 25, 50, 75, 100];
+  var PERCENT_BASES = [20, 40, 50, 60, 80, 100, 120];
+  var DENOMS = [2, 3, 4, 5, 10];
+
+  function pick(arr) { return arr[randomInt(0, arr.length - 1)]; }
+
+  function howManyParts(cfg) {
+    return cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
+  }
+
+  function buildQuestion(cfg) {
+    var op = pick(cfg.ops);
+    var n = howManyParts(cfg);
+    var parts = [];
+    var i, rest, sum, product, result;
+
+    if (op === 'add') {
+      for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
+      sum = parts.reduce(function (a, b) { return a + b; }, 0);
+      return { text: parts.join(' + '), answer: sum };
+    }
+
+    if (op === 'sub') {                     // built backwards so it never goes below zero
+      rest = [];
+      for (i = 0; i < n - 1; i++) rest.push(randomInt(cfg.from, cfg.to));
+      result = randomInt(cfg.from, cfg.to);
+      var first = rest.reduce(function (a, b) { return a + b; }, result);
+      return { text: [first].concat(rest).join(' − '), answer: result };
+    }
+
+    if (op === 'mul') {
+      for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
+      product = parts.reduce(function (a, b) { return a * b; }, 1);
+      return { text: parts.join(' × '), answer: product };
+    }
+
+    if (op === 'div') {                     // built backwards so it always divides exactly
+      rest = [];
+      for (i = 0; i < n - 1; i++) rest.push(Math.max(1, randomInt(cfg.from, cfg.to)));
+      result = randomInt(cfg.from, cfg.to);
+      var top = rest.reduce(function (a, b) { return a * b; }, result);
+      return { text: [top].concat(rest).join(' ÷ '), answer: result };
+    }
+
+    if (op === 'pct') {                     // friendly numbers only, answers stay whole
+      var percent = pick(PERCENTS);
+      var base = pick(PERCENT_BASES);
+      for (i = 0; i < 12 && (base * percent) % 100 !== 0; i++) {
+        percent = pick(PERCENTS);
+        base = pick(PERCENT_BASES);
+      }
+      if ((base * percent) % 100 !== 0) { percent = 50; base = 60; }
+      return { text: percent + '% of ' + base, answer: base * percent / 100 };
+    }
+
+    var denom = pick(DENOMS);               // fractions of a whole number
+    var numer = randomInt(1, denom - 1);
+    var chunk = randomInt(cfg.from, cfg.to);
+    return { text: numer + '/' + denom + ' of ' + (denom * chunk), answer: numer * chunk };
+  }
+
   function makeQuestions(cfg) {
     var made = [];
     var seen = {};
     var guard = 0;
-    while (made.length < cfg.count && guard < cfg.count * 60) {
+    while (made.length < cfg.count && guard < cfg.count * 80) {
       guard++;
-      var howMany = cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
-      var parts = [];
-      for (var i = 0; i < howMany; i++) parts.push(randomInt(cfg.from, cfg.to));
-      var key = parts.join('x');
-      if (seen[key] && made.length < Math.pow(cfg.to - cfg.from + 1, 2)) continue;
-      seen[key] = true;
-      var answer = parts.reduce(function (a, b) { return a * b; }, 1);
-      made.push({ parts: parts, answer: answer });
+      var q = buildQuestion(cfg);
+      if (seen[q.text]) continue;
+      seen[q.text] = true;
+      made.push(q);
     }
-    while (made.length < cfg.count) {           // tiny ranges: repeats are fine
-      var extra = [];
-      var n = cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
-      for (var j = 0; j < n; j++) extra.push(randomInt(cfg.from, cfg.to));
-      made.push({ parts: extra, answer: extra.reduce(function (a, b) { return a * b; }, 1) });
-    }
+    while (made.length < cfg.count) made.push(buildQuestion(cfg));   // tiny ranges: repeats are fine
     return made;
   }
 
@@ -77,7 +130,7 @@
 
       var sum = document.createElement('span');
       sum.className = 'quiz-sum';
-      sum.textContent = q.parts.join(' × ') + ' =';
+      sum.textContent = q.text + ' =';
       li.appendChild(sum);
 
       var input = document.createElement('input');
@@ -86,7 +139,7 @@
       input.autocomplete = 'off';
       input.className = 'quiz-input';
       input.dataset.index = String(index);
-      input.setAttribute('aria-label', 'Answer for ' + q.parts.join(' times '));
+      input.setAttribute('aria-label', 'Answer for ' + q.text);
       li.appendChild(input);
 
       var mark = document.createElement('span');
@@ -123,7 +176,8 @@
 
   function describe(cfg) {
     var kind = cfg.factors === 'mix' ? 'mixed 2–4 numbers' : cfg.factors + ' numbers';
-    return cfg.count + ' sums · ' + kind + ' · from ' + cfg.from + ' to ' + cfg.to;
+    var ops = cfg.ops.map(function (o) { return OP_NAMES[o]; }).join(', ');
+    return cfg.count + ' sums · ' + ops + ' · ' + kind + ' · from ' + cfg.from + ' to ' + cfg.to;
   }
 
   function startQuiz() {
@@ -255,6 +309,12 @@
     var from = clampInt(document.getElementById('qFrom').value, 1, 30, 2);
     var to = clampInt(document.getElementById('qTo').value, 1, 30, 12);
     if (from > to) { var swap = from; from = to; to = swap; }
+    var ops = [].slice.call(document.querySelectorAll('.op-check:checked')).map(function (b) { return b.value; });
+    if (!ops.length) {
+      hint.classList.add('error');
+      hint.textContent = 'Pick at least one kind of sum first — ➕ ➖ ✖️ ➗ 💯 🍕';
+      return;
+    }
     var factorsRaw = document.getElementById('qFactors').value;
     var minutes = clampInt(document.getElementById('qMinutes').value, 0, 60, 3);
     var seconds = clampInt(document.getElementById('qSeconds').value, 0, 59, 0);
@@ -265,6 +325,7 @@
     document.getElementById('qSeconds').value = seconds;
 
     settings = {
+      ops: ops,
       from: from,
       to: to,
       factors: factorsRaw === 'mix' ? 'mix' : parseInt(factorsRaw, 10),

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Multiplication Quiz &middot; Mathly</title>
+<title>Quiz Time &middot; Mathly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,14 +13,24 @@
 <header class="site-header">
   <div class="wrap">
     <a class="back" href="index.html">⬅ Back to games</a>
-    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">⏱️</span> Multiplication Quiz</h1>
-    <p class="tagline">Beat the clock and collect your stars!</p>
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">⏱️</span> Quiz Time</h1>
+    <p class="tagline">Pick your sums, beat the clock, collect your stars!</p>
   </div>
 </header>
 
 <main class="wrap">
   <section class="panel" aria-label="Make a quiz">
     <h2 class="panel-title">1. Make your quiz 🎲</h2>
+    <fieldset class="ops">
+      <legend>What kind of sums?</legend>
+      <label class="op"><input type="checkbox" class="op-check" value="add"><span>➕ Adding</span></label>
+      <label class="op"><input type="checkbox" class="op-check" value="sub"><span>➖ Taking away</span></label>
+      <label class="op"><input type="checkbox" class="op-check" value="mul" checked><span>✖️ Times</span></label>
+      <label class="op"><input type="checkbox" class="op-check" value="div"><span>➗ Sharing</span></label>
+      <label class="op"><input type="checkbox" class="op-check" value="pct"><span>💯 Percentages</span></label>
+      <label class="op"><input type="checkbox" class="op-check" value="frac"><span>🍕 Fractions</span></label>
+    </fieldset>
+
     <form id="quizSetup" class="controls">
       <label class="field">
         <span>Numbers from</span>
@@ -31,7 +41,7 @@
         <input type="number" id="qTo" min="1" max="30" value="12" required>
       </label>
       <label class="field">
-        <span>Numbers per sum</span>
+        <span>Numbers per sum <small>(+ − × ÷)</small></span>
         <select id="qFactors">
           <option value="2" selected>2 (a × b)</option>
           <option value="3">3 (a × b × c)</option>
