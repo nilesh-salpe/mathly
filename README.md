@@ -1,4 +1,4 @@
-# Math Playground
+# Mathly
 
 A colourful, kid-friendly static site for practising multiplication tables, ready for GitHub Pages.
 
@@ -13,12 +13,12 @@ git init
 git add .
 git commit -m "Multiplication tables practice site"
 git branch -M main
-git remote add origin https://github.com/<user>/<repo>.git
+git remote add origin https://github.com/nilesh-salpe/mathly.git
 git push -u origin main
 ```
 
 Then in the repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
-The site appears at `https://<user>.github.io/<repo>/`.
+The site appears at `https://nilesh-salpe.github.io/mathly/`.
 
 ## Run locally
 
