@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multiplication Tables &middot; Math Playground</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="back" href="index.html">⬅ Back to games</a>
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">✖️</span> Multiplication Tables</h1>
+    <p class="tagline">Pick your tables, fill the boxes, then tap <strong>Check my answers</strong>!</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="panel" aria-label="Choose your tables">
+    <h2 class="panel-title">1. Choose your tables 🎯</h2>
+    <form id="setup" class="controls">
+      <label class="field">
+        <span>Start at table</span>
+        <input type="number" id="from" min="1" max="30" value="2" required>
+      </label>
+      <label class="field">
+        <span>Finish at table</span>
+        <input type="number" id="to" min="1" max="30" value="6" required>
+      </label>
+      <label class="field">
+        <span>Count up to</span>
+        <input type="number" id="rows" min="1" max="30" value="10" required>
+      </label>
+      <button type="submit" class="btn btn-primary">✏️ Make my sheet</button>
+    </form>
+    <p class="hint" id="setupHint">Any tables from 1 to 30 — pick your favourites!</p>
+  </section>
+
+  <section class="panel" id="sheetPanel" hidden>
+    <h2 class="panel-title">2. Fill in the boxes ✏️</h2>
+    <div class="sheet-bar">
+      <div class="select-tools">
+        <span class="select-label">Tick the tables to mark:</span>
+        <button type="button" class="btn btn-ghost" id="selectAll">Tick all</button>
+        <button type="button" class="btn btn-ghost" id="selectNone">Untick all</button>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn btn-ghost" id="clearBtn">🧹 Start over</button>
+        <button type="button" class="btn btn-primary" id="checkBtn">✅ Check my answers</button>
+      </div>
+    </div>
+
+    <div id="result" class="result" hidden>
+      <span class="result-emoji" id="resultEmoji" aria-hidden="true"></span>
+      <span class="result-text">
+        <strong id="resultHead"></strong>
+        <span id="resultSub"></span>
+        <span class="stars" id="resultStars" aria-hidden="true"></span>
+      </span>
+    </div>
+
+    <div class="grid-scroll">
+      <table class="grid" id="grid"></table>
+    </div>
+
+    <p class="legend">
+      <span class="chip chip-right">💚 Correct</span>
+      <span class="chip chip-wrong">❤️ Try again</span>
+      <span class="chip chip-blank">💛 Not filled in</span>
+    </p>
+  </section>
+</main>
+
+<footer class="wrap site-footer">
+  <p><a href="index.html">⬅ Back to games</a></p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
