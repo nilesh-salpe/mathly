@@ -11,14 +11,14 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="wrap">
+  <div class="wrap wrap-wide">
     <a class="back" href="index.html">⬅ Back to games</a>
     <h1 class="brand"><span class="brand-emoji" aria-hidden="true">⏱️</span> Quiz Time</h1>
     <p class="tagline">Pick your sums, beat the clock, collect your stars!</p>
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap wrap-wide">
   <section class="panel" aria-label="Make a quiz">
     <h2 class="panel-title">1. Make your quiz 🎲</h2>
     <fieldset class="ops">
@@ -61,11 +61,12 @@
         <span>+ seconds</span>
         <input type="number" id="qSeconds" min="0" max="59" value="0" required>
       </label>
-      <button type="submit" class="btn btn-primary">🎉 Create new quiz</button>
+      <button type="submit" class="btn btn-primary"><span class="btn-emoji" aria-hidden="true">🎉</span>Create new quiz</button>
     </form>
     <p class="hint" id="quizHint">Set the timer to 0 minutes and 0 seconds for no clock at all.</p>
   </section>
 
+  <div class="quiz-layout">
   <section class="panel" id="quizPanel" hidden>
     <div class="quiz-top">
       <h2 class="panel-title" id="quizTitle">2. Answer the sums ✏️</h2>
@@ -87,19 +88,20 @@
     <ol class="quiz-list" id="quizList"></ol>
 
     <div class="quiz-actions">
-      <button type="button" class="btn btn-primary" id="finishBtn">✅ Finish &amp; see my score</button>
-      <button type="button" class="btn btn-ghost" id="newQuizBtn">🎲 New quiz</button>
+      <button type="button" class="btn btn-primary btn-big" id="finishBtn"><span class="btn-emoji" aria-hidden="true">✅</span>Finish &amp; see my score</button>
+      <button type="button" class="btn btn-ghost btn-big" id="newQuizBtn"><span class="btn-emoji" aria-hidden="true">🎲</span>New quiz</button>
     </div>
   </section>
 
   <section class="panel" id="scorePanel" hidden>
     <h2 class="panel-title">🏆 My scores</h2>
     <ul class="scoreboard" id="scoreboard"></ul>
-    <button type="button" class="btn btn-ghost" id="clearScores">🧹 Clear my scores</button>
+    <button type="button" class="btn btn-ghost" id="clearScores"><span class="btn-emoji" aria-hidden="true">🧹</span>Clear my scores</button>
   </section>
+  </div>
 </main>
 
-<footer class="wrap site-footer">
+<footer class="wrap wrap-wide site-footer">
   <p><a href="index.html">⬅ Back to games</a></p>
 </footer>
 

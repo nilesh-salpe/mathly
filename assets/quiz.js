@@ -46,11 +46,14 @@
   }
 
   var OP_NAMES = { add: 'adding', sub: 'taking away', mul: 'times', div: 'sharing', pct: 'percentages', frac: 'fractions' };
+  var OP_EMOJI = { add: '➕', sub: '➖', mul: '✖️', div: '➗', pct: '💯', frac: '🍕' };
   var PERCENTS = [10, 20, 25, 50, 75, 100];
   var PERCENT_BASES = [20, 40, 50, 60, 80, 100, 120];
   var DENOMS = [2, 3, 4, 5, 10];
 
   function pick(arr) { return arr[randomInt(0, arr.length - 1)]; }
+
+  function gcd(a, b) { return b ? gcd(b, a % b) : a; }
 
   function howManyParts(cfg) {
     return cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
@@ -65,7 +68,7 @@
     if (op === 'add') {
       for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
       sum = parts.reduce(function (a, b) { return a + b; }, 0);
-      return { text: parts.join(' + '), answer: sum };
+      return { op: 'add', text: parts.join(' + '), answer: sum };
     }
 
     if (op === 'sub') {                     // built backwards so it never goes below zero
@@ -73,13 +76,13 @@
       for (i = 0; i < n - 1; i++) rest.push(randomInt(cfg.from, cfg.to));
       result = randomInt(cfg.from, cfg.to);
       var first = rest.reduce(function (a, b) { return a + b; }, result);
-      return { text: [first].concat(rest).join(' − '), answer: result };
+      return { op: 'sub', text: [first].concat(rest).join(' − '), answer: result };
     }
 
     if (op === 'mul') {
       for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
       product = parts.reduce(function (a, b) { return a * b; }, 1);
-      return { text: parts.join(' × '), answer: product };
+      return { op: 'mul', text: parts.join(' × '), answer: product };
     }
 
     if (op === 'div') {                     // built backwards so it always divides exactly
@@ -87,7 +90,7 @@
       for (i = 0; i < n - 1; i++) rest.push(Math.max(1, randomInt(cfg.from, cfg.to)));
       result = randomInt(cfg.from, cfg.to);
       var top = rest.reduce(function (a, b) { return a * b; }, result);
-      return { text: [top].concat(rest).join(' ÷ '), answer: result };
+      return { op: 'div', text: [top].concat(rest).join(' ÷ '), answer: result };
     }
 
     if (op === 'pct') {                     // friendly numbers only, answers stay whole
@@ -98,13 +101,15 @@
         base = pick(PERCENT_BASES);
       }
       if ((base * percent) % 100 !== 0) { percent = 50; base = 60; }
-      return { text: percent + '% of ' + base, answer: base * percent / 100 };
+      return { op: 'pct', text: percent + '% of ' + base, answer: base * percent / 100 };
     }
 
-    var denom = pick(DENOMS);               // fractions of a whole number
+    var denom = pick(DENOMS);               // fractions of a whole number, lowest terms
     var numer = randomInt(1, denom - 1);
+    for (i = 0; i < 10 && gcd(numer, denom) !== 1; i++) numer = randomInt(1, denom - 1);
+    if (gcd(numer, denom) !== 1) numer = 1;
     var chunk = randomInt(cfg.from, cfg.to);
-    return { text: numer + '/' + denom + ' of ' + (denom * chunk), answer: numer * chunk };
+    return { op: 'frac', text: numer + '/' + denom + ' of ' + (denom * chunk), answer: numer * chunk };
   }
 
   function makeQuestions(cfg) {
@@ -126,7 +131,13 @@
     list.innerHTML = '';
     questions.forEach(function (q, index) {
       var li = document.createElement('li');
-      li.className = 'quiz-item';
+      li.className = 'quiz-item op-' + q.op;
+
+      var badge = document.createElement('span');
+      badge.className = 'quiz-badge';
+      badge.innerHTML = '<span class="quiz-no">' + (index + 1) + '</span>' +
+        '<span class="quiz-op" aria-hidden="true">' + OP_EMOJI[q.op] + '</span>';
+      li.appendChild(badge);
 
       var sum = document.createElement('span');
       sum.className = 'quiz-sum';
@@ -186,7 +197,11 @@
     renderQuiz();
     result.hidden = true;
     result.className = 'result';
-    title.textContent = '2. Answer the sums ✏️ — ' + describe(settings);
+    title.textContent = '2. Answer the sums ✏️';
+    var extra = document.createElement('span');
+    extra.className = 'quiz-title-extra';
+    extra.textContent = describe(settings);
+    title.appendChild(extra);
     panel.hidden = false;
     startTimer();
     var first = list.querySelector('input');
