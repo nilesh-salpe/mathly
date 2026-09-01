@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn &middot; Mathly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">🎈 Mathly</a>
+      <a href="chapter.html" id="chapterCrumb">Chapter</a>
+      <span class="crumb-here" id="conceptCrumb">Learn</span>
+    </nav>
+    <h1 class="brand" id="conceptTitle">Learn</h1>
+    <p class="tagline" id="conceptIdea"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="panel">
+    <h2 class="panel-title">Look at this 👀</h2>
+    <figure class="concept-figure">
+      <div id="conceptPicture"></div>
+      <figcaption id="conceptCaption"></figcaption>
+    </figure>
+  </section>
+
+  <section class="panel">
+    <h2 class="panel-title">Step by step 🪜</h2>
+    <ol class="steps" id="conceptSteps"></ol>
+    <button type="button" class="btn btn-ghost" id="nextStep"><span class="btn-emoji" aria-hidden="true">👉</span>Show me the next step</button>
+  </section>
+
+  <section class="panel">
+    <h2 class="panel-title">Now you try ✏️</h2>
+    <p class="hint">No score and no clock here — have a go, then check.</p>
+    <ol class="quiz-list" id="conceptTry"></ol>
+    <div class="quiz-actions">
+      <button type="button" class="btn btn-primary" id="checkTry"><span class="btn-emoji" aria-hidden="true">✅</span>Check these</button>
+      <button type="button" class="btn btn-ghost" id="newTry"><span class="btn-emoji" aria-hidden="true">🔄</span>Give me new ones</button>
+    </div>
+  </section>
+
+  <section class="panel practice-panel">
+    <h2 class="panel-title">Ready to practise? 🚀</h2>
+    <p class="hint">A quiz on this topic, as many questions as you like.</p>
+    <a class="btn btn-primary btn-big" id="practiceLink" href="quiz.html"><span class="btn-emoji" aria-hidden="true">⏱️</span>Practise this in a quiz</a>
+  </section>
+</main>
+
+<footer class="wrap site-footer">
+  <p><a href="index.html">⬅ All chapters</a></p>
+</footer>
+
+<script src="assets/catalog.js"></script>
+<script src="assets/engine.js"></script>
+<script src="assets/questions/foundations.js"></script>
+<script src="assets/questions/numbers.js"></script>
+<script src="assets/concepts.js"></script>
+<script src="assets/concept.js"></script>
+</body>
+</html>

@@ -10,15 +10,32 @@
     return null;
   }
 
+  var KINDS = {
+    learn: { label: 'Learn it', emoji: '📖' },
+    quiz:  { label: 'Quiz',     emoji: '⏱️' },
+    drill: { label: 'Practice', emoji: '✏️' }
+  };
+
+  function stars(chapterId) {
+    if (!window.Mathly || !window.Mathly.progress) return '';
+    var got = window.Mathly.progress.chapter(chapterId);
+    if (!got.topics || !got.earned) return '';
+    return '<span class="card-stars">⭐ ' + got.earned + ' / ' + got.possible + '</span>';
+  }
+
   function card(item, href, ready) {
     var tag = ready ? 'a' : 'div';
     var el = document.createElement(tag);
     el.className = 'card tint-' + (item.tint || 1) + (ready ? ' card-link' : ' card-soon');
     if (ready) el.href = href; else el.setAttribute('aria-disabled', 'true');
+    var kind = KINDS[item.kind];
     el.innerHTML =
       '<span class="card-icon" aria-hidden="true">' + item.emoji + '</span>' +
       '<span class="card-body">' +
-        '<span class="card-title">' + item.title + '</span>' +
+        '<span class="card-title">' + item.title +
+          (kind ? '<span class="kind">' + kind.emoji + ' ' + kind.label + '</span>' : '') +
+          (item.id ? stars(item.id) : '') +
+        '</span>' +
         '<span class="card-text">' + item.text + '</span>' +
       '</span>' +
       (ready ? '<span class="card-arrow" aria-hidden="true">▶</span>' : '');

@@ -1,11 +1,11 @@
-(function () {
+(function (M) {
   'use strict';
 
   var STORE = 'mathly-quiz-scores';
-  var MAX_NUMBER = 10000;
-  var BIGGEST_ANSWER = 1e12;   // keeps × and ÷ answers exact and readable
 
   var setup = document.getElementById('quizSetup');
+  var topicChips = document.getElementById('topicChips');
+  var levelChips = document.getElementById('levelChips');
   var hint = document.getElementById('quizHint');
   var panel = document.getElementById('quizPanel');
   var list = document.getElementById('quizList');
@@ -21,11 +21,21 @@
   var scoreboard = document.getElementById('scoreboard');
 
   var settings = null;
-  var questions = [];
+  var items = [];
   var ticker = null;
   var secondsLeft = 0;
   var secondsUsed = 0;
   var finished = true;
+
+  // only a bare sum gets an "=" after it; a worded question already ends properly
+  function needsEquals(q) {
+    return (q.mode === 'number' || q.mode === 'unit') && !/[a-z▢◻,]/i.test(q.prompt);
+  }
+
+  function param(name) {
+    var found = location.search.match(new RegExp('[?&]' + name + '=([^&]+)'));
+    return found ? decodeURIComponent(found[1]) : null;
+  }
 
   function clampInt(value, min, max, fallback) {
     var n = parseInt(value, 10);
@@ -33,136 +43,132 @@
     return Math.min(max, Math.max(min, n));
   }
 
-  function randomInt(min, max) {
-    return min + Math.floor(Math.random() * (max - min + 1));
-  }
-
   function twoDigits(n) { return (n < 10 ? '0' : '') + n; }
+  function clockText(total) { return twoDigits(Math.floor(total / 60)) + ':' + twoDigits(total % 60); }
+  function starsText(count) { return new Array(count + 1).join('⭐') + new Array(6 - count).join('☆'); }
 
-  function clockText(total) {
-    return twoDigits(Math.floor(total / 60)) + ':' + twoDigits(total % 60);
+  /* ---------- setting up ---------- */
+
+  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value' };
+
+  function buildTopicChips() {
+    var chapters = {};
+    M.all().forEach(function (type) {
+      (chapters[type.chapter] = chapters[type.chapter] || []).push(type);
+    });
+
+    var wanted = {};
+    var topic = param('topic');
+    var chapter = param('chapter');
+    if (topic) wanted[topic] = true;
+
+    Object.keys(chapters).forEach(function (id) {
+      var group = document.createElement('div');
+      group.className = 'chip-group';
+
+      var name = document.createElement('span');
+      name.className = 'chip-group-name';
+      name.textContent = CHAPTER_NAMES[id] || id;
+      group.appendChild(name);
+
+      chapters[id].forEach(function (type) {
+        var label = document.createElement('label');
+        label.className = 'op op-' + (type.tint || 'add');
+        var box = document.createElement('input');
+        box.type = 'checkbox';
+        box.className = 'op-check';
+        box.value = type.id;
+        box.checked = topic ? !!wanted[type.id] : (chapter ? chapter === id : type.id === 'mul');
+        var text = document.createElement('span');
+        text.textContent = type.emoji + ' ' + type.label;
+        label.appendChild(box);
+        label.appendChild(text);
+        group.appendChild(label);
+      });
+
+      topicChips.appendChild(group);
+    });
   }
 
-  function starsText(count) {
-    return new Array(count + 1).join('⭐') + new Array(6 - count).join('☆');
+  function buildLevelChips() {
+    var chosen = param('level') || 'just';
+    M.LEVEL_ORDER.forEach(function (id) {
+      var level = M.LEVELS[id];
+      var label = document.createElement('label');
+      label.className = 'level';
+      var radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'level';
+      radio.value = id;
+      radio.checked = id === chosen;
+      var text = document.createElement('span');
+      text.textContent = level.emoji + ' ' + level.label;
+      label.appendChild(radio);
+      label.appendChild(text);
+      levelChips.appendChild(label);
+    });
+    applyLevelDefaults(chosen);
   }
 
-  var OP_NAMES = { add: 'adding', sub: 'taking away', mul: 'times', div: 'sharing', pct: 'percentages', frac: 'fractions' };
-  var PERCENTS = [10, 20, 25, 50, 75, 100];
-  var DENOMS = [2, 3, 4, 5, 10];
-
-  function pick(arr) { return arr[randomInt(0, arr.length - 1)]; }
-
-  function gcd(a, b) { return b ? gcd(b, a % b) : a; }
-
-  // 3 or more numbers get brackets so the order is obvious: ((a − b) − c) − d
-  function chain(parts, sign) {
-    if (parts.length < 3) return parts.join(' ' + sign + ' ');
-    var text = parts[0] + ' ' + sign + ' ' + parts[1];
-    for (var i = 2; i < parts.length; i++) text = '(' + text + ') ' + sign + ' ' + parts[i];
-    return text;
+  function applyLevelDefaults(id) {
+    var level = M.level(id);
+    document.getElementById('qFrom').value = level.from;
+    document.getElementById('qTo').value = level.to;
+    document.getElementById('qFactors').value = String(level.parts);
   }
 
-  function howManyParts(cfg) {
-    return cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
+  function chosenLevel() {
+    var picked = levelChips.querySelector('input[name="level"]:checked');
+    return picked ? picked.value : 'just';
   }
 
-  function shuffle(arr) {
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = randomInt(0, i);
-      var swap = arr[i]; arr[i] = arr[j]; arr[j] = swap;
-    }
-    return arr;
+  function chosenTopics() {
+    return [].slice.call(topicChips.querySelectorAll('.op-check:checked')).map(function (b) { return b.value; });
   }
 
-  // Deal the ticked operations round by round, so every kind shows up
-  // before any of them comes round a second time.
-  function opSchedule(ops, count) {
+  /* ---------- making the quiz ---------- */
+
+  function schedule(topics, count) {
     var seq = [];
-    while (seq.length < count) seq = seq.concat(shuffle(ops.slice()));
+    while (seq.length < count) seq = seq.concat(M.rand.shuffle(topics.slice()));
     return seq.slice(0, count);
   }
 
-  function buildQuestion(cfg, op) {
-    op = op || pick(cfg.ops);
-    var n = howManyParts(cfg);
-    var parts = [];
-    var i, rest, sum, product, result;
-
-    if (op === 'add') {
-      for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
-      sum = parts.reduce(function (a, b) { return a + b; }, 0);
-      return { op: 'add', text: chain(parts, '+'), answer: sum };
-    }
-
-    if (op === 'sub') {                     // built backwards so it never goes below zero
-      rest = [];
-      for (i = 0; i < n - 1; i++) rest.push(randomInt(cfg.from, cfg.to));
-      result = randomInt(cfg.from, cfg.to);
-      var first = rest.reduce(function (a, b) { return a + b; }, result);
-      return { op: 'sub', text: chain([first].concat(rest), '−'), answer: result };
-    }
-
-    if (op === 'mul') {
-      product = 1;
-      for (i = 0; i < n; i++) {
-        var factor = randomInt(cfg.from, cfg.to);
-        if (parts.length >= 2 && product * factor > BIGGEST_ANSWER) break;
-        parts.push(factor);
-        product *= factor;
-      }
-      return { op: 'mul', text: chain(parts, '×'), answer: product };
-    }
-
-    if (op === 'div') {                     // built backwards so it always divides exactly
-      rest = [];
-      result = randomInt(cfg.from, cfg.to);
-      var top = result;
-      for (i = 0; i < n - 1; i++) {
-        var divisor = Math.max(1, randomInt(cfg.from, cfg.to));
-        if (rest.length >= 1 && top * divisor > BIGGEST_ANSWER) break;
-        rest.push(divisor);
-        top *= divisor;
-      }
-      return { op: 'div', text: chain([top].concat(rest), '÷'), answer: result };
-    }
-
-    if (op === 'pct') {                     // base is a multiple of 20 from the chosen range,
-      var percent = pick(PERCENTS);         // so every answer is a whole number
-      var base = Math.round(randomInt(cfg.from, cfg.to) / 20) * 20;
-      if (base < 20) base = 20;
-      return { op: 'pct', text: percent + '% of ' + base, answer: base * percent / 100 };
-    }
-
-    var denom = pick(DENOMS);               // fractions of a whole number, lowest terms
-    var numer = randomInt(1, denom - 1);
-    for (i = 0; i < 10 && gcd(numer, denom) !== 1; i++) numer = randomInt(1, denom - 1);
-    if (gcd(numer, denom) !== 1) numer = 1;
-    var chunk = randomInt(cfg.from, cfg.to);
-    return { op: 'frac', text: numer + '/' + denom + ' of ' + (denom * chunk), answer: numer * chunk };
-  }
-
-  function makeQuestions(cfg) {
-    var schedule = opSchedule(cfg.ops, cfg.count);
+  function makeItems(cfg) {
+    var plan = schedule(cfg.topics, cfg.count);
     var made = [];
     var seen = {};
 
-    for (var i = 0; i < schedule.length; i++) {
-      var q = buildQuestion(cfg, schedule[i]);
-      for (var tries = 0; tries < 40 && seen[q.text]; tries++) {
-        q = buildQuestion(cfg, schedule[i]);       // tiny ranges: repeats are fine in the end
-      }
-      seen[q.text] = true;
-      made.push(q);
-    }
+    plan.forEach(function (typeId) {
+      var type = M.get(typeId);
+      var q = type.make(cfg.ctx);
+      for (var tries = 0; tries < 40 && seen[q.prompt]; tries++) q = type.make(cfg.ctx);
+      seen[q.prompt] = true;
+      made.push({ typeId: typeId, type: type, q: q, given: null });
+    });
     return made;
   }
 
-  function renderQuiz() {
+  /* ---------- drawing the questions ---------- */
+
+  function speakButton(text) {
+    if (!M.canSpeak()) return null;
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'speak';
+    button.title = 'Read this out';
+    button.setAttribute('aria-label', 'Read this question out loud');
+    button.textContent = '🔊';
+    button.addEventListener('click', function () { M.speak(text); });
+    return button;
+  }
+
+  function renderItems() {
     list.innerHTML = '';
-    questions.forEach(function (q, index) {
+    items.forEach(function (item, index) {
+      var q = item.q;
       var li = document.createElement('li');
-      li.className = 'quiz-item op-' + q.op;
+      li.className = 'quiz-item op-' + (item.type.tint || 'add') + (q.mode === 'choice' ? ' quiz-item-wide' : '');
 
       var badge = document.createElement('span');
       badge.className = 'quiz-badge';
@@ -171,29 +177,107 @@
 
       var sum = document.createElement('span');
       sum.className = 'quiz-sum';
-      sum.textContent = q.text + ' =';
+      sum.textContent = q.prompt + (needsEquals(q) ? ' =' : '');
       li.appendChild(sum);
 
-      var input = document.createElement('input');
-      input.type = 'text';
-      input.inputMode = 'numeric';
-      input.autocomplete = 'off';
-      input.className = 'quiz-input';
-      input.dataset.index = String(index);
-      input.setAttribute('aria-label', 'Answer for ' + q.text);
-      li.appendChild(input);
+      if (/[a-z]{3}/i.test(q.prompt)) {
+        var speaker = speakButton(q.prompt);
+        if (speaker) li.appendChild(speaker);
+      }
+
+      if (q.mode === 'choice') {
+        var group = document.createElement('span');
+        group.className = 'choices';
+        q.choices.forEach(function (choice) {
+          var button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'choice';
+          button.textContent = choice;
+          button.addEventListener('click', function () {
+            if (finished) return;
+            item.given = choice;
+            [].slice.call(group.children).forEach(function (b) { b.classList.remove('picked'); });
+            button.classList.add('picked');
+          });
+          group.appendChild(button);
+        });
+        li.appendChild(group);
+        item.el = group;
+      } else if (q.mode === 'multi') {
+        var wrap = document.createElement('span');
+        wrap.className = 'multi';
+        q.fields.forEach(function (field, i) {
+          var cell = document.createElement('span');
+          cell.className = 'multi-cell';
+          var input = numberInput(index, i);
+          cell.appendChild(input);
+          var label = document.createElement('span');
+          label.className = 'multi-label';
+          label.textContent = field.label;
+          cell.appendChild(label);
+          wrap.appendChild(cell);
+        });
+        li.appendChild(wrap);
+        item.el = wrap;
+      } else {
+        var single = numberInput(index, 0);
+        li.appendChild(single);
+        if (q.unit) {
+          var unit = document.createElement('span');
+          unit.className = 'unit';
+          unit.textContent = q.unit;
+          li.appendChild(unit);
+        }
+        item.el = single;
+      }
+
+      if (q.note) {
+        var note = document.createElement('span');
+        note.className = 'quiz-note';
+        note.textContent = q.note;
+        li.appendChild(note);
+      }
 
       var mark = document.createElement('span');
       mark.className = 'quiz-mark';
       li.appendChild(mark);
+      item.mark = mark;
+      item.li = li;
 
       list.appendChild(li);
     });
   }
 
-  function stopTimer() {
-    if (ticker) { clearInterval(ticker); ticker = null; }
+  function numberInput(index, field) {
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.inputMode = 'numeric';
+    input.autocomplete = 'off';
+    input.className = 'quiz-input';
+    input.dataset.index = String(index);
+    input.dataset.field = String(field);
+    return input;
   }
+
+  function readGiven(item) {
+    var q = item.q;
+    if (q.mode === 'choice') return item.given;
+    if (q.mode === 'multi') {
+      return [].slice.call(item.el.querySelectorAll('input')).map(function (i) { return i.value.trim(); });
+    }
+    return item.el.value.trim();
+  }
+
+  function isBlank(item) {
+    var given = readGiven(item);
+    if (item.q.mode === 'choice') return !given;
+    if (item.q.mode === 'multi') return given.every(function (v) { return v === ''; });
+    return given === '';
+  }
+
+  /* ---------- the clock ---------- */
+
+  function stopTimer() { if (ticker) { clearInterval(ticker); ticker = null; } }
 
   function startTimer() {
     stopTimer();
@@ -208,33 +292,31 @@
       secondsUsed++;
       timerValue.textContent = clockText(Math.max(0, secondsLeft));
       timerBox.classList.toggle('hurry', secondsLeft <= 30 && secondsLeft > 0);
-      if (secondsLeft <= 0) {
-        timerBox.classList.add('done');
-        finishQuiz(true);
-      }
+      if (secondsLeft <= 0) { timerBox.classList.add('done'); finishQuiz(true); }
     }, 1000);
   }
 
+  /* ---------- running a quiz ---------- */
+
   function describe(cfg) {
-    var kind = cfg.factors === 'mix' ? 'mixed 2–4 numbers' : cfg.factors + ' numbers';
-    var ops = cfg.ops.map(function (o) { return OP_NAMES[o]; }).join(', ');
-    return cfg.count + ' sums · ' + ops + ' · ' + kind + ' · from ' + cfg.from + ' to ' + cfg.to;
+    var names = cfg.topics.map(function (id) { return M.get(id).label.toLowerCase(); }).join(', ');
+    return cfg.count + ' questions · ' + names + ' · ' + M.level(cfg.level).label.toLowerCase();
   }
 
   function startQuiz() {
-    questions = makeQuestions(settings);
+    items = makeItems(settings);
     finished = false;
-    renderQuiz();
+    renderItems();
     result.hidden = true;
     result.className = 'result';
-    title.textContent = '2. Answer the sums ✏️';
+    title.textContent = '2. Answer the questions ✏️';
     var extra = document.createElement('span');
     extra.className = 'quiz-title-extra';
     extra.textContent = describe(settings);
     title.appendChild(extra);
     panel.hidden = false;
     startTimer();
-    var first = list.querySelector('input');
+    var first = list.querySelector('.quiz-input');
     if (first) first.focus();
   }
 
@@ -245,37 +327,53 @@
     if (settings.limit && !byTimer) secondsUsed = settings.limit - Math.max(0, secondsLeft);
 
     var right = 0, wrong = 0, blank = 0;
-    var inputs = list.querySelectorAll('.quiz-input');
+    var perTopic = {};
 
-    for (var i = 0; i < inputs.length; i++) {
-      var input = inputs[i];
-      var q = questions[Number(input.dataset.index)];
-      var mark = input.parentNode.querySelector('.quiz-mark');
-      var typed = input.value.trim();
-      input.disabled = true;
-      input.classList.remove('right', 'wrong', 'blank');
+    items.forEach(function (item) {
+      var given = readGiven(item);
+      var tally = perTopic[item.typeId] = perTopic[item.typeId] || { right: 0, total: 0 };
+      tally.total++;
 
-      if (typed === '') {
-        input.classList.add('blank');
-        mark.className = 'quiz-mark blank';
-        mark.textContent = '💛 ' + q.answer;
-        blank++;
-      } else if (typed.replace(/^0+(?=\d)/, '') === String(q.answer)) {
-        input.classList.add('right');
-        mark.className = 'quiz-mark right';
-        mark.textContent = '✅ 1 point';
-        right++;
-      } else {
-        input.classList.add('wrong');
-        mark.className = 'quiz-mark wrong';
-        mark.textContent = '❌ it was ' + q.answer;
-        wrong++;
-      }
+      item.li.querySelectorAll('.quiz-input').forEach(function (i) { i.disabled = true; });
+      item.li.querySelectorAll('.choice').forEach(function (b) { b.disabled = true; });
+
+      var state;
+      if (isBlank(item)) { state = 'blank'; blank++; }
+      else if (M.isRight(item.q, given)) { state = 'right'; right++; tally.right++; }
+      else { state = 'wrong'; wrong++; }
+
+      paint(item, state);
+    });
+
+    Object.keys(perTopic).forEach(function (id) {
+      M.progress.record(id, perTopic[id].right, perTopic[id].total);
+    });
+
+    showScore(right, wrong, blank, byTimer);
+    saveScore(right, byTimer);
+    renderScores();
+  }
+
+  function paint(item, state) {
+    var q = item.q;
+    if (q.mode === 'choice') {
+      [].slice.call(item.el.children).forEach(function (button) {
+        if (button.textContent === String(q.answer)) button.classList.add('right');
+        else if (button.classList.contains('picked')) button.classList.add('wrong');
+      });
+    } else {
+      item.li.querySelectorAll('.quiz-input').forEach(function (i) { i.classList.add(state); });
     }
+    item.mark.className = 'quiz-mark ' + state;
+    item.mark.textContent = state === 'right' ? '✅ 1 point'
+      : state === 'blank' ? '💛 ' + M.answerText(q)
+      : '❌ it was ' + M.answerText(q);
+  }
 
-    var total = questions.length;
+  function showScore(right, wrong, blank, byTimer) {
+    var total = items.length;
     var perfect = right === total;
-    var stars = perfect ? 5 : Math.min(4, Math.max(0, Math.round((right / total) * 5)));
+    var stars = perfect ? 5 : M.starsFor(right, total);
     var kind = perfect ? 'pass' : (right >= total / 2 ? 'mixed' : 'fail');
     var head = perfect ? 'Perfect score! 🎉'
       : (right >= total * 0.8 ? 'Brilliant work!'
@@ -291,32 +389,31 @@
     resultSub.textContent = head + (wrong ? ' ' + wrong + ' to fix.' : '') +
       (blank ? ' ' + blank + ' left empty.' : '') + timePart;
     resultStars.textContent = starsText(stars);
-
-    saveScore({
-      when: Date.now(),
-      right: right,
-      total: total,
-      stars: stars,
-      seconds: settings.limit ? secondsUsed : null,
-      timedOut: !!byTimer,
-      about: describe(settings)
-    });
+    result.scrollIntoView({ block: 'nearest' });
   }
+
+  /* ---------- the scoreboard ---------- */
 
   function readScores() {
     try { return JSON.parse(localStorage.getItem(STORE)) || []; } catch (e) { return []; }
   }
 
-  function saveScore(entry) {
+  function saveScore(right, byTimer) {
     var all = readScores();
-    all.unshift(entry);
-    all = all.slice(0, 20);
-    try { localStorage.setItem(STORE, JSON.stringify(all)); } catch (e) { /* private mode */ }
-    renderScores(all);
+    all.unshift({
+      when: Date.now(),
+      right: right,
+      total: items.length,
+      stars: right === items.length ? 5 : M.starsFor(right, items.length),
+      seconds: settings.limit ? secondsUsed : null,
+      timedOut: !!byTimer,
+      about: describe(settings)
+    });
+    try { localStorage.setItem(STORE, JSON.stringify(all.slice(0, 20))); } catch (e) { /* private mode */ }
   }
 
-  function renderScores(all) {
-    all = all || readScores();
+  function renderScores() {
+    var all = readScores();
     scoreboard.innerHTML = '';
     if (!all.length) { scorePanel.hidden = true; return; }
     scorePanel.hidden = false;
@@ -344,38 +441,43 @@
       body.appendChild(line1);
       body.appendChild(line2);
       li.appendChild(body);
-
       scoreboard.appendChild(li);
     });
   }
 
+  /* ---------- wiring ---------- */
+
   setup.addEventListener('submit', function (e) {
     e.preventDefault();
-    var from = clampInt(document.getElementById('qFrom').value, 1, MAX_NUMBER, 2);
-    var to = clampInt(document.getElementById('qTo').value, 1, MAX_NUMBER, 12);
-    if (from > to) { var swap = from; from = to; to = swap; }
-    var ops = [].slice.call(document.querySelectorAll('.op-check:checked')).map(function (b) { return b.value; });
-    if (!ops.length) {
+    var topics = chosenTopics();
+    if (!topics.length) {
       hint.classList.add('error');
-      hint.textContent = 'Pick at least one kind of sum first — ➕ ➖ ✖️ ➗ 💯 🍕';
+      hint.textContent = 'Pick at least one kind of question first — tap a chip above.';
       return;
     }
-    var factorsRaw = document.getElementById('qFactors').value;
-    var minutes = clampInt(document.getElementById('qMinutes').value, 0, 60, 3);
-    var seconds = clampInt(document.getElementById('qSeconds').value, 0, 59, 0);
 
+    var from = clampInt(document.getElementById('qFrom').value, 1, 10000, 2);
+    var to = clampInt(document.getElementById('qTo').value, 1, 10000, 12);
+    if (from > to) { var swap = from; from = to; to = swap; }
     document.getElementById('qFrom').value = from;
     document.getElementById('qTo').value = to;
-    document.getElementById('qMinutes').value = minutes;
-    document.getElementById('qSeconds').value = seconds;
+
+    var minutes = clampInt(document.getElementById('qMinutes').value, 0, 60, 0);
+    var seconds = clampInt(document.getElementById('qSeconds').value, 0, 59, 0);
+    var factors = document.getElementById('qFactors').value;
+    var level = chosenLevel();
 
     settings = {
-      ops: ops,
-      from: from,
-      to: to,
-      factors: factorsRaw === 'mix' ? 'mix' : parseInt(factorsRaw, 10),
+      topics: topics,
+      level: level,
       count: clampInt(document.getElementById('qCount').value, 1, 50, 10),
-      limit: minutes * 60 + seconds
+      limit: minutes * 60 + seconds,
+      ctx: {
+        level: level,
+        from: from,
+        to: to,
+        parts: factors === 'mix' ? 'mix' : parseInt(factors, 10)
+      }
     };
     document.getElementById('qCount').value = settings.count;
 
@@ -386,22 +488,35 @@
     startQuiz();
   });
 
+  levelChips.addEventListener('change', function (e) {
+    if (e.target.name === 'level') applyLevelDefaults(e.target.value);
+  });
+
+  list.addEventListener('input', function (e) {
+    if (!e.target.classList.contains('quiz-input')) return;
+    e.target.classList.remove('right', 'wrong', 'blank');
+  });
+
   list.addEventListener('keydown', function (e) {
     if (e.key !== 'Enter' || !e.target.classList.contains('quiz-input')) return;
     e.preventDefault();
-    var next = list.querySelector('.quiz-input[data-index="' + (Number(e.target.dataset.index) + 1) + '"]');
-    if (next) next.focus(); else finishQuiz(false);
+    var boxes = [].slice.call(list.querySelectorAll('.quiz-input:not([disabled])'));
+    var at = boxes.indexOf(e.target);
+    if (at > -1 && at + 1 < boxes.length) boxes[at + 1].focus();
+    else finishQuiz(false);
   });
 
   document.getElementById('finishBtn').addEventListener('click', function () { finishQuiz(false); });
-  document.getElementById('newQuizBtn').addEventListener('click', function () {
-    if (!settings) return;
-    startQuiz();
-  });
+  document.getElementById('newQuizBtn').addEventListener('click', function () { if (settings) startQuiz(); });
   document.getElementById('clearScores').addEventListener('click', function () {
     try { localStorage.removeItem(STORE); } catch (e) { /* ignore */ }
-    renderScores([]);
+    renderScores();
   });
 
+  buildTopicChips();
+  buildLevelChips();
   renderScores();
-})();
+  if (param('topic') || param('chapter')) {
+    setup.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+  }
+})(window.Mathly);

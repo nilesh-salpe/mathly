@@ -265,13 +265,19 @@ body {
 }
 
 /* ---------- Quiz: pick your sums ---------- */
-.ops {
-  display: flex; flex-wrap: wrap; gap: .6rem;
+.picker {
   border: 3px dashed #ded2f5; border-radius: 22px;
-  padding: 1rem 1.1rem 1.2rem; margin: 0 0 1.4rem;
+  padding: 1rem 1.1rem 1.2rem; margin: 0 0 1.2rem;
   background: #fdfcff;
 }
-.ops legend { padding: 0 .6rem; font-size: 1.05rem; font-weight: 600; color: #5a4a92; }
+.picker legend { padding: 0 .6rem; font-size: 1.05rem; font-weight: 600; color: #5a4a92; }
+.chip-rows { display: flex; flex-direction: column; gap: .8rem; }
+.chip-rows-level { flex-direction: row; flex-wrap: wrap; gap: .6rem; }
+.chip-group { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.chip-group-name {
+  flex: 0 0 auto; min-width: 9.5rem; font-size: .85rem; font-weight: 600;
+  color: var(--ink-soft); text-transform: uppercase; letter-spacing: .04em;
+}
 .op {
   display: inline-flex; align-items: center; gap: .5rem; cursor: pointer; user-select: none;
   background: #fff; border: 3px solid var(--line); border-radius: 999px;
@@ -280,13 +286,20 @@ body {
 }
 .op:hover { transform: translateY(-2px); }
 .op input { width: 22px; height: 22px; accent-color: var(--accent); cursor: pointer; }
-.op-add:has(input:checked), .op[data-op="add"]:has(input:checked) { background: #eafbe9; border-color: #9edb98; color: #34772f; }
-.ops .op:nth-of-type(1):has(input:checked) { background: #eafbe9; border-color: #9edb98; color: #34772f; }
-.ops .op:nth-of-type(2):has(input:checked) { background: #fff2e0; border-color: #ffc987; color: #a9640f; }
-.ops .op:nth-of-type(3):has(input:checked) { background: #ffeef5; border-color: #ffb3d0; color: #bd3f74; }
-.ops .op:nth-of-type(4):has(input:checked) { background: #e8f3ff; border-color: #a8d2ff; color: #2760ad; }
-.ops .op:nth-of-type(5):has(input:checked) { background: #f1ecff; border-color: #c6b4ff; color: #5f42c0; }
-.ops .op:nth-of-type(6):has(input:checked) { background: #e6faf8; border-color: #96ddd3; color: #1f7d71; }
+.op-add:has(input:checked)  { background: #eafbe9; border-color: #9edb98; color: #34772f; }
+.op-sub:has(input:checked)  { background: #fff2e0; border-color: #ffc987; color: #a9640f; }
+.op-mul:has(input:checked)  { background: #ffeef5; border-color: #ffb3d0; color: #bd3f74; }
+.op-div:has(input:checked)  { background: #e8f3ff; border-color: #a8d2ff; color: #2760ad; }
+.op-pct:has(input:checked)  { background: #f1ecff; border-color: #c6b4ff; color: #5f42c0; }
+.op-frac:has(input:checked) { background: #e6faf8; border-color: #96ddd3; color: #1f7d71; }
+
+.level {
+  display: inline-flex; align-items: center; gap: .5rem; cursor: pointer; user-select: none;
+  background: #fff; border: 3px solid var(--line); border-radius: 999px;
+  padding: .5rem 1.05rem; font-size: 1.05rem; font-weight: 500;
+}
+.level input { width: 22px; height: 22px; accent-color: var(--accent); cursor: pointer; }
+.level:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); color: #4b3a86; font-weight: 600; }
 .field small { font-weight: 400; opacity: .75; }
 .btn-emoji { display: inline-block; margin-right: .5rem; }
 
@@ -435,3 +448,82 @@ body {
 
 /* answers can be long now that numbers reach 10000 */
 .quiz-input { width: auto; min-width: 104px; flex: 1 1 104px; max-width: 100%; }
+
+/* ---------- Grown-up settings ---------- */
+.grown-up { margin: 0 0 1rem; border: 3px solid var(--line); border-radius: 18px; background: #fdfbff; }
+.grown-up > summary {
+  cursor: pointer; padding: .7rem 1rem; font-weight: 600; color: var(--ink-soft);
+  border-radius: 15px; list-style: none;
+}
+.grown-up > summary::-webkit-details-marker { display: none; }
+.grown-up > summary::before { content: '⚙️ '; }
+.grown-up[open] > summary { border-bottom: 2px solid var(--line); }
+.grown-up .controls { padding: .9rem 1rem 1.1rem; }
+.grown-up-note { margin: .8rem 1rem 0; font-size: .9rem; color: var(--ink-soft); }
+
+/* ---------- Answer modes ---------- */
+.choices { display: flex; flex-wrap: wrap; gap: .45rem; margin-left: auto; }
+.choice {
+  font-family: inherit; font-size: 1.15rem; font-weight: 700; cursor: pointer;
+  min-width: 3.2rem; padding: .45rem .9rem; color: var(--ink);
+  background: #fff; border: 3px solid #e3dcf0; border-radius: 14px;
+}
+.choice:hover:not(:disabled) { border-color: var(--accent); }
+.choice.picked { background: var(--accent-soft); border-color: var(--accent); color: #4b3a86; }
+.choice.right { background: var(--right-bg); border-color: var(--right-line); color: var(--right-ink); }
+.choice.wrong { background: var(--wrong-bg); border-color: var(--wrong-line); color: var(--wrong-ink); }
+.choice:disabled { cursor: default; }
+
+.multi { display: flex; flex-wrap: wrap; gap: .5rem; margin-left: auto; }
+.multi-cell { display: grid; gap: .15rem; justify-items: center; }
+.multi-cell .quiz-input { width: 72px; min-width: 72px; flex: 0 0 auto; }
+.multi-label { font-size: .72rem; color: var(--ink-soft); font-weight: 600; }
+
+.unit { font-size: 1.05rem; font-weight: 600; color: var(--ink-soft); }
+.quiz-note { width: 100%; font-size: .8rem; color: var(--ink-soft); }
+.quiz-item-wide { grid-column: span 1; }
+
+.speak {
+  border: 2px solid var(--line); background: #fff; border-radius: 999px;
+  width: 2rem; height: 2rem; font-size: .95rem; cursor: pointer; line-height: 1;
+}
+.speak:hover { border-color: var(--accent); }
+
+/* ---------- Menu extras ---------- */
+.kind {
+  display: inline-block; margin-left: .5rem; padding: .1rem .5rem;
+  font-size: .72rem; font-weight: 600; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent); vertical-align: middle;
+}
+.card-stars { display: inline-block; margin-left: .5rem; font-size: .8rem; color: var(--blank-ink); }
+
+/* ---------- Concept pages ---------- */
+.concept-figure { margin: 0; display: grid; gap: .8rem; }
+.concept-figure > div { display: flex; justify-content: center; }
+.concept-svg { width: 100%; max-width: 680px; height: auto; }
+.concept-figure figcaption { font-size: 1rem; font-weight: 600; color: var(--ink-soft); text-align: center; }
+
+.steps { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: .6rem; counter-reset: step; }
+.step {
+  display: grid; gap: .15rem; padding: .8rem 1rem .8rem 3rem; position: relative;
+  background: #fdfbff; border: 3px solid var(--line); border-radius: 18px;
+}
+.step::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; left: .8rem; top: .8rem;
+  width: 1.7rem; height: 1.7rem; display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent);
+  border-radius: 50%; font-weight: 700; font-size: .9rem;
+}
+.step strong { font-size: 1.05rem; }
+.step span { color: var(--ink-soft); }
+.practice-panel { text-align: center; }
+.practice-panel .btn { display: inline-block; text-decoration: none; margin-top: .4rem; }
+
+/* ---------- Self-test ---------- */
+.scroll-table { overflow-x: auto; margin-top: 1rem; }
+.test-table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 560px; }
+.test-table th, .test-table td { text-align: left; padding: .5rem .7rem; border-bottom: 2px solid var(--line); }
+.test-table thead th { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
+.test-table tr.bad td { background: var(--wrong-bg); color: var(--wrong-ink); }
+.test-table tr.good td:nth-child(3) { color: var(--right-ink); font-weight: 600; }
