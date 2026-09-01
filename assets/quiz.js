@@ -48,7 +48,6 @@
   }
 
   var OP_NAMES = { add: 'adding', sub: 'taking away', mul: 'times', div: 'sharing', pct: 'percentages', frac: 'fractions' };
-  var OP_EMOJI = { add: '➕', sub: '➖', mul: '✖️', div: '➗', pct: '💯', frac: '🍕' };
   var PERCENTS = [10, 20, 25, 50, 75, 100];
   var DENOMS = [2, 3, 4, 5, 10];
 
@@ -167,8 +166,7 @@
 
       var badge = document.createElement('span');
       badge.className = 'quiz-badge';
-      badge.innerHTML = '<span class="quiz-no">' + (index + 1) + '</span>' +
-        '<span class="quiz-op" aria-hidden="true">' + OP_EMOJI[q.op] + '</span>';
+      badge.innerHTML = '<span class="quiz-no">' + (index + 1) + '</span>';
       li.appendChild(badge);
 
       var sum = document.createElement('span');

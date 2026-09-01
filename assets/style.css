@@ -332,7 +332,6 @@ body {
   background: #fff; border: 3px solid var(--line); border-radius: 50%;
   font-size: .9rem; font-weight: 700; color: var(--ink-soft);
 }
-.quiz-op { font-size: 1.15rem; }
 
 .quiz-sum { font-size: 1.3rem; font-weight: 600; letter-spacing: .01em; }
 .quiz-input {
@@ -395,7 +394,6 @@ body {
 .quiz-input { width: 92px; font-size: 1.2rem; padding: .45rem .4rem; border-radius: 14px; }
 .quiz-mark { font-size: .9rem; }
 .quiz-no { width: 26px; height: 26px; font-size: .82rem; border-width: 2px; }
-.quiz-op { font-size: 1rem; }
 
 .scoreboard { gap: .6rem; }
 .score-row { padding: .6rem .8rem; gap: .7rem; border-radius: 16px; }
