@@ -434,3 +434,6 @@ body {
   .quiz-layout:has(#quizPanel[hidden]) { grid-template-columns: 1fr; }
   .quiz-layout:has(#quizPanel[hidden]) #scorePanel { width: 100%; position: static; max-height: none; }
 }
+
+/* answers can be long now that numbers reach 10000 */
+.quiz-input { width: auto; min-width: 104px; flex: 1 1 104px; max-width: 100%; }

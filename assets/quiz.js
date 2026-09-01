@@ -2,6 +2,8 @@
   'use strict';
 
   var STORE = 'mathly-quiz-scores';
+  var MAX_NUMBER = 10000;
+  var BIGGEST_ANSWER = 1e12;   // keeps × and ÷ answers exact and readable
 
   var setup = document.getElementById('quizSetup');
   var hint = document.getElementById('quizHint');
@@ -48,12 +50,19 @@
   var OP_NAMES = { add: 'adding', sub: 'taking away', mul: 'times', div: 'sharing', pct: 'percentages', frac: 'fractions' };
   var OP_EMOJI = { add: '➕', sub: '➖', mul: '✖️', div: '➗', pct: '💯', frac: '🍕' };
   var PERCENTS = [10, 20, 25, 50, 75, 100];
-  var PERCENT_BASES = [20, 40, 50, 60, 80, 100, 120];
   var DENOMS = [2, 3, 4, 5, 10];
 
   function pick(arr) { return arr[randomInt(0, arr.length - 1)]; }
 
   function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+
+  // 3 or more numbers get brackets so the order is obvious: ((a − b) − c) − d
+  function chain(parts, sign) {
+    if (parts.length < 3) return parts.join(' ' + sign + ' ');
+    var text = parts[0] + ' ' + sign + ' ' + parts[1];
+    for (var i = 2; i < parts.length; i++) text = '(' + text + ') ' + sign + ' ' + parts[i];
+    return text;
+  }
 
   function howManyParts(cfg) {
     return cfg.factors === 'mix' ? randomInt(2, 4) : cfg.factors;
@@ -84,7 +93,7 @@
     if (op === 'add') {
       for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
       sum = parts.reduce(function (a, b) { return a + b; }, 0);
-      return { op: 'add', text: parts.join(' + '), answer: sum };
+      return { op: 'add', text: chain(parts, '+'), answer: sum };
     }
 
     if (op === 'sub') {                     // built backwards so it never goes below zero
@@ -92,31 +101,37 @@
       for (i = 0; i < n - 1; i++) rest.push(randomInt(cfg.from, cfg.to));
       result = randomInt(cfg.from, cfg.to);
       var first = rest.reduce(function (a, b) { return a + b; }, result);
-      return { op: 'sub', text: [first].concat(rest).join(' − '), answer: result };
+      return { op: 'sub', text: chain([first].concat(rest), '−'), answer: result };
     }
 
     if (op === 'mul') {
-      for (i = 0; i < n; i++) parts.push(randomInt(cfg.from, cfg.to));
-      product = parts.reduce(function (a, b) { return a * b; }, 1);
-      return { op: 'mul', text: parts.join(' × '), answer: product };
+      product = 1;
+      for (i = 0; i < n; i++) {
+        var factor = randomInt(cfg.from, cfg.to);
+        if (parts.length >= 2 && product * factor > BIGGEST_ANSWER) break;
+        parts.push(factor);
+        product *= factor;
+      }
+      return { op: 'mul', text: chain(parts, '×'), answer: product };
     }
 
     if (op === 'div') {                     // built backwards so it always divides exactly
       rest = [];
-      for (i = 0; i < n - 1; i++) rest.push(Math.max(1, randomInt(cfg.from, cfg.to)));
       result = randomInt(cfg.from, cfg.to);
-      var top = rest.reduce(function (a, b) { return a * b; }, result);
-      return { op: 'div', text: [top].concat(rest).join(' ÷ '), answer: result };
+      var top = result;
+      for (i = 0; i < n - 1; i++) {
+        var divisor = Math.max(1, randomInt(cfg.from, cfg.to));
+        if (rest.length >= 1 && top * divisor > BIGGEST_ANSWER) break;
+        rest.push(divisor);
+        top *= divisor;
+      }
+      return { op: 'div', text: chain([top].concat(rest), '÷'), answer: result };
     }
 
-    if (op === 'pct') {                     // friendly numbers only, answers stay whole
-      var percent = pick(PERCENTS);
-      var base = pick(PERCENT_BASES);
-      for (i = 0; i < 12 && (base * percent) % 100 !== 0; i++) {
-        percent = pick(PERCENTS);
-        base = pick(PERCENT_BASES);
-      }
-      if ((base * percent) % 100 !== 0) { percent = 50; base = 60; }
+    if (op === 'pct') {                     // base is a multiple of 20 from the chosen range,
+      var percent = pick(PERCENTS);         // so every answer is a whole number
+      var base = Math.round(randomInt(cfg.from, cfg.to) / 20) * 20;
+      if (base < 20) base = 20;
       return { op: 'pct', text: percent + '% of ' + base, answer: base * percent / 100 };
     }
 
@@ -338,8 +353,8 @@
 
   setup.addEventListener('submit', function (e) {
     e.preventDefault();
-    var from = clampInt(document.getElementById('qFrom').value, 1, 30, 2);
-    var to = clampInt(document.getElementById('qTo').value, 1, 30, 12);
+    var from = clampInt(document.getElementById('qFrom').value, 1, MAX_NUMBER, 2);
+    var to = clampInt(document.getElementById('qTo').value, 1, MAX_NUMBER, 12);
     if (from > to) { var swap = from; from = to; to = swap; }
     var ops = [].slice.call(document.querySelectorAll('.op-check:checked')).map(function (b) { return b.value; });
     if (!ops.length) {
