@@ -7,9 +7,10 @@ A colourful, kid-friendly static site for practising multiplication tables, read
 - `assets/catalog.js` — the whole menu as data. **To add a chapter**, push an object onto `MATHLY.chapters` (`id`, `title`, `emoji`, `tint` 1–6, `text`, `games: []`); a chapter with no games shows as "coming soon". **To add a game**, push `{ title, emoji, tint, href, text }` onto that chapter's `games`. No other file needs editing.
 - `tables.html` — (Foundations) pick a range of tables (1–30), fill the boxes, tick the columns you want graded, then **Check answers**. Correct boxes turn light green, wrong ones light pink (with the right answer underneath), unanswered ones light yellow — plus an encouraging message and a star score.
 - `quiz.html` — (Foundations) timed quiz. Tick the kinds of sums you want — adding, taking away, times, sharing (division), percentages, fractions — then choose a number range (1 up to 10000), how many numbers per sum (2 = a×b, 3 = a×b×c, 4 = a×b×c×d, or a mix; applies to + − × ÷), how many sums, and a timer (minutes + seconds; 0:00 means no clock). Subtraction never goes below zero, division always divides exactly, percentages and fractions always land on whole answers (percentage bases follow the chosen range, rounded to a multiple of 20), and × / ÷ drop a factor rather than let an answer run past a trillion, so every answer stays exact. Sums with 3 or more numbers are bracketed left to right — `((a − b) − c) − d` — so the order is never in doubt. Ticked operations are dealt round-robin, so every kind you pick shows up before any repeats. Each answer is marked individually, you get a score out of the total with stars, and every quiz is kept in a **My scores** list (saved in the browser). **New quiz** deals a fresh set with the same settings.
-**Chapters:** Foundations (mixed sums) · Numbers & Place Value · Add & Subtract · Multiply & Divide · Fractions · Money · Measurement · Time & Calendar · Shapes & Patterns · Data Handling · Revision & Report. Each has *Learn it* concept pages and a quiz; Multiply & Divide also has the tables drill.
+**Chapters:** Word Problems · Foundations (mixed sums) · Numbers & Place Value · Add & Subtract · Multiply & Divide · Fractions · Money · Measurement · Time & Calendar · Shapes & Patterns · Data Handling · Revision & Report. Eleven in all. Each has *Learn it* concept pages and a quiz; Multiply & Divide also has the tables drill.
 
 - `concept.html?c=<chapter>&t=<topic>` — a **Learn it** page: big idea, an SVG picture, the method one step at a time, two "now you try" questions with instant marking, then a button into the quiz for that topic.
+- `bank.html?c=<chapter>` — the **question bank**: 100 ready-made questions per chapter, filterable by topic and level, answers hidden until asked for, and printable. Without a chapter it lists them all.
 - `report.html` — the report card: stars per topic, what has been practised, what to try next, and a print layout. Reads the same `mathly-progress` store the quizzes write.
 - `selftest.html` — runs every registered question type at every level (200 questions each) and checks the invariants: whole answers, nothing negative, prompts that read properly, exactly one correct choice, answers that mark themselves right, plus any per-type check. Open it before every push.
 - `assets/engine.js` — the question registry, levels, marking, per-topic progress and read-aloud. Question types live in `assets/questions/*.js` and register themselves:
@@ -26,6 +27,40 @@ Mathly.register({
 
 Answer modes: `number` (one box), `choice` (big buttons, needs `choices`), `multi` (several labelled boxes, needs `fields`), `unit` (a box with a unit after it). Adding a topic = one `Mathly.register` call, one entry in `assets/concepts.js`, one entry in `assets/catalog.js`.
 - `assets/style.css`, `assets/menu.js`, `assets/app.js`, `assets/quiz.js`, `assets/concept.js`, `assets/concepts.js`, `assets/selftest.js` — styles and logic. No build step, no dependencies.
+
+## Where the content lives
+
+All content is JSON under `data/`, fetched at runtime — no content is hard-coded into a page:
+
+```
+data/catalog.json      the menu: chapters and what is in each one
+data/concepts.json     every lesson: big idea, steps, remember, watch out, words, picture spec
+data/banks/index.json  which chapters have a bank, and how many questions each holds
+data/banks/<chapter>.json   100 checked questions with answers
+```
+
+`assets/data.js` is the only thing that knows where that comes from. To move the
+content behind an API later, point it somewhere else and change nothing else:
+
+```js
+Mathly.data.base = 'https://api.example.com/mathly/';   // expects the same JSON shapes
+```
+
+Lessons name a drawing rather than embedding one — `"picture": { "draw": "columnAdd", "args": [345, 278] }`
+— and `assets/pictures.js` holds the drawings. So the words are data and the SVG is code.
+
+### Rebuilding the data
+
+The editable sources are `assets/catalog.js` and `assets/concepts.js`; the JSON is generated:
+
+```bash
+node tools/export-data.js     # catalog.js + concepts.js  ->  data/catalog.json, data/concepts.json
+node tools/build-banks.js     # question generators       ->  data/banks/*.json  (100 per chapter)
+node tools/build-banks.js 200 # a bigger bank
+```
+
+`build-banks.js` runs the same checks as `selftest.html` on every question before writing it, and
+fingerprints each question by prompt, picture, answer and choices, so no two are the same.
 
 ## Publish on GitHub Pages
 

@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  window.Mathly.data.ready.then(function () {
+
   var chapters = (window.MATHLY && window.MATHLY.chapters) || [];
 
   function findChapter(id) {
@@ -13,7 +15,8 @@
   var KINDS = {
     learn: { label: 'Learn it', emoji: '📖' },
     quiz:  { label: 'Quiz',     emoji: '⏱️' },
-    drill: { label: 'Practice', emoji: '✏️' }
+    drill: { label: 'Practice', emoji: '✏️' },
+    bank:  { label: 'Question bank', emoji: '🗂️' }
   };
 
   function summary(chapter) {
@@ -93,15 +96,30 @@
         var join = game.href.indexOf('?') > -1 ? '&' : '?';
         gameMenu.appendChild(card(game, game.href + join + 'from=' + chapter.id, true));
       });
+
+      // every chapter with a bank gets a card for it, without touching the catalog
+      window.Mathly.data.json('banks/index').then(function (index) {
+        if (index.chapters.indexOf(chapter.id) < 0) return;
+        gameMenu.appendChild(card({
+          title: 'Question bank',
+          emoji: '🗂️',
+          tint: 6,
+          kind: 'bank',
+          text: index.perChapter + ' ready-made questions for this chapter, with answers you can hide, and a print button.'
+        }, 'bank.html?c=' + chapter.id, true));
+      });
     }
   }
 
   // Breadcrumb "back" link on a game page points at the chapter it came from.
   var crumb = document.getElementById('chapterCrumb');
   if (crumb) {
-    var from = (location.search.match(/[?&]from=([^&]+)/) || [])[1];
+    var query = location.search;
+    var from = (query.match(/[?&]from=([^&]+)/) || query.match(/[?&]chapter=([^&]+)/) || query.match(/[?&]c=([^&]+)/) || [])[1];
+    if (from === 'all') from = 'revision';
     var parent = findChapter(from ? decodeURIComponent(from) : 'foundations') || chapters[0];
     crumb.href = 'chapter.html?c=' + parent.id;
     crumb.innerHTML = parent.emoji + ' ' + parent.title;
   }
+  });
 })();

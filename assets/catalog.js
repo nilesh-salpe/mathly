@@ -289,6 +289,21 @@ window.MATHLY = {
       ]
     },
     {
+      id: 'wordproblems',
+      title: 'Word Problems',
+      emoji: '📚',
+      tint: 3,
+      text: 'Stories from every chapter — joining, sharing, money, measures, time and fractions, in one step and two.',
+      games: [
+        { title: 'Which sum does this story need?', emoji: '🧭', tint: 3, kind: 'learn',
+          href: 'concept.html?c=wordproblems&t=which-sum',
+          text: 'The clue words that tell you whether to add, take away, times or share.' },
+        { title: 'Word Problems Quiz', emoji: '⏱️', tint: 5, kind: 'quiz',
+          href: 'quiz.html?chapter=wordproblems&level=just',
+          text: 'Joining and leaving, groups, money, measures, time, fractions, two-step and choosing the sum.' }
+      ]
+    },
+    {
       id: 'revision',
       title: 'Revision &amp; Report',
       emoji: '🏅',
@@ -298,6 +313,9 @@ window.MATHLY = {
         { title: 'Mixed Quiz', emoji: '🎲', tint: 5, kind: 'quiz',
           href: 'quiz.html?chapter=all&level=just',
           text: 'Every kind of question in the whole of Mathly, mixed together. Untick any you do not want.' },
+        { title: 'All question banks', emoji: '🗂️', tint: 6, kind: 'bank',
+          href: 'bank.html',
+          text: '100 ready-made questions for every chapter — filter by topic or level, hide the answers, print them out.' },
         { title: 'My report card', emoji: '🏅', tint: 4, kind: 'learn',
           href: 'report.html',
           text: 'Stars for each topic, what has been practised, and what to try next.' }

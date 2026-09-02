@@ -1,0 +1,1178 @@
+{
+ "chapter": "fractions",
+ "count": 100,
+ "topics": [
+  {
+   "id": "fractions-shaded",
+   "label": "What fraction is shaded?",
+   "emoji": "🍫"
+  },
+  {
+   "id": "fractions-of-group",
+   "label": "Fraction of a group",
+   "emoji": "🫘"
+  },
+  {
+   "id": "fractions-compare",
+   "label": "Which is bigger?",
+   "emoji": "⚖️"
+  },
+  {
+   "id": "fractions-whole",
+   "label": "Making one whole",
+   "emoji": "🥧"
+  },
+  {
+   "id": "fractions-story",
+   "label": "Story problems",
+   "emoji": "📖"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "easy",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "2/3",
+    "1/3",
+    "1/2"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 2,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One half of 8 marbles is how many?",
+   "mode": "number",
+   "answer": 4,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 3,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "easy",
+   "prompt": "Which is the bigger piece of the same cake: 1/2 or 1/4?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/4"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 4,
+   "type": "fractions-whole",
+   "topic": "Making one whole",
+   "level": "easy",
+   "prompt": "How many halves make one whole?",
+   "mode": "number",
+   "answer": 2,
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 5,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 8 marbles. One half of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 6,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One half of 10 ladoos is how many?",
+   "mode": "number",
+   "answer": 5,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 7,
+   "type": "fractions-whole",
+   "topic": "Making one whole",
+   "level": "just",
+   "prompt": "How many quarters make one whole?",
+   "mode": "number",
+   "answer": 4,
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"4 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 8,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 14 pencils. One half of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 9,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "2/3",
+    "1/2",
+    "1/3"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 10,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "2 sixths of 18 marbles is how many?",
+   "mode": "number",
+   "answer": 6,
+   "note": "Share them into 6 equal groups first"
+  },
+  {
+   "n": 11,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/5 or 1/4?",
+   "mode": "choice",
+   "answer": "1/4",
+   "choices": [
+    "1/4",
+    "1/5"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 12,
+   "type": "fractions-whole",
+   "topic": "Making one whole",
+   "level": "challenge",
+   "prompt": "How many fifths make one whole?",
+   "mode": "number",
+   "answer": 5,
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"5 out of 5 parts shaded\"><rect x=\"2\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"42\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"82\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"122\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"162\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 13,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 32 pencils. One eighth of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 28
+  },
+  {
+   "n": 14,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "easy",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/4",
+   "choices": [
+    "2/5",
+    "4/6",
+    "2/4",
+    "3/4"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 15,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "2 quarters of 20 marbles is how many?",
+   "mode": "number",
+   "answer": 10,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 16,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "easy",
+   "prompt": "Which is the bigger piece of the same cake: 1/4 or 1/2?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/4",
+    "1/2"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 17,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 6 pencils. One half of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 18,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "just",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "2/3",
+    "1/3"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 19,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "2 quarters of 32 pencils is how many?",
+   "mode": "number",
+   "answer": 16,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 20,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "just",
+   "prompt": "Which is the bigger piece of the same cake: 1/3 or 1/4?",
+   "mode": "choice",
+   "answer": "1/3",
+   "choices": [
+    "1/3",
+    "1/4"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 21,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 12 marbles. One quarter of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 22,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "5/8",
+   "choices": [
+    "6/8",
+    "5/8",
+    "5/9",
+    "8/13"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"5 out of 8 parts shaded\"><rect x=\"2\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"77\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"127\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"177\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 23,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "One half of 12 pencils is how many?",
+   "mode": "number",
+   "answer": 6,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 24,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/2 or 1/8?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/8"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 25,
+   "type": "fractions-whole",
+   "topic": "Making one whole",
+   "level": "challenge",
+   "prompt": "How many sixths make one whole?",
+   "mode": "number",
+   "answer": 6,
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"6 out of 6 parts shaded\"><rect x=\"2\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"35.333333333333336\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"68.66666666666667\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"135.33333333333334\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"168.66666666666669\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 26,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 21 ladoos. One third of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 14
+  },
+  {
+   "n": 27,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "easy",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/3",
+    "2/3",
+    "1/2"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 28,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One half of 10 stickers is how many?",
+   "mode": "number",
+   "answer": 5,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 29,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "easy",
+   "prompt": "Which is the bigger piece of the same cake: 1/4 or 1/2?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/4"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 30,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 16 marbles. One quarter of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 31,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "just",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "3/4",
+   "choices": [
+    "3/4",
+    "4/7",
+    "3/5"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"3 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 32,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One half of 18 ladoos is how many?",
+   "mode": "number",
+   "answer": 9,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 33,
+   "type": "fractions-whole",
+   "topic": "Making one whole",
+   "level": "just",
+   "prompt": "How many thirds make one whole?",
+   "mode": "number",
+   "answer": 3,
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"3 out of 3 parts shaded\"><rect x=\"2\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"68.66666666666667\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"135.33333333333334\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 34,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 12 mangoes. One third of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 35,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/8",
+   "choices": [
+    "3/8",
+    "2/8",
+    "2/9",
+    "8/10"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 8 parts shaded\"><rect x=\"2\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"77\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"127\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"177\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 36,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "3 eighths of 32 stickers is how many?",
+   "mode": "number",
+   "answer": 12,
+   "note": "Share them into 8 equal groups first"
+  },
+  {
+   "n": 37,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/3 or 1/2?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/3",
+    "1/2"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 38,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 30 mangoes. One fifth of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 24
+  },
+  {
+   "n": 39,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "easy",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/4",
+   "choices": [
+    "4/6",
+    "3/4",
+    "2/5",
+    "2/4"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 40,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One half of 6 biscuits is how many?",
+   "mode": "number",
+   "answer": 3,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 41,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "easy",
+   "prompt": "Which is the bigger piece of the same cake: 1/2 or 1/4?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/4",
+    "1/2"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 42,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 4 ladoos. One half of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 43,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "just",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/3",
+   "choices": [
+    "2/3",
+    "2/4",
+    "3/5"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 3 parts shaded\"><rect x=\"2\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"68.66666666666667\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"135.33333333333334\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 44,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One half of 18 biscuits is how many?",
+   "mode": "number",
+   "answer": 9,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 45,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "just",
+   "prompt": "Which is the bigger piece of the same cake: 1/2 or 1/3?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/3",
+    "1/2"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 46,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 32 stickers. One quarter of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 47,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/4",
+   "choices": [
+    "4/6",
+    "2/4",
+    "3/4",
+    "2/5"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 48,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "One third of 27 pencils is how many?",
+   "mode": "number",
+   "answer": 9,
+   "note": "Share them into 3 equal groups first"
+  },
+  {
+   "n": 49,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/6 or 1/2?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/6",
+    "1/2"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 50,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 25 ladoos. One fifth of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 20
+  },
+  {
+   "n": 51,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "easy",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/3",
+    "1/2",
+    "2/3"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 52,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "3 quarters of 8 biscuits is how many?",
+   "mode": "number",
+   "answer": 6,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 53,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 10 mangoes. One half of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 54,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "just",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/4",
+   "choices": [
+    "1/4",
+    "2/4",
+    "1/5",
+    "4/5"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 55,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One third of 6 pencils is how many?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Share them into 3 equal groups first"
+  },
+  {
+   "n": 56,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 15 stickers. One third of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 57,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "3/5",
+   "choices": [
+    "3/5",
+    "4/5",
+    "5/8",
+    "3/6"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"3 out of 5 parts shaded\"><rect x=\"2\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"42\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"82\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"122\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"162\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 58,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "4 sixths of 30 biscuits is how many?",
+   "mode": "number",
+   "answer": 20,
+   "note": "Share them into 6 equal groups first"
+  },
+  {
+   "n": 59,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/2 or 1/5?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/5"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 60,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 48 marbles. One eighth of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 42
+  },
+  {
+   "n": 61,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 8 ladoos. One half of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 62,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 16 biscuits. One half of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 63,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/5",
+   "choices": [
+    "5/7",
+    "3/5",
+    "2/6",
+    "2/5"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 5 parts shaded\"><rect x=\"2\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"42\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"82\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"122\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"162\" y=\"2\" width=\"39\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 64,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "One half of 14 stickers is how many?",
+   "mode": "number",
+   "answer": 7,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 65,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/5 or 1/2?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/5"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 66,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 16 stickers. One half of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 67,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One quarter of 16 mangoes is how many?",
+   "mode": "number",
+   "answer": 4,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 68,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 16 pencils. One quarter of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 12
+  },
+  {
+   "n": 69,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "just",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/3",
+   "choices": [
+    "1/4",
+    "2/3",
+    "3/4",
+    "1/3"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 3 parts shaded\"><rect x=\"2\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"68.66666666666667\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"135.33333333333334\" y=\"2\" width=\"65.66666666666667\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 70,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One half of 16 ladoos is how many?",
+   "mode": "number",
+   "answer": 8,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 71,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "just",
+   "prompt": "Which is the bigger piece of the same cake: 1/2 or 1/3?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/3"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 72,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 12 marbles. One third of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 73,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "One sixth of 30 marbles is how many?",
+   "mode": "number",
+   "answer": 5,
+   "note": "Share them into 6 equal groups first"
+  },
+  {
+   "n": 74,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/3 or 1/5?",
+   "mode": "choice",
+   "answer": "1/3",
+   "choices": [
+    "1/3",
+    "1/5"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 75,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 56 stickers. One eighth of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 76,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One quarter of 8 mangoes is how many?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 77,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 8 biscuits. One quarter of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 78,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One half of 16 marbles is how many?",
+   "mode": "number",
+   "answer": 8,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 79,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "just",
+   "prompt": "Which is the bigger piece of the same cake: 1/4 or 1/3?",
+   "mode": "choice",
+   "answer": "1/3",
+   "choices": [
+    "1/4",
+    "1/3"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 80,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 18 ladoos. One half of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 81,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "4/6",
+   "choices": [
+    "6/10",
+    "4/6",
+    "4/7",
+    "5/6"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"4 out of 6 parts shaded\"><rect x=\"2\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"35.333333333333336\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"68.66666666666667\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"135.33333333333334\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"168.66666666666669\" y=\"2\" width=\"32.333333333333336\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 82,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "7 eighths of 64 ladoos is how many?",
+   "mode": "number",
+   "answer": 56,
+   "note": "Share them into 8 equal groups first"
+  },
+  {
+   "n": 83,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/6 or 1/8?",
+   "mode": "choice",
+   "answer": "1/6",
+   "choices": [
+    "1/6",
+    "1/8"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 84,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 64 pencils. One eighth of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 56
+  },
+  {
+   "n": 85,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One quarter of 16 biscuits is how many?",
+   "mode": "number",
+   "answer": 4,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 86,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "One half of 4 ladoos is how many?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 87,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 8 mangoes. One half of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 88,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "challenge",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/3",
+    "2/3"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"1 out of 2 parts shaded\"><rect x=\"2\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"99\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 89,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "One eighth of 24 stickers is how many?",
+   "mode": "number",
+   "answer": 3,
+   "note": "Share them into 8 equal groups first"
+  },
+  {
+   "n": 90,
+   "type": "fractions-compare",
+   "topic": "Which is bigger?",
+   "level": "challenge",
+   "prompt": "Which is the bigger piece of the same cake: 1/8 or 1/3?",
+   "mode": "choice",
+   "answer": "1/3",
+   "choices": [
+    "1/3",
+    "1/8"
+   ],
+   "note": "Fewer pieces means each piece is bigger"
+  },
+  {
+   "n": 91,
+   "type": "fractions-whole",
+   "topic": "Making one whole",
+   "level": "challenge",
+   "prompt": "How many eighths make one whole?",
+   "mode": "number",
+   "answer": 8,
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"8 out of 8 parts shaded\"><rect x=\"2\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"77\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"127\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"177\" y=\"2\" width=\"24\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 92,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 16 stickers. One half of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 93,
+   "type": "fractions-shaded",
+   "topic": "What fraction is shaded?",
+   "level": "easy",
+   "prompt": "What fraction of the bar is shaded?",
+   "mode": "choice",
+   "answer": "2/4",
+   "choices": [
+    "2/4",
+    "3/4",
+    "4/6",
+    "2/5"
+   ],
+   "picture": "<svg viewBox=\"0 0 204 56\" role=\"img\" aria-label=\"2 out of 4 parts shaded\"><rect x=\"2\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"52\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffc9dd\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"102\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/><rect x=\"152\" y=\"2\" width=\"49\" height=\"52\" fill=\"#ffffff\" stroke=\"#c9457e\" stroke-width=\"2.5\"/></svg>"
+  },
+  {
+   "n": 94,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One half of 6 pencils is how many?",
+   "mode": "number",
+   "answer": 3,
+   "note": "Share them into 2 equal groups first"
+  },
+  {
+   "n": 95,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "A basket has 12 ladoos. One quarter of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 96,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "just",
+   "prompt": "2 quarters of 24 stickers is how many?",
+   "mode": "number",
+   "answer": 12,
+   "note": "Share them into 4 equal groups first"
+  },
+  {
+   "n": 97,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "A basket has 8 ladoos. One quarter of them are given away. How many are left?",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 98,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "challenge",
+   "prompt": "One third of 6 mangoes is how many?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Share them into 3 equal groups first"
+  },
+  {
+   "n": 99,
+   "type": "fractions-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "A basket has 14 ladoos. One half of them are given away. How many are given away?",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 100,
+   "type": "fractions-of-group",
+   "topic": "Fraction of a group",
+   "level": "easy",
+   "prompt": "One quarter of 8 pencils is how many?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Share them into 4 equal groups first"
+  }
+ ]
+}

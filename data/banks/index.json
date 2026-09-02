@@ -1,0 +1,17 @@
+{
+  "chapters": [
+    "foundations",
+    "numbers",
+    "addsub",
+    "muldiv",
+    "fractions",
+    "money",
+    "measure",
+    "time",
+    "shapes",
+    "data",
+    "wordproblems"
+  ],
+  "perChapter": 100,
+  "total": 1100
+}

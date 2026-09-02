@@ -1,0 +1,1389 @@
+{
+ "chapter": "shapes",
+ "count": 100,
+ "topics": [
+  {
+   "id": "shapes-sides",
+   "label": "Sides and corners",
+   "emoji": "📐"
+  },
+  {
+   "id": "shapes-name",
+   "label": "Name the shape",
+   "emoji": "🔷"
+  },
+  {
+   "id": "shapes-symmetry",
+   "label": "Lines of symmetry",
+   "emoji": "🦋"
+  },
+  {
+   "id": "shapes-solids",
+   "label": "Solid shapes",
+   "emoji": "🧊"
+  },
+  {
+   "id": "patterns-number",
+   "label": "Number patterns",
+   "emoji": "🔢"
+  },
+  {
+   "id": "patterns-shape",
+   "label": "Shape patterns",
+   "emoji": "🔺"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "type": "shapes-sides",
+   "topic": "Sides and corners",
+   "level": "easy",
+   "prompt": "A square has how many sides and corners?",
+   "mode": "multi",
+   "answer": [
+    4,
+    4
+   ],
+   "fields": [
+    {
+     "label": "sides"
+    },
+    {
+     "label": "corners"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "octagon",
+    "triangle",
+    "pentagon",
+    "hexagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 3,
+   "type": "shapes-symmetry",
+   "topic": "Lines of symmetry",
+   "level": "easy",
+   "prompt": "How many lines of symmetry does a regular triangle have?",
+   "mode": "number",
+   "answer": 3,
+   "note": "A line of symmetry folds the shape exactly in half",
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 3 sides\"><polygon points=\"60.0,14.0 98.1,80.0 21.9,80.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 4,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "easy",
+   "prompt": "How many edges does a cube have?",
+   "mode": "number",
+   "answer": 12,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 5,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "11, 13, 15, 17, ▢",
+   "mode": "number",
+   "answer": 19,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 6,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🔶 🟣 🔶 🟣 🔶 🟣 🔶 ▢",
+   "mode": "choice",
+   "answer": "🟣",
+   "choices": [
+    "🟣",
+    "🟩",
+    "🔵"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 7,
+   "type": "shapes-sides",
+   "topic": "Sides and corners",
+   "level": "just",
+   "prompt": "A pentagon has how many sides and corners?",
+   "mode": "multi",
+   "answer": [
+    5,
+    5
+   ],
+   "fields": [
+    {
+     "label": "sides"
+    },
+    {
+     "label": "corners"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "square",
+    "hexagon",
+    "pentagon",
+    "triangle"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 9,
+   "type": "shapes-symmetry",
+   "topic": "Lines of symmetry",
+   "level": "just",
+   "prompt": "How many lines of symmetry does a regular octagon have?",
+   "mode": "number",
+   "answer": 8,
+   "note": "A line of symmetry folds the shape exactly in half",
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 8 sides\"><polygon points=\"60.0,14.0 91.1,26.9 104.0,58.0 91.1,89.1 60.0,102.0 28.9,89.1 16.0,58.0 28.9,26.9\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 10,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "just",
+   "prompt": "How many faces does a cylinder have?",
+   "mode": "number",
+   "answer": 3,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 11,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "64, 56, 48, 40, ▢",
+   "mode": "number",
+   "answer": 32,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 12,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🟩 🟣 🟩 🟣 🟩 🟣 🟩 ▢",
+   "mode": "choice",
+   "answer": "🟣",
+   "choices": [
+    "🟩",
+    "🔺",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 13,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "square",
+    "octagon",
+    "pentagon",
+    "hexagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 14,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "challenge",
+   "prompt": "How many faces does a cuboid have?",
+   "mode": "number",
+   "answer": 6,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 15,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "challenge",
+   "prompt": "1, 2, 4, 8, ▢",
+   "mode": "number",
+   "answer": 16,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 16,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🟩 🔵 🟩 🔵 🟩 🔵 🟩 ▢",
+   "mode": "choice",
+   "answer": "🔵",
+   "choices": [
+    "🟣",
+    "🔵",
+    "🟩"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 17,
+   "type": "shapes-sides",
+   "topic": "Sides and corners",
+   "level": "easy",
+   "prompt": "A rectangle has how many sides and corners?",
+   "mode": "multi",
+   "answer": [
+    4,
+    4
+   ],
+   "fields": [
+    {
+     "label": "sides"
+    },
+    {
+     "label": "corners"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "pentagon",
+    "octagon",
+    "square",
+    "triangle"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 19,
+   "type": "shapes-symmetry",
+   "topic": "Lines of symmetry",
+   "level": "easy",
+   "prompt": "How many lines of symmetry does a regular square have?",
+   "mode": "number",
+   "answer": 4,
+   "note": "A line of symmetry folds the shape exactly in half",
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 20,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "easy",
+   "prompt": "How many corners does a cylinder have?",
+   "mode": "number",
+   "answer": 0,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 21,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "17, 20, 23, 26, ▢",
+   "mode": "number",
+   "answer": 29,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 22,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🔶 🔵 🔶 🔵 🔶 🔵 🔶 ▢",
+   "mode": "choice",
+   "answer": "🔵",
+   "choices": [
+    "🔵",
+    "🔶",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 23,
+   "type": "shapes-sides",
+   "topic": "Sides and corners",
+   "level": "just",
+   "prompt": "A octagon has how many sides and corners?",
+   "mode": "multi",
+   "answer": [
+    8,
+    8
+   ],
+   "fields": [
+    {
+     "label": "sides"
+    },
+    {
+     "label": "corners"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "just",
+   "prompt": "How many faces does a sphere have?",
+   "mode": "number",
+   "answer": 1,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 25,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "3, 6, 12, 24, ▢",
+   "mode": "number",
+   "answer": 48,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 26,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🟣 🔺 ⭐ 🟣 🔺 ⭐ 🟣 ▢",
+   "mode": "choice",
+   "answer": "🔺",
+   "choices": [
+    "🟩",
+    "🟣",
+    "🔺"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 27,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "hexagon",
+   "choices": [
+    "pentagon",
+    "octagon",
+    "triangle",
+    "hexagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 6 sides\"><polygon points=\"60.0,14.0 98.1,36.0 98.1,80.0 60.0,102.0 21.9,80.0 21.9,36.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 28,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "challenge",
+   "prompt": "How many edges does a cylinder have?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 29,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🔺 🔶 ⭐ 🔺 🔶 ⭐ 🔺 ▢",
+   "mode": "choice",
+   "answer": "🔶",
+   "choices": [
+    "🔶",
+    "⭐",
+    "🟩"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 30,
+   "type": "shapes-sides",
+   "topic": "Sides and corners",
+   "level": "easy",
+   "prompt": "A triangle has how many sides and corners?",
+   "mode": "multi",
+   "answer": [
+    3,
+    3
+   ],
+   "fields": [
+    {
+     "label": "sides"
+    },
+    {
+     "label": "corners"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "pentagon",
+    "square",
+    "triangle",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 32,
+   "type": "shapes-symmetry",
+   "topic": "Lines of symmetry",
+   "level": "easy",
+   "prompt": "How many lines of symmetry does a regular rectangle have?",
+   "mode": "number",
+   "answer": 2,
+   "note": "A line of symmetry folds the shape exactly in half",
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 33,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "easy",
+   "prompt": "How many edges does a sphere have?",
+   "mode": "number",
+   "answer": 0,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 34,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "16, 18, 20, 22, ▢",
+   "mode": "number",
+   "answer": 24,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 35,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "⭐ 🟣 ⭐ 🟣 ⭐ 🟣 ⭐ ▢",
+   "mode": "choice",
+   "answer": "🟣",
+   "choices": [
+    "🔵",
+    "⭐",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 36,
+   "type": "shapes-sides",
+   "topic": "Sides and corners",
+   "level": "just",
+   "prompt": "A hexagon has how many sides and corners?",
+   "mode": "multi",
+   "answer": [
+    6,
+    6
+   ],
+   "fields": [
+    {
+     "label": "sides"
+    },
+    {
+     "label": "corners"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "hexagon",
+    "octagon",
+    "square",
+    "pentagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 38,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "just",
+   "prompt": "How many faces does a cube have?",
+   "mode": "number",
+   "answer": 6,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 39,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "4, 8, 16, 32, ▢",
+   "mode": "number",
+   "answer": 64,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 40,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🔵 🟣 ⭐ 🔵 🟣 ⭐ 🔵 ▢",
+   "mode": "choice",
+   "answer": "🟣",
+   "choices": [
+    "🔺",
+    "🔵",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 41,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "triangle",
+    "pentagon",
+    "square",
+    "hexagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 42,
+   "type": "shapes-symmetry",
+   "topic": "Lines of symmetry",
+   "level": "challenge",
+   "prompt": "How many lines of symmetry does a regular hexagon have?",
+   "mode": "number",
+   "answer": 6,
+   "note": "A line of symmetry folds the shape exactly in half",
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 6 sides\"><polygon points=\"60.0,14.0 98.1,36.0 98.1,80.0 60.0,102.0 21.9,80.0 21.9,36.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 43,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "challenge",
+   "prompt": "How many corners does a cube have?",
+   "mode": "number",
+   "answer": 8,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 44,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "challenge",
+   "prompt": "3, 9, 15, 21, ▢",
+   "mode": "number",
+   "answer": 27,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 45,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🟣 ⭐ 🟩 🟣 ⭐ 🟩 🟣 ▢",
+   "mode": "choice",
+   "answer": "⭐",
+   "choices": [
+    "🟩",
+    "🟣",
+    "⭐"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 46,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "hexagon",
+    "triangle",
+    "pentagon",
+    "square"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 47,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "2, 4, 6, 8, ▢",
+   "mode": "number",
+   "answer": 10,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 48,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🔶 🟩 🔶 🟩 🔶 🟩 🔶 ▢",
+   "mode": "choice",
+   "answer": "🟩",
+   "choices": [
+    "🔺",
+    "🟣",
+    "🟩"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 49,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "hexagon",
+   "choices": [
+    "hexagon",
+    "square",
+    "octagon",
+    "pentagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 6 sides\"><polygon points=\"60.0,14.0 98.1,36.0 98.1,80.0 60.0,102.0 21.9,80.0 21.9,36.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 50,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🟩 ⭐ 🟩 ⭐ 🟩 ⭐ 🟩 ▢",
+   "mode": "choice",
+   "answer": "⭐",
+   "choices": [
+    "🔵",
+    "⭐",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 51,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "pentagon",
+    "triangle",
+    "square",
+    "hexagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 52,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "challenge",
+   "prompt": "How many corners does a cuboid have?",
+   "mode": "number",
+   "answer": 8,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 53,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "challenge",
+   "prompt": "90, 81, 72, 63, ▢",
+   "mode": "number",
+   "answer": 54,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 54,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "⭐ 🟩 🔺 ⭐ 🟩 🔺 ⭐ ▢",
+   "mode": "choice",
+   "answer": "🟩",
+   "choices": [
+    "⭐",
+    "🟣",
+    "🟩"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 55,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "triangle",
+    "square",
+    "hexagon",
+    "pentagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 56,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "4, 7, 10, 13, ▢",
+   "mode": "number",
+   "answer": 16,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 57,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🟩 🔵 🟩 🔵 🟩 🔵 🟩 ▢",
+   "mode": "choice",
+   "answer": "🔵",
+   "choices": [
+    "🔶",
+    "⭐",
+    "🔵"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 58,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "triangle",
+    "pentagon",
+    "hexagon",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 59,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "48, 42, 36, 30, ▢",
+   "mode": "number",
+   "answer": 24,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 60,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🔵 ⭐ 🟩 🔵 ⭐ 🟩 🔵 ▢",
+   "mode": "choice",
+   "answer": "⭐",
+   "choices": [
+    "🟩",
+    "⭐",
+    "🔶"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 61,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "square",
+    "pentagon",
+    "triangle",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 62,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "challenge",
+   "prompt": "How many faces does a cone have?",
+   "mode": "number",
+   "answer": 2,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 63,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "challenge",
+   "prompt": "33, 30, 27, 24, ▢",
+   "mode": "number",
+   "answer": 21,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 64,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🔺 ⭐ 🟣 🔺 ⭐ 🟣 🔺 ▢",
+   "mode": "choice",
+   "answer": "⭐",
+   "choices": [
+    "🟣",
+    "⭐",
+    "🔺"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 65,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "triangle",
+   "choices": [
+    "hexagon",
+    "triangle",
+    "pentagon",
+    "square"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 3 sides\"><polygon points=\"60.0,14.0 98.1,80.0 21.9,80.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 66,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "18, 22, 26, 30, ▢",
+   "mode": "number",
+   "answer": 34,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 67,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🔺 🔵 🔺 🔵 🔺 🔵 🔺 ▢",
+   "mode": "choice",
+   "answer": "🔵",
+   "choices": [
+    "🔵",
+    "🔺",
+    "🔶"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 68,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "hexagon",
+    "square",
+    "octagon",
+    "pentagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 69,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "60, 55, 50, 45, ▢",
+   "mode": "number",
+   "answer": 40,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 70,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🔺 ⭐ 🟣 🔺 ⭐ 🟣 🔺 ▢",
+   "mode": "choice",
+   "answer": "⭐",
+   "choices": [
+    "🟣",
+    "⭐",
+    "🟩"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 71,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "pentagon",
+    "triangle",
+    "square",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 72,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "challenge",
+   "prompt": "15, 19, 23, 27, ▢",
+   "mode": "number",
+   "answer": 31,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 73,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "⭐ 🟣 ⭐ 🟣 ⭐ 🟣 ⭐ ▢",
+   "mode": "choice",
+   "answer": "🟣",
+   "choices": [
+    "🔺",
+    "🔶",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 74,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "triangle",
+   "choices": [
+    "triangle",
+    "pentagon",
+    "hexagon",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 3 sides\"><polygon points=\"60.0,14.0 98.1,80.0 21.9,80.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 75,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "1, 6, 11, 16, ▢",
+   "mode": "number",
+   "answer": 21,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 76,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🟣 🔺 🟣 🔺 🟣 🔺 🟣 ▢",
+   "mode": "choice",
+   "answer": "🔺",
+   "choices": [
+    "🔺",
+    "⭐",
+    "🟣"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 77,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "octagon",
+   "choices": [
+    "triangle",
+    "square",
+    "pentagon",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 8 sides\"><polygon points=\"60.0,14.0 91.1,26.9 104.0,58.0 91.1,89.1 60.0,102.0 28.9,89.1 16.0,58.0 28.9,26.9\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 78,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "just",
+   "prompt": "How many edges does a cone have?",
+   "mode": "number",
+   "answer": 1,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 79,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "3, 13, 23, 33, ▢",
+   "mode": "number",
+   "answer": 43,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 80,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🟩 🟣 🔶 🟩 🟣 🔶 🟩 ▢",
+   "mode": "choice",
+   "answer": "🟣",
+   "choices": [
+    "🔶",
+    "🟣",
+    "🔺"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 81,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "octagon",
+   "choices": [
+    "square",
+    "pentagon",
+    "hexagon",
+    "octagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 8 sides\"><polygon points=\"60.0,14.0 91.1,26.9 104.0,58.0 91.1,89.1 60.0,102.0 28.9,89.1 16.0,58.0 28.9,26.9\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 82,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🔵 ⭐ 🔶 🔵 ⭐ 🔶 🔵 ▢",
+   "mode": "choice",
+   "answer": "⭐",
+   "choices": [
+    "🟣",
+    "🔵",
+    "⭐"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 83,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "14, 19, 24, 29, ▢",
+   "mode": "number",
+   "answer": 34,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 84,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🟩 🔶 🟩 🔶 🟩 🔶 🟩 ▢",
+   "mode": "choice",
+   "answer": "🔶",
+   "choices": [
+    "🔶",
+    "🟣",
+    "⭐"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 85,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "square",
+    "triangle",
+    "hexagon",
+    "pentagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 86,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "just",
+   "prompt": "How many edges does a cuboid have?",
+   "mode": "number",
+   "answer": 12,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 87,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "3, 6, 9, 12, ▢",
+   "mode": "number",
+   "answer": 15,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 88,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "⭐ 🔺 🟩 ⭐ 🔺 🟩 ⭐ ▢",
+   "mode": "choice",
+   "answer": "🔺",
+   "choices": [
+    "🟣",
+    "🔺",
+    "⭐"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 89,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "square",
+   "choices": [
+    "triangle",
+    "octagon",
+    "hexagon",
+    "square"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 4 sides\"><polygon points=\"60.0,14.0 104.0,58.0 60.0,102.0 16.0,58.0\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 90,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🟣 🔺 🟩 🟣 🔺 🟩 🟣 ▢",
+   "mode": "choice",
+   "answer": "🔺",
+   "choices": [
+    "🔵",
+    "🔺",
+    "⭐"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 91,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "easy",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "square",
+    "octagon",
+    "hexagon",
+    "pentagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 92,
+   "type": "shapes-solids",
+   "topic": "Solid shapes",
+   "level": "easy",
+   "prompt": "How many corners does a sphere have?",
+   "mode": "number",
+   "answer": 0,
+   "note": "Faces are the flat or curved surfaces, corners are the points, edges are the lines where faces meet"
+  },
+  {
+   "n": 93,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "easy",
+   "prompt": "2, 5, 8, 11, ▢",
+   "mode": "number",
+   "answer": 14,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 94,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "easy",
+   "prompt": "🔵 🟩 🔵 🟩 🔵 🟩 🔵 ▢",
+   "mode": "choice",
+   "answer": "🟩",
+   "choices": [
+    "🔵",
+    "🔺",
+    "🟩"
+   ],
+   "note": "The pattern repeats every 2 shapes"
+  },
+  {
+   "n": 95,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "just",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "octagon",
+   "choices": [
+    "triangle",
+    "square",
+    "octagon",
+    "hexagon"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 8 sides\"><polygon points=\"60.0,14.0 91.1,26.9 104.0,58.0 91.1,89.1 60.0,102.0 28.9,89.1 16.0,58.0 28.9,26.9\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 96,
+   "type": "shapes-symmetry",
+   "topic": "Lines of symmetry",
+   "level": "just",
+   "prompt": "How many lines of symmetry does a regular pentagon have?",
+   "mode": "number",
+   "answer": 5,
+   "note": "A line of symmetry folds the shape exactly in half",
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 97,
+   "type": "patterns-number",
+   "topic": "Number patterns",
+   "level": "just",
+   "prompt": "18, 23, 28, 33, ▢",
+   "mode": "number",
+   "answer": 38,
+   "note": "Look at the jump between each pair"
+  },
+  {
+   "n": 98,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "just",
+   "prompt": "🔵 🔺 🟣 🔵 🔺 🟣 🔵 ▢",
+   "mode": "choice",
+   "answer": "🔺",
+   "choices": [
+    "🔵",
+    "🟣",
+    "🔺"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  },
+  {
+   "n": 99,
+   "type": "shapes-name",
+   "topic": "Name the shape",
+   "level": "challenge",
+   "prompt": "What is this shape called?",
+   "mode": "choice",
+   "answer": "pentagon",
+   "choices": [
+    "triangle",
+    "octagon",
+    "pentagon",
+    "square"
+   ],
+   "picture": "<svg viewBox=\"0 0 120 116\" role=\"img\" aria-label=\"a shape with 5 sides\"><polygon points=\"60.0,14.0 101.8,44.4 85.9,93.6 34.1,93.6 18.2,44.4\" fill=\"#f1ecff\" stroke=\"#6d51c9\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+   "n": 100,
+   "type": "patterns-shape",
+   "topic": "Shape patterns",
+   "level": "challenge",
+   "prompt": "🔺 🔵 🟩 🔺 🔵 🟩 🔺 ▢",
+   "mode": "choice",
+   "answer": "🔵",
+   "choices": [
+    "🟣",
+    "🔶",
+    "🔵"
+   ],
+   "note": "The pattern repeats every 3 shapes"
+  }
+ ]
+}

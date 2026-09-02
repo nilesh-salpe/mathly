@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Question bank &middot; Mathly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap wrap-wide">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">🎈 Mathly</a>
+      <a href="chapter.html" id="chapterCrumb" hidden>Chapter</a>
+      <span class="crumb-here">Question bank</span>
+    </nav>
+    <h1 class="brand" id="bankTitle"><span class="brand-emoji" aria-hidden="true">🗂️</span> Question bank</h1>
+    <p class="tagline" id="bankSummary">100 practice questions for every chapter, ready to work through on paper or on screen.</p>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+  <section class="panel no-print" id="bankControls" hidden>
+    <div class="controls">
+      <label class="field">
+        <span>Show</span>
+        <select id="topicFilter"><option value="all">All topics</option></select>
+      </label>
+      <label class="field">
+        <span>Level</span>
+        <select id="levelFilter">
+          <option value="all">All levels</option>
+          <option value="easy">🌱 Easy</option>
+          <option value="just">🌼 Just right</option>
+          <option value="challenge">🚀 Challenge</option>
+        </select>
+      </label>
+      <button type="button" class="btn btn-ghost" id="toggleAnswers"><span class="btn-emoji" aria-hidden="true">👀</span>Show answers</button>
+      <button type="button" class="btn btn-ghost" onclick="window.print()"><span class="btn-emoji" aria-hidden="true">🖨️</span>Print</button>
+    </div>
+    <p class="hint" id="bankCount"></p>
+  </section>
+
+  <nav class="menu" id="bankChapters"></nav>
+  <section class="panel" id="bankPanel" hidden>
+    <ol class="bank-list" id="bankList"></ol>
+  </section>
+</main>
+
+<footer class="wrap wrap-wide site-footer">
+  <p><a href="index.html">⬅ All chapters</a></p>
+</footer>
+
+<script src="assets/engine.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/questions.js"></script>
+<script src="assets/menu.js"></script>
+<script src="assets/bank.js"></script>
+</body>
+</html>

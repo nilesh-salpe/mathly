@@ -1,6 +1,8 @@
 (function (M) {
   'use strict';
 
+  M.data.ready.then(function () {
+
   var chapters = (window.MATHLY && window.MATHLY.chapters) || [];
   var body = document.getElementById('reportBody');
   var progress = M.progress.read();
@@ -135,4 +137,5 @@
   });
 
   render();
+  });
 })(window.Mathly);

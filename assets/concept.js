@@ -1,9 +1,19 @@
 (function (M) {
   'use strict';
 
+  M.data.ready.then(function () {
+
   // only a bare sum gets an "=" after it; a worded question already ends properly
   function needsEquals(q) {
     return (q.mode === 'number' || q.mode === 'unit') && !/[a-z▢◻,]/i.test(q.prompt);
+  }
+
+  // a lesson names a drawing and its numbers; the drawing itself lives in assets/pictures.js
+  function drawing(spec) {
+    if (!spec) return '';
+    if (typeof spec === 'string') return spec;
+    var make = M.pictures && M.pictures[spec.draw];
+    return make ? make.apply(null, spec.args || []) : '';
   }
 
   function param(name) {
@@ -51,7 +61,7 @@
   document.getElementById('conceptIdea').textContent = concept.bigIdea;
   document.getElementById('conceptCrumb').textContent = concept.title;
   var pictureBox = document.getElementById('conceptPicture');
-  pictureBox.innerHTML = concept.picture;
+  pictureBox.innerHTML = drawing(concept.picture);
   var drawing = pictureBox.querySelector('svg');
   if (drawing) drawing.style.maxWidth = (concept.pictureWidth || 680) + 'px';
   document.getElementById('conceptCaption').textContent = concept.pictureCaption || '';
@@ -275,4 +285,5 @@
 
   document.getElementById('newTry').addEventListener('click', drawTry);
   drawTry();
+  });
 })(window.Mathly);

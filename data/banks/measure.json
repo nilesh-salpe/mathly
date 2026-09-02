@@ -1,0 +1,1368 @@
+{
+ "chapter": "measure",
+ "count": 100,
+ "topics": [
+  {
+   "id": "measure-to-small",
+   "label": "Change to the small unit",
+   "emoji": "📏"
+  },
+  {
+   "id": "measure-to-big",
+   "label": "Change to the big unit",
+   "emoji": "⚖️"
+  },
+  {
+   "id": "measure-compare",
+   "label": "Which is more?",
+   "emoji": "🔍"
+  },
+  {
+   "id": "measure-estimate",
+   "label": "Sensible measures",
+   "emoji": "🤔"
+  },
+  {
+   "id": "measure-add",
+   "label": "Adding measures",
+   "emoji": "➕"
+  },
+  {
+   "id": "measure-story",
+   "label": "Measuring stories",
+   "emoji": "📖"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "easy",
+   "prompt": "5 m 28 cm is how many cm?",
+   "mode": "number",
+   "answer": 528,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 2,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "easy",
+   "prompt": "301 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    3,
+    1
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "easy",
+   "prompt": "Which is more: 4 m 11 cm or 377 cm?",
+   "mode": "choice",
+   "answer": "4 m 11 cm",
+   "choices": [
+    "377 cm",
+    "4 m 11 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 4,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "easy",
+   "prompt": "About how much is a pencil?",
+   "mode": "choice",
+   "answer": "15 cm",
+   "choices": [
+    "150 cm",
+    "15 km",
+    "15 cm",
+    "15 m"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "easy",
+   "prompt": "203 cm + 187 cm",
+   "mode": "number",
+   "answer": 390,
+   "unit": "cm"
+  },
+  {
+   "n": 6,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A plank holds 3 m. 165 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 135,
+   "unit": "cm"
+  },
+  {
+   "n": 7,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "just",
+   "prompt": "3 m 97 cm is how many cm?",
+   "mode": "number",
+   "answer": 397,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 8,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "just",
+   "prompt": "7240 ml is how many l and ml?",
+   "mode": "multi",
+   "answer": [
+    7,
+    240
+   ],
+   "fields": [
+    {
+     "label": "l"
+    },
+    {
+     "label": "ml"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "just",
+   "prompt": "Which is more: 4 m 32 cm or 417 cm?",
+   "mode": "choice",
+   "answer": "4 m 32 cm",
+   "choices": [
+    "417 cm",
+    "4 m 32 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 10,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "just",
+   "prompt": "About how much is a spoon of medicine?",
+   "mode": "choice",
+   "answer": "5 ml",
+   "choices": [
+    "500 ml",
+    "50 l",
+    "5 ml",
+    "5 l"
+   ]
+  },
+  {
+   "n": 11,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "just",
+   "prompt": "1190 g + 3940 g",
+   "mode": "number",
+   "answer": 5130,
+   "unit": "g"
+  },
+  {
+   "n": 12,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "just",
+   "prompt": "A bottle holds 2 l. 1700 ml is used. How many ml are left?",
+   "mode": "number",
+   "answer": 300,
+   "unit": "ml"
+  },
+  {
+   "n": 13,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "challenge",
+   "prompt": "9 kg 410 g is how many g?",
+   "mode": "number",
+   "answer": 9410,
+   "unit": "g",
+   "note": "1 kg = 1000 g"
+  },
+  {
+   "n": 14,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "challenge",
+   "prompt": "8400 ml is how many l and ml?",
+   "mode": "multi",
+   "answer": [
+    8,
+    400
+   ],
+   "fields": [
+    {
+     "label": "l"
+    },
+    {
+     "label": "ml"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "challenge",
+   "prompt": "Which is more: 3 m 45 cm or 290 cm?",
+   "mode": "choice",
+   "answer": "3 m 45 cm",
+   "choices": [
+    "3 m 45 cm",
+    "290 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 16,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "challenge",
+   "prompt": "About how much is a bucket of water?",
+   "mode": "choice",
+   "answer": "10 l",
+   "choices": [
+    "10 ml",
+    "1 ml",
+    "10 l",
+    "100 l"
+   ]
+  },
+  {
+   "n": 17,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "challenge",
+   "prompt": "3200 g + 2420 g",
+   "mode": "number",
+   "answer": 5620,
+   "unit": "g"
+  },
+  {
+   "n": 18,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "challenge",
+   "prompt": "A watermelon holds 6 kg. 4700 g is used. How many g are left?",
+   "mode": "number",
+   "answer": 1300,
+   "unit": "g"
+  },
+  {
+   "n": 19,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "easy",
+   "prompt": "4 m 81 cm is how many cm?",
+   "mode": "number",
+   "answer": 481,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 20,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "easy",
+   "prompt": "365 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    3,
+    65
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "easy",
+   "prompt": "Which is more: 1 m 59 cm or 206 cm?",
+   "mode": "choice",
+   "answer": "206 cm",
+   "choices": [
+    "206 cm",
+    "1 m 59 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 22,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "easy",
+   "prompt": "About how much is a cricket bat?",
+   "mode": "choice",
+   "answer": "1 m",
+   "choices": [
+    "1 cm",
+    "1 m",
+    "100 m",
+    "10 m"
+   ]
+  },
+  {
+   "n": 23,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "easy",
+   "prompt": "141 cm + 388 cm",
+   "mode": "number",
+   "answer": 529,
+   "unit": "cm"
+  },
+  {
+   "n": 24,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A ribbon holds 2 m. 107 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 93,
+   "unit": "cm"
+  },
+  {
+   "n": 25,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "just",
+   "prompt": "8 l 560 ml is how many ml?",
+   "mode": "number",
+   "answer": 8560,
+   "unit": "ml",
+   "note": "1 l = 1000 ml"
+  },
+  {
+   "n": 26,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "just",
+   "prompt": "920 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    9,
+    20
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "just",
+   "prompt": "Which is more: 4 m 78 cm or 429 cm?",
+   "mode": "choice",
+   "answer": "4 m 78 cm",
+   "choices": [
+    "4 m 78 cm",
+    "429 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 28,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "just",
+   "prompt": "About how much is a bucket of water?",
+   "mode": "choice",
+   "answer": "10 l",
+   "choices": [
+    "10 l",
+    "100 l",
+    "1 ml",
+    "10 ml"
+   ]
+  },
+  {
+   "n": 29,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "just",
+   "prompt": "1510 g + 1720 g",
+   "mode": "number",
+   "answer": 3230,
+   "unit": "g"
+  },
+  {
+   "n": 30,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "just",
+   "prompt": "A cloth holds 4 m. 225 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 175,
+   "unit": "cm"
+  },
+  {
+   "n": 31,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "challenge",
+   "prompt": "7 kg 450 g is how many g?",
+   "mode": "number",
+   "answer": 7450,
+   "unit": "g",
+   "note": "1 kg = 1000 g"
+  },
+  {
+   "n": 32,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "challenge",
+   "prompt": "164 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    1,
+    64
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "challenge",
+   "prompt": "Which is more: 3 kg 540 g or 3492 g?",
+   "mode": "choice",
+   "answer": "3 kg 540 g",
+   "choices": [
+    "3492 g",
+    "3 kg 540 g"
+   ],
+   "note": "Change both to g first"
+  },
+  {
+   "n": 34,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "challenge",
+   "prompt": "About how much is a cricket bat?",
+   "mode": "choice",
+   "answer": "1 m",
+   "choices": [
+    "100 m",
+    "1 m",
+    "1 cm",
+    "10 m"
+   ]
+  },
+  {
+   "n": 35,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "challenge",
+   "prompt": "241 cm + 133 cm",
+   "mode": "number",
+   "answer": 374,
+   "unit": "cm"
+  },
+  {
+   "n": 36,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "challenge",
+   "prompt": "A jug holds 2 l. 1300 ml is used. How many ml are left?",
+   "mode": "number",
+   "answer": 700,
+   "unit": "ml"
+  },
+  {
+   "n": 37,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "easy",
+   "prompt": "3 m 21 cm is how many cm?",
+   "mode": "number",
+   "answer": 321,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 38,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "easy",
+   "prompt": "504 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    5,
+    4
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "easy",
+   "prompt": "Which is more: 3 m 95 cm or 437 cm?",
+   "mode": "choice",
+   "answer": "437 cm",
+   "choices": [
+    "3 m 95 cm",
+    "437 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 40,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "easy",
+   "prompt": "About how much is a school bag?",
+   "mode": "choice",
+   "answer": "3 kg",
+   "choices": [
+    "300 kg",
+    "30 kg",
+    "3 kg",
+    "3 g"
+   ]
+  },
+  {
+   "n": 41,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "easy",
+   "prompt": "350 cm + 347 cm",
+   "mode": "number",
+   "answer": 697,
+   "unit": "cm"
+  },
+  {
+   "n": 42,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A ribbon holds 2 m. 128 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 72,
+   "unit": "cm"
+  },
+  {
+   "n": 43,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "just",
+   "prompt": "2 m 88 cm is how many cm?",
+   "mode": "number",
+   "answer": 288,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 44,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "just",
+   "prompt": "4340 ml is how many l and ml?",
+   "mode": "multi",
+   "answer": [
+    4,
+    340
+   ],
+   "fields": [
+    {
+     "label": "l"
+    },
+    {
+     "label": "ml"
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "just",
+   "prompt": "Which is more: 4 l 900 ml or 4942 ml?",
+   "mode": "choice",
+   "answer": "4942 ml",
+   "choices": [
+    "4 l 900 ml",
+    "4942 ml"
+   ],
+   "note": "Change both to ml first"
+  },
+  {
+   "n": 46,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "just",
+   "prompt": "About how much is a school bag?",
+   "mode": "choice",
+   "answer": "3 kg",
+   "choices": [
+    "3 g",
+    "300 kg",
+    "30 kg",
+    "3 kg"
+   ]
+  },
+  {
+   "n": 47,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "just",
+   "prompt": "1500 ml + 3750 ml",
+   "mode": "number",
+   "answer": 5250,
+   "unit": "ml"
+  },
+  {
+   "n": 48,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "just",
+   "prompt": "A pumpkin holds 2 kg. 1400 g is used. How many g are left?",
+   "mode": "number",
+   "answer": 600,
+   "unit": "g"
+  },
+  {
+   "n": 49,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "challenge",
+   "prompt": "3 l 560 ml is how many ml?",
+   "mode": "number",
+   "answer": 3560,
+   "unit": "ml",
+   "note": "1 l = 1000 ml"
+  },
+  {
+   "n": 50,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "challenge",
+   "prompt": "5970 g is how many kg and g?",
+   "mode": "multi",
+   "answer": [
+    5,
+    970
+   ],
+   "fields": [
+    {
+     "label": "kg"
+    },
+    {
+     "label": "g"
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "challenge",
+   "prompt": "Which is more: 3 kg 620 g or 3573 g?",
+   "mode": "choice",
+   "answer": "3 kg 620 g",
+   "choices": [
+    "3 kg 620 g",
+    "3573 g"
+   ],
+   "note": "Change both to g first"
+  },
+  {
+   "n": 52,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "challenge",
+   "prompt": "About how much is a spoon of medicine?",
+   "mode": "choice",
+   "answer": "5 ml",
+   "choices": [
+    "5 l",
+    "50 l",
+    "500 ml",
+    "5 ml"
+   ]
+  },
+  {
+   "n": 53,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "challenge",
+   "prompt": "316 cm + 217 cm",
+   "mode": "number",
+   "answer": 533,
+   "unit": "cm"
+  },
+  {
+   "n": 54,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "challenge",
+   "prompt": "A ribbon holds 2 m. 188 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 12,
+   "unit": "cm"
+  },
+  {
+   "n": 55,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "easy",
+   "prompt": "4 m 14 cm is how many cm?",
+   "mode": "number",
+   "answer": 414,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 56,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "easy",
+   "prompt": "582 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    5,
+    82
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "easy",
+   "prompt": "Which is more: 3 m 5 cm or 286 cm?",
+   "mode": "choice",
+   "answer": "3 m 5 cm",
+   "choices": [
+    "3 m 5 cm",
+    "286 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 58,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "easy",
+   "prompt": "About how much is a classroom door?",
+   "mode": "choice",
+   "answer": "2 m",
+   "choices": [
+    "2 cm",
+    "2 m",
+    "20 m",
+    "200 m"
+   ]
+  },
+  {
+   "n": 59,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "easy",
+   "prompt": "131 cm + 258 cm",
+   "mode": "number",
+   "answer": 389,
+   "unit": "cm"
+  },
+  {
+   "n": 60,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A rope holds 3 m. 179 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 121,
+   "unit": "cm"
+  },
+  {
+   "n": 61,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "just",
+   "prompt": "6 m 82 cm is how many cm?",
+   "mode": "number",
+   "answer": 682,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 62,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "just",
+   "prompt": "7510 ml is how many l and ml?",
+   "mode": "multi",
+   "answer": [
+    7,
+    510
+   ],
+   "fields": [
+    {
+     "label": "l"
+    },
+    {
+     "label": "ml"
+    }
+   ]
+  },
+  {
+   "n": 63,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "just",
+   "prompt": "Which is more: 3 kg 160 g or 3122 g?",
+   "mode": "choice",
+   "answer": "3 kg 160 g",
+   "choices": [
+    "3122 g",
+    "3 kg 160 g"
+   ],
+   "note": "Change both to g first"
+  },
+  {
+   "n": 64,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "just",
+   "prompt": "About how much is a glass of water?",
+   "mode": "choice",
+   "answer": "200 ml",
+   "choices": [
+    "200 l",
+    "2 ml",
+    "200 ml",
+    "20 l"
+   ]
+  },
+  {
+   "n": 65,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "just",
+   "prompt": "2240 g + 1110 g",
+   "mode": "number",
+   "answer": 3350,
+   "unit": "g"
+  },
+  {
+   "n": 66,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "just",
+   "prompt": "A bottle holds 4 l. 2800 ml is used. How many ml are left?",
+   "mode": "number",
+   "answer": 1200,
+   "unit": "ml"
+  },
+  {
+   "n": 67,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "challenge",
+   "prompt": "3 m 95 cm is how many cm?",
+   "mode": "number",
+   "answer": 395,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 68,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "challenge",
+   "prompt": "7220 g is how many kg and g?",
+   "mode": "multi",
+   "answer": [
+    7,
+    220
+   ],
+   "fields": [
+    {
+     "label": "kg"
+    },
+    {
+     "label": "g"
+    }
+   ]
+  },
+  {
+   "n": 69,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "challenge",
+   "prompt": "Which is more: 3 kg 680 g or 3650 g?",
+   "mode": "choice",
+   "answer": "3 kg 680 g",
+   "choices": [
+    "3 kg 680 g",
+    "3650 g"
+   ],
+   "note": "Change both to g first"
+  },
+  {
+   "n": 70,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "challenge",
+   "prompt": "About how much is a school bag?",
+   "mode": "choice",
+   "answer": "3 kg",
+   "choices": [
+    "300 kg",
+    "3 g",
+    "30 kg",
+    "3 kg"
+   ]
+  },
+  {
+   "n": 71,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "challenge",
+   "prompt": "248 cm + 273 cm",
+   "mode": "number",
+   "answer": 521,
+   "unit": "cm"
+  },
+  {
+   "n": 72,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "challenge",
+   "prompt": "A jug holds 2 l. 1900 ml is used. How many ml are left?",
+   "mode": "number",
+   "answer": 100,
+   "unit": "ml"
+  },
+  {
+   "n": 73,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "easy",
+   "prompt": "2 m 90 cm is how many cm?",
+   "mode": "number",
+   "answer": 290,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 74,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "easy",
+   "prompt": "517 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    5,
+    17
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 75,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "easy",
+   "prompt": "Which is more: 3 m 28 cm or 303 cm?",
+   "mode": "choice",
+   "answer": "3 m 28 cm",
+   "choices": [
+    "303 cm",
+    "3 m 28 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 76,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "easy",
+   "prompt": "494 cm + 240 cm",
+   "mode": "number",
+   "answer": 734,
+   "unit": "cm"
+  },
+  {
+   "n": 77,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A cloth holds 6 m. 244 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 356,
+   "unit": "cm"
+  },
+  {
+   "n": 78,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "just",
+   "prompt": "8 m 16 cm is how many cm?",
+   "mode": "number",
+   "answer": 816,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 79,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "just",
+   "prompt": "931 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    9,
+    31
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 80,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "just",
+   "prompt": "Which is more: 2 l 980 ml or 2960 ml?",
+   "mode": "choice",
+   "answer": "2 l 980 ml",
+   "choices": [
+    "2960 ml",
+    "2 l 980 ml"
+   ],
+   "note": "Change both to ml first"
+  },
+  {
+   "n": 81,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "just",
+   "prompt": "About how much is a bucket of water?",
+   "mode": "choice",
+   "answer": "10 l",
+   "choices": [
+    "10 l",
+    "10 ml",
+    "100 l",
+    "1 ml"
+   ]
+  },
+  {
+   "n": 82,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "just",
+   "prompt": "4960 ml + 1610 ml",
+   "mode": "number",
+   "answer": 6570,
+   "unit": "ml"
+  },
+  {
+   "n": 83,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "just",
+   "prompt": "A plank holds 6 m. 566 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 34,
+   "unit": "cm"
+  },
+  {
+   "n": 84,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "challenge",
+   "prompt": "4 l 940 ml is how many ml?",
+   "mode": "number",
+   "answer": 4940,
+   "unit": "ml",
+   "note": "1 l = 1000 ml"
+  },
+  {
+   "n": 85,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "challenge",
+   "prompt": "3970 ml is how many l and ml?",
+   "mode": "multi",
+   "answer": [
+    3,
+    970
+   ],
+   "fields": [
+    {
+     "label": "l"
+    },
+    {
+     "label": "ml"
+    }
+   ]
+  },
+  {
+   "n": 86,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "challenge",
+   "prompt": "Which is more: 3 kg 420 g or 3450 g?",
+   "mode": "choice",
+   "answer": "3450 g",
+   "choices": [
+    "3 kg 420 g",
+    "3450 g"
+   ],
+   "note": "Change both to g first"
+  },
+  {
+   "n": 87,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "challenge",
+   "prompt": "About how much is a pencil?",
+   "mode": "choice",
+   "answer": "15 cm",
+   "choices": [
+    "15 km",
+    "150 cm",
+    "15 cm",
+    "15 m"
+   ]
+  },
+  {
+   "n": 88,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "challenge",
+   "prompt": "1670 g + 1960 g",
+   "mode": "number",
+   "answer": 3630,
+   "unit": "g"
+  },
+  {
+   "n": 89,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "challenge",
+   "prompt": "A jug holds 3 l. 2400 ml is used. How many ml are left?",
+   "mode": "number",
+   "answer": 600,
+   "unit": "ml"
+  },
+  {
+   "n": 90,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "easy",
+   "prompt": "3 m 98 cm is how many cm?",
+   "mode": "number",
+   "answer": 398,
+   "unit": "cm",
+   "note": "1 m = 100 cm"
+  },
+  {
+   "n": 91,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "easy",
+   "prompt": "144 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    1,
+    44
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 92,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "easy",
+   "prompt": "Which is more: 2 m 89 cm or 299 cm?",
+   "mode": "choice",
+   "answer": "299 cm",
+   "choices": [
+    "299 cm",
+    "2 m 89 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 93,
+   "type": "measure-estimate",
+   "topic": "Sensible measures",
+   "level": "easy",
+   "prompt": "About how much is a bucket of water?",
+   "mode": "choice",
+   "answer": "10 l",
+   "choices": [
+    "100 l",
+    "10 l",
+    "1 ml",
+    "10 ml"
+   ]
+  },
+  {
+   "n": 94,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "easy",
+   "prompt": "319 cm + 342 cm",
+   "mode": "number",
+   "answer": 661,
+   "unit": "cm"
+  },
+  {
+   "n": 95,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A rope holds 2 m. 142 cm is used. How many cm are left?",
+   "mode": "number",
+   "answer": 58,
+   "unit": "cm"
+  },
+  {
+   "n": 96,
+   "type": "measure-to-small",
+   "topic": "Change to the small unit",
+   "level": "just",
+   "prompt": "9 l 600 ml is how many ml?",
+   "mode": "number",
+   "answer": 9600,
+   "unit": "ml",
+   "note": "1 l = 1000 ml"
+  },
+  {
+   "n": 97,
+   "type": "measure-to-big",
+   "topic": "Change to the big unit",
+   "level": "just",
+   "prompt": "478 cm is how many m and cm?",
+   "mode": "multi",
+   "answer": [
+    4,
+    78
+   ],
+   "fields": [
+    {
+     "label": "m"
+    },
+    {
+     "label": "cm"
+    }
+   ]
+  },
+  {
+   "n": 98,
+   "type": "measure-compare",
+   "topic": "Which is more?",
+   "level": "just",
+   "prompt": "Which is more: 3 m 47 cm or 370 cm?",
+   "mode": "choice",
+   "answer": "370 cm",
+   "choices": [
+    "3 m 47 cm",
+    "370 cm"
+   ],
+   "note": "Change both to cm first"
+  },
+  {
+   "n": 99,
+   "type": "measure-add",
+   "topic": "Adding measures",
+   "level": "just",
+   "prompt": "3560 g + 1700 g",
+   "mode": "number",
+   "answer": 5260,
+   "unit": "g"
+  },
+  {
+   "n": 100,
+   "type": "measure-story",
+   "topic": "Measuring stories",
+   "level": "just",
+   "prompt": "A pumpkin holds 3 kg. 1800 g is used. How many g are left?",
+   "mode": "number",
+   "answer": 1200,
+   "unit": "g"
+  }
+ ]
+}

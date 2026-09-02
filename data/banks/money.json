@@ -1,0 +1,1155 @@
+{
+ "chapter": "money",
+ "count": 100,
+ "topics": [
+  {
+   "id": "money-add",
+   "label": "Adding money",
+   "emoji": "🧾"
+  },
+  {
+   "id": "money-change",
+   "label": "Giving change",
+   "emoji": "💵"
+  },
+  {
+   "id": "money-make",
+   "label": "Making an amount",
+   "emoji": "🪙"
+  },
+  {
+   "id": "money-paise",
+   "label": "Rupees and paise",
+   "emoji": "🔁"
+  },
+  {
+   "id": "money-bill",
+   "label": "Adding up a bill",
+   "emoji": "🛒"
+  },
+  {
+   "id": "money-enough",
+   "label": "Is there enough?",
+   "emoji": "🤔"
+  },
+  {
+   "id": "money-story",
+   "label": "Money stories",
+   "emoji": "📖"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "easy",
+   "prompt": "₹16 + ₹17",
+   "mode": "number",
+   "answer": 33,
+   "unit": "₹"
+  },
+  {
+   "n": 2,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "easy",
+   "prompt": "A ruler costs ₹19. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 31,
+   "unit": "₹"
+  },
+  {
+   "n": 3,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "easy",
+   "prompt": "How many ₹10 coins make ₹50?",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 4,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "easy",
+   "prompt": "550 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    5,
+    50
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "easy",
+   "prompt": "2 sharpeners at ₹6 each and one colour box at ₹60. What is the total bill?",
+   "mode": "number",
+   "answer": 72,
+   "unit": "₹"
+  },
+  {
+   "n": 6,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "easy",
+   "prompt": "Arjun has ₹19 and wants 3 pencils at ₹8 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 7,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "easy",
+   "prompt": "Meera saves ₹15 every week. How much is saved after 3 weeks?",
+   "mode": "number",
+   "answer": 45,
+   "unit": "₹"
+  },
+  {
+   "n": 8,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "just",
+   "prompt": "₹25 + ₹37",
+   "mode": "number",
+   "answer": 62,
+   "unit": "₹"
+  },
+  {
+   "n": 9,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "just",
+   "prompt": "A colour box costs ₹61. You pay with a ₹200 note. How much change?",
+   "mode": "number",
+   "answer": 139,
+   "unit": "₹"
+  },
+  {
+   "n": 10,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "just",
+   "prompt": "How many ₹50 notes make ₹300?",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 11,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "just",
+   "prompt": "525 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    5,
+    25
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "just",
+   "prompt": "5 notebooks at ₹25 each and one sharpener at ₹6. What is the total bill?",
+   "mode": "number",
+   "answer": 131,
+   "unit": "₹"
+  },
+  {
+   "n": 13,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "just",
+   "prompt": "Kabir has ₹11 and wants 2 pencils at ₹8 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 14,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "just",
+   "prompt": "Ananya had ₹98 and bought a chocolate for ₹20. How much money is left?",
+   "mode": "number",
+   "answer": 78,
+   "unit": "₹"
+  },
+  {
+   "n": 15,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "challenge",
+   "prompt": "₹56 + ₹193",
+   "mode": "number",
+   "answer": 249,
+   "unit": "₹"
+  },
+  {
+   "n": 16,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "challenge",
+   "prompt": "An eraser costs ₹15. You pay with a ₹20 note. How much change?",
+   "mode": "number",
+   "answer": 5,
+   "unit": "₹"
+  },
+  {
+   "n": 17,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "challenge",
+   "prompt": "How many ₹2 coins make ₹18?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 18,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "challenge",
+   "prompt": "175 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    1,
+    75
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "challenge",
+   "prompt": "4 erasers at ₹5 each and one chocolate at ₹20. What is the total bill?",
+   "mode": "number",
+   "answer": 40,
+   "unit": "₹"
+  },
+  {
+   "n": 20,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "challenge",
+   "prompt": "Riya has ₹31 and wants 3 pens at ₹12 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 21,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "challenge",
+   "prompt": "Arjun had ₹356 and bought a pencil for ₹8. How much money is left?",
+   "mode": "number",
+   "answer": 348,
+   "unit": "₹"
+  },
+  {
+   "n": 22,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "easy",
+   "prompt": "₹10 + ₹39",
+   "mode": "number",
+   "answer": 49,
+   "unit": "₹"
+  },
+  {
+   "n": 23,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "easy",
+   "prompt": "A chocolate costs ₹21. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 29,
+   "unit": "₹"
+  },
+  {
+   "n": 24,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "easy",
+   "prompt": "How many ₹10 coins make ₹40?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 25,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "easy",
+   "prompt": "₹2 is how many paise?",
+   "mode": "number",
+   "answer": 200,
+   "unit": "paise"
+  },
+  {
+   "n": 26,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "easy",
+   "prompt": "2 pencils at ₹8 each and one chocolate at ₹20. What is the total bill?",
+   "mode": "number",
+   "answer": 36,
+   "unit": "₹"
+  },
+  {
+   "n": 27,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "easy",
+   "prompt": "Aarav has ₹42 and wants 2 rulers at ₹15 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 28,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "easy",
+   "prompt": "Riya had ₹39 and bought a chocolate for ₹20. How much money is left?",
+   "mode": "number",
+   "answer": 19,
+   "unit": "₹"
+  },
+  {
+   "n": 29,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "just",
+   "prompt": "₹76 + ₹62",
+   "mode": "number",
+   "answer": 138,
+   "unit": "₹"
+  },
+  {
+   "n": 30,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "just",
+   "prompt": "A notebook costs ₹25. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 25,
+   "unit": "₹"
+  },
+  {
+   "n": 31,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "just",
+   "prompt": "How many ₹10 coins make ₹30?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 32,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "just",
+   "prompt": "₹5 is how many paise?",
+   "mode": "number",
+   "answer": 500,
+   "unit": "paise"
+  },
+  {
+   "n": 33,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "just",
+   "prompt": "3 colour boxes at ₹60 each and one sharpener at ₹6. What is the total bill?",
+   "mode": "number",
+   "answer": 186,
+   "unit": "₹"
+  },
+  {
+   "n": 34,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "just",
+   "prompt": "Riya has ₹32 and wants 2 chocolates at ₹20 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 35,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "just",
+   "prompt": "Aarav saves ₹25 every week. How much is saved after 4 weeks?",
+   "mode": "number",
+   "answer": 100,
+   "unit": "₹"
+  },
+  {
+   "n": 36,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "challenge",
+   "prompt": "₹111 + ₹174",
+   "mode": "number",
+   "answer": 285,
+   "unit": "₹"
+  },
+  {
+   "n": 37,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "challenge",
+   "prompt": "A pen costs ₹64. You pay with a ₹200 note. How much change?",
+   "mode": "number",
+   "answer": 136,
+   "unit": "₹"
+  },
+  {
+   "n": 38,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "challenge",
+   "prompt": "How many ₹50 notes make ₹200?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 39,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "challenge",
+   "prompt": "₹17 and 75 paise is how many paise?",
+   "mode": "number",
+   "answer": 1775,
+   "unit": "paise"
+  },
+  {
+   "n": 40,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "challenge",
+   "prompt": "4 sharpeners at ₹6 each and one ruler at ₹15. What is the total bill?",
+   "mode": "number",
+   "answer": 39,
+   "unit": "₹"
+  },
+  {
+   "n": 41,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "challenge",
+   "prompt": "Ananya has ₹21 and wants 3 pencils at ₹8 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 42,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "challenge",
+   "prompt": "Vihaan saves ₹12 every week. How much is saved after 2 weeks?",
+   "mode": "number",
+   "answer": 24,
+   "unit": "₹"
+  },
+  {
+   "n": 43,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "easy",
+   "prompt": "₹25 + ₹13",
+   "mode": "number",
+   "answer": 38,
+   "unit": "₹"
+  },
+  {
+   "n": 44,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "easy",
+   "prompt": "A colour box costs ₹63. You pay with a ₹200 note. How much change?",
+   "mode": "number",
+   "answer": 137,
+   "unit": "₹"
+  },
+  {
+   "n": 45,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "easy",
+   "prompt": "How many ₹5 coins make ₹15?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 46,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "easy",
+   "prompt": "2 colour boxes at ₹60 each and one chocolate at ₹20. What is the total bill?",
+   "mode": "number",
+   "answer": 140,
+   "unit": "₹"
+  },
+  {
+   "n": 47,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "easy",
+   "prompt": "Riya has ₹31 and wants 4 sharpeners at ₹6 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 48,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "easy",
+   "prompt": "Arjun had ₹34 and bought a chocolate for ₹20. How much money is left?",
+   "mode": "number",
+   "answer": 14,
+   "unit": "₹"
+  },
+  {
+   "n": 49,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "just",
+   "prompt": "₹54 + ₹60",
+   "mode": "number",
+   "answer": 114,
+   "unit": "₹"
+  },
+  {
+   "n": 50,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "just",
+   "prompt": "An eraser costs ₹7. You pay with a ₹20 note. How much change?",
+   "mode": "number",
+   "answer": 13,
+   "unit": "₹"
+  },
+  {
+   "n": 51,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "just",
+   "prompt": "How many ₹20 notes make ₹180?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 52,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "just",
+   "prompt": "₹15 and 50 paise is how many paise?",
+   "mode": "number",
+   "answer": 1550,
+   "unit": "paise"
+  },
+  {
+   "n": 53,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "just",
+   "prompt": "2 notebooks at ₹25 each and one sharpener at ₹6. What is the total bill?",
+   "mode": "number",
+   "answer": 56,
+   "unit": "₹"
+  },
+  {
+   "n": 54,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "just",
+   "prompt": "Ananya has ₹111 and wants 5 chocolates at ₹20 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 55,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "just",
+   "prompt": "Riya had ₹20 and bought an eraser for ₹5. How much money is left?",
+   "mode": "number",
+   "answer": 15,
+   "unit": "₹"
+  },
+  {
+   "n": 56,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "challenge",
+   "prompt": "₹234 + ₹317",
+   "mode": "number",
+   "answer": 551,
+   "unit": "₹"
+  },
+  {
+   "n": 57,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "challenge",
+   "prompt": "An eraser costs ₹23. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 27,
+   "unit": "₹"
+  },
+  {
+   "n": 58,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "challenge",
+   "prompt": "How many ₹10 coins make ₹110?",
+   "mode": "number",
+   "answer": 11
+  },
+  {
+   "n": 59,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "challenge",
+   "prompt": "1175 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    11,
+    75
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 60,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "challenge",
+   "prompt": "3 notebooks at ₹25 each and one colour box at ₹60. What is the total bill?",
+   "mode": "number",
+   "answer": 135,
+   "unit": "₹"
+  },
+  {
+   "n": 61,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "challenge",
+   "prompt": "Aarav has ₹37 and wants 2 rulers at ₹15 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 62,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "challenge",
+   "prompt": "Vihaan saves ₹6 every week. How much is saved after 4 weeks?",
+   "mode": "number",
+   "answer": 24,
+   "unit": "₹"
+  },
+  {
+   "n": 63,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "easy",
+   "prompt": "₹16 + ₹7",
+   "mode": "number",
+   "answer": 23,
+   "unit": "₹"
+  },
+  {
+   "n": 64,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "easy",
+   "prompt": "A chocolate costs ₹20. You pay with a ₹100 note. How much change?",
+   "mode": "number",
+   "answer": 80,
+   "unit": "₹"
+  },
+  {
+   "n": 65,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "easy",
+   "prompt": "How many ₹2 coins make ₹8?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 66,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "easy",
+   "prompt": "₹3 and 75 paise is how many paise?",
+   "mode": "number",
+   "answer": 375,
+   "unit": "paise"
+  },
+  {
+   "n": 67,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "easy",
+   "prompt": "2 pencils at ₹8 each and one ruler at ₹15. What is the total bill?",
+   "mode": "number",
+   "answer": 31,
+   "unit": "₹"
+  },
+  {
+   "n": 68,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "easy",
+   "prompt": "Vihaan has ₹48 and wants 5 pens at ₹12 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 69,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "easy",
+   "prompt": "Meera had ₹46 and bought a notebook for ₹25. How much money is left?",
+   "mode": "number",
+   "answer": 21,
+   "unit": "₹"
+  },
+  {
+   "n": 70,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "just",
+   "prompt": "₹10 + ₹52",
+   "mode": "number",
+   "answer": 62,
+   "unit": "₹"
+  },
+  {
+   "n": 71,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "just",
+   "prompt": "A pencil costs ₹10. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 40,
+   "unit": "₹"
+  },
+  {
+   "n": 72,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "just",
+   "prompt": "How many ₹50 notes make ₹150?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 73,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "just",
+   "prompt": "1300 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    13,
+    0
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 74,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "just",
+   "prompt": "3 erasers at ₹5 each and one notebook at ₹25. What is the total bill?",
+   "mode": "number",
+   "answer": 40,
+   "unit": "₹"
+  },
+  {
+   "n": 75,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "just",
+   "prompt": "Diya has ₹44 and wants 3 pens at ₹12 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 76,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "just",
+   "prompt": "Aarav saves ₹25 every week. How much is saved after 2 weeks?",
+   "mode": "number",
+   "answer": 50,
+   "unit": "₹"
+  },
+  {
+   "n": 77,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "challenge",
+   "prompt": "₹130 + ₹75",
+   "mode": "number",
+   "answer": 205,
+   "unit": "₹"
+  },
+  {
+   "n": 78,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "challenge",
+   "prompt": "A ruler costs ₹48. You pay with a ₹100 note. How much change?",
+   "mode": "number",
+   "answer": 52,
+   "unit": "₹"
+  },
+  {
+   "n": 79,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "challenge",
+   "prompt": "How many ₹20 notes make ₹100?",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 80,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "challenge",
+   "prompt": "₹20 and 25 paise is how many paise?",
+   "mode": "number",
+   "answer": 2025,
+   "unit": "paise"
+  },
+  {
+   "n": 81,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "challenge",
+   "prompt": "2 chocolates at ₹20 each and one notebook at ₹25. What is the total bill?",
+   "mode": "number",
+   "answer": 65,
+   "unit": "₹"
+  },
+  {
+   "n": 82,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "challenge",
+   "prompt": "Vihaan has ₹31 and wants 3 sharpeners at ₹6 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 83,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "challenge",
+   "prompt": "Kabir had ₹114 and bought a ruler for ₹15. How much money is left?",
+   "mode": "number",
+   "answer": 99,
+   "unit": "₹"
+  },
+  {
+   "n": 84,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "easy",
+   "prompt": "₹10 + ₹28",
+   "mode": "number",
+   "answer": 38,
+   "unit": "₹"
+  },
+  {
+   "n": 85,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "easy",
+   "prompt": "A pencil costs ₹12. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 38,
+   "unit": "₹"
+  },
+  {
+   "n": 86,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "easy",
+   "prompt": "How many ₹5 coins make ₹35?",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 87,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "easy",
+   "prompt": "325 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    3,
+    25
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 88,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "easy",
+   "prompt": "2 sharpeners at ₹6 each and one ruler at ₹15. What is the total bill?",
+   "mode": "number",
+   "answer": 27,
+   "unit": "₹"
+  },
+  {
+   "n": 89,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "easy",
+   "prompt": "Aarav has ₹30 and wants 2 rulers at ₹15 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 90,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "easy",
+   "prompt": "Riya saves ₹20 every week. How much is saved after 3 weeks?",
+   "mode": "number",
+   "answer": 60,
+   "unit": "₹"
+  },
+  {
+   "n": 91,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "just",
+   "prompt": "₹76 + ₹38",
+   "mode": "number",
+   "answer": 114,
+   "unit": "₹"
+  },
+  {
+   "n": 92,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "just",
+   "prompt": "A pencil costs ₹8. You pay with a ₹10 note. How much change?",
+   "mode": "number",
+   "answer": 2,
+   "unit": "₹"
+  },
+  {
+   "n": 93,
+   "type": "money-make",
+   "topic": "Making an amount",
+   "level": "just",
+   "prompt": "How many ₹5 coins make ₹45?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 94,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "just",
+   "prompt": "600 paise is how many rupees and paise?",
+   "mode": "multi",
+   "answer": [
+    6,
+    0
+   ],
+   "fields": [
+    {
+     "label": "rupees"
+    },
+    {
+     "label": "paise"
+    }
+   ]
+  },
+  {
+   "n": 95,
+   "type": "money-bill",
+   "topic": "Adding up a bill",
+   "level": "just",
+   "prompt": "5 notebooks at ₹25 each and one eraser at ₹5. What is the total bill?",
+   "mode": "number",
+   "answer": 130,
+   "unit": "₹"
+  },
+  {
+   "n": 96,
+   "type": "money-enough",
+   "topic": "Is there enough?",
+   "level": "just",
+   "prompt": "Riya has ₹173 and wants 3 colour boxes at ₹60 each. Is there enough money?",
+   "mode": "choice",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "note": "Work out the total cost first"
+  },
+  {
+   "n": 97,
+   "type": "money-story",
+   "topic": "Money stories",
+   "level": "just",
+   "prompt": "Arjun saves ₹60 every week. How much is saved after 5 weeks?",
+   "mode": "number",
+   "answer": 300,
+   "unit": "₹"
+  },
+  {
+   "n": 98,
+   "type": "money-add",
+   "topic": "Adding money",
+   "level": "challenge",
+   "prompt": "₹391 + ₹122",
+   "mode": "number",
+   "answer": 513,
+   "unit": "₹"
+  },
+  {
+   "n": 99,
+   "type": "money-change",
+   "topic": "Giving change",
+   "level": "challenge",
+   "prompt": "A pencil costs ₹36. You pay with a ₹50 note. How much change?",
+   "mode": "number",
+   "answer": 14,
+   "unit": "₹"
+  },
+  {
+   "n": 100,
+   "type": "money-paise",
+   "topic": "Rupees and paise",
+   "level": "challenge",
+   "prompt": "₹7 and 75 paise is how many paise?",
+   "mode": "number",
+   "answer": 775,
+   "unit": "paise"
+  }
+ ]
+}

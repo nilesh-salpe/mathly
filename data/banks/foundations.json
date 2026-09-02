@@ -1,0 +1,938 @@
+{
+ "chapter": "foundations",
+ "count": 100,
+ "topics": [
+  {
+   "id": "add",
+   "label": "Adding",
+   "emoji": "➕"
+  },
+  {
+   "id": "sub",
+   "label": "Taking away",
+   "emoji": "➖"
+  },
+  {
+   "id": "mul",
+   "label": "Times",
+   "emoji": "✖️"
+  },
+  {
+   "id": "div",
+   "label": "Sharing",
+   "emoji": "➗"
+  },
+  {
+   "id": "pct",
+   "label": "Percentages",
+   "emoji": "💯"
+  },
+  {
+   "id": "frac",
+   "label": "Fractions",
+   "emoji": "🍕"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "9 + 8",
+   "mode": "number",
+   "answer": 17
+  },
+  {
+   "n": 2,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "8 − 6",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 3,
+   "type": "mul",
+   "topic": "Times",
+   "level": "easy",
+   "prompt": "3 × 10",
+   "mode": "number",
+   "answer": 30
+  },
+  {
+   "n": 4,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "easy",
+   "prompt": "15 ÷ 3",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 5,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "easy",
+   "prompt": "75% of 20",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 6,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "easy",
+   "prompt": "4/5 of 35",
+   "mode": "number",
+   "answer": 28
+  },
+  {
+   "n": 7,
+   "type": "add",
+   "topic": "Adding",
+   "level": "just",
+   "prompt": "12 + 7",
+   "mode": "number",
+   "answer": 19
+  },
+  {
+   "n": 8,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "just",
+   "prompt": "15 − 7",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 9,
+   "type": "mul",
+   "topic": "Times",
+   "level": "just",
+   "prompt": "4 × 11",
+   "mode": "number",
+   "answer": 44
+  },
+  {
+   "n": 10,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "just",
+   "prompt": "48 ÷ 4",
+   "mode": "number",
+   "answer": 12
+  },
+  {
+   "n": 11,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "just",
+   "prompt": "10% of 20",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 12,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "just",
+   "prompt": "3/4 of 48",
+   "mode": "number",
+   "answer": 36
+  },
+  {
+   "n": 13,
+   "type": "add",
+   "topic": "Adding",
+   "level": "challenge",
+   "prompt": "(58 + 42) + 3",
+   "mode": "number",
+   "answer": 103
+  },
+  {
+   "n": 14,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "challenge",
+   "prompt": "(227 − 72) − 57",
+   "mode": "number",
+   "answer": 98
+  },
+  {
+   "n": 15,
+   "type": "mul",
+   "topic": "Times",
+   "level": "challenge",
+   "prompt": "(2 × 32) × 96",
+   "mode": "number",
+   "answer": 6144
+  },
+  {
+   "n": 16,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "challenge",
+   "prompt": "(8778 ÷ 57) ÷ 14",
+   "mode": "number",
+   "answer": 11
+  },
+  {
+   "n": 17,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "challenge",
+   "prompt": "25% of 60",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 18,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "challenge",
+   "prompt": "4/5 of 305",
+   "mode": "number",
+   "answer": 244
+  },
+  {
+   "n": 19,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "4 + 3",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 20,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "6 − 2",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 21,
+   "type": "mul",
+   "topic": "Times",
+   "level": "easy",
+   "prompt": "4 × 4",
+   "mode": "number",
+   "answer": 16
+  },
+  {
+   "n": 22,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "easy",
+   "prompt": "6 ÷ 6",
+   "mode": "number",
+   "answer": 1
+  },
+  {
+   "n": 23,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "easy",
+   "prompt": "100% of 20",
+   "mode": "number",
+   "answer": 20
+  },
+  {
+   "n": 24,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "easy",
+   "prompt": "7/10 of 30",
+   "mode": "number",
+   "answer": 21
+  },
+  {
+   "n": 25,
+   "type": "add",
+   "topic": "Adding",
+   "level": "just",
+   "prompt": "11 + 4",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 26,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "just",
+   "prompt": "10 − 3",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 27,
+   "type": "mul",
+   "topic": "Times",
+   "level": "just",
+   "prompt": "5 × 12",
+   "mode": "number",
+   "answer": 60
+  },
+  {
+   "n": 28,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "just",
+   "prompt": "36 ÷ 4",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 29,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "just",
+   "prompt": "1/10 of 40",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 30,
+   "type": "add",
+   "topic": "Adding",
+   "level": "challenge",
+   "prompt": "(69 + 64) + 45",
+   "mode": "number",
+   "answer": 178
+  },
+  {
+   "n": 31,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "challenge",
+   "prompt": "(125 − 23) − 12",
+   "mode": "number",
+   "answer": 90
+  },
+  {
+   "n": 32,
+   "type": "mul",
+   "topic": "Times",
+   "level": "challenge",
+   "prompt": "(8 × 37) × 74",
+   "mode": "number",
+   "answer": 21904
+  },
+  {
+   "n": 33,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "challenge",
+   "prompt": "(93600 ÷ 80) ÷ 15",
+   "mode": "number",
+   "answer": 78
+  },
+  {
+   "n": 34,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "challenge",
+   "prompt": "20% of 40",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 35,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "challenge",
+   "prompt": "1/2 of 82",
+   "mode": "number",
+   "answer": 41
+  },
+  {
+   "n": 36,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "8 + 1",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 37,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "14 − 5",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 38,
+   "type": "mul",
+   "topic": "Times",
+   "level": "easy",
+   "prompt": "8 × 6",
+   "mode": "number",
+   "answer": 48
+  },
+  {
+   "n": 39,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "easy",
+   "prompt": "40 ÷ 4",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 40,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "easy",
+   "prompt": "2/3 of 30",
+   "mode": "number",
+   "answer": 20
+  },
+  {
+   "n": 41,
+   "type": "add",
+   "topic": "Adding",
+   "level": "just",
+   "prompt": "8 + 2",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 42,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "just",
+   "prompt": "13 − 11",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 43,
+   "type": "mul",
+   "topic": "Times",
+   "level": "just",
+   "prompt": "7 × 10",
+   "mode": "number",
+   "answer": 70
+  },
+  {
+   "n": 44,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "just",
+   "prompt": "14 ÷ 2",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 45,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "just",
+   "prompt": "1/2 of 14",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 46,
+   "type": "add",
+   "topic": "Adding",
+   "level": "challenge",
+   "prompt": "(23 + 43) + 78",
+   "mode": "number",
+   "answer": 144
+  },
+  {
+   "n": 47,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "challenge",
+   "prompt": "(172 − 98) − 3",
+   "mode": "number",
+   "answer": 71
+  },
+  {
+   "n": 48,
+   "type": "mul",
+   "topic": "Times",
+   "level": "challenge",
+   "prompt": "(26 × 23) × 87",
+   "mode": "number",
+   "answer": 52026
+  },
+  {
+   "n": 49,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "challenge",
+   "prompt": "(74037 ÷ 23) ÷ 37",
+   "mode": "number",
+   "answer": 87
+  },
+  {
+   "n": 50,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "challenge",
+   "prompt": "2/3 of 60",
+   "mode": "number",
+   "answer": 40
+  },
+  {
+   "n": 51,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "2 + 4",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 52,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "10 − 7",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 53,
+   "type": "mul",
+   "topic": "Times",
+   "level": "easy",
+   "prompt": "4 × 8",
+   "mode": "number",
+   "answer": 32
+  },
+  {
+   "n": 54,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "easy",
+   "prompt": "20 ÷ 5",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 55,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "easy",
+   "prompt": "1/2 of 4",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 56,
+   "type": "add",
+   "topic": "Adding",
+   "level": "just",
+   "prompt": "9 + 10",
+   "mode": "number",
+   "answer": 19
+  },
+  {
+   "n": 57,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "just",
+   "prompt": "4 − 2",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 58,
+   "type": "mul",
+   "topic": "Times",
+   "level": "just",
+   "prompt": "6 × 4",
+   "mode": "number",
+   "answer": 24
+  },
+  {
+   "n": 59,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "just",
+   "prompt": "55 ÷ 5",
+   "mode": "number",
+   "answer": 11
+  },
+  {
+   "n": 60,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "just",
+   "prompt": "1/4 of 44",
+   "mode": "number",
+   "answer": 11
+  },
+  {
+   "n": 61,
+   "type": "add",
+   "topic": "Adding",
+   "level": "challenge",
+   "prompt": "(62 + 8) + 25",
+   "mode": "number",
+   "answer": 95
+  },
+  {
+   "n": 62,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "challenge",
+   "prompt": "(113 − 37) − 36",
+   "mode": "number",
+   "answer": 40
+  },
+  {
+   "n": 63,
+   "type": "mul",
+   "topic": "Times",
+   "level": "challenge",
+   "prompt": "(8 × 88) × 65",
+   "mode": "number",
+   "answer": 45760
+  },
+  {
+   "n": 64,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "challenge",
+   "prompt": "(68080 ÷ 20) ÷ 74",
+   "mode": "number",
+   "answer": 46
+  },
+  {
+   "n": 65,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "challenge",
+   "prompt": "75% of 80",
+   "mode": "number",
+   "answer": 60
+  },
+  {
+   "n": 66,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "challenge",
+   "prompt": "1/5 of 25",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 67,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "3 + 2",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 68,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "15 − 9",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 69,
+   "type": "mul",
+   "topic": "Times",
+   "level": "easy",
+   "prompt": "5 × 1",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 70,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "easy",
+   "prompt": "54 ÷ 9",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 71,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "easy",
+   "prompt": "1/10 of 80",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 72,
+   "type": "add",
+   "topic": "Adding",
+   "level": "just",
+   "prompt": "10 + 12",
+   "mode": "number",
+   "answer": 22
+  },
+  {
+   "n": 73,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "just",
+   "prompt": "16 − 10",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 74,
+   "type": "mul",
+   "topic": "Times",
+   "level": "just",
+   "prompt": "2 × 5",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 75,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "just",
+   "prompt": "24 ÷ 6",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 76,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "just",
+   "prompt": "9/10 of 70",
+   "mode": "number",
+   "answer": 63
+  },
+  {
+   "n": 77,
+   "type": "add",
+   "topic": "Adding",
+   "level": "challenge",
+   "prompt": "(66 + 12) + 39",
+   "mode": "number",
+   "answer": 117
+  },
+  {
+   "n": 78,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "challenge",
+   "prompt": "(248 − 84) − 77",
+   "mode": "number",
+   "answer": 87
+  },
+  {
+   "n": 79,
+   "type": "mul",
+   "topic": "Times",
+   "level": "challenge",
+   "prompt": "(6 × 96) × 91",
+   "mode": "number",
+   "answer": 52416
+  },
+  {
+   "n": 80,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "challenge",
+   "prompt": "(264180 ÷ 51) ÷ 74",
+   "mode": "number",
+   "answer": 70
+  },
+  {
+   "n": 81,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "challenge",
+   "prompt": "1/5 of 265",
+   "mode": "number",
+   "answer": 53
+  },
+  {
+   "n": 82,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "6 + 9",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 83,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "12 − 5",
+   "mode": "number",
+   "answer": 7
+  },
+  {
+   "n": 84,
+   "type": "mul",
+   "topic": "Times",
+   "level": "easy",
+   "prompt": "9 × 8",
+   "mode": "number",
+   "answer": 72
+  },
+  {
+   "n": 85,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "easy",
+   "prompt": "56 ÷ 7",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 86,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "easy",
+   "prompt": "1/5 of 30",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 87,
+   "type": "add",
+   "topic": "Adding",
+   "level": "just",
+   "prompt": "3 + 5",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 88,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "just",
+   "prompt": "8 − 2",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 89,
+   "type": "mul",
+   "topic": "Times",
+   "level": "just",
+   "prompt": "10 × 9",
+   "mode": "number",
+   "answer": 90
+  },
+  {
+   "n": 90,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "just",
+   "prompt": "110 ÷ 10",
+   "mode": "number",
+   "answer": 11
+  },
+  {
+   "n": 91,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "just",
+   "prompt": "25% of 20",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 92,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "just",
+   "prompt": "1/10 of 60",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 93,
+   "type": "add",
+   "topic": "Adding",
+   "level": "challenge",
+   "prompt": "(47 + 25) + 2",
+   "mode": "number",
+   "answer": 74
+  },
+  {
+   "n": 94,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "challenge",
+   "prompt": "(164 − 41) − 77",
+   "mode": "number",
+   "answer": 46
+  },
+  {
+   "n": 95,
+   "type": "mul",
+   "topic": "Times",
+   "level": "challenge",
+   "prompt": "(80 × 66) × 75",
+   "mode": "number",
+   "answer": 396000
+  },
+  {
+   "n": 96,
+   "type": "div",
+   "topic": "Sharing",
+   "level": "challenge",
+   "prompt": "(255840 ÷ 65) ÷ 41",
+   "mode": "number",
+   "answer": 96
+  },
+  {
+   "n": 97,
+   "type": "pct",
+   "topic": "Percentages",
+   "level": "challenge",
+   "prompt": "50% of 100",
+   "mode": "number",
+   "answer": 50
+  },
+  {
+   "n": 98,
+   "type": "frac",
+   "topic": "Fractions",
+   "level": "challenge",
+   "prompt": "3/4 of 296",
+   "mode": "number",
+   "answer": 222
+  },
+  {
+   "n": 99,
+   "type": "add",
+   "topic": "Adding",
+   "level": "easy",
+   "prompt": "1 + 7",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 100,
+   "type": "sub",
+   "topic": "Taking away",
+   "level": "easy",
+   "prompt": "14 − 10",
+   "mode": "number",
+   "answer": 4
+  }
+ ]
+}

@@ -1,6 +1,8 @@
 (function (M) {
   'use strict';
 
+  M.data.ready.then(function () {
+
   var STORE = 'mathly-quiz-scores';
 
   var setup = document.getElementById('quizSetup');
@@ -50,7 +52,14 @@
 
   /* ---------- setting up ---------- */
 
-  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value', addsub: 'Add & subtract', muldiv: 'Multiply & divide', fractions: 'Fractions', money: 'Money', measure: 'Measurement', time: 'Time & calendar', shapes: 'Shapes & patterns', data: 'Data handling' };
+  // chapter names come from the catalog, so a new chapter needs no code change
+  function chapterName(id) {
+    var chapters = (window.MATHLY && window.MATHLY.chapters) || [];
+    for (var i = 0; i < chapters.length; i++) {
+      if (chapters[i].id === id) return chapters[i].title.replace('&amp;', '&');
+    }
+    return id;
+  }
 
   function buildTopicChips() {
     var chapters = {};
@@ -69,7 +78,7 @@
 
       var name = document.createElement('span');
       name.className = 'chip-group-name';
-      name.textContent = CHAPTER_NAMES[id] || id;
+      name.textContent = chapterName(id);
       group.appendChild(name);
 
       chapters[id].forEach(function (type) {
@@ -527,4 +536,5 @@
   if (param('topic') || param('chapter')) {
     setup.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
   }
+  });
 })(window.Mathly);
