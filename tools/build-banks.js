@@ -83,7 +83,7 @@ Object.keys(chapters).forEach(chapterId => {
     });
   }
 
-  const file = path.join(root, 'data/banks/' + chapterId + '.json');
+  const file = path.join(root, 'data/3/banks/' + chapterId + '.json');
   fs.writeFileSync(file, JSON.stringify({
     chapter: chapterId,
     count: questions.length,
@@ -95,7 +95,7 @@ Object.keys(chapters).forEach(chapterId => {
   summary.push(chapterId + ': ' + questions.length);
 });
 
-fs.writeFileSync(path.join(root, 'data/banks/index.json'),
+fs.writeFileSync(path.join(root, 'data/3/banks/index.json'),
   JSON.stringify({ chapters: Object.keys(chapters), perChapter: PER_CHAPTER, total }, null, 2) + '\n');
 
 console.log(summary.join('\n'));

@@ -44,10 +44,10 @@
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "easy",
-   "prompt": "25 =",
+   "prompt": "85 =",
    "mode": "multi",
    "answer": [
-    2,
+    8,
     5
    ],
    "fields": [
@@ -64,7 +64,7 @@
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "easy",
-   "prompt": "10  ◻  24",
+   "prompt": "15  ◻  49",
    "mode": "choice",
    "answer": "<",
    "choices": [
@@ -79,7 +79,7 @@
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "easy",
-   "prompt": "In 15, what is the 5 worth?",
+   "prompt": "In 35, what is the 5 worth?",
    "mode": "number",
    "answer": 5
   },
@@ -88,42 +88,42 @@
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "easy",
-   "prompt": "What comes just before 80?",
+   "prompt": "What comes between 90 and 92?",
    "mode": "number",
-   "answer": 79
+   "answer": 91
   },
   {
    "n": 5,
    "type": "numbers-skip",
    "topic": "Skip counting",
    "level": "easy",
-   "prompt": "5, 10, 15, 20, ▢",
+   "prompt": "40, 50, 60, 70, ▢",
    "mode": "number",
-   "answer": 25,
-   "note": "Counting in 5s"
+   "answer": 80,
+   "note": "Counting in 10s"
   },
   {
    "n": 6,
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "easy",
-   "prompt": "Round 89 to the nearest 10",
+   "prompt": "Round 66 to the nearest 10",
    "mode": "number",
-   "answer": 90
+   "answer": 70
   },
   {
    "n": 7,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "easy",
-   "prompt": "Which number is ninety?",
+   "prompt": "Which number is sixty-three?",
    "mode": "choice",
-   "answer": "90",
+   "answer": "63",
    "choices": [
-    "9",
-    "90",
-    "99",
-    "80"
+    "36",
+    "63",
+    "72",
+    "53"
    ]
   },
   {
@@ -131,11 +131,11 @@
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "just",
-   "prompt": "438 =",
+   "prompt": "498 =",
    "mode": "multi",
    "answer": [
     4,
-    3,
+    9,
     8
    ],
    "fields": [
@@ -155,7 +155,7 @@
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "just",
-   "prompt": "684  ◻  376",
+   "prompt": "776  ◻  585",
    "mode": "choice",
    "answer": ">",
    "choices": [
@@ -170,27 +170,27 @@
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "just",
-   "prompt": "In 160, what is the 1 worth?",
+   "prompt": "In 961, what is the 6 worth?",
    "mode": "number",
-   "answer": 100
+   "answer": 60
   },
   {
    "n": 11,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "just",
-   "prompt": "What comes between 792 and 794?",
+   "prompt": "What comes just after 637?",
    "mode": "number",
-   "answer": 793
+   "answer": 638
   },
   {
    "n": 12,
    "type": "numbers-skip",
    "topic": "Skip counting",
    "level": "just",
-   "prompt": "6, 8, 10, 12, ▢",
+   "prompt": "2, 4, 6, 8, ▢",
    "mode": "number",
-   "answer": 14,
+   "answer": 10,
    "note": "Counting in 2s"
   },
   {
@@ -198,23 +198,23 @@
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "just",
-   "prompt": "Round 488 to the nearest 10",
+   "prompt": "Round 422 to the nearest 10",
    "mode": "number",
-   "answer": 490
+   "answer": 420
   },
   {
    "n": 14,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "just",
-   "prompt": "Which number is four hundred and thirty-one?",
+   "prompt": "Which number is eight hundred and ninety-eight?",
    "mode": "choice",
-   "answer": "431",
+   "answer": "898",
    "choices": [
-    "331",
-    "134",
-    "431",
-    "521"
+    "8980",
+    "798",
+    "898",
+    "988"
    ]
   },
   {
@@ -222,13 +222,13 @@
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "challenge",
-   "prompt": "5285 =",
+   "prompt": "8500 =",
    "mode": "multi",
    "answer": [
-    5,
-    2,
     8,
-    5
+    5,
+    0,
+    0
    ],
    "fields": [
     {
@@ -250,9 +250,9 @@
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "challenge",
-   "prompt": "5374  ◻  5426",
+   "prompt": "9168  ◻  7652",
    "mode": "choice",
-   "answer": "<",
+   "answer": ">",
    "choices": [
     "<",
     ">",
@@ -265,51 +265,51 @@
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "challenge",
-   "prompt": "In 4927, what is the 7 worth?",
+   "prompt": "In 7665, what is the 5 worth?",
    "mode": "number",
-   "answer": 7
+   "answer": 5
   },
   {
    "n": 18,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "challenge",
-   "prompt": "What comes just before 2878?",
+   "prompt": "What comes just before 8051?",
    "mode": "number",
-   "answer": 2877
+   "answer": 8050
   },
   {
    "n": 19,
    "type": "numbers-skip",
    "topic": "Skip counting",
    "level": "challenge",
-   "prompt": "75, 100, 125, 150, ▢",
+   "prompt": "50, 100, 150, 200, ▢",
    "mode": "number",
-   "answer": 175,
-   "note": "Counting in 25s"
+   "answer": 250,
+   "note": "Counting in 50s"
   },
   {
    "n": 20,
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "challenge",
-   "prompt": "Round 4894 to the nearest 100",
+   "prompt": "Round 9105 to the nearest 100",
    "mode": "number",
-   "answer": 4900
+   "answer": 9100
   },
   {
    "n": 21,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "challenge",
-   "prompt": "Which number is seven thousand two hundred and twenty-seven?",
+   "prompt": "Which number is four thousand nine hundred and thirty-eight?",
    "mode": "choice",
-   "answer": "7227",
+   "answer": "4938",
    "choices": [
-    "7317",
-    "7227",
-    "7127",
-    "72270"
+    "4938",
+    "4838",
+    "8394",
+    "5028"
    ]
   },
   {
@@ -317,11 +317,11 @@
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "easy",
-   "prompt": "37 =",
+   "prompt": "44 =",
    "mode": "multi",
    "answer": [
-    3,
-    7
+    4,
+    4
    ],
    "fields": [
     {
@@ -337,9 +337,9 @@
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "easy",
-   "prompt": "98  ◻  30",
+   "prompt": "18  ◻  49",
    "mode": "choice",
-   "answer": ">",
+   "answer": "<",
    "choices": [
     "<",
     ">",
@@ -352,336 +352,54 @@
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "easy",
-   "prompt": "In 13, what is the 3 worth?",
+   "prompt": "In 58, what is the 8 worth?",
    "mode": "number",
-   "answer": 3
+   "answer": 8
   },
   {
    "n": 25,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "easy",
-   "prompt": "What comes just before 87?",
+   "prompt": "What comes just before 32?",
    "mode": "number",
-   "answer": 86
+   "answer": 31
   },
   {
    "n": 26,
    "type": "numbers-skip",
    "topic": "Skip counting",
    "level": "easy",
-   "prompt": "4, 6, 8, 10, ▢",
+   "prompt": "16, 18, 20, 22, ▢",
    "mode": "number",
-   "answer": 12,
+   "answer": 24,
    "note": "Counting in 2s"
   },
   {
    "n": 27,
-   "type": "numbers-round",
-   "topic": "Rounding",
+   "type": "numbers-words",
+   "topic": "Numbers in words",
    "level": "easy",
-   "prompt": "Round 63 to the nearest 10",
-   "mode": "number",
-   "answer": 60
+   "prompt": "Which number is sixteen?",
+   "mode": "choice",
+   "answer": "16",
+   "choices": [
+    "16",
+    "25",
+    "61",
+    "6"
+   ]
   },
   {
    "n": 28,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "easy",
-   "prompt": "Which number is sixty?",
-   "mode": "choice",
-   "answer": "60",
-   "choices": [
-    "69",
-    "50",
-    "6",
-    "60"
-   ]
-  },
-  {
-   "n": 29,
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "just",
-   "prompt": "121 =",
+   "prompt": "865 =",
    "mode": "multi",
    "answer": [
-    1,
-    2,
-    1
-   ],
-   "fields": [
-    {
-     "label": "hundreds"
-    },
-    {
-     "label": "tens"
-    },
-    {
-     "label": "ones"
-    }
-   ]
-  },
-  {
-   "n": 30,
-   "type": "numbers-compare",
-   "topic": "Bigger or smaller",
-   "level": "just",
-   "prompt": "291  ◻  575",
-   "mode": "choice",
-   "answer": "<",
-   "choices": [
-    "<",
-    ">",
-    "="
-   ],
-   "note": "Put the right sign in the box"
-  },
-  {
-   "n": 31,
-   "type": "numbers-digit-value",
-   "topic": "Value of a digit",
-   "level": "just",
-   "prompt": "In 920, what is the 2 worth?",
-   "mode": "number",
-   "answer": 20
-  },
-  {
-   "n": 32,
-   "type": "numbers-neighbours",
-   "topic": "Before, after, between",
-   "level": "just",
-   "prompt": "What comes just after 281?",
-   "mode": "number",
-   "answer": 282
-  },
-  {
-   "n": 33,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "just",
-   "prompt": "40, 50, 60, 70, ▢",
-   "mode": "number",
-   "answer": 80,
-   "note": "Counting in 10s"
-  },
-  {
-   "n": 34,
-   "type": "numbers-round",
-   "topic": "Rounding",
-   "level": "just",
-   "prompt": "Round 673 to the nearest 10",
-   "mode": "number",
-   "answer": 670
-  },
-  {
-   "n": 35,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "just",
-   "prompt": "Which number is one hundred and eighty-six?",
-   "mode": "choice",
-   "answer": "186",
-   "choices": [
-    "681",
-    "86",
-    "276",
-    "186"
-   ]
-  },
-  {
-   "n": 36,
-   "type": "numbers-expanded",
-   "topic": "Expanded form",
-   "level": "challenge",
-   "prompt": "7801 =",
-   "mode": "multi",
-   "answer": [
-    7,
     8,
-    0,
-    1
-   ],
-   "fields": [
-    {
-     "label": "thousands"
-    },
-    {
-     "label": "hundreds"
-    },
-    {
-     "label": "tens"
-    },
-    {
-     "label": "ones"
-    }
-   ]
-  },
-  {
-   "n": 37,
-   "type": "numbers-compare",
-   "topic": "Bigger or smaller",
-   "level": "challenge",
-   "prompt": "8475  ◻  8843",
-   "mode": "choice",
-   "answer": "<",
-   "choices": [
-    "<",
-    ">",
-    "="
-   ],
-   "note": "Put the right sign in the box"
-  },
-  {
-   "n": 38,
-   "type": "numbers-digit-value",
-   "topic": "Value of a digit",
-   "level": "challenge",
-   "prompt": "In 1668, what is the 8 worth?",
-   "mode": "number",
-   "answer": 8
-  },
-  {
-   "n": 39,
-   "type": "numbers-neighbours",
-   "topic": "Before, after, between",
-   "level": "challenge",
-   "prompt": "What comes just before 6106?",
-   "mode": "number",
-   "answer": 6105
-  },
-  {
-   "n": 40,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "challenge",
-   "prompt": "400, 500, 600, 700, ▢",
-   "mode": "number",
-   "answer": 800,
-   "note": "Counting in 100s"
-  },
-  {
-   "n": 41,
-   "type": "numbers-round",
-   "topic": "Rounding",
-   "level": "challenge",
-   "prompt": "Round 8910 to the nearest 100",
-   "mode": "number",
-   "answer": 8900
-  },
-  {
-   "n": 42,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "challenge",
-   "prompt": "Which number is five thousand eight hundred and thirty-five?",
-   "mode": "choice",
-   "answer": "5835",
-   "choices": [
-    "5385",
-    "5925",
-    "5735",
-    "5835"
-   ]
-  },
-  {
-   "n": 43,
-   "type": "numbers-expanded",
-   "topic": "Expanded form",
-   "level": "easy",
-   "prompt": "19 =",
-   "mode": "multi",
-   "answer": [
-    1,
-    9
-   ],
-   "fields": [
-    {
-     "label": "tens"
-    },
-    {
-     "label": "ones"
-    }
-   ]
-  },
-  {
-   "n": 44,
-   "type": "numbers-compare",
-   "topic": "Bigger or smaller",
-   "level": "easy",
-   "prompt": "46  ◻  43",
-   "mode": "choice",
-   "answer": ">",
-   "choices": [
-    "<",
-    ">",
-    "="
-   ],
-   "note": "Put the right sign in the box"
-  },
-  {
-   "n": 45,
-   "type": "numbers-digit-value",
-   "topic": "Value of a digit",
-   "level": "easy",
-   "prompt": "In 16, what is the 1 worth?",
-   "mode": "number",
-   "answer": 10
-  },
-  {
-   "n": 46,
-   "type": "numbers-neighbours",
-   "topic": "Before, after, between",
-   "level": "easy",
-   "prompt": "What comes just after 55?",
-   "mode": "number",
-   "answer": 56
-  },
-  {
-   "n": 47,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "easy",
-   "prompt": "30, 40, 50, 60, ▢",
-   "mode": "number",
-   "answer": 70,
-   "note": "Counting in 10s"
-  },
-  {
-   "n": 48,
-   "type": "numbers-round",
-   "topic": "Rounding",
-   "level": "easy",
-   "prompt": "Round 19 to the nearest 10",
-   "mode": "number",
-   "answer": 20
-  },
-  {
-   "n": 49,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "easy",
-   "prompt": "Which number is fifty?",
-   "mode": "choice",
-   "answer": "50",
-   "choices": [
-    "40",
-    "5",
-    "59",
-    "50"
-   ]
-  },
-  {
-   "n": 50,
-   "type": "numbers-expanded",
-   "topic": "Expanded form",
-   "level": "just",
-   "prompt": "155 =",
-   "mode": "multi",
-   "answer": [
-    1,
-    5,
+    6,
     5
    ],
    "fields": [
@@ -697,11 +415,11 @@
    ]
   },
   {
-   "n": 51,
+   "n": 29,
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "just",
-   "prompt": "940  ◻  207",
+   "prompt": "789  ◻  651",
    "mode": "choice",
    "answer": ">",
    "choices": [
@@ -712,341 +430,68 @@
    "note": "Put the right sign in the box"
   },
   {
-   "n": 52,
+   "n": 30,
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "just",
-   "prompt": "In 769, what is the 7 worth?",
+   "prompt": "In 602, what is the 2 worth?",
    "mode": "number",
-   "answer": 700
+   "answer": 2
   },
   {
-   "n": 53,
+   "n": 31,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "just",
-   "prompt": "What comes just after 101?",
+   "prompt": "What comes just before 527?",
    "mode": "number",
-   "answer": 102
+   "answer": 526
   },
   {
-   "n": 54,
+   "n": 32,
    "type": "numbers-skip",
    "topic": "Skip counting",
    "level": "just",
-   "prompt": "80, 90, 100, 110, ▢",
+   "prompt": "12, 14, 16, 18, ▢",
    "mode": "number",
-   "answer": 120,
-   "note": "Counting in 10s"
+   "answer": 20,
+   "note": "Counting in 2s"
   },
   {
-   "n": 55,
+   "n": 33,
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "just",
-   "prompt": "Round 201 to the nearest 10",
+   "prompt": "Round 556 to the nearest 10",
    "mode": "number",
-   "answer": 200
+   "answer": 560
   },
   {
-   "n": 56,
+   "n": 34,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "just",
-   "prompt": "Which number is four hundred and sixty-one?",
+   "prompt": "Which number is seven hundred and forty-three?",
    "mode": "choice",
-   "answer": "461",
+   "answer": "743",
    "choices": [
-    "551",
-    "164",
-    "461",
-    "361"
+    "643",
+    "347",
+    "833",
+    "743"
    ]
   },
   {
-   "n": 57,
+   "n": 35,
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "challenge",
-   "prompt": "3144 =",
+   "prompt": "4120 =",
    "mode": "multi",
    "answer": [
-    3,
-    1,
     4,
-    4
-   ],
-   "fields": [
-    {
-     "label": "thousands"
-    },
-    {
-     "label": "hundreds"
-    },
-    {
-     "label": "tens"
-    },
-    {
-     "label": "ones"
-    }
-   ]
-  },
-  {
-   "n": 58,
-   "type": "numbers-compare",
-   "topic": "Bigger or smaller",
-   "level": "challenge",
-   "prompt": "3082  ◻  6493",
-   "mode": "choice",
-   "answer": "<",
-   "choices": [
-    "<",
-    ">",
-    "="
-   ],
-   "note": "Put the right sign in the box"
-  },
-  {
-   "n": 59,
-   "type": "numbers-digit-value",
-   "topic": "Value of a digit",
-   "level": "challenge",
-   "prompt": "In 4976, what is the 6 worth?",
-   "mode": "number",
-   "answer": 6
-  },
-  {
-   "n": 60,
-   "type": "numbers-neighbours",
-   "topic": "Before, after, between",
-   "level": "challenge",
-   "prompt": "What comes just before 4156?",
-   "mode": "number",
-   "answer": 4155
-  },
-  {
-   "n": 61,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "challenge",
-   "prompt": "400, 450, 500, 550, ▢",
-   "mode": "number",
-   "answer": 600,
-   "note": "Counting in 50s"
-  },
-  {
-   "n": 62,
-   "type": "numbers-round",
-   "topic": "Rounding",
-   "level": "challenge",
-   "prompt": "Round 4627 to the nearest 100",
-   "mode": "number",
-   "answer": 4600
-  },
-  {
-   "n": 63,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "challenge",
-   "prompt": "Which number is five thousand seven hundred and sixty-nine?",
-   "mode": "choice",
-   "answer": "5769",
-   "choices": [
-    "5769",
-    "5859",
-    "5669",
-    "9675"
-   ]
-  },
-  {
-   "n": 64,
-   "type": "numbers-expanded",
-   "topic": "Expanded form",
-   "level": "easy",
-   "prompt": "23 =",
-   "mode": "multi",
-   "answer": [
+    1,
     2,
-    3
-   ],
-   "fields": [
-    {
-     "label": "tens"
-    },
-    {
-     "label": "ones"
-    }
-   ]
-  },
-  {
-   "n": 65,
-   "type": "numbers-compare",
-   "topic": "Bigger or smaller",
-   "level": "easy",
-   "prompt": "67  ◻  41",
-   "mode": "choice",
-   "answer": ">",
-   "choices": [
-    "<",
-    ">",
-    "="
-   ],
-   "note": "Put the right sign in the box"
-  },
-  {
-   "n": 66,
-   "type": "numbers-digit-value",
-   "topic": "Value of a digit",
-   "level": "easy",
-   "prompt": "In 26, what is the 6 worth?",
-   "mode": "number",
-   "answer": 6
-  },
-  {
-   "n": 67,
-   "type": "numbers-neighbours",
-   "topic": "Before, after, between",
-   "level": "easy",
-   "prompt": "What comes just before 44?",
-   "mode": "number",
-   "answer": 43
-  },
-  {
-   "n": 68,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "easy",
-   "prompt": "25, 30, 35, 40, ▢",
-   "mode": "number",
-   "answer": 45,
-   "note": "Counting in 5s"
-  },
-  {
-   "n": 69,
-   "type": "numbers-round",
-   "topic": "Rounding",
-   "level": "easy",
-   "prompt": "Round 24 to the nearest 10",
-   "mode": "number",
-   "answer": 20
-  },
-  {
-   "n": 70,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "easy",
-   "prompt": "Which number is thirty-two?",
-   "mode": "choice",
-   "answer": "32",
-   "choices": [
-    "32",
-    "41",
-    "23",
-    "22"
-   ]
-  },
-  {
-   "n": 71,
-   "type": "numbers-expanded",
-   "topic": "Expanded form",
-   "level": "just",
-   "prompt": "601 =",
-   "mode": "multi",
-   "answer": [
-    6,
-    0,
-    1
-   ],
-   "fields": [
-    {
-     "label": "hundreds"
-    },
-    {
-     "label": "tens"
-    },
-    {
-     "label": "ones"
-    }
-   ]
-  },
-  {
-   "n": 72,
-   "type": "numbers-compare",
-   "topic": "Bigger or smaller",
-   "level": "just",
-   "prompt": "606  ◻  606",
-   "mode": "choice",
-   "answer": "=",
-   "choices": [
-    "<",
-    ">",
-    "="
-   ],
-   "note": "Put the right sign in the box"
-  },
-  {
-   "n": 73,
-   "type": "numbers-digit-value",
-   "topic": "Value of a digit",
-   "level": "just",
-   "prompt": "In 754, what is the 5 worth?",
-   "mode": "number",
-   "answer": 50
-  },
-  {
-   "n": 74,
-   "type": "numbers-neighbours",
-   "topic": "Before, after, between",
-   "level": "just",
-   "prompt": "What comes just before 568?",
-   "mode": "number",
-   "answer": 567
-  },
-  {
-   "n": 75,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "just",
-   "prompt": "30, 35, 40, 45, ▢",
-   "mode": "number",
-   "answer": 50,
-   "note": "Counting in 5s"
-  },
-  {
-   "n": 76,
-   "type": "numbers-round",
-   "topic": "Rounding",
-   "level": "just",
-   "prompt": "Round 785 to the nearest 10",
-   "mode": "number",
-   "answer": 790
-  },
-  {
-   "n": 77,
-   "type": "numbers-words",
-   "topic": "Numbers in words",
-   "level": "just",
-   "prompt": "Which number is five hundred and seventy-four?",
-   "mode": "choice",
-   "answer": "574",
-   "choices": [
-    "574",
-    "474",
-    "664",
-    "475"
-   ]
-  },
-  {
-   "n": 78,
-   "type": "numbers-expanded",
-   "topic": "Expanded form",
-   "level": "challenge",
-   "prompt": "3560 =",
-   "mode": "multi",
-   "answer": [
-    3,
-    5,
-    6,
     0
    ],
    "fields": [
@@ -1065,11 +510,284 @@
    ]
   },
   {
-   "n": 79,
+   "n": 36,
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "challenge",
-   "prompt": "1552  ◻  8347",
+   "prompt": "1897  ◻  1897",
+   "mode": "choice",
+   "answer": "=",
+   "choices": [
+    "<",
+    ">",
+    "="
+   ],
+   "note": "Put the right sign in the box"
+  },
+  {
+   "n": 37,
+   "type": "numbers-digit-value",
+   "topic": "Value of a digit",
+   "level": "challenge",
+   "prompt": "In 9411, what is the 4 worth?",
+   "mode": "number",
+   "answer": 400
+  },
+  {
+   "n": 38,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "challenge",
+   "prompt": "What comes just before 4516?",
+   "mode": "number",
+   "answer": 4515
+  },
+  {
+   "n": 39,
+   "type": "numbers-skip",
+   "topic": "Skip counting",
+   "level": "challenge",
+   "prompt": "75, 100, 125, 150, ▢",
+   "mode": "number",
+   "answer": 175,
+   "note": "Counting in 25s"
+  },
+  {
+   "n": 40,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "challenge",
+   "prompt": "Round 8329 to the nearest 100",
+   "mode": "number",
+   "answer": 8300
+  },
+  {
+   "n": 41,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "challenge",
+   "prompt": "Which number is three thousand seven hundred and fifty-three?",
+   "mode": "choice",
+   "answer": "3753",
+   "choices": [
+    "3753",
+    "3843",
+    "3573",
+    "3653"
+   ]
+  },
+  {
+   "n": 42,
+   "type": "numbers-expanded",
+   "topic": "Expanded form",
+   "level": "easy",
+   "prompt": "16 =",
+   "mode": "multi",
+   "answer": [
+    1,
+    6
+   ],
+   "fields": [
+    {
+     "label": "tens"
+    },
+    {
+     "label": "ones"
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "type": "numbers-compare",
+   "topic": "Bigger or smaller",
+   "level": "easy",
+   "prompt": "57  ◻  38",
+   "mode": "choice",
+   "answer": ">",
+   "choices": [
+    "<",
+    ">",
+    "="
+   ],
+   "note": "Put the right sign in the box"
+  },
+  {
+   "n": 44,
+   "type": "numbers-digit-value",
+   "topic": "Value of a digit",
+   "level": "easy",
+   "prompt": "In 51, what is the 5 worth?",
+   "mode": "number",
+   "answer": 50
+  },
+  {
+   "n": 45,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "easy",
+   "prompt": "What comes just after 15?",
+   "mode": "number",
+   "answer": 16
+  },
+  {
+   "n": 46,
+   "type": "numbers-skip",
+   "topic": "Skip counting",
+   "level": "easy",
+   "prompt": "10, 12, 14, 16, ▢",
+   "mode": "number",
+   "answer": 18,
+   "note": "Counting in 2s"
+  },
+  {
+   "n": 47,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "easy",
+   "prompt": "Round 32 to the nearest 10",
+   "mode": "number",
+   "answer": 30
+  },
+  {
+   "n": 48,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "easy",
+   "prompt": "Which number is fourteen?",
+   "mode": "choice",
+   "answer": "14",
+   "choices": [
+    "41",
+    "23",
+    "14",
+    "4"
+   ]
+  },
+  {
+   "n": 49,
+   "type": "numbers-expanded",
+   "topic": "Expanded form",
+   "level": "just",
+   "prompt": "599 =",
+   "mode": "multi",
+   "answer": [
+    5,
+    9,
+    9
+   ],
+   "fields": [
+    {
+     "label": "hundreds"
+    },
+    {
+     "label": "tens"
+    },
+    {
+     "label": "ones"
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "type": "numbers-compare",
+   "topic": "Bigger or smaller",
+   "level": "just",
+   "prompt": "713  ◻  706",
+   "mode": "choice",
+   "answer": ">",
+   "choices": [
+    "<",
+    ">",
+    "="
+   ],
+   "note": "Put the right sign in the box"
+  },
+  {
+   "n": 51,
+   "type": "numbers-digit-value",
+   "topic": "Value of a digit",
+   "level": "just",
+   "prompt": "In 960, what is the 6 worth?",
+   "mode": "number",
+   "answer": 60
+  },
+  {
+   "n": 52,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "just",
+   "prompt": "What comes just after 116?",
+   "mode": "number",
+   "answer": 117
+  },
+  {
+   "n": 53,
+   "type": "numbers-skip",
+   "topic": "Skip counting",
+   "level": "just",
+   "prompt": "20, 30, 40, 50, ▢",
+   "mode": "number",
+   "answer": 60,
+   "note": "Counting in 10s"
+  },
+  {
+   "n": 54,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "just",
+   "prompt": "Round 436 to the nearest 10",
+   "mode": "number",
+   "answer": 440
+  },
+  {
+   "n": 55,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "just",
+   "prompt": "Which number is nine hundred and ninety-two?",
+   "mode": "choice",
+   "answer": "992",
+   "choices": [
+    "992",
+    "892",
+    "1082",
+    "299"
+   ]
+  },
+  {
+   "n": 56,
+   "type": "numbers-expanded",
+   "topic": "Expanded form",
+   "level": "challenge",
+   "prompt": "9545 =",
+   "mode": "multi",
+   "answer": [
+    9,
+    5,
+    4,
+    5
+   ],
+   "fields": [
+    {
+     "label": "thousands"
+    },
+    {
+     "label": "hundreds"
+    },
+    {
+     "label": "tens"
+    },
+    {
+     "label": "ones"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "type": "numbers-compare",
+   "topic": "Bigger or smaller",
+   "level": "challenge",
+   "prompt": "2624  ◻  5165",
    "mode": "choice",
    "answer": "<",
    "choices": [
@@ -1080,25 +798,25 @@
    "note": "Put the right sign in the box"
   },
   {
-   "n": 80,
+   "n": 58,
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "challenge",
-   "prompt": "In 8624, what is the 2 worth?",
+   "prompt": "In 1449, what is the 1 worth?",
    "mode": "number",
-   "answer": 20
+   "answer": 1000
   },
   {
-   "n": 81,
+   "n": 59,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "challenge",
-   "prompt": "What comes just before 1395?",
+   "prompt": "What comes just after 1969?",
    "mode": "number",
-   "answer": 1394
+   "answer": 1970
   },
   {
-   "n": 82,
+   "n": 60,
    "type": "numbers-skip",
    "topic": "Skip counting",
    "level": "challenge",
@@ -1108,39 +826,39 @@
    "note": "Counting in 100s"
   },
   {
-   "n": 83,
+   "n": 61,
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "challenge",
-   "prompt": "Round 1008 to the nearest 100",
+   "prompt": "Round 4421 to the nearest 100",
    "mode": "number",
-   "answer": 1000
+   "answer": 4400
   },
   {
-   "n": 84,
+   "n": 62,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "challenge",
-   "prompt": "Which number is three thousand nine hundred and sixty-seven?",
+   "prompt": "Which number is eight thousand seven hundred and one?",
    "mode": "choice",
-   "answer": "3967",
+   "answer": "8701",
    "choices": [
-    "3867",
-    "7693",
-    "4057",
-    "3967"
+    "8791",
+    "8601",
+    "8701",
+    "1078"
    ]
   },
   {
-   "n": 85,
+   "n": 63,
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "easy",
-   "prompt": "34 =",
+   "prompt": "42 =",
    "mode": "multi",
    "answer": [
-    3,
-    4
+    4,
+    2
    ],
    "fields": [
     {
@@ -1152,13 +870,13 @@
    ]
   },
   {
-   "n": 86,
+   "n": 64,
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "easy",
-   "prompt": "41  ◻  41",
+   "prompt": "41  ◻  13",
    "mode": "choice",
-   "answer": "=",
+   "answer": ">",
    "choices": [
     "<",
     ">",
@@ -1167,68 +885,58 @@
    "note": "Put the right sign in the box"
   },
   {
-   "n": 87,
+   "n": 65,
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "easy",
-   "prompt": "In 69, what is the 6 worth?",
+   "prompt": "In 93, what is the 3 worth?",
    "mode": "number",
-   "answer": 60
+   "answer": 3
   },
   {
-   "n": 88,
+   "n": 66,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "easy",
-   "prompt": "What comes just before 82?",
+   "prompt": "What comes just before 25?",
    "mode": "number",
-   "answer": 81
+   "answer": 24
   },
   {
-   "n": 89,
-   "type": "numbers-skip",
-   "topic": "Skip counting",
-   "level": "easy",
-   "prompt": "8, 10, 12, 14, ▢",
-   "mode": "number",
-   "answer": 16,
-   "note": "Counting in 2s"
-  },
-  {
-   "n": 90,
+   "n": 67,
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "easy",
-   "prompt": "Round 28 to the nearest 10",
+   "prompt": "Round 81 to the nearest 10",
    "mode": "number",
-   "answer": 30
+   "answer": 80
   },
   {
-   "n": 91,
+   "n": 68,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "easy",
-   "prompt": "Which number is thirteen?",
+   "prompt": "Which number is seventy-one?",
    "mode": "choice",
-   "answer": "13",
+   "answer": "71",
    "choices": [
-    "22",
-    "3",
-    "31",
-    "13"
+    "71",
+    "17",
+    "80",
+    "61"
    ]
   },
   {
-   "n": 92,
+   "n": 69,
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "just",
-   "prompt": "936 =",
+   "prompt": "124 =",
    "mode": "multi",
    "answer": [
-    9,
-    3,
-    6
+    1,
+    2,
+    4
    ],
    "fields": [
     {
@@ -1243,11 +951,11 @@
    ]
   },
   {
-   "n": 93,
+   "n": 70,
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "just",
-   "prompt": "648  ◻  829",
+   "prompt": "319  ◻  634",
    "mode": "choice",
    "answer": "<",
    "choices": [
@@ -1258,59 +966,69 @@
    "note": "Put the right sign in the box"
   },
   {
-   "n": 94,
+   "n": 71,
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "just",
-   "prompt": "In 979, what is the 7 worth?",
+   "prompt": "In 214, what is the 2 worth?",
    "mode": "number",
-   "answer": 70
+   "answer": 200
   },
   {
-   "n": 95,
+   "n": 72,
    "type": "numbers-neighbours",
    "topic": "Before, after, between",
    "level": "just",
-   "prompt": "What comes just after 687?",
+   "prompt": "What comes just before 878?",
    "mode": "number",
-   "answer": 688
+   "answer": 877
   },
   {
-   "n": 96,
+   "n": 73,
+   "type": "numbers-skip",
+   "topic": "Skip counting",
+   "level": "just",
+   "prompt": "70, 80, 90, 100, ▢",
+   "mode": "number",
+   "answer": 110,
+   "note": "Counting in 10s"
+  },
+  {
+   "n": 74,
    "type": "numbers-round",
    "topic": "Rounding",
    "level": "just",
-   "prompt": "Round 141 to the nearest 10",
+   "prompt": "Round 684 to the nearest 10",
    "mode": "number",
-   "answer": 140
+   "answer": 680
   },
   {
-   "n": 97,
+   "n": 75,
    "type": "numbers-words",
    "topic": "Numbers in words",
    "level": "just",
-   "prompt": "Which number is two hundred and eleven?",
+   "prompt": "Which number is five hundred and forty-three?",
    "mode": "choice",
-   "answer": "211",
+   "answer": "543",
    "choices": [
-    "112",
-    "211",
-    "111",
-    "301"
+    "345",
+    "633",
+    "443",
+    "543"
    ]
   },
   {
-   "n": 98,
+   "n": 76,
    "type": "numbers-expanded",
    "topic": "Expanded form",
    "level": "challenge",
-   "prompt": "6130 =",
+   "prompt": "8449 =",
    "mode": "multi",
    "answer": [
-    6,
-    1,
-    3,
-    0
+    8,
+    4,
+    4,
+    9
    ],
    "fields": [
     {
@@ -1328,11 +1046,11 @@
    ]
   },
   {
-   "n": 99,
+   "n": 77,
    "type": "numbers-compare",
    "topic": "Bigger or smaller",
    "level": "challenge",
-   "prompt": "5819  ◻  4157",
+   "prompt": "9264  ◻  1258",
    "mode": "choice",
    "answer": ">",
    "choices": [
@@ -1343,13 +1061,299 @@
    "note": "Put the right sign in the box"
   },
   {
-   "n": 100,
+   "n": 78,
    "type": "numbers-digit-value",
    "topic": "Value of a digit",
    "level": "challenge",
-   "prompt": "In 8652, what is the 6 worth?",
+   "prompt": "In 7428, what is the 2 worth?",
    "mode": "number",
-   "answer": 600
+   "answer": 20
+  },
+  {
+   "n": 79,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "challenge",
+   "prompt": "What comes between 6286 and 6288?",
+   "mode": "number",
+   "answer": 6287
+  },
+  {
+   "n": 80,
+   "type": "numbers-skip",
+   "topic": "Skip counting",
+   "level": "challenge",
+   "prompt": "100, 200, 300, 400, ▢",
+   "mode": "number",
+   "answer": 500,
+   "note": "Counting in 100s"
+  },
+  {
+   "n": 81,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "challenge",
+   "prompt": "Round 8749 to the nearest 100",
+   "mode": "number",
+   "answer": 8700
+  },
+  {
+   "n": 82,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "challenge",
+   "prompt": "Which number is six thousand two hundred and one?",
+   "mode": "choice",
+   "answer": "6201",
+   "choices": [
+    "6291",
+    "6101",
+    "6201",
+    "1026"
+   ]
+  },
+  {
+   "n": 83,
+   "type": "numbers-expanded",
+   "topic": "Expanded form",
+   "level": "easy",
+   "prompt": "17 =",
+   "mode": "multi",
+   "answer": [
+    1,
+    7
+   ],
+   "fields": [
+    {
+     "label": "tens"
+    },
+    {
+     "label": "ones"
+    }
+   ]
+  },
+  {
+   "n": 84,
+   "type": "numbers-compare",
+   "topic": "Bigger or smaller",
+   "level": "easy",
+   "prompt": "95  ◻  98",
+   "mode": "choice",
+   "answer": "<",
+   "choices": [
+    "<",
+    ">",
+    "="
+   ],
+   "note": "Put the right sign in the box"
+  },
+  {
+   "n": 85,
+   "type": "numbers-digit-value",
+   "topic": "Value of a digit",
+   "level": "easy",
+   "prompt": "In 78, what is the 8 worth?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 86,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "easy",
+   "prompt": "What comes just after 42?",
+   "mode": "number",
+   "answer": 43
+  },
+  {
+   "n": 87,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "easy",
+   "prompt": "Round 58 to the nearest 10",
+   "mode": "number",
+   "answer": 60
+  },
+  {
+   "n": 88,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "easy",
+   "prompt": "Which number is forty-five?",
+   "mode": "choice",
+   "answer": "45",
+   "choices": [
+    "35",
+    "450",
+    "54",
+    "45"
+   ]
+  },
+  {
+   "n": 89,
+   "type": "numbers-expanded",
+   "topic": "Expanded form",
+   "level": "just",
+   "prompt": "710 =",
+   "mode": "multi",
+   "answer": [
+    7,
+    1,
+    0
+   ],
+   "fields": [
+    {
+     "label": "hundreds"
+    },
+    {
+     "label": "tens"
+    },
+    {
+     "label": "ones"
+    }
+   ]
+  },
+  {
+   "n": 90,
+   "type": "numbers-compare",
+   "topic": "Bigger or smaller",
+   "level": "just",
+   "prompt": "258  ◻  778",
+   "mode": "choice",
+   "answer": "<",
+   "choices": [
+    "<",
+    ">",
+    "="
+   ],
+   "note": "Put the right sign in the box"
+  },
+  {
+   "n": 91,
+   "type": "numbers-digit-value",
+   "topic": "Value of a digit",
+   "level": "just",
+   "prompt": "In 496, what is the 9 worth?",
+   "mode": "number",
+   "answer": 90
+  },
+  {
+   "n": 92,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "just",
+   "prompt": "What comes between 195 and 197?",
+   "mode": "number",
+   "answer": 196
+  },
+  {
+   "n": 93,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "just",
+   "prompt": "Round 492 to the nearest 10",
+   "mode": "number",
+   "answer": 490
+  },
+  {
+   "n": 94,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "just",
+   "prompt": "Which number is five hundred and eighty-seven?",
+   "mode": "choice",
+   "answer": "587",
+   "choices": [
+    "785",
+    "487",
+    "587",
+    "677"
+   ]
+  },
+  {
+   "n": 95,
+   "type": "numbers-expanded",
+   "topic": "Expanded form",
+   "level": "challenge",
+   "prompt": "2267 =",
+   "mode": "multi",
+   "answer": [
+    2,
+    2,
+    6,
+    7
+   ],
+   "fields": [
+    {
+     "label": "thousands"
+    },
+    {
+     "label": "hundreds"
+    },
+    {
+     "label": "tens"
+    },
+    {
+     "label": "ones"
+    }
+   ]
+  },
+  {
+   "n": 96,
+   "type": "numbers-compare",
+   "topic": "Bigger or smaller",
+   "level": "challenge",
+   "prompt": "9760  ◻  1427",
+   "mode": "choice",
+   "answer": ">",
+   "choices": [
+    "<",
+    ">",
+    "="
+   ],
+   "note": "Put the right sign in the box"
+  },
+  {
+   "n": 97,
+   "type": "numbers-digit-value",
+   "topic": "Value of a digit",
+   "level": "challenge",
+   "prompt": "In 8615, what is the 5 worth?",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 98,
+   "type": "numbers-neighbours",
+   "topic": "Before, after, between",
+   "level": "challenge",
+   "prompt": "What comes just after 8116?",
+   "mode": "number",
+   "answer": 8117
+  },
+  {
+   "n": 99,
+   "type": "numbers-round",
+   "topic": "Rounding",
+   "level": "challenge",
+   "prompt": "Round 2953 to the nearest 100",
+   "mode": "number",
+   "answer": 3000
+  },
+  {
+   "n": 100,
+   "type": "numbers-words",
+   "topic": "Numbers in words",
+   "level": "challenge",
+   "prompt": "Which number is one thousand six hundred and thirty-five?",
+   "mode": "choice",
+   "answer": "1635",
+   "choices": [
+    "5361",
+    "1535",
+    "1635",
+    "1725"
+   ]
   }
  ]
 }

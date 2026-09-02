@@ -28,9 +28,9 @@ vm.createContext(context);
 });
 
 function write(name, value) {
-  const file = path.join(root, 'data', name + '.json');
+  const file = path.join(root, 'data', '3', name + '.json');
   fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
-  console.log('wrote data/' + name + '.json');
+  console.log('wrote data/3/' + name + '.json');
 }
 
 write('catalog', context.window.MATHLY);

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">🎈</span> Mathly</h1>
+    <p class="tagline">Fun practice, one number at a time!</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="panel">
+    <h2 class="panel-title">How Mathly works 🧭</h2>
+    <ol class="how-list">
+      <li class="how-step"><strong>Pick a chapter 📚</strong><span>Eleven chapters covering the Class 3 syllabus, from place value to word problems.</span></li>
+      <li class="how-step"><strong>Learn it 📖</strong><span>A short lesson with a picture, the method step by step, words to know and what to watch out for.</span></li>
+      <li class="how-step"><strong>Try it ✏️</strong><span>Two practice questions at the end of every lesson, with no score and no clock.</span></li>
+      <li class="how-step"><strong>Quiz yourself ⏱️</strong><span>Mix any kinds of question, choose Easy, Just right or Challenge, and collect stars.</span></li>
+    </ol>
+    <p class="legend-note">Everything is saved on this device only — no login, no adverts, nothing sent anywhere. Grown-ups can open <a href="bank.html">the question banks</a> (100 ready-made questions per chapter, printable), <a href="report.html">the report card</a>, or <a href="selftest.html">the question self-test</a>.</p>
+  </section>
+
+  <h2 class="section-title">Pick a chapter</h2>
+  <nav class="menu" id="chapterMenu"></nav>
+</main>
+
+<footer class="wrap site-footer">
+  <p>Made for happy practice 🌈</p>
+</footer>
+
+<script>window.MATHLY_DATA_BASE = '../data/3/';</script>
+<script src="../assets/engine.js"></script>
+<script src="../assets/data.js"></script>
+<script src="../assets/questions.js"></script>
+<script src="../assets/menu.js"></script>
+</body>
+</html>

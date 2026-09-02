@@ -44,39 +44,39 @@
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "easy",
-   "prompt": "59 + 46",
+   "prompt": "69 + 49",
    "mode": "number",
-   "answer": 105
+   "answer": 118
   },
   {
    "n": 2,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "easy",
-   "prompt": "90 − 49",
+   "prompt": "126 − 55",
    "mode": "number",
-   "answer": 41
+   "answer": 71
   },
   {
    "n": 3,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "27 + ▢ = 95",
+   "prompt": "▢ + 70 = 151",
    "mode": "number",
-   "answer": 68
+   "answer": 81
   },
   {
    "n": 4,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "easy",
-   "prompt": "About how much is 17 + 91?",
+   "prompt": "About how much is 80 + 25?",
    "mode": "choice",
    "answer": "110",
    "choices": [
-    "130",
     "120",
+    "130",
     "110",
     "100"
    ],
@@ -87,67 +87,67 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "easy",
-   "prompt": "If 98 + 35 = 133, what is 133 − 35?",
+   "prompt": "If 63 + 44 = 107, what is 107 − 44?",
    "mode": "number",
-   "answer": 98
+   "answer": 63
   },
   {
    "n": 6,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "A shop had 50 marbles. It sold 33 of them. How many marbles are still in the shop?",
+   "prompt": "Meera had 10 stickers. Arjun gave Meera 18 more. How many stickers does Meera have now?",
    "mode": "number",
-   "answer": 17
+   "answer": 28
   },
   {
    "n": 7,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "A school had 31 pencils. It bought 26 more and gave 24 to another school. How many pencils are left?",
+   "prompt": "Riya had 70 marbles. Ananya gave Riya 23 more, and then Riya gave 33 away. How many marbles now?",
    "mode": "number",
-   "answer": 33
+   "answer": 60
   },
   {
    "n": 8,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "just",
-   "prompt": "369 + 905",
+   "prompt": "429 + 358",
    "mode": "number",
-   "answer": 1274
+   "answer": 787
   },
   {
    "n": 9,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "just",
-   "prompt": "757 − 226",
+   "prompt": "1211 − 258",
    "mode": "number",
-   "answer": 531
+   "answer": 953
   },
   {
    "n": 10,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "137 + ▢ = 255",
+   "prompt": "▢ + 350 = 1174",
    "mode": "number",
-   "answer": 118
+   "answer": 824
   },
   {
    "n": 11,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "just",
-   "prompt": "About how much is 898 + 100?",
+   "prompt": "About how much is 387 + 780?",
    "mode": "choice",
-   "answer": "1000",
+   "answer": "1200",
    "choices": [
-    "900",
-    "1000",
     "1200",
+    "1400",
+    "1300",
     "1100"
    ],
    "note": "Round each number to the nearest 100 first"
@@ -157,68 +157,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "just",
-   "prompt": "If 920 − 197 = 723, what is 723 + 197?",
+   "prompt": "If 912 + 608 = 1520, what is 1520 − 608?",
    "mode": "number",
-   "answer": 920
+   "answer": 912
   },
   {
    "n": 13,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "A shop had 507 crayons. It sold 182 of them. How many crayons are still in the shop?",
+   "prompt": "Meera had 974 marbles and gave 106 to Ananya. How many marbles are left?",
    "mode": "number",
-   "answer": 325
+   "answer": 868
   },
   {
    "n": 14,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "A school had 840 stickers. It bought 239 more and gave 221 to another school. How many stickers are left?",
+   "prompt": "A bus had 125 people. At the first stop 85 got off and 233 got on. How many people are on the bus now?",
    "mode": "number",
-   "answer": 858
+   "answer": 273
   },
   {
    "n": 15,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "challenge",
-   "prompt": "664 + 855",
+   "prompt": "944 + 133",
    "mode": "number",
-   "answer": 1519
+   "answer": 1077
   },
   {
    "n": 16,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "challenge",
-   "prompt": "761 − 565",
+   "prompt": "961 − 854",
    "mode": "number",
-   "answer": 196
+   "answer": 107
   },
   {
    "n": 17,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "challenge",
-   "prompt": "▢ + 414 = 1135",
+   "prompt": "612 + ▢ = 1436",
    "mode": "number",
-   "answer": 721
+   "answer": 824
   },
   {
    "n": 18,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "challenge",
-   "prompt": "About how much is 606 + 397?",
+   "prompt": "About how much is 559 + 187?",
    "mode": "choice",
-   "answer": "1000",
+   "answer": "800",
    "choices": [
-    "900",
+    "800",
     "1000",
-    "1100",
-    "1200"
+    "700",
+    "900"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -227,68 +227,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "challenge",
-   "prompt": "If 767 − 198 = 569, what is 569 + 198?",
+   "prompt": "If 622 + 576 = 1198, what is 1198 − 576?",
    "mode": "number",
-   "answer": 767
+   "answer": 622
   },
   {
    "n": 20,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "One box has 479 marbles and another box has 320. How many marbles are there altogether?",
+   "prompt": "One box has 562 ladoos and another box has 418. How many ladoos are there altogether?",
    "mode": "number",
-   "answer": 799
+   "answer": 980
   },
   {
    "n": 21,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "A bus had 341 people. At the first stop 6 got off and 106 got on. How many people are on the bus now?",
+   "prompt": "A bus had 110 people. At the first stop 29 got off and 235 got on. How many people are on the bus now?",
    "mode": "number",
-   "answer": 441
+   "answer": 316
   },
   {
    "n": 22,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "easy",
-   "prompt": "67 + 23",
+   "prompt": "84 + 79",
    "mode": "number",
-   "answer": 90
+   "answer": 163
   },
   {
    "n": 23,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "easy",
-   "prompt": "121 − 22",
+   "prompt": "43 − 16",
    "mode": "number",
-   "answer": 99
+   "answer": 27
   },
   {
    "n": 24,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "▢ + 99 = 130",
+   "prompt": "26 + ▢ = 102",
    "mode": "number",
-   "answer": 31
+   "answer": 76
   },
   {
    "n": 25,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "easy",
-   "prompt": "About how much is 47 + 62?",
+   "prompt": "About how much is 41 + 85?",
    "mode": "choice",
-   "answer": "110",
+   "answer": "130",
    "choices": [
-    "120",
-    "100",
     "130",
-    "110"
+    "140",
+    "120",
+    "150"
    ],
    "note": "Round each number to the nearest 10 first"
   },
@@ -297,68 +297,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "easy",
-   "prompt": "If 11 + 49 = 60, what is 60 − 49?",
+   "prompt": "If 73 + 64 = 137, what is 137 − 64?",
    "mode": "number",
-   "answer": 11
+   "answer": 73
   },
   {
    "n": 27,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "A shop had 106 cricket balls. It sold 37 of them. How many cricket balls are still in the shop?",
+   "prompt": "Sara had 33 mangoes. Meera gave Sara 10 more. How many mangoes does Sara have now?",
    "mode": "number",
-   "answer": 69
+   "answer": 43
   },
   {
    "n": 28,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "A school had 28 marbles. It bought 29 more and gave 28 to another school. How many marbles are left?",
+   "prompt": "A bus had 85 people. At the first stop 25 got off and 29 got on. How many people are on the bus now?",
    "mode": "number",
-   "answer": 29
+   "answer": 89
   },
   {
    "n": 29,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "just",
-   "prompt": "785 + 990",
+   "prompt": "700 + 623",
    "mode": "number",
-   "answer": 1775
+   "answer": 1323
   },
   {
    "n": 30,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "just",
-   "prompt": "795 − 165",
+   "prompt": "1000 − 122",
    "mode": "number",
-   "answer": 630
+   "answer": 878
   },
   {
    "n": 31,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "▢ − 549 = 489",
+   "prompt": "277 + ▢ = 477",
    "mode": "number",
-   "answer": 1038
+   "answer": 200
   },
   {
    "n": 32,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "just",
-   "prompt": "About how much is 579 + 297?",
+   "prompt": "About how much is 621 + 739?",
    "mode": "choice",
-   "answer": "900",
+   "answer": "1300",
    "choices": [
-    "1100",
-    "900",
-    "1000",
-    "800"
+    "1400",
+    "1200",
+    "1300",
+    "1500"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -367,68 +367,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "just",
-   "prompt": "If 138 + 640 = 778, what is 778 − 640?",
+   "prompt": "If 178 + 695 = 873, what is 873 − 695?",
    "mode": "number",
-   "answer": 138
+   "answer": 178
   },
   {
    "n": 34,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "Sara had 627 pencils and gave 138 to Ishaan. How many pencils are left?",
+   "prompt": "One box has 826 marbles and another box has 126. How many marbles are there altogether?",
    "mode": "number",
-   "answer": 489
+   "answer": 952
   },
   {
    "n": 35,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "A school had 781 cricket balls. It bought 238 more and gave 75 to another school. How many cricket balls are left?",
+   "prompt": "Vihaan had 274 mangoes. Meera gave Vihaan 153 more, and then Vihaan gave 94 away. How many mangoes now?",
    "mode": "number",
-   "answer": 944
+   "answer": 333
   },
   {
    "n": 36,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "challenge",
-   "prompt": "568 + 166",
+   "prompt": "990 + 401",
    "mode": "number",
-   "answer": 734
+   "answer": 1391
   },
   {
    "n": 37,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "challenge",
-   "prompt": "829 − 567",
+   "prompt": "1399 − 599",
    "mode": "number",
-   "answer": 262
+   "answer": 800
   },
   {
    "n": 38,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "challenge",
-   "prompt": "466 + ▢ = 1407",
+   "prompt": "▢ − 542 = 764",
    "mode": "number",
-   "answer": 941
+   "answer": 1306
   },
   {
    "n": 39,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "challenge",
-   "prompt": "About how much is 472 + 841?",
+   "prompt": "About how much is 460 + 417?",
    "mode": "choice",
-   "answer": "1300",
+   "answer": "900",
    "choices": [
-    "1500",
-    "1300",
-    "1200",
-    "1400"
+    "1100",
+    "1000",
+    "800",
+    "900"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -437,68 +437,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "challenge",
-   "prompt": "If 1421 − 587 = 834, what is 834 + 587?",
+   "prompt": "If 653 − 553 = 100, what is 100 + 553?",
    "mode": "number",
-   "answer": 1421
+   "answer": 653
   },
   {
    "n": 41,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "Diya had 1242 mangoes and gave 320 to Arjun. How many mangoes are left?",
+   "prompt": "Aarav has ₹1164 and buys a book for ₹170. How much money is left?",
    "mode": "number",
-   "answer": 922
+   "answer": 994
   },
   {
    "n": 42,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "A school had 398 stickers. It bought 228 more and gave 69 to another school. How many stickers are left?",
+   "prompt": "A school had 464 mangoes. It bought 245 more and gave 231 to another school. How many mangoes are left?",
    "mode": "number",
-   "answer": 557
+   "answer": 478
   },
   {
    "n": 43,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "easy",
-   "prompt": "94 + 32",
+   "prompt": "78 + 41",
    "mode": "number",
-   "answer": 126
+   "answer": 119
   },
   {
    "n": 44,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "easy",
-   "prompt": "136 − 98",
+   "prompt": "156 − 70",
    "mode": "number",
-   "answer": 38
+   "answer": 86
   },
   {
    "n": 45,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "▢ + 15 = 82",
+   "prompt": "35 + ▢ = 123",
    "mode": "number",
-   "answer": 67
+   "answer": 88
   },
   {
    "n": 46,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "easy",
-   "prompt": "About how much is 78 + 34?",
+   "prompt": "About how much is 36 + 31?",
    "mode": "choice",
-   "answer": "110",
+   "answer": "70",
    "choices": [
-    "130",
-    "120",
-    "100",
-    "110"
+    "60",
+    "80",
+    "70",
+    "90"
    ],
    "note": "Round each number to the nearest 10 first"
   },
@@ -507,68 +507,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "easy",
-   "prompt": "If 76 + 70 = 146, what is 146 − 70?",
+   "prompt": "If 112 − 37 = 75, what is 75 + 37?",
    "mode": "number",
-   "answer": 76
+   "answer": 112
   },
   {
    "n": 48,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "A shop had 110 mangoes. It sold 19 of them. How many mangoes are still in the shop?",
+   "prompt": "Arjun has ₹95 and buys a book for ₹36. How much money is left?",
    "mode": "number",
-   "answer": 91
+   "answer": 59
   },
   {
    "n": 49,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "A bus had 68 people. At the first stop 1 got off and 21 got on. How many people are on the bus now?",
+   "prompt": "A school had 95 story books. It bought 20 more and gave 38 to another school. How many story books are left?",
    "mode": "number",
-   "answer": 88
+   "answer": 77
   },
   {
    "n": 50,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "just",
-   "prompt": "688 + 278",
+   "prompt": "122 + 233",
    "mode": "number",
-   "answer": 966
+   "answer": 355
   },
   {
    "n": 51,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "just",
-   "prompt": "1603 − 772",
+   "prompt": "1089 − 503",
    "mode": "number",
-   "answer": 831
+   "answer": 586
   },
   {
    "n": 52,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "932 + ▢ = 1258",
+   "prompt": "289 + ▢ = 975",
    "mode": "number",
-   "answer": 326
+   "answer": 686
   },
   {
    "n": 53,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "just",
-   "prompt": "About how much is 890 + 858?",
+   "prompt": "About how much is 494 + 192?",
    "mode": "choice",
-   "answer": "1800",
+   "answer": "700",
    "choices": [
-    "1800",
-    "1900",
-    "1700",
-    "2000"
+    "900",
+    "600",
+    "800",
+    "700"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -577,68 +577,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "just",
-   "prompt": "If 1142 − 549 = 593, what is 593 + 549?",
+   "prompt": "If 797 + 851 = 1648, what is 1648 − 851?",
    "mode": "number",
-   "answer": 1142
+   "answer": 797
   },
   {
    "n": 55,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "Arjun has ₹917 and buys a book for ₹165. How much money is left?",
+   "prompt": "Sara had 134 ladoos. Aarav gave Sara 188 more. How many ladoos does Sara have now?",
    "mode": "number",
-   "answer": 752
+   "answer": 322
   },
   {
    "n": 56,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "A school had 178 crayons. It bought 260 more and gave 13 to another school. How many crayons are left?",
+   "prompt": "Diya had 984 ladoos. Meera gave Diya 284 more, and then Diya gave 367 away. How many ladoos now?",
    "mode": "number",
-   "answer": 425
+   "answer": 901
   },
   {
    "n": 57,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "challenge",
-   "prompt": "352 + 787",
+   "prompt": "527 + 313",
    "mode": "number",
-   "answer": 1139
+   "answer": 840
   },
   {
    "n": 58,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "challenge",
-   "prompt": "958 − 660",
+   "prompt": "940 − 405",
    "mode": "number",
-   "answer": 298
+   "answer": 535
   },
   {
    "n": 59,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "challenge",
-   "prompt": "859 + ▢ = 1127",
+   "prompt": "▢ − 121 = 749",
    "mode": "number",
-   "answer": 268
+   "answer": 870
   },
   {
    "n": 60,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "challenge",
-   "prompt": "About how much is 896 + 285?",
+   "prompt": "About how much is 565 + 219?",
    "mode": "choice",
-   "answer": "1200",
+   "answer": "800",
    "choices": [
-    "1400",
-    "1100",
-    "1200",
-    "1300"
+    "800",
+    "700",
+    "1000",
+    "900"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -647,68 +647,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "challenge",
-   "prompt": "If 440 + 473 = 913, what is 913 − 473?",
+   "prompt": "If 663 − 194 = 469, what is 469 + 194?",
    "mode": "number",
-   "answer": 440
+   "answer": 663
   },
   {
    "n": 62,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "A shop had 947 stickers. It sold 198 of them. How many stickers are still in the shop?",
+   "prompt": "Ishaan had 740 pencils and gave 434 to Ananya. How many pencils are left?",
    "mode": "number",
-   "answer": 749
+   "answer": 306
   },
   {
    "n": 63,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "Ishaan had 470 cricket balls. Meera gave Ishaan 152 more, and then Ishaan gave 277 away. How many cricket balls now?",
+   "prompt": "Ishaan had 696 crayons. Kabir gave Ishaan 331 more, and then Ishaan gave 300 away. How many crayons now?",
    "mode": "number",
-   "answer": 345
+   "answer": 727
   },
   {
    "n": 64,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "easy",
-   "prompt": "32 + 75",
+   "prompt": "28 + 64",
    "mode": "number",
-   "answer": 107
+   "answer": 92
   },
   {
    "n": 65,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "easy",
-   "prompt": "49 − 39",
+   "prompt": "120 − 56",
    "mode": "number",
-   "answer": 10
+   "answer": 64
   },
   {
    "n": 66,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "▢ + 66 = 128",
+   "prompt": "▢ − 60 = 84",
    "mode": "number",
-   "answer": 62
+   "answer": 144
   },
   {
    "n": 67,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "easy",
-   "prompt": "About how much is 25 + 23?",
+   "prompt": "About how much is 80 + 25?",
    "mode": "choice",
-   "answer": "50",
+   "answer": "110",
    "choices": [
-    "40",
-    "70",
-    "60",
-    "50"
+    "120",
+    "130",
+    "100",
+    "110"
    ],
    "note": "Round each number to the nearest 10 first"
   },
@@ -717,68 +717,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "easy",
-   "prompt": "If 51 − 29 = 22, what is 22 + 29?",
+   "prompt": "If 182 − 88 = 94, what is 94 + 88?",
    "mode": "number",
-   "answer": 51
+   "answer": 182
   },
   {
    "n": 69,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "One box has 98 crayons and another box has 45. How many crayons are there altogether?",
+   "prompt": "Vihaan had 45 crayons. Sara gave Vihaan 40 more. How many crayons does Vihaan have now?",
    "mode": "number",
-   "answer": 143
+   "answer": 85
   },
   {
    "n": 70,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "A school had 78 pencils. It bought 30 more and gave 40 to another school. How many pencils are left?",
+   "prompt": "A school had 40 mangoes. It bought 17 more and gave 20 to another school. How many mangoes are left?",
    "mode": "number",
-   "answer": 68
+   "answer": 37
   },
   {
    "n": 71,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "just",
-   "prompt": "765 + 500",
+   "prompt": "977 + 757",
    "mode": "number",
-   "answer": 1265
+   "answer": 1734
   },
   {
    "n": 72,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "just",
-   "prompt": "952 − 112",
+   "prompt": "1605 − 848",
    "mode": "number",
-   "answer": 840
+   "answer": 757
   },
   {
    "n": 73,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "▢ − 462 = 382",
+   "prompt": "▢ + 590 = 914",
    "mode": "number",
-   "answer": 844
+   "answer": 324
   },
   {
    "n": 74,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "just",
-   "prompt": "About how much is 982 + 656?",
+   "prompt": "About how much is 911 + 264?",
    "mode": "choice",
-   "answer": "1700",
+   "answer": "1200",
    "choices": [
-    "1700",
-    "1800",
-    "1600",
-    "1900"
+    "1400",
+    "1300",
+    "1100",
+    "1200"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -787,68 +787,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "just",
-   "prompt": "If 1451 − 764 = 687, what is 687 + 764?",
+   "prompt": "If 1152 − 880 = 272, what is 272 + 880?",
    "mode": "number",
-   "answer": 1451
+   "answer": 1152
   },
   {
    "n": 76,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "Kabir has ₹1062 and buys a book for ₹172. How much money is left?",
+   "prompt": "Aarav has ₹1029 and buys a book for ₹306. How much money is left?",
    "mode": "number",
-   "answer": 890
+   "answer": 723
   },
   {
    "n": 77,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "A school had 761 pencils. It bought 103 more and gave 328 to another school. How many pencils are left?",
+   "prompt": "A bus had 244 people. At the first stop 14 got off and 131 got on. How many people are on the bus now?",
    "mode": "number",
-   "answer": 536
+   "answer": 361
   },
   {
    "n": 78,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "challenge",
-   "prompt": "662 + 125",
+   "prompt": "263 + 862",
    "mode": "number",
-   "answer": 787
+   "answer": 1125
   },
   {
    "n": 79,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "challenge",
-   "prompt": "1349 − 928",
+   "prompt": "1339 − 791",
    "mode": "number",
-   "answer": 421
+   "answer": 548
   },
   {
    "n": 80,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "challenge",
-   "prompt": "760 − ▢ = 447",
+   "prompt": "1250 − ▢ = 523",
    "mode": "number",
-   "answer": 313
+   "answer": 727
   },
   {
    "n": 81,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "challenge",
-   "prompt": "About how much is 663 + 646?",
+   "prompt": "About how much is 492 + 359?",
    "mode": "choice",
-   "answer": "1300",
+   "answer": "900",
    "choices": [
-    "1200",
-    "1500",
-    "1400",
-    "1300"
+    "1000",
+    "1100",
+    "800",
+    "900"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -857,67 +857,67 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "challenge",
-   "prompt": "If 1721 − 770 = 951, what is 951 + 770?",
+   "prompt": "If 179 + 144 = 323, what is 323 − 144?",
    "mode": "number",
-   "answer": 1721
+   "answer": 179
   },
   {
    "n": 83,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "Arjun had 597 pencils and gave 334 to Diya. How many pencils are left?",
+   "prompt": "Diya has ₹1413 and buys a book for ₹443. How much money is left?",
    "mode": "number",
-   "answer": 263
+   "answer": 970
   },
   {
    "n": 84,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "Riya had 421 ladoos. Arjun gave Riya 123 more, and then Riya gave 241 away. How many ladoos now?",
+   "prompt": "A school had 752 mangoes. It bought 194 more and gave 324 to another school. How many mangoes are left?",
    "mode": "number",
-   "answer": 303
+   "answer": 622
   },
   {
    "n": 85,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "easy",
-   "prompt": "72 + 25",
+   "prompt": "62 + 18",
    "mode": "number",
-   "answer": 97
+   "answer": 80
   },
   {
    "n": 86,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "easy",
-   "prompt": "104 − 25",
+   "prompt": "71 − 23",
    "mode": "number",
-   "answer": 79
+   "answer": 48
   },
   {
    "n": 87,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "97 + ▢ = 175",
+   "prompt": "▢ + 27 = 58",
    "mode": "number",
-   "answer": 78
+   "answer": 31
   },
   {
    "n": 88,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "easy",
-   "prompt": "About how much is 99 + 48?",
+   "prompt": "About how much is 84 + 87?",
    "mode": "choice",
-   "answer": "150",
+   "answer": "170",
    "choices": [
-    "140",
-    "150",
     "160",
+    "180",
+    "190",
     "170"
    ],
    "note": "Round each number to the nearest 10 first"
@@ -927,68 +927,68 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "easy",
-   "prompt": "If 119 − 84 = 35, what is 35 + 84?",
+   "prompt": "If 85 − 56 = 29, what is 29 + 56?",
    "mode": "number",
-   "answer": 119
+   "answer": 85
   },
   {
    "n": 90,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "A shop had 61 cricket balls. It sold 35 of them. How many cricket balls are still in the shop?",
+   "prompt": "Meera had 116 mangoes and gave 26 to Ananya. How many mangoes are left?",
    "mode": "number",
-   "answer": 26
+   "answer": 90
   },
   {
    "n": 91,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "Diya had 58 crayons. Arjun gave Diya 10 more, and then Diya gave 34 away. How many crayons now?",
+   "prompt": "Kabir had 83 mangoes. Diya gave Kabir 21 more, and then Kabir gave 5 away. How many mangoes now?",
    "mode": "number",
-   "answer": 34
+   "answer": 99
   },
   {
    "n": 92,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "just",
-   "prompt": "529 + 330",
+   "prompt": "820 + 411",
    "mode": "number",
-   "answer": 859
+   "answer": 1231
   },
   {
    "n": 93,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "just",
-   "prompt": "884 − 421",
+   "prompt": "609 − 469",
    "mode": "number",
-   "answer": 463
+   "answer": 140
   },
   {
    "n": 94,
    "type": "addsub-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "865 + ▢ = 1528",
+   "prompt": "286 + ▢ = 1114",
    "mode": "number",
-   "answer": 663
+   "answer": 828
   },
   {
    "n": 95,
    "type": "addsub-estimate",
    "topic": "Roughly how much?",
    "level": "just",
-   "prompt": "About how much is 673 + 565?",
+   "prompt": "About how much is 879 + 145?",
    "mode": "choice",
-   "answer": "1300",
+   "answer": "1000",
    "choices": [
+    "900",
     "1200",
-    "1300",
-    "1500",
-    "1400"
+    "1100",
+    "1000"
    ],
    "note": "Round each number to the nearest 100 first"
   },
@@ -997,45 +997,45 @@
    "type": "addsub-inverse",
    "topic": "Check it backwards",
    "level": "just",
-   "prompt": "If 1465 − 594 = 871, what is 871 + 594?",
+   "prompt": "If 873 − 611 = 262, what is 262 + 611?",
    "mode": "number",
-   "answer": 1465
+   "answer": 873
   },
   {
    "n": 97,
    "type": "addsub-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "One box has 682 ladoos and another box has 111. How many ladoos are there altogether?",
+   "prompt": "Diya has ₹1220 and buys a book for ₹342. How much money is left?",
    "mode": "number",
-   "answer": 793
+   "answer": 878
   },
   {
    "n": 98,
    "type": "addsub-story-two",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "Meera had 527 cricket balls. Arjun gave Meera 136 more, and then Meera gave 95 away. How many cricket balls now?",
+   "prompt": "A school had 429 mangoes. It bought 289 more and gave 355 to another school. How many mangoes are left?",
    "mode": "number",
-   "answer": 568
+   "answer": 363
   },
   {
    "n": 99,
    "type": "addsub-add",
    "topic": "Adding up",
    "level": "challenge",
-   "prompt": "695 + 348",
+   "prompt": "777 + 347",
    "mode": "number",
-   "answer": 1043
+   "answer": 1124
   },
   {
    "n": 100,
    "type": "addsub-sub",
    "topic": "Taking away",
    "level": "challenge",
-   "prompt": "785 − 140",
+   "prompt": "843 − 112",
    "mode": "number",
-   "answer": 645
+   "answer": 731
   }
  ]
 }

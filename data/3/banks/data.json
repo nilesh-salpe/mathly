@@ -1,0 +1,1210 @@
+{
+ "chapter": "data",
+ "count": 100,
+ "topics": [
+  {
+   "id": "data-tally",
+   "label": "Tally marks",
+   "emoji": "✋"
+  },
+  {
+   "id": "data-tally-draw",
+   "label": "Bundles of five",
+   "emoji": "5️⃣"
+  },
+  {
+   "id": "data-pictograph",
+   "label": "Reading a pictograph",
+   "emoji": "📊"
+  },
+  {
+   "id": "data-total",
+   "label": "Adding up a table",
+   "emoji": "🧮"
+  },
+  {
+   "id": "data-most",
+   "label": "Most and least",
+   "emoji": "🏆"
+  },
+  {
+   "id": "data-difference",
+   "label": "How many more?",
+   "emoji": "↔️"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "easy",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 7,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 116 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 2,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "easy",
+   "prompt": "To tally 17, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    3,
+    2
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "easy",
+   "prompt": "Each 🚲 stands for 2 bikes.  Friday: 🚲 🚲 🚲 🚲 🚲  — how many bikes is that?",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 4,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "easy",
+   "prompt": "Monday: 9 balls, Tuesday: 6, Wednesday: 3. How many balls altogether?",
+   "mode": "number",
+   "answer": 18
+  },
+  {
+   "n": 5,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "easy",
+   "prompt": "Ananya: 5, Riya: 28, Meera: 14 books. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Ananya",
+   "choices": [
+    "Meera",
+    "Riya",
+    "Ananya"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "easy",
+   "prompt": "Ananya has 8 bikes and Riya has 4. How many more does Ananya have?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 7,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "just",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 9,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 138 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 8,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "just",
+   "prompt": "To tally 22, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    4,
+    2
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "just",
+   "prompt": "Each 🚲 stands for 5 bikes.  Wednesday: 🚲 🚲 🚲 🚲 🚲  — how many bikes is that?",
+   "mode": "number",
+   "answer": 25
+  },
+  {
+   "n": 10,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "just",
+   "prompt": "Monday: 7 balls, Tuesday: 28, Wednesday: 28. How many balls altogether?",
+   "mode": "number",
+   "answer": 63
+  },
+  {
+   "n": 11,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "just",
+   "prompt": "Kabir: 26, Riya: 8, Diya: 12 books. Who has the most?",
+   "mode": "choice",
+   "answer": "Kabir",
+   "choices": [
+    "Riya",
+    "Diya",
+    "Kabir"
+   ]
+  },
+  {
+   "n": 12,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "just",
+   "prompt": "Kabir has 24 flowers and Aarav has 13. How many more does Kabir have?",
+   "mode": "number",
+   "answer": 11
+  },
+  {
+   "n": 13,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "challenge",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 35,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 474 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"10\" x2=\"221\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"232\" y1=\"10\" x2=\"232\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"243\" y1=\"10\" x2=\"243\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"48\" x2=\"258\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"276\" y1=\"10\" x2=\"276\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"287\" y1=\"10\" x2=\"287\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"10\" x2=\"298\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"309\" y1=\"10\" x2=\"309\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"272\" y1=\"48\" x2=\"324\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"342\" y1=\"10\" x2=\"342\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"353\" y1=\"10\" x2=\"353\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"364\" y1=\"10\" x2=\"364\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"375\" y1=\"10\" x2=\"375\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"338\" y1=\"48\" x2=\"390\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"408\" y1=\"10\" x2=\"408\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"419\" y1=\"10\" x2=\"419\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"430\" y1=\"10\" x2=\"430\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"441\" y1=\"10\" x2=\"441\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"404\" y1=\"48\" x2=\"456\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 14,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "challenge",
+   "prompt": "To tally 20, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    4,
+    0
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "challenge",
+   "prompt": "Each 📗 stands for 5 books.  Wednesday: 📗 📗 📗 📗  — how many books is that?",
+   "mode": "number",
+   "answer": 20
+  },
+  {
+   "n": 16,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "challenge",
+   "prompt": "Monday: 18 balls, Tuesday: 25, Wednesday: 24. How many balls altogether?",
+   "mode": "number",
+   "answer": 67
+  },
+  {
+   "n": 17,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "challenge",
+   "prompt": "Aarav: 25, Riya: 2, Diya: 12 mangoes. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Riya",
+   "choices": [
+    "Aarav",
+    "Riya",
+    "Diya"
+   ]
+  },
+  {
+   "n": 18,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "challenge",
+   "prompt": "Aarav has 26 balls and Meera has 3. How many more does Aarav have?",
+   "mode": "number",
+   "answer": 23
+  },
+  {
+   "n": 19,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "easy",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 8,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 127 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 20,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "easy",
+   "prompt": "To tally 9, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    1,
+    4
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "easy",
+   "prompt": "Each 🚲 stands for 5 bikes.  Monday: 🚲 🚲 🚲 🚲 🚲 🚲  — how many bikes is that?",
+   "mode": "number",
+   "answer": 30
+  },
+  {
+   "n": 22,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "easy",
+   "prompt": "Monday: 3 balls, Tuesday: 9, Wednesday: 7. How many balls altogether?",
+   "mode": "number",
+   "answer": 19
+  },
+  {
+   "n": 23,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "easy",
+   "prompt": "Riya: 17, Meera: 27, Aarav: 7 books. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Aarav",
+   "choices": [
+    "Meera",
+    "Aarav",
+    "Riya"
+   ]
+  },
+  {
+   "n": 24,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "easy",
+   "prompt": "Diya has 3 balls and Riya has 11. How many more does Riya have?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 25,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "just",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 12,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 182 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 26,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "just",
+   "prompt": "To tally 44, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    8,
+    4
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "just",
+   "prompt": "Each 🌼 stands for 5 flowers.  Thursday: 🌼 🌼  — how many flowers is that?",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 28,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "just",
+   "prompt": "Monday: 2 buses, Tuesday: 14, Wednesday: 15. How many buses altogether?",
+   "mode": "number",
+   "answer": 31
+  },
+  {
+   "n": 29,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "just",
+   "prompt": "Meera: 24, Ananya: 4, Diya: 11 bikes. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Ananya",
+   "choices": [
+    "Ananya",
+    "Diya",
+    "Meera"
+   ]
+  },
+  {
+   "n": 30,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "just",
+   "prompt": "Riya has 38 bikes and Ananya has 7. How many more does Riya have?",
+   "mode": "number",
+   "answer": 31
+  },
+  {
+   "n": 31,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "challenge",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 25,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 342 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"10\" x2=\"221\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"232\" y1=\"10\" x2=\"232\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"243\" y1=\"10\" x2=\"243\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"48\" x2=\"258\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"276\" y1=\"10\" x2=\"276\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"287\" y1=\"10\" x2=\"287\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"10\" x2=\"298\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"309\" y1=\"10\" x2=\"309\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"272\" y1=\"48\" x2=\"324\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 32,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "challenge",
+   "prompt": "To tally 6, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    1,
+    1
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "challenge",
+   "prompt": "Each ⚽ stands for 2 balls.  Wednesday: ⚽ ⚽ ⚽ ⚽ ⚽ ⚽  — how many balls is that?",
+   "mode": "number",
+   "answer": 12
+  },
+  {
+   "n": 34,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "challenge",
+   "prompt": "Monday: 6 bikes, Tuesday: 23, Wednesday: 29. How many bikes altogether?",
+   "mode": "number",
+   "answer": 58
+  },
+  {
+   "n": 35,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "challenge",
+   "prompt": "Kabir: 25, Ananya: 6, Meera: 18 buses. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Ananya",
+   "choices": [
+    "Kabir",
+    "Meera",
+    "Ananya"
+   ]
+  },
+  {
+   "n": 36,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "challenge",
+   "prompt": "Kabir has 26 mangoes and Diya has 14. How many more does Kabir have?",
+   "mode": "number",
+   "answer": 12
+  },
+  {
+   "n": 37,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "easy",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 14,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 204 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 38,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "easy",
+   "prompt": "Each 🚌 stands for 2 buses.  Friday: 🚌 🚌  — how many buses is that?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 39,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "easy",
+   "prompt": "Monday: 5 balls, Tuesday: 8, Wednesday: 6. How many balls altogether?",
+   "mode": "number",
+   "answer": 19
+  },
+  {
+   "n": 40,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "easy",
+   "prompt": "Kabir: 23, Diya: 17, Meera: 3 books. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Meera",
+   "choices": [
+    "Meera",
+    "Diya",
+    "Kabir"
+   ]
+  },
+  {
+   "n": 41,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "easy",
+   "prompt": "Ananya has 7 buses and Aarav has 11. How many more does Aarav have?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 42,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "just",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 15,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 210 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 43,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "just",
+   "prompt": "To tally 42, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    8,
+    2
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "just",
+   "prompt": "Each 📗 stands for 10 books.  Friday: 📗 📗 📗 📗  — how many books is that?",
+   "mode": "number",
+   "answer": 40
+  },
+  {
+   "n": 45,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "just",
+   "prompt": "Monday: 8 mangoes, Tuesday: 2, Wednesday: 22. How many mangoes altogether?",
+   "mode": "number",
+   "answer": 32
+  },
+  {
+   "n": 46,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "just",
+   "prompt": "Ananya: 18, Aarav: 3, Riya: 21 balls. Who has the most?",
+   "mode": "choice",
+   "answer": "Riya",
+   "choices": [
+    "Aarav",
+    "Riya",
+    "Ananya"
+   ]
+  },
+  {
+   "n": 47,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "just",
+   "prompt": "Diya has 35 flowers and Kabir has 29. How many more does Diya have?",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 48,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "challenge",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 17,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 248 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"10\" x2=\"221\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 49,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "challenge",
+   "prompt": "To tally 35, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    7,
+    0
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "challenge",
+   "prompt": "Each 📗 stands for 10 books.  Tuesday: 📗 📗 📗  — how many books is that?",
+   "mode": "number",
+   "answer": 30
+  },
+  {
+   "n": 51,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "challenge",
+   "prompt": "Monday: 19 bikes, Tuesday: 20, Wednesday: 20. How many bikes altogether?",
+   "mode": "number",
+   "answer": 59
+  },
+  {
+   "n": 52,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "challenge",
+   "prompt": "Diya: 20, Riya: 14, Aarav: 6 balls. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Aarav",
+   "choices": [
+    "Aarav",
+    "Riya",
+    "Diya"
+   ]
+  },
+  {
+   "n": 53,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "challenge",
+   "prompt": "Aarav has 36 flowers and Diya has 19. How many more does Aarav have?",
+   "mode": "number",
+   "answer": 17
+  },
+  {
+   "n": 54,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "easy",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 13,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 193 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 55,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "easy",
+   "prompt": "To tally 13, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    2,
+    3
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "easy",
+   "prompt": "Each 🚌 stands for 5 buses.  Tuesday: 🚌 🚌  — how many buses is that?",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 57,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "easy",
+   "prompt": "Monday: 8 flowers, Tuesday: 9, Wednesday: 7. How many flowers altogether?",
+   "mode": "number",
+   "answer": 24
+  },
+  {
+   "n": 58,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "easy",
+   "prompt": "Diya: 14, Aarav: 21, Riya: 9 bikes. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Riya",
+   "choices": [
+    "Riya",
+    "Aarav",
+    "Diya"
+   ]
+  },
+  {
+   "n": 59,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "easy",
+   "prompt": "Ananya has 2 flowers and Diya has 11. How many more does Diya have?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 60,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "just",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 24,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 336 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"10\" x2=\"221\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"232\" y1=\"10\" x2=\"232\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"243\" y1=\"10\" x2=\"243\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"48\" x2=\"258\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"276\" y1=\"10\" x2=\"276\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"287\" y1=\"10\" x2=\"287\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"10\" x2=\"298\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"309\" y1=\"10\" x2=\"309\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 61,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "just",
+   "prompt": "Each 🥭 stands for 10 mangoes.  Monday: 🥭 🥭 🥭 🥭 🥭 🥭  — how many mangoes is that?",
+   "mode": "number",
+   "answer": 60
+  },
+  {
+   "n": 62,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "just",
+   "prompt": "Monday: 26 flowers, Tuesday: 22, Wednesday: 6. How many flowers altogether?",
+   "mode": "number",
+   "answer": 54
+  },
+  {
+   "n": 63,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "just",
+   "prompt": "Aarav: 12, Riya: 29, Diya: 9 bikes. Who has the most?",
+   "mode": "choice",
+   "answer": "Riya",
+   "choices": [
+    "Riya",
+    "Aarav",
+    "Diya"
+   ]
+  },
+  {
+   "n": 64,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "just",
+   "prompt": "Diya has 21 mangoes and Meera has 40. How many more does Meera have?",
+   "mode": "number",
+   "answer": 19
+  },
+  {
+   "n": 65,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "challenge",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 11,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 171 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 66,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "challenge",
+   "prompt": "To tally 39, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    7,
+    4
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 67,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "challenge",
+   "prompt": "Each 🥭 stands for 10 mangoes.  Friday: 🥭 🥭 🥭 🥭  — how many mangoes is that?",
+   "mode": "number",
+   "answer": 40
+  },
+  {
+   "n": 68,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "challenge",
+   "prompt": "Monday: 16 buses, Tuesday: 23, Wednesday: 18. How many buses altogether?",
+   "mode": "number",
+   "answer": 57
+  },
+  {
+   "n": 69,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "challenge",
+   "prompt": "Diya: 5, Riya: 20, Aarav: 11 flowers. Who has the most?",
+   "mode": "choice",
+   "answer": "Riya",
+   "choices": [
+    "Aarav",
+    "Diya",
+    "Riya"
+   ]
+  },
+  {
+   "n": 70,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "challenge",
+   "prompt": "Diya has 18 mangoes and Kabir has 10. How many more does Diya have?",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 71,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "easy",
+   "prompt": "To tally 8, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    1,
+    3
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 72,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "easy",
+   "prompt": "Each 🌼 stands for 5 flowers.  Friday: 🌼 🌼 🌼 🌼  — how many flowers is that?",
+   "mode": "number",
+   "answer": 20
+  },
+  {
+   "n": 73,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "easy",
+   "prompt": "Monday: 8 balls, Tuesday: 3, Wednesday: 9. How many balls altogether?",
+   "mode": "number",
+   "answer": 20
+  },
+  {
+   "n": 74,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "easy",
+   "prompt": "Kabir: 23, Meera: 2, Aarav: 15 balls. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Meera",
+   "choices": [
+    "Meera",
+    "Aarav",
+    "Kabir"
+   ]
+  },
+  {
+   "n": 75,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "easy",
+   "prompt": "Ananya has 7 balls and Diya has 11. How many more does Diya have?",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 76,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "just",
+   "prompt": "To tally 12, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    2,
+    2
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 77,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "just",
+   "prompt": "Each 🌼 stands for 10 flowers.  Wednesday: 🌼 🌼 🌼 🌼 🌼  — how many flowers is that?",
+   "mode": "number",
+   "answer": 50
+  },
+  {
+   "n": 78,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "just",
+   "prompt": "Monday: 12 balls, Tuesday: 19, Wednesday: 27. How many balls altogether?",
+   "mode": "number",
+   "answer": 58
+  },
+  {
+   "n": 79,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "just",
+   "prompt": "Kabir: 5, Meera: 14, Ananya: 20 books. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Kabir",
+   "choices": [
+    "Kabir",
+    "Meera",
+    "Ananya"
+   ]
+  },
+  {
+   "n": 80,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "just",
+   "prompt": "Diya has 9 books and Meera has 24. How many more does Meera have?",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 81,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "challenge",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 36,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 501 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"10\" x2=\"221\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"232\" y1=\"10\" x2=\"232\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"243\" y1=\"10\" x2=\"243\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"48\" x2=\"258\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"276\" y1=\"10\" x2=\"276\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"287\" y1=\"10\" x2=\"287\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"10\" x2=\"298\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"309\" y1=\"10\" x2=\"309\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"272\" y1=\"48\" x2=\"324\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"342\" y1=\"10\" x2=\"342\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"353\" y1=\"10\" x2=\"353\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"364\" y1=\"10\" x2=\"364\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"375\" y1=\"10\" x2=\"375\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"338\" y1=\"48\" x2=\"390\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"408\" y1=\"10\" x2=\"408\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"419\" y1=\"10\" x2=\"419\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"430\" y1=\"10\" x2=\"430\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"441\" y1=\"10\" x2=\"441\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"404\" y1=\"48\" x2=\"456\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"474\" y1=\"10\" x2=\"474\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 82,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "challenge",
+   "prompt": "To tally 11, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    2,
+    1
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 83,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "challenge",
+   "prompt": "Each 🥭 stands for 5 mangoes.  Wednesday: 🥭 🥭 🥭 🥭 🥭 🥭  — how many mangoes is that?",
+   "mode": "number",
+   "answer": 30
+  },
+  {
+   "n": 84,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "challenge",
+   "prompt": "Monday: 22 bikes, Tuesday: 5, Wednesday: 23. How many bikes altogether?",
+   "mode": "number",
+   "answer": 50
+  },
+  {
+   "n": 85,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "challenge",
+   "prompt": "Riya: 22, Aarav: 13, Diya: 8 bikes. Who has the most?",
+   "mode": "choice",
+   "answer": "Riya",
+   "choices": [
+    "Diya",
+    "Aarav",
+    "Riya"
+   ]
+  },
+  {
+   "n": 86,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "challenge",
+   "prompt": "Ananya has 2 mangoes and Kabir has 5. How many more does Kabir have?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 87,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "easy",
+   "prompt": "Each 🚲 stands for 5 bikes.  Thursday: 🚲 🚲 🚲 🚲 🚲 🚲  — how many bikes is that?",
+   "mode": "number",
+   "answer": 30
+  },
+  {
+   "n": 88,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "easy",
+   "prompt": "Monday: 4 flowers, Tuesday: 4, Wednesday: 7. How many flowers altogether?",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 89,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "easy",
+   "prompt": "Ananya: 21, Riya: 7, Kabir: 19 flowers. Who has the most?",
+   "mode": "choice",
+   "answer": "Ananya",
+   "choices": [
+    "Riya",
+    "Ananya",
+    "Kabir"
+   ]
+  },
+  {
+   "n": 90,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "easy",
+   "prompt": "Riya has 11 flowers and Ananya has 5. How many more does Riya have?",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 91,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "just",
+   "prompt": "Each 🚌 stands for 2 buses.  Tuesday: 🚌 🚌 🚌  — how many buses is that?",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 92,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "just",
+   "prompt": "Monday: 15 buses, Tuesday: 26, Wednesday: 24. How many buses altogether?",
+   "mode": "number",
+   "answer": 65
+  },
+  {
+   "n": 93,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "just",
+   "prompt": "Riya: 11, Aarav: 2, Ananya: 30 buses. Who has the fewest?",
+   "mode": "choice",
+   "answer": "Aarav",
+   "choices": [
+    "Ananya",
+    "Aarav",
+    "Riya"
+   ]
+  },
+  {
+   "n": 94,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "just",
+   "prompt": "Aarav has 13 flowers and Meera has 26. How many more does Meera have?",
+   "mode": "number",
+   "answer": 13
+  },
+  {
+   "n": 95,
+   "type": "data-tally",
+   "topic": "Tally marks",
+   "level": "challenge",
+   "prompt": "How many does this tally show?",
+   "mode": "number",
+   "answer": 34,
+   "note": "Each crossed bundle is 5",
+   "picture": "<svg viewBox=\"0 0 468 62\" role=\"img\" aria-label=\"tally marks\"><line x1=\"12\" y1=\"10\" x2=\"12\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"10\" x2=\"23\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"10\" x2=\"34\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"48\" x2=\"60\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"10\" x2=\"78\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"89\" y1=\"10\" x2=\"89\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"10\" x2=\"111\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"48\" x2=\"126\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"10\" x2=\"144\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"155\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"10\" x2=\"166\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"10\" x2=\"177\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"48\" x2=\"192\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"10\" x2=\"221\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"232\" y1=\"10\" x2=\"232\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"243\" y1=\"10\" x2=\"243\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"48\" x2=\"258\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"276\" y1=\"10\" x2=\"276\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"287\" y1=\"10\" x2=\"287\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"298\" y1=\"10\" x2=\"298\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"309\" y1=\"10\" x2=\"309\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"272\" y1=\"48\" x2=\"324\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"342\" y1=\"10\" x2=\"342\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"353\" y1=\"10\" x2=\"353\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"364\" y1=\"10\" x2=\"364\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"375\" y1=\"10\" x2=\"375\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"338\" y1=\"48\" x2=\"390\" y2=\"14\" stroke=\"#c9457e\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"408\" y1=\"10\" x2=\"408\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"419\" y1=\"10\" x2=\"419\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"430\" y1=\"10\" x2=\"430\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"441\" y1=\"10\" x2=\"441\" y2=\"52\" stroke=\"#3d3450\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  {
+   "n": 96,
+   "type": "data-tally-draw",
+   "topic": "Bundles of five",
+   "level": "challenge",
+   "prompt": "To tally 15, how many full bundles of 5 and how many single marks?",
+   "mode": "multi",
+   "answer": [
+    3,
+    0
+   ],
+   "fields": [
+    {
+     "label": "bundles"
+    },
+    {
+     "label": "singles"
+    }
+   ]
+  },
+  {
+   "n": 97,
+   "type": "data-pictograph",
+   "topic": "Reading a pictograph",
+   "level": "challenge",
+   "prompt": "Each 🌼 stands for 2 flowers.  Tuesday: 🌼 🌼 🌼 🌼 🌼 🌼  — how many flowers is that?",
+   "mode": "number",
+   "answer": 12
+  },
+  {
+   "n": 98,
+   "type": "data-total",
+   "topic": "Adding up a table",
+   "level": "challenge",
+   "prompt": "Monday: 22 balls, Tuesday: 17, Wednesday: 12. How many balls altogether?",
+   "mode": "number",
+   "answer": 51
+  },
+  {
+   "n": 99,
+   "type": "data-most",
+   "topic": "Most and least",
+   "level": "challenge",
+   "prompt": "Riya: 7, Diya: 30, Kabir: 14 books. Who has the most?",
+   "mode": "choice",
+   "answer": "Diya",
+   "choices": [
+    "Kabir",
+    "Diya",
+    "Riya"
+   ]
+  },
+  {
+   "n": 100,
+   "type": "data-difference",
+   "topic": "How many more?",
+   "level": "challenge",
+   "prompt": "Kabir has 38 balls and Meera has 18. How many more does Kabir have?",
+   "mode": "number",
+   "answer": 20
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+  "grades": [
+    {
+      "id": "1",
+      "title": "Class 1",
+      "emoji": "1️⃣",
+      "tint": 1,
+      "ready": false,
+      "text": "Numbers to 100, counting, adding and taking away small numbers, shapes around us.",
+      "meta": "Coming soon… 🚧"
+    },
+    {
+      "id": "2",
+      "title": "Class 2",
+      "emoji": "2️⃣",
+      "tint": 4,
+      "ready": false,
+      "text": "Numbers to 1000, tens and ones, tables of 2, 5 and 10, money and simple measures.",
+      "meta": "Coming soon… 🚧"
+    },
+    {
+      "id": "3",
+      "title": "Class 3",
+      "emoji": "3️⃣",
+      "tint": 2,
+      "ready": true,
+      "href": "3/index.html",
+      "text": "The whole CBSE Class 3 year — place value, adding and taking away, times and sharing, fractions, money, measurement, time, shapes, data handling and word problems.",
+      "meta": "12 chapters · 16 lessons · 71 kinds of question · 1100 banked questions"
+    },
+    {
+      "id": "4",
+      "title": "Class 4",
+      "emoji": "4️⃣",
+      "tint": 3,
+      "ready": false,
+      "text": "Numbers to 100000, long multiplication and division, factors, decimals, perimeter and area.",
+      "meta": "Coming soon… 🚧"
+    },
+    {
+      "id": "5",
+      "title": "Class 5",
+      "emoji": "5️⃣",
+      "tint": 5,
+      "ready": false,
+      "text": "Decimals and percentages, fractions of fractions, volume, averages and data.",
+      "meta": "Coming soon… 🚧"
+    }
+  ]
+}

@@ -49,28 +49,27 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "easy",
-   "prompt": "Ishaan has 54 rupees and Sara has 28 rupees. How many more rupees does Ishaan have?",
+   "prompt": "There were 25 people on a train. At the next station 39 more got on. How many people are on the train now?",
    "mode": "number",
-   "answer": 26,
-   "unit": "₹"
+   "answer": 64
   },
   {
    "n": 2,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "easy",
-   "prompt": "A classroom has 2 rows of chairs with 2 chairs in each row. How many chairs are there?",
+   "prompt": "10 crayons are shared equally between 2 children. How many does each child get?",
    "mode": "number",
-   "answer": 4
+   "answer": 5
   },
   {
    "n": 3,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "easy",
-   "prompt": "A pencil costs ₹66. You pay ₹150. How much change do you get?",
+   "prompt": "A boy had ₹34 and spent ₹14 at the school fair. How much is left?",
    "mode": "number",
-   "answer": 84,
+   "answer": 20,
    "unit": "₹"
   },
   {
@@ -78,9 +77,9 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "easy",
-   "prompt": "A sack holds 2 kg of rice. How many kilograms in 4 sacks?",
+   "prompt": "A sack holds 5 kg of rice. How many kilograms in 4 sacks?",
    "mode": "number",
-   "answer": 8,
+   "answer": 20,
    "unit": "kg"
   },
   {
@@ -88,38 +87,37 @@
    "type": "wp-time",
    "topic": "Time stories",
    "level": "easy",
-   "prompt": "A class starts at 9:05 and finishes at 9:30. How many minutes long is the class?",
+   "prompt": "The holidays last 3 weeks and 6 days. How many days is that?",
    "mode": "number",
-   "answer": 25,
-   "unit": "minutes"
+   "answer": 27,
+   "unit": "days"
   },
   {
    "n": 6,
    "type": "wp-fraction",
    "topic": "Fraction stories",
    "level": "easy",
-   "prompt": "A basket holds 20 pencils. One quarter of them are given away. How many are given away?",
+   "prompt": "There are 20 balloons in a box. One quarter of them are broken. How many are not broken?",
    "mode": "number",
-   "answer": 5
+   "answer": 15
   },
   {
    "n": 7,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "A girl buys 2 balls at ₹22 each and pays with ₹98. How much change does she get?",
+   "prompt": "5 boxes hold 5 eggs each. 5 eggs break. How many good eggs are left?",
    "mode": "number",
-   "answer": 54,
-   "unit": "₹"
+   "answer": 20
   },
   {
    "n": 8,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "easy",
-   "prompt": "A shop had 10 pencils and sold 15. How many are left? Which sum would you do?",
+   "prompt": "5 balloons are shared equally between 4 children. How many each? Which sum would you do?",
    "mode": "choice",
-   "answer": "Take away",
+   "answer": "Share",
    "choices": [
     "Add",
     "Take away",
@@ -133,27 +131,28 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "just",
-   "prompt": "Diya collected 291 ladoos and Ishaan collected 111. How many ladoos do they have altogether?",
+   "prompt": "Arjun has 291 rupees and Riya has 22 rupees. How many more rupees does Arjun have?",
    "mode": "number",
-   "answer": 402
+   "answer": 269,
+   "unit": "₹"
   },
   {
    "n": 10,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "just",
-   "prompt": "A classroom has 8 rows of chairs with 3 chairs in each row. How many chairs are there?",
+   "prompt": "32 crayons are shared equally between 4 children. How many does each child get?",
    "mode": "number",
-   "answer": 24
+   "answer": 8
   },
   {
    "n": 11,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "just",
-   "prompt": "Vihaan saves ₹18 every week. How much money after 3 weeks?",
+   "prompt": "A boy had ₹248 and spent ₹9 at the school fair. How much is left?",
    "mode": "number",
-   "answer": 54,
+   "answer": 239,
    "unit": "₹"
   },
   {
@@ -161,9 +160,9 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "just",
-   "prompt": "A ribbon is 6 m long. 28 cm is cut off. How many centimetres of ribbon are left?",
+   "prompt": "A ribbon is 3 m long. 25 cm is cut off. How many centimetres of ribbon are left?",
    "mode": "number",
-   "answer": 572,
+   "answer": 275,
    "unit": "cm"
   },
   {
@@ -171,37 +170,37 @@
    "type": "wp-time",
    "topic": "Time stories",
    "level": "just",
-   "prompt": "The holidays last 7 weeks and 2 days. How many days is that?",
+   "prompt": "A girl practises the tabla for 20 minutes a day. How many minutes in 4 days?",
    "mode": "number",
-   "answer": 51,
-   "unit": "days"
+   "answer": 80,
+   "unit": "minutes"
   },
   {
    "n": 14,
    "type": "wp-fraction",
    "topic": "Fraction stories",
    "level": "just",
-   "prompt": "There are 6 story books in a box. Half of them are broken. How many are not broken?",
+   "prompt": "There are 8 ladoos in a box. Half of them are broken. How many are not broken?",
    "mode": "number",
-   "answer": 3
+   "answer": 4
   },
   {
    "n": 15,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "Vihaan had 261 ladoos, was given 67 more by Arjun, then gave 106 away. How many ladoos now?",
+   "prompt": "Sara had 157 story books, was given 101 more by Ananya, then gave 96 away. How many story books now?",
    "mode": "number",
-   "answer": 222
+   "answer": 162
   },
   {
    "n": 16,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "just",
-   "prompt": "215 ladoos are shared equally between 7 children. How many each? Which sum would you do?",
+   "prompt": "8 boxes hold 5 mangoes each. How many in total? Which sum would you do?",
    "mode": "choice",
-   "answer": "Share",
+   "answer": "Times",
    "choices": [
     "Add",
     "Take away",
@@ -215,27 +214,28 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "challenge",
-   "prompt": "A shop had 807 story books in the morning and sold 312 during the day. How many story books are left?",
+   "prompt": "Arjun has 1380 rupees and Riya has 881 rupees. How many more rupees does Arjun have?",
    "mode": "number",
-   "answer": 495
+   "answer": 499,
+   "unit": "₹"
   },
   {
    "n": 18,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "challenge",
-   "prompt": "14 ladoos are shared equally between 7 children. How many does each child get?",
+   "prompt": "A shopkeeper packs 8 crayons into each box and fills 3 boxes. How many crayons is that?",
    "mode": "number",
-   "answer": 2
+   "answer": 24
   },
   {
    "n": 19,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "challenge",
-   "prompt": "A ball costs ₹51. You pay ₹150. How much change do you get?",
+   "prompt": "A kite costs ₹48. You pay ₹100. How much change do you get?",
    "mode": "number",
-   "answer": 99,
+   "answer": 52,
    "unit": "₹"
   },
   {
@@ -243,45 +243,45 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "challenge",
-   "prompt": "A glass holds 200 ml of milk. How many millilitres in 2 glasses?",
+   "prompt": "A ribbon is 2 m long. 77 cm is cut off. How many centimetres of ribbon are left?",
    "mode": "number",
-   "answer": 400,
-   "unit": "ml"
+   "answer": 123,
+   "unit": "cm"
   },
   {
    "n": 21,
    "type": "wp-time",
    "topic": "Time stories",
    "level": "challenge",
-   "prompt": "The holidays last 2 weeks and 5 days. How many days is that?",
+   "prompt": "A girl practises the tabla for 30 minutes a day. How many minutes in 4 days?",
    "mode": "number",
-   "answer": 19,
-   "unit": "days"
+   "answer": 120,
+   "unit": "minutes"
   },
   {
    "n": 22,
    "type": "wp-fraction",
    "topic": "Fraction stories",
    "level": "challenge",
-   "prompt": "There are 16 pencils in a box. Half of them are broken. How many are not broken?",
+   "prompt": "A basket holds 27 marbles. One third of them are given away. How many are given away?",
    "mode": "number",
-   "answer": 8
+   "answer": 9
   },
   {
    "n": 23,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "Diya had 450 pencils, was given 724 more by Ishaan, then gave 408 away. How many pencils now?",
+   "prompt": "Arjun had 811 mangoes, was given 272 more by Ananya, then gave 441 away. How many mangoes now?",
    "mode": "number",
-   "answer": 766
+   "answer": 642
   },
   {
    "n": 24,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "challenge",
-   "prompt": "3 boxes hold 7 mangoes each. How many in total? Which sum would you do?",
+   "prompt": "9 boxes hold 3 ladoos each. How many in total? Which sum would you do?",
    "mode": "choice",
    "answer": "Times",
    "choices": [
@@ -297,28 +297,27 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "easy",
-   "prompt": "Aarav has 56 rupees and Kabir has 35 rupees. How many more rupees does Aarav have?",
+   "prompt": "A shop had 44 marbles in the morning and sold 29 during the day. How many marbles are left?",
    "mode": "number",
-   "answer": 21,
-   "unit": "₹"
+   "answer": 15
   },
   {
    "n": 26,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "easy",
-   "prompt": "A classroom has 3 rows of chairs with 3 chairs in each row. How many chairs are there?",
+   "prompt": "6 balloons are shared equally between 3 children. How many does each child get?",
    "mode": "number",
-   "answer": 9
+   "answer": 2
   },
   {
    "n": 27,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "easy",
-   "prompt": "A boy had ₹66 and spent ₹30 at the school fair. How much is left?",
+   "prompt": "Vihaan saves ₹35 every week. How much money after 3 weeks?",
    "mode": "number",
-   "answer": 36,
+   "answer": 105,
    "unit": "₹"
   },
   {
@@ -326,19 +325,19 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "easy",
-   "prompt": "A ribbon is 2 m long. 69 cm is cut off. How many centimetres of ribbon are left?",
+   "prompt": "A sack holds 3 kg of rice. How many kilograms in 2 sacks?",
    "mode": "number",
-   "answer": 131,
-   "unit": "cm"
+   "answer": 6,
+   "unit": "kg"
   },
   {
    "n": 29,
    "type": "wp-time",
    "topic": "Time stories",
    "level": "easy",
-   "prompt": "A girl practises the tabla for 15 minutes a day. How many minutes in 4 days?",
+   "prompt": "A journey takes 4 hours. How many minutes is that?",
    "mode": "number",
-   "answer": 60,
+   "answer": 240,
    "unit": "minutes"
   },
   {
@@ -346,18 +345,18 @@
    "type": "wp-fraction",
    "topic": "Fraction stories",
    "level": "easy",
-   "prompt": "A basket holds 8 stickers. One quarter of them are given away. How many are given away?",
+   "prompt": "A cake is cut into 4 equal pieces and 3 pieces are eaten. How many pieces are left?",
    "mode": "number",
-   "answer": 2
+   "answer": 1
   },
   {
    "n": 31,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "A girl buys 4 notebooks at ₹40 each and pays with ₹178. How much change does she get?",
+   "prompt": "A girl buys 2 pencils at ₹27 each and pays with ₹89. How much change does she get?",
    "mode": "number",
-   "answer": 18,
+   "answer": 35,
    "unit": "₹"
   },
   {
@@ -365,9 +364,9 @@
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "easy",
-   "prompt": "37 crayons are shared equally between 4 children. How many each? Which sum would you do?",
+   "prompt": "Arjun has 27 pencils and is given 40 more. How many altogether? Which sum would you do?",
    "mode": "choice",
-   "answer": "Share",
+   "answer": "Add",
    "choices": [
     "Add",
     "Take away",
@@ -381,27 +380,27 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "just",
-   "prompt": "A shop had 334 ladoos in the morning and sold 205 during the day. How many ladoos are left?",
+   "prompt": "A shop had 319 marbles in the morning and sold 183 during the day. How many marbles are left?",
    "mode": "number",
-   "answer": 129
+   "answer": 136
   },
   {
    "n": 34,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "just",
-   "prompt": "A classroom has 8 rows of chairs with 8 chairs in each row. How many chairs are there?",
+   "prompt": "A shopkeeper packs 4 story books into each box and fills 3 boxes. How many story books is that?",
    "mode": "number",
-   "answer": 64
+   "answer": 12
   },
   {
    "n": 35,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "just",
-   "prompt": "A boy had ₹208 and spent ₹17 at the school fair. How much is left?",
+   "prompt": "A boy had ₹69 and spent ₹37 at the school fair. How much is left?",
    "mode": "number",
-   "answer": 191,
+   "answer": 32,
    "unit": "₹"
   },
   {
@@ -409,7 +408,7 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "just",
-   "prompt": "A glass holds 150 ml of milk. How many millilitres in 8 glasses?",
+   "prompt": "A glass holds 200 ml of milk. How many millilitres in 6 glasses?",
    "mode": "number",
    "answer": 1200,
    "unit": "ml"
@@ -419,9 +418,9 @@
    "type": "wp-time",
    "topic": "Time stories",
    "level": "just",
-   "prompt": "A journey takes 5 hours. How many minutes is that?",
+   "prompt": "A class starts at 8:30 and finishes at 9:05. How many minutes long is the class?",
    "mode": "number",
-   "answer": 300,
+   "answer": 35,
    "unit": "minutes"
   },
   {
@@ -438,18 +437,18 @@
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "Sara had 112 ladoos, was given 53 more by Meera, then gave 20 away. How many ladoos now?",
+   "prompt": "6 boxes hold 8 eggs each. 44 eggs break. How many good eggs are left?",
    "mode": "number",
-   "answer": 145
+   "answer": 4
   },
   {
    "n": 40,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "just",
-   "prompt": "Aarav has 241 ladoos and is given 266 more. How many altogether? Which sum would you do?",
+   "prompt": "7 boxes hold 7 balloons each. How many in total? Which sum would you do?",
    "mode": "choice",
-   "answer": "Add",
+   "answer": "Times",
    "choices": [
     "Add",
     "Take away",
@@ -463,27 +462,27 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "challenge",
-   "prompt": "Sara collected 576 stickers and Riya collected 480. How many stickers do they have altogether?",
+   "prompt": "A shop had 1567 stickers in the morning and sold 796 during the day. How many stickers are left?",
    "mode": "number",
-   "answer": 1056
+   "answer": 771
   },
   {
    "n": 42,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "challenge",
-   "prompt": "A classroom has 9 rows of chairs with 3 chairs in each row. How many chairs are there?",
+   "prompt": "14 pencils are shared equally between 7 children. How many does each child get?",
    "mode": "number",
-   "answer": 27
+   "answer": 2
   },
   {
    "n": 43,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "challenge",
-   "prompt": "Ananya saves ₹8 every week. How much money after 2 weeks?",
+   "prompt": "A boy had ₹920 and spent ₹38 at the school fair. How much is left?",
    "mode": "number",
-   "answer": 16,
+   "answer": 882,
    "unit": "₹"
   },
   {
@@ -491,45 +490,46 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "challenge",
-   "prompt": "A sack holds 2 kg of rice. How many kilograms in 7 sacks?",
+   "prompt": "A jug holds 4 litres of juice. 770 ml is poured out. How many millilitres are left?",
    "mode": "number",
-   "answer": 14,
-   "unit": "kg"
+   "answer": 3230,
+   "unit": "ml"
   },
   {
    "n": 45,
    "type": "wp-time",
    "topic": "Time stories",
    "level": "challenge",
-   "prompt": "The holidays last 2 weeks and 3 days. How many days is that?",
+   "prompt": "A girl practises the tabla for 20 minutes a day. How many minutes in 5 days?",
    "mode": "number",
-   "answer": 17,
-   "unit": "days"
+   "answer": 100,
+   "unit": "minutes"
   },
   {
    "n": 46,
    "type": "wp-fraction",
    "topic": "Fraction stories",
    "level": "challenge",
-   "prompt": "There are 24 stickers in a box. One quarter of them are broken. How many are not broken?",
+   "prompt": "There are 12 marbles in a box. One quarter of them are broken. How many are not broken?",
    "mode": "number",
-   "answer": 18
+   "answer": 9
   },
   {
    "n": 47,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "2 boxes hold 5 eggs each. 3 eggs break. How many good eggs are left?",
+   "prompt": "A girl buys 9 chocolates at ₹12 each and pays with ₹140. How much change does she get?",
    "mode": "number",
-   "answer": 7
+   "answer": 32,
+   "unit": "₹"
   },
   {
    "n": 48,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "challenge",
-   "prompt": "A shop had 898 marbles and sold 308. How many are left? Which sum would you do?",
+   "prompt": "A shop had 325 marbles and sold 246. How many are left? Which sum would you do?",
    "mode": "choice",
    "answer": "Take away",
    "choices": [
@@ -545,27 +545,28 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "easy",
-   "prompt": "There were 12 people on a train. At the next station 19 more got on. How many people are on the train now?",
+   "prompt": "Riya has 61 rupees and Vihaan has 28 rupees. How many more rupees does Riya have?",
    "mode": "number",
-   "answer": 31
+   "answer": 33,
+   "unit": "₹"
   },
   {
    "n": 50,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "easy",
-   "prompt": "Meera reads 4 pages every day. How many pages in 2 days?",
+   "prompt": "A shopkeeper packs 3 marbles into each box and fills 5 boxes. How many marbles is that?",
    "mode": "number",
-   "answer": 8
+   "answer": 15
   },
   {
    "n": 51,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "easy",
-   "prompt": "Vihaan buys 3 notebooks at ₹18 each. What is the total cost?",
+   "prompt": "Meera saves ₹37 every week. How much money after 2 weeks?",
    "mode": "number",
-   "answer": 54,
+   "answer": 74,
    "unit": "₹"
   },
   {
@@ -573,27 +574,27 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "easy",
-   "prompt": "A jug holds 2 litres of juice. 367 ml is poured out. How many millilitres are left?",
+   "prompt": "A ribbon is 3 m long. 31 cm is cut off. How many centimetres of ribbon are left?",
    "mode": "number",
-   "answer": 1633,
-   "unit": "ml"
+   "answer": 269,
+   "unit": "cm"
   },
   {
    "n": 53,
    "type": "wp-time",
    "topic": "Time stories",
    "level": "easy",
-   "prompt": "The holidays last 5 weeks and 4 days. How many days is that?",
+   "prompt": "A girl practises the tabla for 30 minutes a day. How many minutes in 5 days?",
    "mode": "number",
-   "answer": 39,
-   "unit": "days"
+   "answer": 150,
+   "unit": "minutes"
   },
   {
    "n": 54,
    "type": "wp-fraction",
    "topic": "Fraction stories",
    "level": "easy",
-   "prompt": "A cake is cut into 4 equal pieces and 2 pieces are eaten. How many pieces are left?",
+   "prompt": "A basket holds 6 crayons. One third of them are given away. How many are given away?",
    "mode": "number",
    "answer": 2
   },
@@ -602,16 +603,17 @@
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "Kabir had 20 marbles, was given 32 more by Ananya, then gave 21 away. How many marbles now?",
+   "prompt": "A girl buys 3 chocolates at ₹15 each and pays with ₹74. How much change does she get?",
    "mode": "number",
-   "answer": 31
+   "answer": 29,
+   "unit": "₹"
   },
   {
    "n": 56,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "easy",
-   "prompt": "Kabir has 23 ladoos and is given 36 more. How many altogether? Which sum would you do?",
+   "prompt": "Arjun has 34 stickers and is given 26 more. How many altogether? Which sum would you do?",
    "mode": "choice",
    "answer": "Add",
    "choices": [
@@ -627,220 +629,157 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "just",
-   "prompt": "A shop had 294 story books in the morning and sold 66 during the day. How many story books are left?",
+   "prompt": "Meera collected 68 pencils and Sara collected 22. How many pencils do they have altogether?",
    "mode": "number",
-   "answer": 228
+   "answer": 90
   },
   {
    "n": 58,
-   "type": "wp-money",
-   "topic": "Money stories",
+   "type": "wp-groups",
+   "topic": "Groups and sharing",
    "level": "just",
-   "prompt": "A boy had ₹114 and spent ₹23 at the school fair. How much is left?",
+   "prompt": "A shopkeeper packs 7 mangoes into each box and fills 8 boxes. How many mangoes is that?",
    "mode": "number",
-   "answer": 91,
-   "unit": "₹"
+   "answer": 56
   },
   {
    "n": 59,
-   "type": "wp-measure",
-   "topic": "Measuring stories",
+   "type": "wp-money",
+   "topic": "Money stories",
    "level": "just",
-   "prompt": "A glass holds 200 ml of milk. How many millilitres in 4 glasses?",
+   "prompt": "Vihaan saves ₹19 every week. How much money after 3 weeks?",
    "mode": "number",
-   "answer": 800,
-   "unit": "ml"
+   "answer": 57,
+   "unit": "₹"
   },
   {
    "n": 60,
-   "type": "wp-time",
-   "topic": "Time stories",
-   "level": "just",
-   "prompt": "A journey takes 4 hours. How many minutes is that?",
-   "mode": "number",
-   "answer": 240,
-   "unit": "minutes"
-  },
-  {
-   "n": 61,
-   "type": "wp-fraction",
-   "topic": "Fraction stories",
-   "level": "just",
-   "prompt": "A basket holds 10 stickers. Half of them are given away. How many are given away?",
-   "mode": "number",
-   "answer": 5
-  },
-  {
-   "n": 62,
-   "type": "wp-twostep",
-   "topic": "Two-step stories",
-   "level": "just",
-   "prompt": "Riya had 22 story books, was given 144 more by Diya, then gave 66 away. How many story books now?",
-   "mode": "number",
-   "answer": 100
-  },
-  {
-   "n": 63,
-   "type": "wp-choose",
-   "topic": "Which sum is it?",
-   "level": "just",
-   "prompt": "278 pencils are shared equally between 2 children. How many each? Which sum would you do?",
-   "mode": "choice",
-   "answer": "Share",
-   "choices": [
-    "Add",
-    "Take away",
-    "Times",
-    "Share"
-   ],
-   "note": "You do not have to work it out — just choose the kind of sum"
-  },
-  {
-   "n": 64,
-   "type": "wp-joining",
-   "topic": "Joining and leaving",
-   "level": "challenge",
-   "prompt": "Vihaan has 422 rupees and Sara has 126 rupees. How many more rupees does Vihaan have?",
-   "mode": "number",
-   "answer": 296,
-   "unit": "₹"
-  },
-  {
-   "n": 65,
-   "type": "wp-groups",
-   "topic": "Groups and sharing",
-   "level": "challenge",
-   "prompt": "Riya reads 9 pages every day. How many pages in 4 days?",
-   "mode": "number",
-   "answer": 36
-  },
-  {
-   "n": 66,
-   "type": "wp-money",
-   "topic": "Money stories",
-   "level": "challenge",
-   "prompt": "A eraser costs ₹25. You pay ₹100. How much change do you get?",
-   "mode": "number",
-   "answer": 75,
-   "unit": "₹"
-  },
-  {
-   "n": 67,
    "type": "wp-measure",
    "topic": "Measuring stories",
-   "level": "challenge",
-   "prompt": "A glass holds 250 ml of milk. How many millilitres in 7 glasses?",
+   "level": "just",
+   "prompt": "A glass holds 200 ml of milk. How many millilitres in 9 glasses?",
    "mode": "number",
-   "answer": 1750,
+   "answer": 1800,
    "unit": "ml"
   },
   {
-   "n": 68,
+   "n": 61,
    "type": "wp-time",
    "topic": "Time stories",
-   "level": "challenge",
-   "prompt": "A journey takes 7 hours. How many minutes is that?",
+   "level": "just",
+   "prompt": "A journey takes 5 hours. How many minutes is that?",
    "mode": "number",
-   "answer": 420,
+   "answer": 300,
    "unit": "minutes"
   },
   {
-   "n": 69,
-   "type": "wp-twostep",
-   "topic": "Two-step stories",
-   "level": "challenge",
-   "prompt": "8 boxes hold 2 eggs each. 1 eggs break. How many good eggs are left?",
-   "mode": "number",
-   "answer": 15
-  },
-  {
-   "n": 70,
-   "type": "wp-choose",
-   "topic": "Which sum is it?",
-   "level": "challenge",
-   "prompt": "820 pencils are shared equally between 6 children. How many each? Which sum would you do?",
-   "mode": "choice",
-   "answer": "Share",
-   "choices": [
-    "Add",
-    "Take away",
-    "Times",
-    "Share"
-   ],
-   "note": "You do not have to work it out — just choose the kind of sum"
-  },
-  {
-   "n": 71,
-   "type": "wp-joining",
-   "topic": "Joining and leaving",
-   "level": "easy",
-   "prompt": "A shop had 31 mangoes in the morning and sold 14 during the day. How many mangoes are left?",
-   "mode": "number",
-   "answer": 17
-  },
-  {
-   "n": 72,
-   "type": "wp-groups",
-   "topic": "Groups and sharing",
-   "level": "easy",
-   "prompt": "12 pencils are shared equally between 4 children. How many does each child get?",
+   "n": 62,
+   "type": "wp-fraction",
+   "topic": "Fraction stories",
+   "level": "just",
+   "prompt": "There are 6 balloons in a box. Half of them are broken. How many are not broken?",
    "mode": "number",
    "answer": 3
   },
   {
-   "n": 73,
-   "type": "wp-money",
-   "topic": "Money stories",
-   "level": "easy",
-   "prompt": "A chocolate costs ₹38. You pay ₹100. How much change do you get?",
+   "n": 63,
+   "type": "wp-twostep",
+   "topic": "Two-step stories",
+   "level": "just",
+   "prompt": "A girl buys 6 erasers at ₹45 each and pays with ₹322. How much change does she get?",
    "mode": "number",
-   "answer": 62,
+   "answer": 52,
    "unit": "₹"
   },
   {
-   "n": 74,
-   "type": "wp-measure",
-   "topic": "Measuring stories",
-   "level": "easy",
-   "prompt": "A sack holds 8 kg of rice. How many kilograms in 3 sacks?",
-   "mode": "number",
-   "answer": 24,
-   "unit": "kg"
+   "n": 64,
+   "type": "wp-choose",
+   "topic": "Which sum is it?",
+   "level": "just",
+   "prompt": "Riya has 43 balloons and is given 72 more. How many altogether? Which sum would you do?",
+   "mode": "choice",
+   "answer": "Add",
+   "choices": [
+    "Add",
+    "Take away",
+    "Times",
+    "Share"
+   ],
+   "note": "You do not have to work it out — just choose the kind of sum"
   },
   {
-   "n": 75,
+   "n": 65,
+   "type": "wp-joining",
+   "topic": "Joining and leaving",
+   "level": "challenge",
+   "prompt": "A shop had 1447 balloons in the morning and sold 784 during the day. How many balloons are left?",
+   "mode": "number",
+   "answer": 663
+  },
+  {
+   "n": 66,
+   "type": "wp-groups",
+   "topic": "Groups and sharing",
+   "level": "challenge",
+   "prompt": "Arjun reads 4 pages every day. How many pages in 4 days?",
+   "mode": "number",
+   "answer": 16
+  },
+  {
+   "n": 67,
+   "type": "wp-money",
+   "topic": "Money stories",
+   "level": "challenge",
+   "prompt": "Sara buys 3 erasers at ₹34 each. What is the total cost?",
+   "mode": "number",
+   "answer": 102,
+   "unit": "₹"
+  },
+  {
+   "n": 68,
+   "type": "wp-measure",
+   "topic": "Measuring stories",
+   "level": "challenge",
+   "prompt": "A jug holds 6 litres of juice. 493 ml is poured out. How many millilitres are left?",
+   "mode": "number",
+   "answer": 5507,
+   "unit": "ml"
+  },
+  {
+   "n": 69,
    "type": "wp-time",
    "topic": "Time stories",
-   "level": "easy",
-   "prompt": "A journey takes 2 hours. How many minutes is that?",
+   "level": "challenge",
+   "prompt": "A class starts at 7:20 and finishes at 7:40. How many minutes long is the class?",
    "mode": "number",
-   "answer": 120,
+   "answer": 20,
    "unit": "minutes"
   },
   {
-   "n": 76,
+   "n": 70,
    "type": "wp-fraction",
    "topic": "Fraction stories",
-   "level": "easy",
-   "prompt": "There are 4 mangoes in a box. Half of them are broken. How many are not broken?",
+   "level": "challenge",
+   "prompt": "There are 24 marbles in a box. One quarter of them are broken. How many are not broken?",
    "mode": "number",
-   "answer": 2
+   "answer": 18
   },
   {
-   "n": 77,
+   "n": 71,
    "type": "wp-twostep",
    "topic": "Two-step stories",
-   "level": "easy",
-   "prompt": "Meera had 21 mangoes, was given 6 more by Vihaan, then gave 1 away. How many mangoes now?",
+   "level": "challenge",
+   "prompt": "A girl buys 3 chocolates at ₹18 each and pays with ₹100. How much change does she get?",
    "mode": "number",
-   "answer": 26
+   "answer": 46,
+   "unit": "₹"
   },
   {
-   "n": 78,
+   "n": 72,
    "type": "wp-choose",
    "topic": "Which sum is it?",
-   "level": "easy",
-   "prompt": "2 boxes hold 4 crayons each. How many in total? Which sum would you do?",
+   "level": "challenge",
+   "prompt": "2 boxes hold 9 ladoos each. How many in total? Which sum would you do?",
    "mode": "choice",
    "answer": "Times",
    "choices": [
@@ -852,80 +791,143 @@
    "note": "You do not have to work it out — just choose the kind of sum"
   },
   {
-   "n": 79,
+   "n": 73,
    "type": "wp-joining",
    "topic": "Joining and leaving",
-   "level": "just",
-   "prompt": "Arjun has 513 rupees and Aarav has 274 rupees. How many more rupees does Arjun have?",
+   "level": "easy",
+   "prompt": "There were 22 people on a train. At the next station 20 more got on. How many people are on the train now?",
    "mode": "number",
-   "answer": 239,
+   "answer": 42
+  },
+  {
+   "n": 74,
+   "type": "wp-groups",
+   "topic": "Groups and sharing",
+   "level": "easy",
+   "prompt": "Sara reads 5 pages every day. How many pages in 2 days?",
+   "mode": "number",
+   "answer": 10
+  },
+  {
+   "n": 75,
+   "type": "wp-money",
+   "topic": "Money stories",
+   "level": "easy",
+   "prompt": "A boy had ₹27 and spent ₹10 at the school fair. How much is left?",
+   "mode": "number",
+   "answer": 17,
    "unit": "₹"
+  },
+  {
+   "n": 76,
+   "type": "wp-measure",
+   "topic": "Measuring stories",
+   "level": "easy",
+   "prompt": "A ribbon is 3 m long. 34 cm is cut off. How many centimetres of ribbon are left?",
+   "mode": "number",
+   "answer": 266,
+   "unit": "cm"
+  },
+  {
+   "n": 77,
+   "type": "wp-time",
+   "topic": "Time stories",
+   "level": "easy",
+   "prompt": "The holidays last 5 weeks and 2 days. How many days is that?",
+   "mode": "number",
+   "answer": 37,
+   "unit": "days"
+  },
+  {
+   "n": 78,
+   "type": "wp-twostep",
+   "topic": "Two-step stories",
+   "level": "easy",
+   "prompt": "4 boxes hold 4 eggs each. 3 eggs break. How many good eggs are left?",
+   "mode": "number",
+   "answer": 13
+  },
+  {
+   "n": 79,
+   "type": "wp-choose",
+   "topic": "Which sum is it?",
+   "level": "easy",
+   "prompt": "A shop had 24 mangoes and sold 32. How many are left? Which sum would you do?",
+   "mode": "choice",
+   "answer": "Take away",
+   "choices": [
+    "Add",
+    "Take away",
+    "Times",
+    "Share"
+   ],
+   "note": "You do not have to work it out — just choose the kind of sum"
   },
   {
    "n": 80,
-   "type": "wp-groups",
-   "topic": "Groups and sharing",
+   "type": "wp-joining",
+   "topic": "Joining and leaving",
    "level": "just",
-   "prompt": "A shopkeeper packs 7 marbles into each box and fills 8 boxes. How many marbles is that?",
+   "prompt": "A shop had 256 story books in the morning and sold 124 during the day. How many story books are left?",
    "mode": "number",
-   "answer": 56
+   "answer": 132
   },
   {
    "n": 81,
-   "type": "wp-money",
-   "topic": "Money stories",
+   "type": "wp-groups",
+   "topic": "Groups and sharing",
    "level": "just",
-   "prompt": "A boy had ₹60 and spent ₹6 at the school fair. How much is left?",
+   "prompt": "36 stickers are shared equally between 6 children. How many does each child get?",
    "mode": "number",
-   "answer": 54,
-   "unit": "₹"
+   "answer": 6
   },
   {
    "n": 82,
-   "type": "wp-measure",
-   "topic": "Measuring stories",
+   "type": "wp-money",
+   "topic": "Money stories",
    "level": "just",
-   "prompt": "A glass holds 200 ml of milk. How many millilitres in 6 glasses?",
+   "prompt": "Meera buys 5 notebooks at ₹55 each. What is the total cost?",
    "mode": "number",
-   "answer": 1200,
-   "unit": "ml"
+   "answer": 275,
+   "unit": "₹"
   },
   {
    "n": 83,
-   "type": "wp-time",
-   "topic": "Time stories",
+   "type": "wp-measure",
+   "topic": "Measuring stories",
    "level": "just",
-   "prompt": "A class starts at 5:15 and finishes at 5:35. How many minutes long is the class?",
+   "prompt": "A jug holds 4 litres of juice. 304 ml is poured out. How many millilitres are left?",
    "mode": "number",
-   "answer": 20,
-   "unit": "minutes"
+   "answer": 3696,
+   "unit": "ml"
   },
   {
    "n": 84,
-   "type": "wp-fraction",
-   "topic": "Fraction stories",
+   "type": "wp-time",
+   "topic": "Time stories",
    "level": "just",
-   "prompt": "A basket holds 18 stickers. Half of them are given away. How many are given away?",
+   "prompt": "A girl practises the tabla for 30 minutes a day. How many minutes in 3 days?",
    "mode": "number",
-   "answer": 9
+   "answer": 90,
+   "unit": "minutes"
   },
   {
    "n": 85,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "just",
-   "prompt": "Riya had 298 stickers, was given 21 more by Kabir, then gave 112 away. How many stickers now?",
+   "prompt": "2 boxes hold 7 eggs each. 4 eggs break. How many good eggs are left?",
    "mode": "number",
-   "answer": 207
+   "answer": 10
   },
   {
    "n": 86,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "just",
-   "prompt": "A shop had 201 marbles and sold 135. How many are left? Which sum would you do?",
+   "prompt": "4 boxes hold 4 stickers each. How many in total? Which sum would you do?",
    "mode": "choice",
-   "answer": "Take away",
+   "answer": "Times",
    "choices": [
     "Add",
     "Take away",
@@ -939,65 +941,63 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "challenge",
-   "prompt": "There were 708 people on a train. At the next station 423 more got on. How many people are on the train now?",
+   "prompt": "There were 610 people on a train. At the next station 204 more got on. How many people are on the train now?",
    "mode": "number",
-   "answer": 1131
+   "answer": 814
   },
   {
    "n": 88,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "challenge",
-   "prompt": "16 story books are shared equally between 2 children. How many does each child get?",
+   "prompt": "18 pencils are shared equally between 2 children. How many does each child get?",
    "mode": "number",
-   "answer": 8
+   "answer": 9
   },
   {
    "n": 89,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "challenge",
-   "prompt": "Ishaan saves ₹30 every week. How much money after 6 weeks?",
+   "prompt": "Meera buys 2 kites at ₹22 each. What is the total cost?",
    "mode": "number",
-   "answer": 180,
+   "answer": 44,
    "unit": "₹"
   },
   {
    "n": 90,
-   "type": "wp-measure",
-   "topic": "Measuring stories",
-   "level": "challenge",
-   "prompt": "A ribbon is 4 m long. 89 cm is cut off. How many centimetres of ribbon are left?",
-   "mode": "number",
-   "answer": 311,
-   "unit": "cm"
-  },
-  {
-   "n": 91,
    "type": "wp-time",
    "topic": "Time stories",
    "level": "challenge",
-   "prompt": "A class starts at 3:10 and finishes at 3:35. How many minutes long is the class?",
+   "prompt": "A class starts at 7:00 and finishes at 7:20. How many minutes long is the class?",
    "mode": "number",
-   "answer": 25,
+   "answer": 20,
    "unit": "minutes"
+  },
+  {
+   "n": 91,
+   "type": "wp-fraction",
+   "topic": "Fraction stories",
+   "level": "challenge",
+   "prompt": "There are 8 marbles in a box. One quarter of them are broken. How many are not broken?",
+   "mode": "number",
+   "answer": 6
   },
   {
    "n": 92,
    "type": "wp-twostep",
    "topic": "Two-step stories",
    "level": "challenge",
-   "prompt": "A girl buys 7 balls at ₹32 each and pays with ₹274. How much change does she get?",
+   "prompt": "6 boxes hold 9 eggs each. 30 eggs break. How many good eggs are left?",
    "mode": "number",
-   "answer": 50,
-   "unit": "₹"
+   "answer": 24
   },
   {
    "n": 93,
    "type": "wp-choose",
    "topic": "Which sum is it?",
    "level": "challenge",
-   "prompt": "Arjun has 633 marbles and is given 438 more. How many altogether? Which sum would you do?",
+   "prompt": "Arjun has 164 mangoes and is given 844 more. How many altogether? Which sum would you do?",
    "mode": "choice",
    "answer": "Add",
    "choices": [
@@ -1013,28 +1013,27 @@
    "type": "wp-joining",
    "topic": "Joining and leaving",
    "level": "easy",
-   "prompt": "Vihaan has 46 rupees and Riya has 27 rupees. How many more rupees does Vihaan have?",
+   "prompt": "There were 38 people on a train. At the next station 31 more got on. How many people are on the train now?",
    "mode": "number",
-   "answer": 19,
-   "unit": "₹"
+   "answer": 69
   },
   {
    "n": 95,
    "type": "wp-groups",
    "topic": "Groups and sharing",
    "level": "easy",
-   "prompt": "A shopkeeper packs 3 pencils into each box and fills 5 boxes. How many pencils is that?",
+   "prompt": "12 story books are shared equally between 4 children. How many does each child get?",
    "mode": "number",
-   "answer": 15
+   "answer": 3
   },
   {
    "n": 96,
    "type": "wp-money",
    "topic": "Money stories",
    "level": "easy",
-   "prompt": "Sara saves ₹16 every week. How much money after 5 weeks?",
+   "prompt": "Vihaan buys 4 balls at ₹28 each. What is the total cost?",
    "mode": "number",
-   "answer": 80,
+   "answer": 112,
    "unit": "₹"
   },
   {
@@ -1042,44 +1041,38 @@
    "type": "wp-measure",
    "topic": "Measuring stories",
    "level": "easy",
-   "prompt": "A glass holds 150 ml of milk. How many millilitres in 4 glasses?",
+   "prompt": "A ribbon is 2 m long. 88 cm is cut off. How many centimetres of ribbon are left?",
    "mode": "number",
-   "answer": 600,
-   "unit": "ml"
+   "answer": 112,
+   "unit": "cm"
   },
   {
    "n": 98,
-   "type": "wp-fraction",
-   "topic": "Fraction stories",
+   "type": "wp-time",
+   "topic": "Time stories",
    "level": "easy",
-   "prompt": "A basket holds 6 balloons. One third of them are given away. How many are given away?",
+   "prompt": "A journey takes 2 hours. How many minutes is that?",
    "mode": "number",
-   "answer": 2
+   "answer": 120,
+   "unit": "minutes"
   },
   {
    "n": 99,
-   "type": "wp-twostep",
-   "topic": "Two-step stories",
+   "type": "wp-fraction",
+   "topic": "Fraction stories",
    "level": "easy",
-   "prompt": "5 boxes hold 5 eggs each. 14 eggs break. How many good eggs are left?",
+   "prompt": "A basket holds 16 stickers. One quarter of them are given away. How many are given away?",
    "mode": "number",
-   "answer": 11
+   "answer": 4
   },
   {
    "n": 100,
-   "type": "wp-choose",
-   "topic": "Which sum is it?",
+   "type": "wp-twostep",
+   "topic": "Two-step stories",
    "level": "easy",
-   "prompt": "12 balloons are shared equally between 4 children. How many each? Which sum would you do?",
-   "mode": "choice",
-   "answer": "Share",
-   "choices": [
-    "Add",
-    "Take away",
-    "Times",
-    "Share"
-   ],
-   "note": "You do not have to work it out — just choose the kind of sum"
+   "prompt": "2 boxes hold 3 eggs each. 5 eggs break. How many good eggs are left?",
+   "mode": "number",
+   "answer": 1
   }
  ]
 }

@@ -5,7 +5,8 @@
 (function (M) {
   'use strict';
 
-  var base = 'data/';
+  // each grade keeps its content in its own folder; a page says which before this loads
+  var base = window.MATHLY_DATA_BASE || 'data/';
   var cache = {};
 
   function json(name) {
@@ -46,13 +47,19 @@
     throw error;
   }
 
+  var started = null;
+
   M.data = {
     get base() { return base; },
-    set base(value) { base = value; cache = {}; },
+    set base(value) { base = value; cache = {}; started = null; },
     json: json,
     catalog: catalog,
     concepts: concepts,
     bank: bank,
-    ready: Promise.all([catalog(), concepts()]).catch(failed)
+    // pages that show chapters or lessons wait on this; the grade picker never asks
+    get ready() {
+      if (!started) started = Promise.all([catalog(), concepts()]).catch(failed);
+      return started;
+    }
   };
 })(window.Mathly);

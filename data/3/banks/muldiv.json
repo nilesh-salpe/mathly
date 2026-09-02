@@ -44,26 +44,26 @@
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "easy",
-   "prompt": "4 × 9",
+   "prompt": "3 × 6",
    "mode": "number",
-   "answer": 36
+   "answer": 18
   },
   {
    "n": 2,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
    "level": "easy",
-   "prompt": "24 × 4",
+   "prompt": "11 × 2",
    "mode": "number",
-   "answer": 96,
-   "note": "Split it: 20 × 4 and 4 × 4"
+   "answer": 22,
+   "note": "Split it: 10 × 2 and 1 × 2"
   },
   {
    "n": 3,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
    "level": "easy",
-   "prompt": "50 ÷ 10",
+   "prompt": "15 ÷ 3",
    "mode": "number",
    "answer": 5
   },
@@ -72,11 +72,11 @@
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "easy",
-   "prompt": "27 marbles shared equally between 5 friends",
+   "prompt": "23 ladoos shared equally between 5 friends",
    "mode": "multi",
    "answer": [
-    5,
-    2
+    4,
+    3
    ],
    "fields": [
     {
@@ -92,47 +92,47 @@
    "type": "muldiv-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "▢ × 6 = 30",
+   "prompt": "20 ÷ ▢ = 5",
    "mode": "number",
-   "answer": 5
+   "answer": 4
   },
   {
    "n": 6,
    "type": "muldiv-groups",
    "topic": "Equal groups",
    "level": "easy",
-   "prompt": "3 + 3 = ▢ × 3",
+   "prompt": "2 + 2 + 2 + 2 = ▢ × 2",
    "mode": "number",
-   "answer": 2,
-   "note": "How many groups of 3 are there?"
+   "answer": 4,
+   "note": "How many groups of 2 are there?"
   },
   {
    "n": 7,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "One pencil costs ₹5. How much do 3 pencils cost?",
+   "prompt": "One pencil costs ₹4. How much do 2 pencils cost?",
    "mode": "number",
-   "answer": 15
+   "answer": 8
   },
   {
    "n": 8,
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "just",
-   "prompt": "3 × 5",
+   "prompt": "4 × 2",
    "mode": "number",
-   "answer": 15
+   "answer": 8
   },
   {
    "n": 9,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
    "level": "just",
-   "prompt": "58 × 5",
+   "prompt": "29 × 8",
    "mode": "number",
-   "answer": 290,
-   "note": "Split it: 50 × 5 and 8 × 5"
+   "answer": 232,
+   "note": "Split it: 20 × 8 and 9 × 8"
   },
   {
    "n": 10,
@@ -148,11 +148,11 @@
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "just",
-   "prompt": "20 biscuits shared equally between 6 friends",
+   "prompt": "60 mangoes shared equally between 9 friends",
    "mode": "multi",
    "answer": [
-    3,
-    2
+    6,
+    6
    ],
    "fields": [
     {
@@ -168,67 +168,67 @@
    "type": "muldiv-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "▢ × 3 = 12",
+   "prompt": "14 ÷ ▢ = 7",
    "mode": "number",
-   "answer": 4
+   "answer": 2
   },
   {
    "n": 13,
    "type": "muldiv-groups",
    "topic": "Equal groups",
    "level": "just",
-   "prompt": "2 + 2 + 2 = ▢ × 2",
+   "prompt": "6 + 6 + 6 = ▢ × 6",
    "mode": "number",
    "answer": 3,
-   "note": "How many groups of 2 are there?"
+   "note": "How many groups of 6 are there?"
   },
   {
    "n": 14,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "4 stickers are shared equally between 2 children. How many does each child get?",
+   "prompt": "One pencil costs ₹5. How much do 3 pencils cost?",
    "mode": "number",
-   "answer": 2
+   "answer": 15
   },
   {
    "n": 15,
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "challenge",
-   "prompt": "3 × 11",
+   "prompt": "7 × 11",
    "mode": "number",
-   "answer": 33
+   "answer": 77
   },
   {
    "n": 16,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
    "level": "challenge",
-   "prompt": "43 × 8",
+   "prompt": "16 × 6",
    "mode": "number",
-   "answer": 344,
-   "note": "Split it: 40 × 8 and 3 × 8"
+   "answer": 96,
+   "note": "Split it: 10 × 6 and 6 × 6"
   },
   {
    "n": 17,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
    "level": "challenge",
-   "prompt": "40 ÷ 5",
+   "prompt": "55 ÷ 11",
    "mode": "number",
-   "answer": 8
+   "answer": 5
   },
   {
    "n": 18,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "challenge",
-   "prompt": "57 pencils shared equally between 6 friends",
+   "prompt": "46 pencils shared equally between 7 friends",
    "mode": "multi",
    "answer": [
-    9,
-    3
+    6,
+    4
    ],
    "fields": [
     {
@@ -244,142 +244,56 @@
    "type": "muldiv-missing",
    "topic": "Missing number",
    "level": "challenge",
-   "prompt": "▢ × 6 = 72",
+   "prompt": "4 × ▢ = 20",
    "mode": "number",
-   "answer": 12
+   "answer": 5
   },
   {
    "n": 20,
    "type": "muldiv-groups",
    "topic": "Equal groups",
    "level": "challenge",
-   "prompt": "7 + 7 + 7 + 7 + 7 + 7 = ▢ × 7",
+   "prompt": "2 + 2 + 2 = ▢ × 2",
    "mode": "number",
-   "answer": 6,
-   "note": "How many groups of 7 are there?"
+   "answer": 3,
+   "note": "How many groups of 2 are there?"
   },
   {
    "n": 21,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "55 stickers are put into rows of 11. How many rows are there?",
+   "prompt": "Kabir has 4 boxes of ladoos. Each box holds 12. How many ladoos altogether?",
    "mode": "number",
-   "answer": 5
+   "answer": 48
   },
   {
    "n": 22,
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "easy",
-   "prompt": "4 × 6",
+   "prompt": "3 × 5",
    "mode": "number",
-   "answer": 24
+   "answer": 15
   },
   {
    "n": 23,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
    "level": "easy",
-   "prompt": "15 × 4",
+   "prompt": "20 ÷ 4",
    "mode": "number",
-   "answer": 60,
-   "note": "Split it: 10 × 4 and 5 × 4"
+   "answer": 5
   },
   {
    "n": 24,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "easy",
-   "prompt": "20 ÷ 5",
-   "mode": "number",
-   "answer": 4
-  },
-  {
-   "n": 25,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "easy",
-   "prompt": "26 biscuits shared equally between 5 friends",
+   "prompt": "19 ladoos shared equally between 4 friends",
    "mode": "multi",
    "answer": [
-    5,
-    1
-   ],
-   "fields": [
-    {
-     "label": "each"
-    },
-    {
-     "label": "left over"
-    }
-   ]
-  },
-  {
-   "n": 26,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "easy",
-   "prompt": "▢ × 6 = 18",
-   "mode": "number",
-   "answer": 3
-  },
-  {
-   "n": 27,
-   "type": "muldiv-groups",
-   "topic": "Equal groups",
-   "level": "easy",
-   "prompt": "5 + 5 + 5 = ▢ × 5",
-   "mode": "number",
-   "answer": 3,
-   "note": "How many groups of 5 are there?"
-  },
-  {
-   "n": 28,
-   "type": "muldiv-story",
-   "topic": "Story problems",
-   "level": "easy",
-   "prompt": "One pencil costs ₹5. How much do 4 pencils cost?",
-   "mode": "number",
-   "answer": 20
-  },
-  {
-   "n": 29,
-   "type": "muldiv-table",
-   "topic": "Times tables",
-   "level": "just",
-   "prompt": "4 × 7",
-   "mode": "number",
-   "answer": 28
-  },
-  {
-   "n": 30,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
-   "level": "just",
-   "prompt": "19 × 3",
-   "mode": "number",
-   "answer": 57,
-   "note": "Split it: 10 × 3 and 9 × 3"
-  },
-  {
-   "n": 31,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "just",
-   "prompt": "21 ÷ 7",
-   "mode": "number",
-   "answer": 3
-  },
-  {
-   "n": 32,
-   "type": "muldiv-remainder",
-   "topic": "How many left over?",
-   "level": "just",
-   "prompt": "23 mangoes shared equally between 4 friends",
-   "mode": "multi",
-   "answer": [
-    5,
+    4,
     3
    ],
    "fields": [
@@ -392,351 +306,57 @@
    ]
   },
   {
-   "n": 33,
+   "n": 25,
    "type": "muldiv-missing",
    "topic": "Missing number",
-   "level": "just",
-   "prompt": "3 × ▢ = 6",
+   "level": "easy",
+   "prompt": "2 × ▢ = 14",
    "mode": "number",
-   "answer": 2
+   "answer": 7
   },
   {
-   "n": 34,
-   "type": "muldiv-groups",
-   "topic": "Equal groups",
-   "level": "just",
-   "prompt": "4 + 4 = ▢ × 4",
-   "mode": "number",
-   "answer": 2,
-   "note": "How many groups of 4 are there?"
-  },
-  {
-   "n": 35,
+   "n": 26,
    "type": "muldiv-story",
    "topic": "Story problems",
-   "level": "just",
-   "prompt": "Vihaan has 5 boxes of marbles. Each box holds 5. How many marbles altogether?",
+   "level": "easy",
+   "prompt": "20 mangoes are shared equally between 4 children. How many does each child get?",
    "mode": "number",
-   "answer": 25
+   "answer": 5
   },
   {
-   "n": 36,
+   "n": 27,
    "type": "muldiv-table",
    "topic": "Times tables",
-   "level": "challenge",
-   "prompt": "9 × 3",
+   "level": "just",
+   "prompt": "7 × 4",
    "mode": "number",
-   "answer": 27
+   "answer": 28
   },
   {
-   "n": 37,
+   "n": 28,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
-   "level": "challenge",
-   "prompt": "63 × 3",
+   "level": "just",
+   "prompt": "59 × 8",
    "mode": "number",
-   "answer": 189,
-   "note": "Split it: 60 × 3 and 3 × 3"
+   "answer": 472,
+   "note": "Split it: 50 × 8 and 9 × 8"
   },
   {
-   "n": 38,
+   "n": 29,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
-   "level": "challenge",
-   "prompt": "40 ÷ 10",
+   "level": "just",
+   "prompt": "8 ÷ 2",
    "mode": "number",
    "answer": 4
   },
   {
-   "n": 39,
-   "type": "muldiv-remainder",
-   "topic": "How many left over?",
-   "level": "challenge",
-   "prompt": "101 pencils shared equally between 9 friends",
-   "mode": "multi",
-   "answer": [
-    11,
-    2
-   ],
-   "fields": [
-    {
-     "label": "each"
-    },
-    {
-     "label": "left over"
-    }
-   ]
-  },
-  {
-   "n": 40,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "challenge",
-   "prompt": "▢ × 6 = 54",
-   "mode": "number",
-   "answer": 9
-  },
-  {
-   "n": 41,
-   "type": "muldiv-groups",
-   "topic": "Equal groups",
-   "level": "challenge",
-   "prompt": "3 + 3 + 3 + 3 + 3 + 3 = ▢ × 3",
-   "mode": "number",
-   "answer": 6,
-   "note": "How many groups of 3 are there?"
-  },
-  {
-   "n": 42,
-   "type": "muldiv-story",
-   "topic": "Story problems",
-   "level": "challenge",
-   "prompt": "32 mangoes are shared equally between 4 children. How many does each child get?",
-   "mode": "number",
-   "answer": 8
-  },
-  {
-   "n": 43,
-   "type": "muldiv-table",
-   "topic": "Times tables",
-   "level": "easy",
-   "prompt": "2 × 8",
-   "mode": "number",
-   "answer": 16
-  },
-  {
-   "n": 44,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
-   "level": "easy",
-   "prompt": "28 × 4",
-   "mode": "number",
-   "answer": 112,
-   "note": "Split it: 20 × 4 and 8 × 4"
-  },
-  {
-   "n": 45,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "easy",
-   "prompt": "40 ÷ 8",
-   "mode": "number",
-   "answer": 5
-  },
-  {
-   "n": 46,
-   "type": "muldiv-remainder",
-   "topic": "How many left over?",
-   "level": "easy",
-   "prompt": "22 biscuits shared equally between 4 friends",
-   "mode": "multi",
-   "answer": [
-    5,
-    2
-   ],
-   "fields": [
-    {
-     "label": "each"
-    },
-    {
-     "label": "left over"
-    }
-   ]
-  },
-  {
-   "n": 47,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "easy",
-   "prompt": "15 ÷ ▢ = 3",
-   "mode": "number",
-   "answer": 5
-  },
-  {
-   "n": 48,
-   "type": "muldiv-story",
-   "topic": "Story problems",
-   "level": "easy",
-   "prompt": "One pencil costs ₹5. How much do 2 pencils cost?",
-   "mode": "number",
-   "answer": 10
-  },
-  {
-   "n": 49,
-   "type": "muldiv-table",
-   "topic": "Times tables",
-   "level": "just",
-   "prompt": "6 × 10",
-   "mode": "number",
-   "answer": 60
-  },
-  {
-   "n": 50,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
-   "level": "just",
-   "prompt": "48 × 6",
-   "mode": "number",
-   "answer": 288,
-   "note": "Split it: 40 × 6 and 8 × 6"
-  },
-  {
-   "n": 51,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "just",
-   "prompt": "12 ÷ 6",
-   "mode": "number",
-   "answer": 2
-  },
-  {
-   "n": 52,
+   "n": 30,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "just",
-   "prompt": "62 marbles shared equally between 8 friends",
-   "mode": "multi",
-   "answer": [
-    7,
-    6
-   ],
-   "fields": [
-    {
-     "label": "each"
-    },
-    {
-     "label": "left over"
-    }
-   ]
-  },
-  {
-   "n": 53,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "just",
-   "prompt": "8 ÷ ▢ = 4",
-   "mode": "number",
-   "answer": 2
-  },
-  {
-   "n": 54,
-   "type": "muldiv-story",
-   "topic": "Story problems",
-   "level": "just",
-   "prompt": "Ananya has 4 boxes of marbles. Each box holds 9. How many marbles altogether?",
-   "mode": "number",
-   "answer": 36
-  },
-  {
-   "n": 55,
-   "type": "muldiv-table",
-   "topic": "Times tables",
-   "level": "challenge",
-   "prompt": "8 × 3",
-   "mode": "number",
-   "answer": 24
-  },
-  {
-   "n": 56,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
-   "level": "challenge",
-   "prompt": "59 × 5",
-   "mode": "number",
-   "answer": 295,
-   "note": "Split it: 50 × 5 and 9 × 5"
-  },
-  {
-   "n": 57,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "challenge",
-   "prompt": "90 ÷ 10",
-   "mode": "number",
-   "answer": 9
-  },
-  {
-   "n": 58,
-   "type": "muldiv-remainder",
-   "topic": "How many left over?",
-   "level": "challenge",
-   "prompt": "30 mangoes shared equally between 4 friends",
-   "mode": "multi",
-   "answer": [
-    7,
-    2
-   ],
-   "fields": [
-    {
-     "label": "each"
-    },
-    {
-     "label": "left over"
-    }
-   ]
-  },
-  {
-   "n": 59,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "challenge",
-   "prompt": "10 × ▢ = 40",
-   "mode": "number",
-   "answer": 4
-  },
-  {
-   "n": 60,
-   "type": "muldiv-groups",
-   "topic": "Equal groups",
-   "level": "challenge",
-   "prompt": "8 + 8 + 8 + 8 = ▢ × 8",
-   "mode": "number",
-   "answer": 4,
-   "note": "How many groups of 8 are there?"
-  },
-  {
-   "n": 61,
-   "type": "muldiv-story",
-   "topic": "Story problems",
-   "level": "challenge",
-   "prompt": "One pencil costs ₹4. How much do 5 pencils cost?",
-   "mode": "number",
-   "answer": 20
-  },
-  {
-   "n": 62,
-   "type": "muldiv-table",
-   "topic": "Times tables",
-   "level": "easy",
-   "prompt": "5 × 5",
-   "mode": "number",
-   "answer": 25
-  },
-  {
-   "n": 63,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
-   "level": "easy",
-   "prompt": "27 × 5",
-   "mode": "number",
-   "answer": 135,
-   "note": "Split it: 20 × 5 and 7 × 5"
-  },
-  {
-   "n": 64,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "easy",
-   "prompt": "25 ÷ 5",
-   "mode": "number",
-   "answer": 5
-  },
-  {
-   "n": 65,
-   "type": "muldiv-remainder",
-   "topic": "How many left over?",
-   "level": "easy",
-   "prompt": "8 mangoes shared equally between 3 friends",
+   "prompt": "8 stickers shared equally between 3 friends",
    "mode": "multi",
    "answer": [
     2,
@@ -752,61 +372,71 @@
    ]
   },
   {
-   "n": 66,
+   "n": 31,
    "type": "muldiv-missing",
    "topic": "Missing number",
-   "level": "easy",
-   "prompt": "▢ × 3 = 9",
+   "level": "just",
+   "prompt": "▢ × 2 = 16",
    "mode": "number",
-   "answer": 3
+   "answer": 8
   },
   {
-   "n": 67,
+   "n": 32,
+   "type": "muldiv-groups",
+   "topic": "Equal groups",
+   "level": "just",
+   "prompt": "4 + 4 + 4 + 4 = ▢ × 4",
+   "mode": "number",
+   "answer": 4,
+   "note": "How many groups of 4 are there?"
+  },
+  {
+   "n": 33,
    "type": "muldiv-story",
    "topic": "Story problems",
-   "level": "easy",
-   "prompt": "6 pencils are shared equally between 2 children. How many does each child get?",
+   "level": "just",
+   "prompt": "18 marbles are shared equally between 9 children. How many does each child get?",
    "mode": "number",
-   "answer": 3
+   "answer": 2
   },
   {
-   "n": 68,
+   "n": 34,
    "type": "muldiv-table",
    "topic": "Times tables",
-   "level": "just",
-   "prompt": "10 × 7",
+   "level": "challenge",
+   "prompt": "4 × 5",
    "mode": "number",
-   "answer": 70
+   "answer": 20
   },
   {
-   "n": 69,
+   "n": 35,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
-   "level": "just",
-   "prompt": "38 × 6",
+   "level": "challenge",
+   "prompt": "15 × 8",
    "mode": "number",
-   "answer": 228,
-   "note": "Split it: 30 × 6 and 8 × 6"
+   "answer": 120,
+   "note": "Split it: 10 × 8 and 5 × 8"
   },
   {
-   "n": 70,
+   "n": 36,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
-   "level": "just",
-   "prompt": "70 ÷ 10",
+   "level": "challenge",
+   "prompt": "72 ÷ 6",
    "mode": "number",
-   "answer": 7
+   "answer": 12
   },
   {
-   "n": 71,
+   "n": 37,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
-   "level": "just",
-   "prompt": "25 mangoes shared equally between 6 friends",
+   "level": "challenge",
+   "prompt": "26 ladoos shared equally between 3 friends",
    "mode": "multi",
    "answer": [
-    4,
-    1
+    8,
+    2
    ],
    "fields": [
     {
@@ -818,123 +448,67 @@
    ]
   },
   {
-   "n": 72,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "just",
-   "prompt": "9 × ▢ = 54",
-   "mode": "number",
-   "answer": 6
-  },
-  {
-   "n": 73,
-   "type": "muldiv-story",
-   "topic": "Story problems",
-   "level": "just",
-   "prompt": "One pencil costs ₹6. How much do 6 pencils cost?",
-   "mode": "number",
-   "answer": 36
-  },
-  {
-   "n": 74,
-   "type": "muldiv-table",
-   "topic": "Times tables",
-   "level": "challenge",
-   "prompt": "6 × 8",
-   "mode": "number",
-   "answer": 48
-  },
-  {
-   "n": 75,
-   "type": "muldiv-two-digit",
-   "topic": "2-digit × 1-digit",
-   "level": "challenge",
-   "prompt": "73 × 8",
-   "mode": "number",
-   "answer": 584,
-   "note": "Split it: 70 × 8 and 3 × 8"
-  },
-  {
-   "n": 76,
-   "type": "muldiv-divide",
-   "topic": "Sharing exactly",
-   "level": "challenge",
-   "prompt": "20 ÷ 4",
-   "mode": "number",
-   "answer": 5
-  },
-  {
-   "n": 77,
-   "type": "muldiv-remainder",
-   "topic": "How many left over?",
-   "level": "challenge",
-   "prompt": "45 pencils shared equally between 6 friends",
-   "mode": "multi",
-   "answer": [
-    7,
-    3
-   ],
-   "fields": [
-    {
-     "label": "each"
-    },
-    {
-     "label": "left over"
-    }
-   ]
-  },
-  {
-   "n": 78,
+   "n": 38,
    "type": "muldiv-missing",
    "topic": "Missing number",
    "level": "challenge",
-   "prompt": "▢ × 9 = 90",
+   "prompt": "▢ × 5 = 45",
    "mode": "number",
-   "answer": 10
+   "answer": 9
   },
   {
-   "n": 79,
+   "n": 39,
    "type": "muldiv-groups",
    "topic": "Equal groups",
    "level": "challenge",
-   "prompt": "11 + 11 + 11 + 11 + 11 = ▢ × 11",
+   "prompt": "9 + 9 + 9 + 9 = ▢ × 9",
    "mode": "number",
-   "answer": 5,
-   "note": "How many groups of 11 are there?"
+   "answer": 4,
+   "note": "How many groups of 9 are there?"
   },
   {
-   "n": 80,
+   "n": 40,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "56 biscuits are put into rows of 8. How many rows are there?",
+   "prompt": "One pencil costs ₹11. How much do 4 pencils cost?",
    "mode": "number",
-   "answer": 7
+   "answer": 44
   },
   {
-   "n": 81,
+   "n": 41,
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "easy",
-   "prompt": "4 × 8",
+   "prompt": "5 × 5",
    "mode": "number",
-   "answer": 32
+   "answer": 25
   },
   {
-   "n": 82,
+   "n": 42,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "easy",
+   "prompt": "14 × 3",
+   "mode": "number",
+   "answer": 42,
+   "note": "Split it: 10 × 3 and 4 × 3"
+  },
+  {
+   "n": 43,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
    "level": "easy",
-   "prompt": "36 ÷ 9",
+   "prompt": "6 ÷ 3",
    "mode": "number",
-   "answer": 4
+   "answer": 2
   },
   {
-   "n": 83,
+   "n": 44,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "easy",
-   "prompt": "14 pencils shared equally between 4 friends",
+   "prompt": "14 marbles shared equally between 4 friends",
    "mode": "multi",
    "answer": [
     3,
@@ -950,61 +524,488 @@
    ]
   },
   {
+   "n": 45,
+   "type": "muldiv-missing",
+   "topic": "Missing number",
+   "level": "easy",
+   "prompt": "▢ × 3 = 6",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 46,
+   "type": "muldiv-groups",
+   "topic": "Equal groups",
+   "level": "easy",
+   "prompt": "3 + 3 + 3 + 3 = ▢ × 3",
+   "mode": "number",
+   "answer": 4,
+   "note": "How many groups of 3 are there?"
+  },
+  {
+   "n": 47,
+   "type": "muldiv-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "Ananya has 3 boxes of biscuits. Each box holds 5. How many biscuits altogether?",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 48,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "just",
+   "prompt": "7 × 6",
+   "mode": "number",
+   "answer": 42
+  },
+  {
+   "n": 49,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "just",
+   "prompt": "21 × 5",
+   "mode": "number",
+   "answer": 105,
+   "note": "Split it: 20 × 5 and 1 × 5"
+  },
+  {
+   "n": 50,
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
+   "level": "just",
+   "prompt": "10 ÷ 2",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 51,
+   "type": "muldiv-remainder",
+   "topic": "How many left over?",
+   "level": "just",
+   "prompt": "48 crayons shared equally between 7 friends",
+   "mode": "multi",
+   "answer": [
+    6,
+    6
+   ],
+   "fields": [
+    {
+     "label": "each"
+    },
+    {
+     "label": "left over"
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "type": "muldiv-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "One pencil costs ₹3. How much do 7 pencils cost?",
+   "mode": "number",
+   "answer": 21
+  },
+  {
+   "n": 53,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "challenge",
+   "prompt": "8 × 11",
+   "mode": "number",
+   "answer": 88
+  },
+  {
+   "n": 54,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "challenge",
+   "prompt": "64 × 9",
+   "mode": "number",
+   "answer": 576,
+   "note": "Split it: 60 × 9 and 4 × 9"
+  },
+  {
+   "n": 55,
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
+   "level": "challenge",
+   "prompt": "48 ÷ 8",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 56,
+   "type": "muldiv-remainder",
+   "topic": "How many left over?",
+   "level": "challenge",
+   "prompt": "19 biscuits shared equally between 3 friends",
+   "mode": "multi",
+   "answer": [
+    6,
+    1
+   ],
+   "fields": [
+    {
+     "label": "each"
+    },
+    {
+     "label": "left over"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "type": "muldiv-missing",
+   "topic": "Missing number",
+   "level": "challenge",
+   "prompt": "▢ × 8 = 48",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 58,
+   "type": "muldiv-groups",
+   "topic": "Equal groups",
+   "level": "challenge",
+   "prompt": "6 + 6 + 6 + 6 + 6 + 6 = ▢ × 6",
+   "mode": "number",
+   "answer": 6,
+   "note": "How many groups of 6 are there?"
+  },
+  {
+   "n": 59,
+   "type": "muldiv-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "33 mangoes are put into rows of 11. How many rows are there?",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 60,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "easy",
+   "prompt": "5 × 9",
+   "mode": "number",
+   "answer": 45
+  },
+  {
+   "n": 61,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "easy",
+   "prompt": "27 × 3",
+   "mode": "number",
+   "answer": 81,
+   "note": "Split it: 20 × 3 and 7 × 3"
+  },
+  {
+   "n": 62,
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
+   "level": "easy",
+   "prompt": "12 ÷ 3",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 63,
+   "type": "muldiv-remainder",
+   "topic": "How many left over?",
+   "level": "easy",
+   "prompt": "11 marbles shared equally between 5 friends",
+   "mode": "multi",
+   "answer": [
+    2,
+    1
+   ],
+   "fields": [
+    {
+     "label": "each"
+    },
+    {
+     "label": "left over"
+    }
+   ]
+  },
+  {
+   "n": 64,
+   "type": "muldiv-missing",
+   "topic": "Missing number",
+   "level": "easy",
+   "prompt": "5 × ▢ = 25",
+   "mode": "number",
+   "answer": 5
+  },
+  {
+   "n": 65,
+   "type": "muldiv-groups",
+   "topic": "Equal groups",
+   "level": "easy",
+   "prompt": "4 + 4 = ▢ × 4",
+   "mode": "number",
+   "answer": 2,
+   "note": "How many groups of 4 are there?"
+  },
+  {
+   "n": 66,
+   "type": "muldiv-story",
+   "topic": "Story problems",
+   "level": "easy",
+   "prompt": "6 stickers are put into rows of 3. How many rows are there?",
+   "mode": "number",
+   "answer": 2
+  },
+  {
+   "n": 67,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "just",
+   "prompt": "5 × 3",
+   "mode": "number",
+   "answer": 15
+  },
+  {
+   "n": 68,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "just",
+   "prompt": "56 × 6",
+   "mode": "number",
+   "answer": 336,
+   "note": "Split it: 50 × 6 and 6 × 6"
+  },
+  {
+   "n": 69,
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
+   "level": "just",
+   "prompt": "54 ÷ 9",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 70,
+   "type": "muldiv-remainder",
+   "topic": "How many left over?",
+   "level": "just",
+   "prompt": "42 marbles shared equally between 5 friends",
+   "mode": "multi",
+   "answer": [
+    8,
+    2
+   ],
+   "fields": [
+    {
+     "label": "each"
+    },
+    {
+     "label": "left over"
+    }
+   ]
+  },
+  {
+   "n": 71,
+   "type": "muldiv-missing",
+   "topic": "Missing number",
+   "level": "just",
+   "prompt": "24 ÷ ▢ = 8",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 72,
+   "type": "muldiv-story",
+   "topic": "Story problems",
+   "level": "just",
+   "prompt": "One pencil costs ₹3. How much do 8 pencils cost?",
+   "mode": "number",
+   "answer": 24
+  },
+  {
+   "n": 73,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "challenge",
+   "prompt": "11 × 8",
+   "mode": "number",
+   "answer": 88
+  },
+  {
+   "n": 74,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "challenge",
+   "prompt": "59 × 6",
+   "mode": "number",
+   "answer": 354,
+   "note": "Split it: 50 × 6 and 9 × 6"
+  },
+  {
+   "n": 75,
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
+   "level": "challenge",
+   "prompt": "32 ÷ 4",
+   "mode": "number",
+   "answer": 8
+  },
+  {
+   "n": 76,
+   "type": "muldiv-remainder",
+   "topic": "How many left over?",
+   "level": "challenge",
+   "prompt": "43 stickers shared equally between 4 friends",
+   "mode": "multi",
+   "answer": [
+    10,
+    3
+   ],
+   "fields": [
+    {
+     "label": "each"
+    },
+    {
+     "label": "left over"
+    }
+   ]
+  },
+  {
+   "n": 77,
+   "type": "muldiv-missing",
+   "topic": "Missing number",
+   "level": "challenge",
+   "prompt": "12 ÷ ▢ = 2",
+   "mode": "number",
+   "answer": 6
+  },
+  {
+   "n": 78,
+   "type": "muldiv-groups",
+   "topic": "Equal groups",
+   "level": "challenge",
+   "prompt": "5 + 5 = ▢ × 5",
+   "mode": "number",
+   "answer": 2,
+   "note": "How many groups of 5 are there?"
+  },
+  {
+   "n": 79,
+   "type": "muldiv-story",
+   "topic": "Story problems",
+   "level": "challenge",
+   "prompt": "One pencil costs ₹3. How much do 3 pencils cost?",
+   "mode": "number",
+   "answer": 9
+  },
+  {
+   "n": 80,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "easy",
+   "prompt": "2 × 2",
+   "mode": "number",
+   "answer": 4
+  },
+  {
+   "n": 81,
+   "type": "muldiv-two-digit",
+   "topic": "2-digit × 1-digit",
+   "level": "easy",
+   "prompt": "12 × 4",
+   "mode": "number",
+   "answer": 48,
+   "note": "Split it: 10 × 4 and 2 × 4"
+  },
+  {
+   "n": 82,
+   "type": "muldiv-divide",
+   "topic": "Sharing exactly",
+   "level": "easy",
+   "prompt": "9 ÷ 3",
+   "mode": "number",
+   "answer": 3
+  },
+  {
+   "n": 83,
+   "type": "muldiv-remainder",
+   "topic": "How many left over?",
+   "level": "easy",
+   "prompt": "29 biscuits shared equally between 5 friends",
+   "mode": "multi",
+   "answer": [
+    5,
+    4
+   ],
+   "fields": [
+    {
+     "label": "each"
+    },
+    {
+     "label": "left over"
+    }
+   ]
+  },
+  {
    "n": 84,
    "type": "muldiv-missing",
    "topic": "Missing number",
    "level": "easy",
-   "prompt": "▢ × 10 = 50",
+   "prompt": "3 × ▢ = 12",
    "mode": "number",
-   "answer": 5
+   "answer": 4
   },
   {
    "n": 85,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "easy",
-   "prompt": "4 ladoos are put into rows of 2. How many rows are there?",
+   "prompt": "Arjun has 4 boxes of mangoes. Each box holds 4. How many mangoes altogether?",
    "mode": "number",
-   "answer": 2
+   "answer": 16
   },
   {
    "n": 86,
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "just",
-   "prompt": "2 × 10",
+   "prompt": "2 × 4",
    "mode": "number",
-   "answer": 20
+   "answer": 8
   },
   {
    "n": 87,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
    "level": "just",
-   "prompt": "30 × 4",
+   "prompt": "41 × 9",
    "mode": "number",
-   "answer": 120,
-   "note": "Split it: 30 × 4 and 0 × 4"
+   "answer": 369,
+   "note": "Split it: 40 × 9 and 1 × 9"
   },
   {
    "n": 88,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
    "level": "just",
-   "prompt": "80 ÷ 10",
+   "prompt": "49 ÷ 7",
    "mode": "number",
-   "answer": 8
+   "answer": 7
   },
   {
    "n": 89,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "just",
-   "prompt": "37 biscuits shared equally between 9 friends",
+   "prompt": "40 biscuits shared equally between 9 friends",
    "mode": "multi",
    "answer": [
     4,
-    1
+    4
    ],
    "fields": [
     {
@@ -1020,67 +1021,67 @@
    "type": "muldiv-missing",
    "topic": "Missing number",
    "level": "just",
-   "prompt": "4 × ▢ = 16",
+   "prompt": "5 × ▢ = 10",
    "mode": "number",
-   "answer": 4
+   "answer": 2
   },
   {
    "n": 91,
    "type": "muldiv-groups",
    "topic": "Equal groups",
    "level": "just",
-   "prompt": "6 + 6 + 6 = ▢ × 6",
+   "prompt": "10 + 10 = ▢ × 10",
    "mode": "number",
-   "answer": 3,
-   "note": "How many groups of 6 are there?"
+   "answer": 2,
+   "note": "How many groups of 10 are there?"
   },
   {
    "n": 92,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "just",
-   "prompt": "49 mangoes are put into rows of 7. How many rows are there?",
+   "prompt": "60 biscuits are put into rows of 10. How many rows are there?",
    "mode": "number",
-   "answer": 7
+   "answer": 6
   },
   {
    "n": 93,
    "type": "muldiv-table",
    "topic": "Times tables",
    "level": "challenge",
-   "prompt": "9 × 5",
+   "prompt": "12 × 12",
    "mode": "number",
-   "answer": 45
+   "answer": 144
   },
   {
    "n": 94,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
    "level": "challenge",
-   "prompt": "89 × 4",
+   "prompt": "68 × 6",
    "mode": "number",
-   "answer": 356,
-   "note": "Split it: 80 × 4 and 9 × 4"
+   "answer": 408,
+   "note": "Split it: 60 × 6 and 8 × 6"
   },
   {
    "n": 95,
    "type": "muldiv-divide",
    "topic": "Sharing exactly",
    "level": "challenge",
-   "prompt": "8 ÷ 2",
+   "prompt": "25 ÷ 5",
    "mode": "number",
-   "answer": 4
+   "answer": 5
   },
   {
    "n": 96,
    "type": "muldiv-remainder",
    "topic": "How many left over?",
    "level": "challenge",
-   "prompt": "35 pencils shared equally between 6 friends",
+   "prompt": "51 mangoes shared equally between 5 friends",
    "mode": "multi",
    "answer": [
-    5,
-    5
+    10,
+    1
    ],
    "fields": [
     {
@@ -1093,41 +1094,41 @@
   },
   {
    "n": 97,
-   "type": "muldiv-missing",
-   "topic": "Missing number",
-   "level": "challenge",
-   "prompt": "36 ÷ ▢ = 12",
-   "mode": "number",
-   "answer": 3
-  },
-  {
-   "n": 98,
    "type": "muldiv-groups",
    "topic": "Equal groups",
    "level": "challenge",
-   "prompt": "7 + 7 + 7 = ▢ × 7",
+   "prompt": "4 + 4 + 4 + 4 + 4 = ▢ × 4",
    "mode": "number",
-   "answer": 3,
-   "note": "How many groups of 7 are there?"
+   "answer": 5,
+   "note": "How many groups of 4 are there?"
   },
   {
-   "n": 99,
+   "n": 98,
    "type": "muldiv-story",
    "topic": "Story problems",
    "level": "challenge",
-   "prompt": "Riya has 7 boxes of biscuits. Each box holds 10. How many biscuits altogether?",
+   "prompt": "One pencil costs ₹9. How much do 4 pencils cost?",
    "mode": "number",
-   "answer": 70
+   "answer": 36
+  },
+  {
+   "n": 99,
+   "type": "muldiv-table",
+   "topic": "Times tables",
+   "level": "easy",
+   "prompt": "2 × 7",
+   "mode": "number",
+   "answer": 14
   },
   {
    "n": 100,
    "type": "muldiv-two-digit",
    "topic": "2-digit × 1-digit",
    "level": "easy",
-   "prompt": "25 × 4",
+   "prompt": "12 × 2",
    "mode": "number",
-   "answer": 100,
-   "note": "Split it: 20 × 4 and 5 × 4"
+   "answer": 24,
+   "note": "Split it: 10 × 2 and 2 × 2"
   }
  ]
 }
