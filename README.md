@@ -29,6 +29,20 @@ Mathly.register({
 Answer modes: `number` (one box), `choice` (big buttons, needs `choices`), `multi` (several labelled boxes, needs `fields`), `unit` (a box with a unit after it). Adding a topic = one `Mathly.register` call, one entry in `assets/concepts.js`, one entry in `assets/catalog.js`.
 - `assets/style.css`, `assets/menu.js`, `assets/app.js`, `assets/quiz.js`, `assets/concept.js`, `assets/concepts.js`, `assets/selftest.js` — styles and logic. No build step, no dependencies.
 
+## Olympiad section
+
+`olympiad/3/` is a separate track for IMO-style papers, on the same engine:
+
+- `olympiad/3/index.html` — the hub: the paper's shape, drills for every question type, and your last papers.
+- `olympiad/3/practice.html?type=<id>` (or `?section=<id>`) — ten questions of one kind, untimed, with the reason shown as soon as you answer.
+- `olympiad/3/paper.html` — a full practice paper: one clock, a question strip you can skip around and flag, nothing marked until you hand it in, then section-wise scores and a review with an explanation on every question.
+- `olympiad/3/selftest.html` — the same harness with two extra rules for olympiad questions: exactly four options, and an explanation on every one.
+- `data/olympiad/3/paper.json` — the paper pattern (sections, counts, minutes). Patterns change year to year; edit this file, nothing else.
+- `assets/olympiad/*.js` — `kit.js` (four-option helper), then `lr`, `mr`, `ev` and `ach` question types.
+
+Every olympiad question builds its own wrong options from the mistakes children actually make — the
+off-by-one, the forgotten carry, area instead of perimeter — so a wrong click says something.
+
 ## Where the content lives
 
 All content is JSON under `data/`, fetched at runtime — no content is hard-coded into a page:

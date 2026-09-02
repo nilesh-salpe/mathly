@@ -25,6 +25,22 @@
 
     if (q.mode === 'choice') {
       if (!Array.isArray(q.choices) || q.choices.length < 2 || q.choices.length > 4) return 'needs 2 to 4 choices';
+      // olympiad questions are always four options with a reason attached
+      if (type && type.section) {
+        if (q.choices.length !== 4) return 'an olympiad question needs exactly four options';
+        if (!q.why || !String(q.why).trim()) return 'no explanation on this question';
+        if (/undefined|NaN/.test(String(q.why))) return 'the explanation reads badly';
+        // every option must look like the same kind of thing as the answer:
+        // digits stay digits (a code may keep a leading zero), words stay words
+        var digitsOnly = /^\d+$/;
+        var answerIsDigits = digitsOnly.test(String(q.answer));
+        for (var c = 0; c < q.choices.length; c++) {
+          var option = String(q.choices[c]);
+          if (option.length > 30) return 'an option is too long to be believable';
+          if (answerIsDigits && !digitsOnly.test(option)) return 'option "' + option + '" is not a plain number';
+          if (/\d\.\d{3}/.test(option)) return 'option "' + option + '" looks like a stray number';
+        }
+      }
       var seen = {}, correct = 0;
       q.choices.forEach(function (c) {
         if (seen[c]) correct = -99;

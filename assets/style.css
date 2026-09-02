@@ -614,3 +614,34 @@ body {
   .bank-item { break-inside: avoid; border-color: #ddd; background: #fff; }
   .bank-tag { display: none; }
 }
+
+/* ---------- Olympiad ---------- */
+.choices-wide { margin-left: 0; width: 100%; gap: .5rem; }
+.choices-wide .choice { flex: 1 1 8rem; text-align: center; font-size: 1.05rem; }
+.quiz-item-drill { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+.quiz-item-drill .quiz-sum { flex: 1 1 100%; font-size: 1.08rem; font-weight: 500; line-height: 1.45; }
+.drill-list { grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
+.why {
+  width: 100%; margin-top: .5rem; padding: .5rem .8rem; font-size: .92rem;
+  background: var(--accent-soft); border-radius: 12px; color: #4b3a86;
+}
+.why strong { color: var(--accent); }
+
+.strip { display: flex; flex-wrap: wrap; gap: .3rem; margin: .2rem 0 1.1rem; }
+.strip-dot {
+  width: 2rem; height: 2rem; border-radius: 10px; cursor: pointer;
+  font-family: inherit; font-size: .82rem; font-weight: 600;
+  background: #fff; border: 2px solid var(--line); color: var(--ink-soft);
+}
+.strip-dot.done { background: var(--right-bg); border-color: var(--right-line); color: var(--right-ink); }
+.strip-dot.flagged { background: var(--blank-bg); border-color: var(--blank-line); color: var(--blank-ink); }
+.strip-dot.here { outline: 3px solid var(--accent); outline-offset: 1px; }
+
+.exam-card {
+  border: 3px solid var(--line); border-radius: 20px; padding: 1.1rem 1.2rem;
+  display: flex; flex-direction: column; gap: .8rem; align-items: flex-start;
+}
+.exam-prompt { margin: 0; font-size: 1.25rem; font-weight: 500; line-height: 1.5; }
+.exam-question { margin-bottom: 1.1rem; }
+.review-list { grid-template-columns: 1fr; }
+@media print { .strip, .quiz-actions, .site-header .crumbs, .site-footer { display: none !important; } }

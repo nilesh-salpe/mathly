@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drill &middot; Mathly Olympiad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap wrap-wide">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">🎈 Mathly</a>
+      <a href="index.html">🏅 Olympiad</a>
+      <span class="crumb-here" id="drillCrumb">Drill</span>
+    </nav>
+    <h1 class="brand" id="drillTitle">Drill</h1>
+    <p class="tagline">Answer, see why, move on. No score, no clock.</p>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+  <section class="panel">
+    <div class="quiz-top">
+      <h2 class="panel-title" id="drillProgress">Ten questions</h2>
+      <div class="quiz-actions" style="margin-top:0">
+        <button type="button" class="btn btn-ghost" id="newSet"><span class="btn-emoji" aria-hidden="true">🔄</span>New set</button>
+      </div>
+    </div>
+    <ol class="quiz-list drill-list" id="drillList"></ol>
+  </section>
+</main>
+
+<footer class="wrap wrap-wide site-footer">
+  <p><a href="index.html">⬅ Back to olympiad practice</a></p>
+</footer>
+
+<script>window.MATHLY_DATA_BASE = '../../data/olympiad/3/';</script>
+<script src="../../assets/engine.js"></script>
+<script src="../../assets/data.js"></script>
+<script src="../../assets/olympiad/questions.js"></script>
+<script src="../../assets/olympiad/practice.js"></script>
+</body>
+</html>

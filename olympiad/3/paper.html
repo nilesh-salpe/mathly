@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice paper &middot; Mathly Olympiad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap wrap-wide">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">🎈 Mathly</a>
+      <a href="index.html">🏅 Olympiad</a>
+      <span class="crumb-here">Practice paper</span>
+    </nav>
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">📝</span> Practice paper</h1>
+    <p class="tagline" id="paperIntro">Getting your paper ready…</p>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+  <section class="panel" id="startPanel" hidden>
+    <h2 class="panel-title">Before you start 🧭</h2>
+    <ul class="plain-list" id="startNotes"></ul>
+    <div class="quiz-actions">
+      <button type="button" class="btn btn-primary btn-big" id="startBtn"><span class="btn-emoji" aria-hidden="true">▶️</span>Start the clock</button>
+      <a class="btn btn-ghost btn-big" href="index.html"><span class="btn-emoji" aria-hidden="true">⬅</span>Not now</a>
+    </div>
+  </section>
+
+  <section class="panel" id="examPanel" hidden>
+    <div class="quiz-top">
+      <h2 class="panel-title" id="examSection">Section</h2>
+      <div class="timer" id="timer"><span class="timer-emoji" aria-hidden="true">⏱️</span><span class="timer-value" id="timerValue">00:00</span></div>
+    </div>
+
+    <div class="strip" id="strip"></div>
+
+    <div class="exam-question" id="examQuestion"></div>
+
+    <div class="quiz-actions">
+      <button type="button" class="btn btn-ghost" id="prevBtn"><span class="btn-emoji" aria-hidden="true">⬅</span>Back</button>
+      <button type="button" class="btn btn-ghost" id="flagBtn"><span class="btn-emoji" aria-hidden="true">🚩</span>Come back to this</button>
+      <button type="button" class="btn btn-primary" id="nextBtn"><span class="btn-emoji" aria-hidden="true">➡</span>Next</button>
+      <button type="button" class="btn btn-primary btn-big" id="submitBtn"><span class="btn-emoji" aria-hidden="true">✅</span>Hand in the paper</button>
+    </div>
+  </section>
+
+  <section class="panel" id="resultPanel" hidden>
+    <h2 class="panel-title">How it went 🏅</h2>
+    <div id="resultSummary"></div>
+    <div class="quiz-actions">
+      <button type="button" class="btn btn-primary" id="againBtn"><span class="btn-emoji" aria-hidden="true">🔄</span>Another paper</button>
+      <a class="btn btn-ghost" href="index.html"><span class="btn-emoji" aria-hidden="true">🏅</span>Back to olympiad practice</a>
+      <button type="button" class="btn btn-ghost" onclick="window.print()"><span class="btn-emoji" aria-hidden="true">🖨️</span>Print the review</button>
+    </div>
+    <ol class="quiz-list review-list" id="reviewList"></ol>
+  </section>
+</main>
+
+<footer class="wrap wrap-wide site-footer">
+  <p><a href="index.html">⬅ Back to olympiad practice</a></p>
+</footer>
+
+<script>window.MATHLY_DATA_BASE = '../../data/olympiad/3/';</script>
+<script src="../../assets/engine.js"></script>
+<script src="../../assets/data.js"></script>
+<script src="../../assets/olympiad/questions.js"></script>
+<script src="../../assets/olympiad/paper.js"></script>
+</body>
+</html>

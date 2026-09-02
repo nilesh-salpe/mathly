@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olympiad self-test &middot; Mathly</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap wrap-wide">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">🎈 Mathly</a><a href="index.html">🏅 Olympiad</a><span class="crumb-here">Self-test</span></nav>
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">🔬</span> Olympiad self-test</h1>
+    <p class="tagline">Every olympiad question type, checked: four options, exactly one right, and a reason on every one.</p>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+  <section class="panel">
+    <div id="verdict" class="result" hidden>
+      <span class="result-emoji" id="verdictEmoji" aria-hidden="true"></span>
+      <span class="result-text"><strong id="verdictHead"></strong><span id="verdictSub"></span></span>
+    </div>
+    <div class="scroll-table" id="report"></div>
+  </section>
+</main>
+
+<script src="../../assets/engine.js"></script>
+<script src="../../assets/olympiad/questions.js"></script>
+<script src="../../assets/selftest.js"></script>
+<script>
+(function () {
+  var report = document.getElementById('report');
+  var verdict = document.getElementById('verdict');
+
+  function draw(rows, failures) {
+    var table = document.createElement('table');
+    table.className = 'test-table';
+    table.innerHTML = '<thead><tr><th>Question type</th><th>Level</th><th>Result</th><th>Variety</th></tr></thead>';
+    var body = document.createElement('tbody');
+    rows.forEach(function (row) {
+      var tr = document.createElement('tr');
+      tr.className = row.problem ? 'bad' : 'good';
+      tr.innerHTML = '<td>' + row.type + '</td><td>' + row.level + '</td>' +
+        '<td>' + (row.problem ? '❌ ' + row.problem : '✅ passed') + '</td>' +
+        '<td>' + row.variety + '% different</td>';
+      body.appendChild(tr);
+    });
+    table.appendChild(body);
+    report.innerHTML = '';
+    report.appendChild(table);
+
+    verdict.hidden = false;
+    verdict.className = 'result ' + (failures ? 'fail' : 'pass');
+    document.getElementById('verdictEmoji').textContent = failures ? '🛑' : '🎉';
+    document.getElementById('verdictHead').textContent = failures
+      ? failures + ' of ' + rows.length + ' checks failed'
+      : 'All ' + rows.length + ' checks passed';
+    document.getElementById('verdictSub').textContent =
+      window.MathlySelfTest.SAMPLES + ' questions generated per type per level.';
+  }
+
+  window.MathlySelfTest.run(draw);
+})();
+</script>
+</body>
+</html>

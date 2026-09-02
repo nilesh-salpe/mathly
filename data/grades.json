@@ -45,6 +45,16 @@
       "ready": false,
       "text": "Decimals and percentages, fractions of fractions, volume, averages and data.",
       "meta": "Coming soon… 🚧"
+    },
+    {
+      "id": "olympiad-3",
+      "title": "Maths Olympiad · Class 3",
+      "emoji": "🏅",
+      "tint": 6,
+      "ready": true,
+      "href": "olympiad/3/index.html",
+      "text": "Practice for IMO-style papers: logical reasoning, mathematical reasoning, everyday maths and the achievers section — four options each, with the reason explained.",
+      "meta": "4 sections · 26 kinds of question · full 35-question paper against the clock"
     }
   ]
 }

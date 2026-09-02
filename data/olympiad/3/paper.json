@@ -1,0 +1,40 @@
+{
+  "class": "3",
+  "title": "Class 3 practice paper",
+  "minutes": 60,
+  "note": "Patterns change from year to year. Check the current one on the organiser's site and edit this file — nothing else needs changing.",
+  "sections": [
+    {
+      "id": "lr",
+      "name": "Logical Reasoning",
+      "emoji": "🧩",
+      "tint": 1,
+      "count": 10,
+      "blurb": "Series, odd one out, analogies, places in a row, directions, codes and calendars — the part a school textbook never covers."
+    },
+    {
+      "id": "mr",
+      "name": "Mathematical Reasoning",
+      "emoji": "🔢",
+      "tint": 5,
+      "count": 13,
+      "blurb": "Class 3 maths asked sideways: making the biggest number, missing digits, divisibility, perimeter, fractions of amounts and reading tables."
+    },
+    {
+      "id": "ev",
+      "name": "Everyday Mathematics",
+      "emoji": "🛒",
+      "tint": 6,
+      "count": 8,
+      "blurb": "Shopping bills and change, bus times, packing boxes, recipes, saving up, and whether an answer sounds sensible."
+    },
+    {
+      "id": "ach",
+      "name": "Achievers",
+      "emoji": "🏅",
+      "tint": 4,
+      "count": 4,
+      "blurb": "Fewer questions, two things to hold in your head at once. These are the ones that separate the top scores."
+    }
+  ]
+}

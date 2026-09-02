@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olympiad practice &middot; Mathly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap wrap-wide">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">🎈 Mathly</a>
+      <span class="crumb-here">Olympiad · Class 3</span>
+    </nav>
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">🏅</span> Olympiad practice</h1>
+    <p class="tagline" id="hubSummary">Four sections, four options each, and one clock for the whole paper.</p>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+  <section class="panel practice-panel">
+    <h2 class="panel-title">Take a practice paper 📝</h2>
+    <p class="hint" id="paperShape"></p>
+    <a class="btn btn-primary btn-big" href="paper.html"><span class="btn-emoji" aria-hidden="true">⏱️</span>Start a practice paper</a>
+  </section>
+
+  <section class="panel" id="lastPanel" hidden>
+    <h2 class="panel-title">Your last papers 📈</h2>
+    <ul class="scoreboard" id="lastPapers"></ul>
+  </section>
+
+  <section class="panel">
+    <h2 class="panel-title">How an olympiad paper is different 🧭</h2>
+    <ol class="how-list">
+      <li class="how-step"><strong>New question shapes 🧩</strong><span>Series, odd one out, mirror logic, codes — none of it appears in a school chapter.</span></li>
+      <li class="how-step"><strong>Four tempting options ✅</strong><span>The wrong answers are the ones you get from the usual slips, so read before you pick.</span></li>
+      <li class="how-step"><strong>One clock for the paper ⏱️</strong><span>Skip what is slow, come back to it, and keep moving.</span></li>
+      <li class="how-step"><strong>Every answer explained 💡</strong><span>After the paper, each question shows why the right answer is right.</span></li>
+    </ol>
+  </section>
+
+  <h2 class="section-title">Practise one kind of question</h2>
+  <div id="sectionList"></div>
+</main>
+
+<footer class="wrap wrap-wide site-footer">
+  <p><a href="../../index.html">⬅ All classes</a> &middot; <a href="../../3/index.html">Class 3 chapters</a> &middot; <a href="selftest.html">Question self-test</a></p>
+</footer>
+
+<script>window.MATHLY_DATA_BASE = '../../data/olympiad/3/';</script>
+<script src="../../assets/engine.js"></script>
+<script src="../../assets/data.js"></script>
+<script src="../../assets/olympiad/questions.js"></script>
+<script src="../../assets/olympiad/hub.js"></script>
+</body>
+</html>
