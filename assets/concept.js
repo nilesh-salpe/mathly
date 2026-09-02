@@ -50,7 +50,10 @@
     '<span class="brand-emoji" aria-hidden="true">' + concept.emoji + '</span> ' + concept.title;
   document.getElementById('conceptIdea').textContent = concept.bigIdea;
   document.getElementById('conceptCrumb').textContent = concept.title;
-  document.getElementById('conceptPicture').innerHTML = concept.picture;
+  var pictureBox = document.getElementById('conceptPicture');
+  pictureBox.innerHTML = concept.picture;
+  var drawing = pictureBox.querySelector('svg');
+  if (drawing) drawing.style.maxWidth = (concept.pictureWidth || 680) + 'px';
   document.getElementById('conceptCaption').textContent = concept.pictureCaption || '';
   document.getElementById('practiceLink').href = concept.practice;
 

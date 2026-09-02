@@ -202,18 +202,64 @@ window.MATHLY = {
       ]
     },
     {
+      id: 'money',
+      title: 'Money',
+      emoji: '🪙',
+      tint: 4,
+      text: 'Rupees and paise, making amounts, adding up a bill and working out change.',
+      games: [
+        { title: 'Rupees and paise', emoji: '🪙', tint: 4, kind: 'learn',
+          href: 'concept.html?c=money&t=rupees-paise',
+          text: 'Notes and coins, and why ₹1 is 100 paise.' },
+        { title: 'Working out change', emoji: '💵', tint: 3, kind: 'learn',
+          href: 'concept.html?c=money&t=giving-change',
+          text: 'Count up from the price to the money you paid.' },
+        { title: 'Money Quiz', emoji: '⏱️', tint: 1, kind: 'quiz',
+          href: 'quiz.html?chapter=money&level=just',
+          text: 'Adding money, change, making amounts, paise, bills and is there enough.' }
+      ]
+    },
+    {
+      id: 'measure',
+      title: 'Measurement',
+      emoji: '📏',
+      tint: 5,
+      text: 'Length, weight and capacity — metres and centimetres, kilograms and grams, litres and millilitres.',
+      games: [
+        { title: 'Big units and small units', emoji: '📏', tint: 5, kind: 'learn',
+          href: 'concept.html?c=measure&t=big-and-small-units',
+          text: 'Changing m to cm, kg to g and l to ml, and back again.' },
+        { title: 'Choosing a sensible measure', emoji: '🤔', tint: 2, kind: 'learn',
+          href: 'concept.html?c=measure&t=sensible-units',
+          text: 'Guess first, then pick the unit that fits.' },
+        { title: 'Measurement Quiz', emoji: '⏱️', tint: 6, kind: 'quiz',
+          href: 'quiz.html?chapter=measure&level=just',
+          text: 'Changing units, comparing, sensible guesses, adding measures and stories.' }
+      ]
+    },
+    {
+      id: 'time',
+      title: 'Time &amp; Calendar',
+      emoji: '🕐',
+      tint: 2,
+      text: 'Reading a clock, how long things take, a.m. and p.m., days, weeks and months.',
+      games: [
+        { title: 'Reading a clock', emoji: '🕐', tint: 2, kind: 'learn',
+          href: 'concept.html?c=time&t=read-the-clock',
+          text: 'The short hand, the long hand and counting minutes in fives.' },
+        { title: 'How long does it take?', emoji: '⏳', tint: 4, kind: 'learn',
+          href: 'concept.html?c=time&t=how-long',
+          text: 'Count on from the start time to the finish time.' },
+        { title: 'Time Quiz', emoji: '⏱️', tint: 5, kind: 'quiz',
+          href: 'quiz.html?chapter=time&level=just',
+          text: 'Clock faces, how long, finishing times, a.m. or p.m., time facts and the calendar.' }
+      ]
+    },
+    {
       id: 'shapes',
       title: 'Shapes &amp; Space',
       emoji: '📐',
       tint: 3,
-      text: 'Coming soon… 🚧',
-      games: []
-    },
-    {
-      id: 'time-money',
-      title: 'Time &amp; Money',
-      emoji: '🕒',
-      tint: 4,
       text: 'Coming soon… 🚧',
       games: []
     },

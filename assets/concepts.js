@@ -309,7 +309,244 @@
     return svg(w + 90, y + 36, body);
   }
 
+
+  /* A line with labelled stops and the jumps between them */
+  function jumpsPicture(stops, jumps, caption) {
+    var w = 540, left = 40, right = w - 40, body = '';
+    var gap = (right - left) / (stops.length - 1);
+    body += '<line x1="' + left + '" y1="86" x2="' + right + '" y2="86" stroke="' + SOFT + '" stroke-width="3" stroke-linecap="round"/>';
+    stops.forEach(function (stop, i) {
+      var x = left + i * gap;
+      body += '<line x1="' + x + '" y1="78" x2="' + x + '" y2="94" stroke="' + INK + '" stroke-width="3"/>';
+      body += label(x, 116, stop, INK, 16);
+    });
+    jumps.forEach(function (jump, i) {
+      var x1 = left + i * gap, x2 = left + (i + 1) * gap, mid = (x1 + x2) / 2;
+      body += '<path d="M ' + x1 + ' 76 Q ' + mid + ' 34 ' + x2 + ' 76" fill="none" stroke="' + PINK_D + '" stroke-width="3"/>';
+      body += '<path d="M ' + (x2 - 8) + ' 68 L ' + x2 + ' 78 L ' + (x2 - 11) + ' 78 z" fill="' + PINK_D + '"/>';
+      body += label(mid, 34, jump, PINK_D, 15);
+    });
+    body += label(w / 2, 142, caption, INK, 17);
+    return svg(w, 158, body);
+  }
+
+  /* Rupee notes and coins laid out to make an amount */
+  function moneyPicture(notes, coins, caption) {
+    var body = '', x = 14;
+    notes.forEach(function (value) {
+      body += '<rect x="' + x + '" y="16" width="96" height="52" rx="8" fill="' + GREEN + '" opacity=".4" stroke="' + GREEN_D + '" stroke-width="3"/>';
+      body += '<text x="' + (x + 48) + '" y="49" text-anchor="middle" fill="' + GREEN_D +
+        '" font-family="Fredoka, sans-serif" font-size="22" font-weight="700">₹' + value + '</text>';
+      x += 106;
+    });
+    coins.forEach(function (value) {
+      body += '<circle cx="' + (x + 26) + '" cy="42" r="26" fill="' + BLUE + '" opacity=".5" stroke="' + BLUE_D + '" stroke-width="3"/>';
+      body += '<text x="' + (x + 26) + '" y="49" text-anchor="middle" fill="' + BLUE_D +
+        '" font-family="Fredoka, sans-serif" font-size="17" font-weight="700">₹' + value + '</text>';
+      x += 60;
+    });
+    body += label(Math.max(x, 200) / 2, 96, caption, INK, 17);
+    return svg(Math.max(x + 10, 220), 112, body);
+  }
+
+  /* One metre marked out in centimetres, with the other two unit pairs beside it */
+  function unitsPicture() {
+    var body = '', w = 520;
+    body += '<rect x="14" y="18" width="' + (w - 28) + '" height="34" rx="8" fill="#fff" stroke="' + PURPLE_D + '" stroke-width="3"/>';
+    for (var i = 1; i < 10; i++) {
+      var x = 14 + (w - 28) * i / 10;
+      body += '<line x1="' + x + '" y1="18" x2="' + x + '" y2="' + (i === 5 ? 52 : 38) + '" stroke="' + PURPLE_D + '" stroke-width="2"/>';
+    }
+    body += label(w / 2, 44, '1 metre = 100 centimetres', PURPLE_D, 16);
+    body += label(w / 4, 86, '1 kg = 1000 g', GREEN_D, 17);
+    body += label(w * 3 / 4, 86, '1 litre = 1000 ml', BLUE_D, 17);
+    body += label(w / 2, 112, 'the big unit is always made of many small ones', SOFT, 13);
+    return svg(w, 128, body);
+  }
+
+  /* Three everyday things with the unit that suits them */
+  function sensibleUnitsPicture() {
+    var items = [
+      { emoji: '✏️', text: 'a pencil', unit: '15 cm', colour: PINK_D },
+      { emoji: '🎒', text: 'a school bag', unit: '3 kg', colour: GREEN_D },
+      { emoji: '🥤', text: 'a glass of water', unit: '200 ml', colour: BLUE_D }
+    ];
+    var body = '', x = 14, boxW = 168;
+    items.forEach(function (item) {
+      body += '<rect x="' + x + '" y="14" width="' + boxW + '" height="86" rx="18" fill="#fff" stroke="#e2d9ef" stroke-width="3"/>';
+      body += '<text x="' + (x + boxW / 2) + '" y="48" text-anchor="middle" font-size="26">' + item.emoji + '</text>';
+      body += label(x + boxW / 2, 68, item.text, SOFT, 13);
+      body += label(x + boxW / 2, 90, item.unit, item.colour, 18);
+      x += boxW + 12;
+    });
+    return svg(x, 112, body);
+  }
+
   window.MATHLY_CONCEPTS = {
+    'rupees-paise': {
+      chapter: 'money',
+      title: 'Rupees and paise',
+      emoji: '🪙',
+      bigIdea: 'One rupee is made of 100 paise, the same way one metre is made of 100 centimetres.',
+      picture: moneyPicture([50, 20, 10], [5], 'a ₹50 note, a ₹20 note, a ₹10 note and a ₹5 coin make ₹85'),
+      pictureCaption: '₹50 + ₹20 + ₹10 + ₹5 = ₹85',
+      remember: '100 paise = ₹1. To change rupees into paise, multiply by 100.',
+      watchOut: [
+        '₹2 and 50 paise is 250 paise, not 205 paise.',
+        'Write the rupee sign in front of the number: ₹85, not 85₹.'
+      ],
+      words: [
+        { word: 'Note', meaning: 'Paper money — ₹10, ₹20, ₹50, ₹100 and more.' },
+        { word: 'Coin', meaning: 'Metal money — ₹1, ₹2, ₹5, ₹10.' },
+        { word: 'Paise', meaning: 'The small unit of money. 100 of them make one rupee.' }
+      ],
+      steps: [
+        { head: 'Start with the big notes', text: 'To make ₹85, take the biggest note that fits: ₹50.' },
+        { head: 'Keep going', text: '₹85 − ₹50 = ₹35 still to make. Add a ₹20 note, then a ₹10 note.' },
+        { head: 'Finish with coins', text: '₹5 is left, so add a ₹5 coin. Altogether: 50 + 20 + 10 + 5 = 85.' },
+        { head: 'Rupees into paise', text: '₹3 = 300 paise. ₹3 and 50 paise = 350 paise.' }
+      ],
+      tryTypes: ['money-make', 'money-paise'],
+      practice: 'quiz.html?chapter=money&level=just'
+    },
+
+    'giving-change': {
+      chapter: 'money',
+      title: 'Working out change',
+      emoji: '💵',
+      bigIdea: 'Change is what is left when you pay with more than the price. Count up from the price to the money you gave.',
+      picture: jumpsPicture(['₹34', '₹40', '₹50'], ['+ ₹6', '+ ₹10'], '₹6 + ₹10 = ₹16 change'),
+      pictureCaption: 'A ₹34 pen paid for with a ₹50 note',
+      remember: 'Counting up is easier than taking away: go to the next ten first, then on to the amount you paid.',
+      watchOut: [
+        'Change can never be more than the money you handed over.',
+        'If the price and the money paid are the same, the change is ₹0 — that is fine.'
+      ],
+      words: [
+        { word: 'Change', meaning: 'The money handed back to you.' },
+        { word: 'Cost', meaning: 'How much something is priced at.' },
+        { word: 'Total', meaning: 'Everything added together.' }
+      ],
+      steps: [
+        { head: 'Look at the price', text: 'The pen costs ₹34 and you pay with ₹50.' },
+        { head: 'Jump to the next ten', text: 'From ₹34 up to ₹40 is ₹6.' },
+        { head: 'Jump to what you paid', text: 'From ₹40 up to ₹50 is ₹10.' },
+        { head: 'Add the jumps', text: '₹6 + ₹10 = ₹16. So the change is ₹16. Check: 34 + 16 = 50.' }
+      ],
+      tryTypes: ['money-change', 'money-bill'],
+      practice: 'quiz.html?topic=money-change&level=just'
+    },
+
+    'big-and-small-units': {
+      chapter: 'measure',
+      title: 'Big units and small units',
+      emoji: '📏',
+      bigIdea: 'Every measure has a big unit and a small unit. Metres and centimetres, kilograms and grams, litres and millilitres.',
+      picture: unitsPicture(),
+      pictureCaption: '1 m = 100 cm · 1 kg = 1000 g · 1 l = 1000 ml',
+      remember: 'To go from the big unit to the small one, multiply. To come back, divide.',
+      watchOut: [
+        'Metres use 100, but kilograms and litres use 1000. It is easy to mix them up.',
+        '2 m 45 cm is 245 cm, not 2045 cm.'
+      ],
+      words: [
+        { word: 'Length', meaning: 'How long something is — measured in m and cm.' },
+        { word: 'Weight', meaning: 'How heavy something is — measured in kg and g.' },
+        { word: 'Capacity', meaning: 'How much a container holds — measured in l and ml.' }
+      ],
+      steps: [
+        { head: 'Name the units', text: 'Length uses metres and centimetres. 1 m = 100 cm.' },
+        { head: 'Going down to the small unit', text: '2 m = 2 × 100 = 200 cm. Add the extra centimetres: 2 m 45 cm = 245 cm.' },
+        { head: 'Coming back up', text: '350 cm = 3 m and 50 cm, because 3 whole hundreds fit into 350.' },
+        { head: 'Weight and capacity', text: 'They work the same way, but with 1000: 2 kg 300 g = 2300 g, and 1 l 500 ml = 1500 ml.' }
+      ],
+      tryTypes: ['measure-to-small', 'measure-to-big'],
+      practice: 'quiz.html?chapter=measure&level=just'
+    },
+
+    'sensible-units': {
+      chapter: 'measure',
+      title: 'Choosing a sensible measure',
+      emoji: '🤔',
+      bigIdea: 'Before measuring, guess. A sensible guess tells you which unit to use and warns you when an answer is silly.',
+      picture: sensibleUnitsPicture(),
+      pictureCaption: 'Small things use small units',
+      remember: 'Use cm for small lengths and m for big ones, g for light things and kg for heavy ones, ml for a glass and l for a bucket.',
+      watchOut: [
+        'A pencil is about 15 cm, not 15 m — 15 m is longer than a classroom.',
+        'A school bag is about 3 kg, not 3 g. 3 g is lighter than a coin.'
+      ],
+      words: [
+        { word: 'Estimate', meaning: 'A sensible guess made before measuring.' },
+        { word: 'Unit', meaning: 'What you measure in: cm, m, g, kg, ml, l.' },
+        { word: 'Compare', meaning: 'Decide which of two measures is more.' }
+      ],
+      steps: [
+        { head: 'Picture the thing', text: 'Think of something you know the size of — your hand is about 10 cm across.' },
+        { head: 'Pick the unit', text: 'Small things use cm, g and ml. Big things use m, kg and l.' },
+        { head: 'Make the guess', text: 'A pencil is about as long as your hand and a half, so around 15 cm.' },
+        { head: 'Check the answer', text: 'If a measurement sounds silly — a pencil 15 m long — the unit is probably wrong.' }
+      ],
+      tryTypes: ['measure-estimate', 'measure-compare'],
+      practice: 'quiz.html?topic=measure-estimate&level=just'
+    },
+
+    'read-the-clock': {
+      chapter: 'time',
+      title: 'Reading a clock',
+      emoji: '🕐',
+      bigIdea: 'The short hand tells you the hour. The long hand tells you the minutes, counting five for every big number.',
+      picture: (window.Mathly && window.Mathly.clockSvg) ? window.Mathly.clockSvg(3, 40) : '',
+      pictureWidth: 260,
+      pictureCaption: 'The short hand is past 3, the long hand is on 8: twenty to four, or 3:40',
+      remember: 'Count the minutes in fives round the clock: 5, 10, 15, 20… all the way to 60.',
+      watchOut: [
+        'When the long hand is past 6, the short hand is nearly at the next number — but the hour is still the smaller one.',
+        'The long hand on 8 means 40 minutes, not 8 minutes.'
+      ],
+      words: [
+        { word: 'Hour hand', meaning: 'The short, thick hand.' },
+        { word: 'Minute hand', meaning: 'The long, thin hand.' },
+        { word: 'Half past', meaning: '30 minutes after the hour.' },
+        { word: 'Quarter past', meaning: '15 minutes after the hour.' }
+      ],
+      steps: [
+        { head: 'Find the short hand', text: 'It is between 3 and 4, so the hour is 3 — always the number it has passed.' },
+        { head: 'Find the long hand', text: 'It points at 8.' },
+        { head: 'Count in fives', text: '8 × 5 = 40, so it is 40 minutes past the hour.' },
+        { head: 'Say the time', text: '3:40. People also say twenty minutes to four, because 20 more minutes reaches 4 o clock.' }
+      ],
+      tryTypes: ['time-read', 'time-ampm'],
+      practice: 'quiz.html?chapter=time&level=just'
+    },
+
+    'how-long': {
+      chapter: 'time',
+      title: 'How long does it take?',
+      emoji: '⏳',
+      bigIdea: 'To find how long something lasts, count on from the start time to the finish time — the o clock first, then the extra minutes.',
+      picture: jumpsPicture(['3:15', '4:00', '4:05'], ['+ 45 min', '+ 5 min'], '45 + 5 = 50 minutes'),
+      pictureCaption: 'From 3:15 to 4:05 is 50 minutes',
+      remember: 'Jump to the next o clock first, then count the leftover minutes, then add the jumps.',
+      watchOut: [
+        'An hour is 60 minutes, not 100. 1 hour 20 minutes is 80 minutes.',
+        'Counting the hours only is not enough — the minutes on both sides matter.'
+      ],
+      words: [
+        { word: 'Duration', meaning: 'How long something lasts.' },
+        { word: 'a.m.', meaning: 'Midnight to noon — the morning half of the day.' },
+        { word: 'p.m.', meaning: 'Noon to midnight — the afternoon and night.' }
+      ],
+      steps: [
+        { head: 'Write both times', text: 'The film starts at 3:15 and finishes at 4:05.' },
+        { head: 'Jump to the o clock', text: 'From 3:15 to 4:00 is 45 minutes.' },
+        { head: 'Count the extra minutes', text: 'From 4:00 to 4:05 is 5 minutes.' },
+        { head: 'Add the jumps', text: '45 + 5 = 50 minutes altogether.' }
+      ],
+      tryTypes: ['time-elapsed', 'time-finish'],
+      practice: 'quiz.html?topic=time-elapsed&level=just'
+    },
+
     'equal-parts': {
       chapter: 'fractions',
       title: 'What a fraction is',

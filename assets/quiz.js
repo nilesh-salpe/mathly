@@ -50,7 +50,7 @@
 
   /* ---------- setting up ---------- */
 
-  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value', addsub: 'Add & subtract', muldiv: 'Multiply & divide', fractions: 'Fractions' };
+  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value', addsub: 'Add & subtract', muldiv: 'Multiply & divide', fractions: 'Fractions', money: 'Money', measure: 'Measurement', time: 'Time & calendar' };
 
   function buildTopicChips() {
     var chapters = {};
