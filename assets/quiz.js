@@ -50,7 +50,7 @@
 
   /* ---------- setting up ---------- */
 
-  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value', addsub: 'Add & subtract', muldiv: 'Multiply & divide', fractions: 'Fractions', money: 'Money', measure: 'Measurement', time: 'Time & calendar' };
+  var CHAPTER_NAMES = { foundations: 'Foundations', numbers: 'Numbers & place value', addsub: 'Add & subtract', muldiv: 'Multiply & divide', fractions: 'Fractions', money: 'Money', measure: 'Measurement', time: 'Time & calendar', shapes: 'Shapes & patterns', data: 'Data handling' };
 
   function buildTopicChips() {
     var chapters = {};
@@ -79,7 +79,7 @@
         box.type = 'checkbox';
         box.className = 'op-check';
         box.value = type.id;
-        box.checked = topic ? !!wanted[type.id] : (chapter ? chapter === id : type.id === 'mul');
+        box.checked = topic ? !!wanted[type.id] : (chapter ? (chapter === 'all' || chapter === id) : type.id === 'mul');
         var text = document.createElement('span');
         text.textContent = type.emoji + ' ' + type.label;
         label.appendChild(box);

@@ -257,19 +257,51 @@ window.MATHLY = {
     },
     {
       id: 'shapes',
-      title: 'Shapes &amp; Space',
+      title: 'Shapes &amp; Patterns',
       emoji: '📐',
       tint: 3,
-      text: 'Coming soon… 🚧',
-      games: []
+      text: 'Flat shapes and solids, sides and corners, lines of symmetry, and patterns that repeat or grow.',
+      games: [
+        { title: 'Sides and corners', emoji: '📐', tint: 3, kind: 'learn',
+          href: 'concept.html?c=shapes&t=sides-and-corners',
+          text: 'Name a shape by counting its straight sides.' },
+        { title: 'Symmetry and patterns', emoji: '🦋', tint: 5, kind: 'learn',
+          href: 'concept.html?c=shapes&t=symmetry-and-patterns',
+          text: 'Folding shapes in half, and finding the rule in a pattern.' },
+        { title: 'Shapes &amp; Patterns Quiz', emoji: '⏱️', tint: 1, kind: 'quiz',
+          href: 'quiz.html?chapter=shapes&level=just',
+          text: 'Sides and corners, naming shapes, symmetry, solids and patterns.' }
+      ]
     },
     {
-      id: 'word-problems',
-      title: 'Word Problems',
-      emoji: '📚',
+      id: 'data',
+      title: 'Data Handling',
+      emoji: '📊',
+      tint: 6,
+      text: 'Tally marks, pictographs and answering questions from a small table.',
+      games: [
+        { title: 'Tally marks and pictographs', emoji: '📊', tint: 6, kind: 'learn',
+          href: 'concept.html?c=data&t=tally-and-pictograph',
+          text: 'Bundles of five, and why the key matters.' },
+        { title: 'Data Quiz', emoji: '⏱️', tint: 2, kind: 'quiz',
+          href: 'quiz.html?chapter=data&level=just',
+          text: 'Reading tallies, pictographs, totals, most and fewest, and how many more.' }
+      ]
+    },
+    {
+      id: 'revision',
+      title: 'Revision &amp; Report',
+      emoji: '🏅',
       tint: 5,
-      text: 'Coming soon… 🚧',
-      games: []
+      text: 'A mixed quiz from every chapter, and a report card for a grown-up to look at.',
+      games: [
+        { title: 'Mixed Quiz', emoji: '🎲', tint: 5, kind: 'quiz',
+          href: 'quiz.html?chapter=all&level=just',
+          text: 'Every kind of question in the whole of Mathly, mixed together. Untick any you do not want.' },
+        { title: 'My report card', emoji: '🏅', tint: 4, kind: 'learn',
+          href: 'report.html',
+          text: 'Stars for each topic, what has been practised, and what to try next.' }
+      ]
     }
   ]
 };

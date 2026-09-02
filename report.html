@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My report card &middot; Mathly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap wrap-wide">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">🎈 Mathly</a>
+      <a href="chapter.html?c=revision" id="chapterCrumb">🏅 Revision &amp; Report</a>
+      <span class="crumb-here">My report card</span>
+    </nav>
+    <h1 class="brand"><span class="brand-emoji" aria-hidden="true">🏅</span> My report card</h1>
+    <p class="tagline" id="reportSummary">Every quiz you finish adds to this page.</p>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+  <section class="panel" id="nextPanel" hidden>
+    <h2 class="panel-title">Good things to practise next 🎯</h2>
+    <nav class="menu" id="nextUp"></nav>
+  </section>
+
+  <section class="panel">
+    <h2 class="panel-title">Chapter by chapter 📚</h2>
+    <div id="reportBody"></div>
+  </section>
+
+  <section class="panel no-print">
+    <h2 class="panel-title">For a grown-up ⚙️</h2>
+    <p class="hint">Stars are kept in this browser only — a different device or a cleared browser starts again. Printing this page gives you a paper copy.</p>
+    <div class="quiz-actions" style="margin-top:.8rem">
+      <button type="button" class="btn btn-ghost" onclick="window.print()"><span class="btn-emoji" aria-hidden="true">🖨️</span>Print this report</button>
+      <button type="button" class="btn btn-ghost" id="clearProgress"><span class="btn-emoji" aria-hidden="true">🧹</span>Clear all progress</button>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap wrap-wide site-footer">
+  <p><a href="index.html">⬅ All chapters</a></p>
+</footer>
+
+<script src="assets/catalog.js"></script>
+<script src="assets/engine.js"></script>
+<script src="assets/questions.js"></script>
+<script src="assets/report.js"></script>
+</body>
+</html>

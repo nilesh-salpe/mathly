@@ -382,7 +382,143 @@
     return svg(x, 112, body);
   }
 
+
+  /* A row of shapes with their sides counted */
+  function shapesRowPicture() {
+    var shapes = [{ n: 3, name: 'triangle' }, { n: 4, name: 'square' }, { n: 5, name: 'pentagon' }, { n: 6, name: 'hexagon' }];
+    var body = '', x = 20, gap = 130;
+    shapes.forEach(function (shape) {
+      var points = [];
+      for (var i = 0; i < shape.n; i++) {
+        var a = (i / shape.n) * Math.PI * 2 - Math.PI / 2;
+        points.push((x + 44 + Math.cos(a) * 38).toFixed(1) + ',' + (52 + Math.sin(a) * 38).toFixed(1));
+      }
+      body += '<polygon points="' + points.join(' ') + '" fill="' + PURPLE + '" opacity=".4" stroke="' + PURPLE_D + '" stroke-width="3.5" stroke-linejoin="round"/>';
+      body += label(x + 44, 108, shape.name, INK, 15);
+      body += label(x + 44, 126, shape.n + ' sides · ' + shape.n + ' corners', SOFT, 12);
+      x += gap;
+    });
+    return svg(x, 138, body);
+  }
+
+  /* A shape folded along its line of symmetry */
+  function symmetryPicture() {
+    var body = '';
+    body += '<rect x="60" y="20" width="150" height="90" rx="8" fill="' + GREEN + '" opacity=".35" stroke="' + GREEN_D + '" stroke-width="3.5"/>';
+    body += '<line x1="135" y1="10" x2="135" y2="120" stroke="' + PINK_D + '" stroke-width="3" stroke-dasharray="7 5"/>';
+    body += label(135, 140, 'one line of symmetry', PINK_D, 13);
+    var points = [];
+    for (var i = 0; i < 5; i++) {
+      var a = (i / 5) * Math.PI * 2 - Math.PI / 2;
+      points.push((380 + Math.cos(a) * 48).toFixed(1) + ',' + (66 + Math.sin(a) * 48).toFixed(1));
+    }
+    body += '<polygon points="' + points.join(' ') + '" fill="' + PURPLE + '" opacity=".35" stroke="' + PURPLE_D + '" stroke-width="3.5" stroke-linejoin="round"/>';
+    for (var j = 0; j < 5; j++) {
+      var b = (j / 5) * Math.PI * 2 - Math.PI / 2;
+      body += '<line x1="380" y1="66" x2="' + (380 + Math.cos(b) * 48) + '" y2="' + (66 + Math.sin(b) * 48) +
+        '" stroke="' + PINK_D + '" stroke-width="2" stroke-dasharray="6 4"/>';
+    }
+    body += label(380, 140, 'a regular pentagon has five', PINK_D, 13);
+    return svg(500, 152, body);
+  }
+
+  /* A pictograph with a key */
+  function pictographPicture() {
+    var rows = [{ day: 'Monday', many: 4 }, { day: 'Tuesday', many: 2 }, { day: 'Wednesday', many: 5 }];
+    var body = label(100, 24, 'Key: 🚲 = 5 bikes', SOFT, 14), y = 56;
+    rows.forEach(function (row) {
+      body += '<text x="14" y="' + y + '" fill="' + INK + '" font-family="Fredoka, sans-serif" font-size="15" font-weight="600">' + row.day + '</text>';
+      var bikes = '';
+      for (var i = 0; i < row.many; i++) bikes += '🚲';
+      body += '<text x="120" y="' + y + '" font-size="20">' + bikes + '</text>';
+      body += label(120 + row.many * 24 + 34, y, '= ' + row.many * 5, PINK_D, 15);
+      y += 34;
+    });
+    return svg(400, y + 6, body);
+  }
+
   window.MATHLY_CONCEPTS = {
+    'sides-and-corners': {
+      chapter: 'shapes',
+      title: 'Sides and corners',
+      emoji: '📐',
+      bigIdea: 'Flat shapes are named by how many straight sides they have — and they always have the same number of corners.',
+      picture: shapesRowPicture(),
+      pictureCaption: 'triangle 3, square 4, pentagon 5, hexagon 6',
+      remember: 'Count the straight sides and you have the name. Sides and corners always match.',
+      watchOut: [
+        'A square and a rectangle both have 4 sides — a square has all four the same length.',
+        'A circle has no straight sides and no corners at all.'
+      ],
+      words: [
+        { word: 'Side', meaning: 'One straight edge of a flat shape.' },
+        { word: 'Corner', meaning: 'The point where two sides meet.' },
+        { word: 'Face', meaning: 'A flat surface on a solid shape, like one side of a dice.' }
+      ],
+      steps: [
+        { head: 'Trace the outline', text: 'Follow the edge of the shape with your finger and count each straight part.' },
+        { head: 'Count the corners', text: 'Every time your finger turns, that is a corner.' },
+        { head: 'Name it', text: '3 sides is a triangle, 4 a square or rectangle, 5 a pentagon, 6 a hexagon, 8 an octagon.' },
+        { head: 'Solids too', text: 'A cube is made of 6 square faces, with 8 corners and 12 edges.' }
+      ],
+      tryTypes: ['shapes-sides', 'shapes-name'],
+      practice: 'quiz.html?chapter=shapes&level=just'
+    },
+
+    'symmetry-and-patterns': {
+      chapter: 'shapes',
+      title: 'Symmetry and patterns',
+      emoji: '🦋',
+      bigIdea: 'A line of symmetry folds a shape into two halves that match exactly. A pattern is something that repeats or grows by the same amount.',
+      picture: symmetryPicture(),
+      pictureCaption: 'A rectangle folds in two ways; a regular pentagon in five',
+      remember: 'A regular shape has as many lines of symmetry as it has sides.',
+      watchOut: [
+        'A rectangle has only 2 lines of symmetry, not 4 — folding it corner to corner does not match.',
+        'In a number pattern, check the jump between every pair, not just the first two.'
+      ],
+      words: [
+        { word: 'Symmetry', meaning: 'When both halves match exactly after folding.' },
+        { word: 'Pattern', meaning: 'Something that repeats or grows in the same way each time.' },
+        { word: 'Rule', meaning: 'What the pattern does each step — add 5, double, or repeat.' }
+      ],
+      steps: [
+        { head: 'Fold it in your head', text: 'If the two halves land exactly on top of each other, that fold line is a line of symmetry.' },
+        { head: 'Try every direction', text: 'A square folds four ways: down, across, and both diagonals.' },
+        { head: 'Find a pattern rule', text: 'In 4, 8, 12, 16 the jump is always +4, so the next is 20.' },
+        { head: 'Repeating patterns', text: 'In 🔺 🔵 🔺 🔵 the unit is two shapes long, so the next is 🔺.' }
+      ],
+      tryTypes: ['shapes-symmetry', 'patterns-number'],
+      practice: 'quiz.html?topic=patterns-number&level=just'
+    },
+
+    'tally-and-pictograph': {
+      chapter: 'data',
+      title: 'Tally marks and pictographs',
+      emoji: '📊',
+      bigIdea: 'Counting is easier in bundles. Tally marks bundle by five; a pictograph lets one picture stand for many things.',
+      picture: pictographPicture(),
+      pictureCaption: 'Each bike stands for 5, so Monday is 4 × 5 = 20 bikes',
+      remember: 'Always read the key first. One picture almost never means one thing.',
+      watchOut: [
+        'The fifth tally mark goes across the other four — it does not stand beside them.',
+        '4 pictures does not mean 4 things. If the key says 5, it means 20.'
+      ],
+      words: [
+        { word: 'Tally', meaning: 'A quick mark made while counting.' },
+        { word: 'Key', meaning: 'The note that says what one picture stands for.' },
+        { word: 'Data', meaning: 'The facts you have collected.' }
+      ],
+      steps: [
+        { head: 'Make the marks', text: 'Draw one line for each thing you count.' },
+        { head: 'Bundle at five', text: 'The fifth mark goes across the other four, so each bundle is easy to spot.' },
+        { head: 'Count the bundles', text: '3 bundles and 2 singles is 3 × 5 + 2 = 17.' },
+        { head: 'Read a pictograph', text: 'Check the key, count the pictures, then multiply. 4 bikes with a key of 5 means 20.' }
+      ],
+      tryTypes: ['data-tally', 'data-pictograph'],
+      practice: 'quiz.html?chapter=data&level=just'
+    },
+
     'rupees-paise': {
       chapter: 'money',
       title: 'Rupees and paise',
