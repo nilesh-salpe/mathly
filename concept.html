@@ -37,6 +37,21 @@
     <button type="button" class="btn btn-ghost" id="nextStep"><span class="btn-emoji" aria-hidden="true">👉</span>Show me the next step</button>
   </section>
 
+  <section class="panel" id="rememberPanel" hidden>
+    <h2 class="panel-title">Remember this ⭐</h2>
+    <p class="remember" id="conceptRemember"></p>
+    <div class="two-up">
+      <div class="mini-panel" id="watchPanel" hidden>
+        <h3 class="mini-title">Watch out 🚧</h3>
+        <ul class="plain-list" id="conceptWatch"></ul>
+      </div>
+      <div class="mini-panel" id="wordsPanel" hidden>
+        <h3 class="mini-title">Words to know 📚</h3>
+        <ul class="word-list" id="conceptWords"></ul>
+      </div>
+    </div>
+  </section>
+
   <section class="panel">
     <h2 class="panel-title">Now you try ✏️</h2>
     <p class="hint">No score and no clock here — have a go, then check.</p>
@@ -51,6 +66,12 @@
     <h2 class="panel-title">Ready to practise? 🚀</h2>
     <p class="hint">A quiz on this topic, as many questions as you like.</p>
     <a class="btn btn-primary btn-big" id="practiceLink" href="quiz.html"><span class="btn-emoji" aria-hidden="true">⏱️</span>Practise this in a quiz</a>
+    <p class="hint" id="practiceNote"></p>
+  </section>
+
+  <section class="panel" id="alsoPanel" hidden>
+    <h2 class="panel-title">More in this chapter ➡️</h2>
+    <nav class="menu" id="conceptAlso"></nav>
   </section>
 </main>
 

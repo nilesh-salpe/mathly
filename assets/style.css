@@ -531,3 +531,28 @@ body {
 /* a drawing inside a question card */
 .quiz-picture { width: 100%; display: flex; justify-content: center; }
 .quiz-picture svg { width: 100%; max-width: 210px; height: auto; }
+
+/* ---------- More explanation on the pages ---------- */
+.remember {
+  margin: 0 0 1rem; padding: .9rem 1.1rem; font-size: 1.08rem; font-weight: 500;
+  background: var(--blank-bg); border: 3px solid var(--blank-line); border-radius: 18px; color: #7a5c10;
+}
+.two-up { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.mini-panel { background: #fdfbff; border: 3px solid var(--line); border-radius: 18px; padding: .9rem 1rem; }
+.mini-title { margin: 0 0 .5rem; font-size: 1rem; font-weight: 600; color: #5a4a92; }
+.plain-list, .word-list { margin: 0; padding-left: 1.1rem; display: grid; gap: .45rem; color: var(--ink-soft); }
+.word-list { list-style: none; padding-left: 0; }
+.word-list strong { color: var(--ink); }
+
+.how-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.how-step {
+  display: grid; gap: .2rem; padding: .8rem 1rem;
+  background: #fdfbff; border: 3px solid var(--line); border-radius: 18px;
+}
+.how-step strong { font-size: 1.02rem; }
+.how-step span { font-size: .92rem; color: var(--ink-soft); }
+
+.card-meta { display: block; margin-top: .25rem; font-size: .82rem; color: var(--ink-soft); }
+.chapter-meta { margin: .4rem 0 0; font-size: .95rem; color: var(--ink-soft); }
+
+.legend-note { margin-top: .8rem; font-size: .9rem; color: var(--ink-soft); }

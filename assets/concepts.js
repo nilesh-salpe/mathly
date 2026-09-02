@@ -323,6 +323,17 @@
         { head: 'The top number', text: 'One part is shaded, so 1 goes on top. We write 1/4 and say one quarter.' },
         { head: 'Watch out', text: 'If the parts are not the same size, it is not a fraction of the whole at all.' }
       ],
+      remember: 'The bottom number counts the equal parts in the whole. The top number counts the parts you have.',
+      watchOut: [
+        'The parts must be exactly the same size, or it is not that fraction at all.',
+        'A bigger bottom number means smaller pieces, not bigger ones.'
+      ],
+      words: [
+        { word: 'Fraction', meaning: 'A part of a whole thing.' },
+        { word: 'Numerator', meaning: 'The number on top — how many parts you have.' },
+        { word: 'Denominator', meaning: 'The number underneath — how many equal parts there are.' },
+        { word: 'Whole', meaning: 'All of it, every part together.' }
+      ],
       tryTypes: ['fractions-shaded', 'fractions-whole'],
       practice: 'quiz.html?topic=fractions-shaded&level=just'
     },
@@ -339,6 +350,16 @@
         { head: 'Share them out', text: '12 mangoes into 3 piles gives 4 in each pile.' },
         { head: 'Take the top number of piles', text: 'One third means take 1 pile — that is 4 mangoes.' },
         { head: 'More than one pile', text: 'Two thirds would be 2 piles, which is 8 mangoes.' }
+      ],
+      remember: 'Divide by the bottom number to make the piles, then multiply by the top number to take the piles you need.',
+      watchOut: [
+        'Make the piles equal before you count. Grabbing a handful gives the wrong answer.',
+        'One quarter of 20 is 5, not 4. The 4 tells you how many piles, not the answer.'
+      ],
+      words: [
+        { word: 'Of', meaning: 'In fractions, "of" tells you to work out that part of the amount.' },
+        { word: 'Share equally', meaning: 'Give exactly the same amount to each group.' },
+        { word: 'Half', meaning: 'One of two equal parts.' }
       ],
       tryTypes: ['fractions-of-group', 'fractions-story'],
       practice: 'quiz.html?topic=fractions-of-group&level=just'
@@ -357,6 +378,16 @@
         { head: 'Look at one piece', text: 'The more pieces you cut a bar into, the smaller each piece becomes.' },
         { head: 'The rule', text: 'So 1/2 > 1/3 > 1/4. A bigger bottom number means a smaller piece.' }
       ],
+      remember: 'When the wholes are the same size, the fraction with the bigger bottom number has the smaller pieces.',
+      watchOut: [
+        '1/4 is smaller than 1/2, even though 4 is bigger than 2.',
+        'You can only compare fairly when both wholes are the same size — half a small roti is not half a big one.'
+      ],
+      words: [
+        { word: 'Compare', meaning: 'Work out which one is bigger or smaller.' },
+        { word: 'Same whole', meaning: 'Both fractions come from things of the same size.' },
+        { word: 'Equal parts', meaning: 'Pieces that are exactly the same size as each other.' }
+      ],
       tryTypes: ['fractions-compare', 'fractions-shaded'],
       practice: 'quiz.html?topic=fractions-compare&level=just'
     },
@@ -373,6 +404,16 @@
         { head: 'Count the groups', text: 'There are 3 plates.' },
         { head: 'Add them up', text: '4 + 4 + 4 = 12.' },
         { head: 'Write it as times', text: '3 groups of 4 is written 3 × 4 = 12. Swapping them gives the same answer: 4 × 3 = 12 too.' }
+      ],
+      remember: '3 × 4 means 3 groups of 4. Multiplying is a shortcut for adding the same number again and again.',
+      watchOut: [
+        'The groups must be equal. Three plates with different amounts is not a times sum.',
+        '3 × 4 and 4 × 3 give the same answer, but they draw different pictures.'
+      ],
+      words: [
+        { word: 'Product', meaning: 'The answer to a multiplication.' },
+        { word: 'Equal groups', meaning: 'Groups with exactly the same number in each.' },
+        { word: 'Times table', meaning: 'The list of answers for one number: 4, 8, 12, 16…' }
       ],
       tryTypes: ['muldiv-groups', 'muldiv-table'],
       practice: 'quiz.html?topic=muldiv-table&level=just'
@@ -391,6 +432,16 @@
         { head: 'What is left?', text: '13 − 12 = 1 biscuit is left over. It cannot be shared without breaking it.' },
         { head: 'Say the answer', text: '13 ÷ 4 = 3 each, with 1 left over. The leftover is called the remainder.' }
       ],
+      remember: 'Deal them out one at a time. Whatever cannot be shared fairly is the remainder.',
+      watchOut: [
+        'The remainder is always smaller than the number of groups. If it is not, each group can take one more.',
+        'When nothing is left over, the remainder is 0 and the sharing was exact.'
+      ],
+      words: [
+        { word: 'Divide', meaning: 'Share into equal groups.' },
+        { word: 'Quotient', meaning: 'How many each group gets.' },
+        { word: 'Remainder', meaning: 'What is left over after sharing fairly.' }
+      ],
       tryTypes: ['muldiv-remainder', 'muldiv-divide'],
       practice: 'quiz.html?topic=muldiv-remainder&level=just'
     },
@@ -407,6 +458,16 @@
         { head: 'Multiply the tens', text: '30 × 6 = 180. (3 × 6 = 18, then add the zero.)' },
         { head: 'Multiply the ones', text: '4 × 6 = 24.' },
         { head: 'Add the two parts', text: '180 + 24 = 204. So 34 × 6 = 204.' }
+      ],
+      remember: 'Split into tens and ones, multiply each part, then add the two parts together.',
+      watchOut: [
+        'Do not stop at the tens. 30 × 6 = 180 is only half of the answer.',
+        '30 × 6 is just 3 × 6 with a zero on the end.'
+      ],
+      words: [
+        { word: 'Split', meaning: 'Break a number into its tens and ones.' },
+        { word: 'Part answer', meaning: 'One piece of the sum, before you add the pieces together.' },
+        { word: 'Multiple', meaning: 'A number you land on when counting in equal steps.' }
       ],
       tryTypes: ['muldiv-two-digit', 'muldiv-story'],
       practice: 'quiz.html?topic=muldiv-two-digit&level=just'
@@ -425,6 +486,16 @@
         { head: 'Add the tens', text: '4 + 7 = 11, plus the carried 1 makes 12 tens. Write 2 and carry 1 to the hundreds.' },
         { head: 'Add the hundreds', text: '3 + 2 = 5, plus the carried 1 makes 6. The answer is 623.' }
       ],
+      remember: 'Add the ones first. Ten ones make one ten, and that ten is carried into the next column.',
+      watchOut: [
+        'Remember to add the carried 1 when you add the next column.',
+        'Keep the columns straight: ones under ones, tens under tens.'
+      ],
+      words: [
+        { word: 'Carry', meaning: 'Move a whole ten (or hundred) into the next column.' },
+        { word: 'Sum', meaning: 'The answer to an addition.' },
+        { word: 'Column', meaning: 'A line of digits that all have the same place value.' }
+      ],
       tryTypes: ['addsub-add', 'addsub-estimate'],
       practice: 'quiz.html?topic=addsub-add&level=just'
     },
@@ -441,6 +512,16 @@
         { head: 'Borrow', text: 'The 3 tens become 2 tens, and the 2 ones become 12 ones. Now 12 − 7 = 5.' },
         { head: 'Now the tens', text: 'You cannot take 4 from 2, so borrow again: 5 hundreds become 4, and 2 tens become 12. 12 − 4 = 8.' },
         { head: 'Finish the hundreds', text: '4 − 1 = 3. The answer is 385. Check it: 385 + 147 = 532.' }
+      ],
+      remember: 'When the top digit is too small, borrow ten from the column on its left.',
+      watchOut: [
+        "Do not just take the small digit from the big one. 2 − 7 is not 5 — you must borrow.",
+        'After borrowing, the column you borrowed from is one less. Write the change down so you do not forget it.'
+      ],
+      words: [
+        { word: 'Borrow', meaning: 'Take one ten from the next column along and add it here.' },
+        { word: 'Difference', meaning: 'The answer to a subtraction.' },
+        { word: 'Check', meaning: 'Add your answer back on to see if you get the number you started with.' }
       ],
       tryTypes: ['addsub-sub', 'addsub-inverse'],
       practice: 'quiz.html?topic=addsub-sub&level=just'
@@ -459,6 +540,16 @@
         { head: 'Joining or leaving?', text: 'Words like gave her, more, altogether and in total mean add. Words like gave away, sold, left and how many more mean take away.' },
         { head: 'Do the sum and check', text: '126 + 45 = 171. Read the question again — does 171 stickers answer it? Yes.' }
       ],
+      remember: 'Things joining together means add. Things leaving, or being compared, means take away.',
+      watchOut: [
+        'Read right to the end. The last sentence tells you what to find.',
+        '"How many more" means take away, even though the word more sounds like adding.'
+      ],
+      words: [
+        { word: 'Altogether', meaning: 'A word that usually means add.' },
+        { word: 'Left', meaning: 'A word that usually means take away.' },
+        { word: 'Two-step', meaning: 'A problem that needs two sums, one after the other.' }
+      ],
       tryTypes: ['addsub-story', 'addsub-story-two'],
       practice: 'quiz.html?topic=addsub-story&level=just'
     },
@@ -475,6 +566,16 @@
         { head: 'Split it up', text: 'The 4 is in the hundreds place, the 7 is in the tens place and the 6 is in the ones place.' },
         { head: 'Give each digit its value', text: '4 hundreds is 400. 7 tens is 70. 6 ones is 6.' },
         { head: 'Add them back', text: '400 + 70 + 6 = 476. That is called the expanded form.' }
+      ],
+      remember: 'The place a digit sits in tells you what it is worth — hundreds, tens or ones.',
+      watchOut: [
+        'A zero still holds a place. In 406 there are no tens, but the 0 keeps the 4 in the hundreds.',
+        'The same digit can be worth different amounts: in 337 the first 3 is worth 300 and the second is worth 30.'
+      ],
+      words: [
+        { word: 'Digit', meaning: 'One of the symbols 0 to 9 that numbers are made from.' },
+        { word: 'Place value', meaning: 'What a digit is worth because of where it sits.' },
+        { word: 'Expanded form', meaning: '476 written the long way: 400 + 70 + 6.' }
       ],
       tryTypes: ['numbers-expanded', 'numbers-digit-value'],
       practice: 'quiz.html?chapter=numbers&level=just'
@@ -493,6 +594,16 @@
         { head: 'Compare the tens', text: '308 has 0 tens. 380 has 8 tens. 0 is less than 8, so 308 is the smaller number.' },
         { head: 'Write the sign', text: '308 < 380. The open end of the sign always faces the bigger number — it is a hungry mouth.' }
       ],
+      remember: 'Compare the biggest place first. Only if those digits are the same do you move one place to the right.',
+      watchOut: [
+        'More digits almost always wins: 1000 is bigger than 999.',
+        'The open end of the sign faces the bigger number, like a mouth that wants more.'
+      ],
+      words: [
+        { word: 'Greater than', meaning: 'The > sign, used when the first number is bigger.' },
+        { word: 'Less than', meaning: 'The < sign, used when the first number is smaller.' },
+        { word: 'Equal to', meaning: 'The = sign, used when both numbers are the same.' }
+      ],
       tryTypes: ['numbers-compare', 'numbers-neighbours'],
       practice: 'quiz.html?topic=numbers-compare&level=just'
     },
@@ -509,6 +620,16 @@
         { head: 'Find halfway', text: 'Halfway between 60 and 70 is 65.' },
         { head: 'Which side?', text: '67 is past 65, so it is closer to 70.' },
         { head: 'Round it', text: '67 rounded to the nearest 10 is 70. The quick way: look at the ones digit — 5 or more rounds up, 4 or less stays.' }
+      ],
+      remember: 'Look at the digit to the right of the place you are rounding to: 5 or more rounds up, 4 or less stays.',
+      watchOut: [
+        'Rounding is not guessing. 67 always rounds to 70, never to 65.',
+        'A number that already ends in 0 stays exactly where it is.'
+      ],
+      words: [
+        { word: 'Round', meaning: 'Change a number to the nearest ten or hundred.' },
+        { word: 'Nearest ten', meaning: 'The closest number you say when counting in tens.' },
+        { word: 'Estimate', meaning: 'A close-enough answer worked out quickly in your head.' }
       ],
       tryTypes: ['numbers-round', 'numbers-skip'],
       practice: 'quiz.html?topic=numbers-round&level=just'

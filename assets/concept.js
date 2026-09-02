@@ -8,15 +8,37 @@
 
   function param(name) {
     var found = location.search.match(new RegExp('[?&]' + name + '=([^&]+)'));
-    return found ? decodeURIComponent(found[1]) : null;
+    // a stray second "?" in a shared link must not become part of the value
+    return found ? decodeURIComponent(found[1]).split(/[?#]/)[0] : null;
   }
 
   var concepts = window.MATHLY_CONCEPTS || {};
   var id = param('t') || Object.keys(concepts)[0];
   var concept = concepts[id];
   if (!concept) {
-    document.getElementById('conceptTitle').textContent = 'This page has moved';
-    document.getElementById('conceptIdea').textContent = 'Pick a topic from the chapter page.';
+    var wanted = param('c');
+    var others = Object.keys(concepts).filter(function (key) {
+      return !wanted || concepts[key].chapter === wanted;
+    });
+    document.getElementById('conceptTitle').innerHTML = '<span class="brand-emoji">🧭</span> Pick a page to learn from';
+    document.getElementById('conceptIdea').textContent =
+      'That link did not point at a lesson. Here is what you can learn here:';
+    var menu = document.getElementById('conceptAlso');
+    var lost = document.getElementById('alsoPanel');
+    if (menu && lost) {
+      lost.hidden = false;
+      (others.length ? others : Object.keys(concepts)).forEach(function (key) {
+        var other = concepts[key];
+        var link = document.createElement('a');
+        link.className = 'card card-link tint-2';
+        link.href = 'concept.html?c=' + other.chapter + '&t=' + key;
+        link.innerHTML = '<span class="card-icon" aria-hidden="true">' + other.emoji + '</span>' +
+          '<span class="card-body"><span class="card-title">' + other.title + '</span>' +
+          '<span class="card-text">' + other.bigIdea + '</span></span>' +
+          '<span class="card-arrow" aria-hidden="true">▶</span>';
+        menu.appendChild(link);
+      });
+    }
     return;
   }
 
@@ -36,6 +58,65 @@
     var crumb = document.getElementById('chapterCrumb');
     crumb.href = 'chapter.html?c=' + chapter.id;
     crumb.innerHTML = chapter.emoji + ' ' + chapter.title;
+  }
+
+  /* ---- remember, watch out, words to know ---- */
+  if (concept.remember) {
+    document.getElementById('rememberPanel').hidden = false;
+    document.getElementById('conceptRemember').textContent = concept.remember;
+  }
+
+  if (concept.watchOut && concept.watchOut.length) {
+    document.getElementById('rememberPanel').hidden = false;
+    document.getElementById('watchPanel').hidden = false;
+    var watchList = document.getElementById('conceptWatch');
+    concept.watchOut.forEach(function (line) {
+      var li = document.createElement('li');
+      li.textContent = line;
+      watchList.appendChild(li);
+    });
+  }
+
+  if (concept.words && concept.words.length) {
+    document.getElementById('rememberPanel').hidden = false;
+    document.getElementById('wordsPanel').hidden = false;
+    var wordList = document.getElementById('conceptWords');
+    concept.words.forEach(function (pair) {
+      var li = document.createElement('li');
+      li.innerHTML = '<strong>' + pair.word + '</strong> — ' + pair.meaning;
+      wordList.appendChild(li);
+    });
+  }
+
+  /* ---- what the practice quiz will ask ---- */
+  var practiceNote = document.getElementById('practiceNote');
+  if (practiceNote) {
+    var asks = (concept.tryTypes || []).map(function (typeId) {
+      var type = M.get(typeId);
+      return type ? type.label.toLowerCase() : null;
+    }).filter(Boolean);
+    practiceNote.textContent = asks.length
+      ? 'The quiz asks about ' + asks.join(' and ') + '. You choose how many questions, how hard they are, and whether there is a clock.'
+      : 'You choose how many questions, how hard they are, and whether there is a clock.';
+  }
+
+  /* ---- the rest of this chapter ---- */
+  if (chapter) {
+    var also = document.getElementById('conceptAlso');
+    var alsoPanel = document.getElementById('alsoPanel');
+    chapter.games.forEach(function (game) {
+      if (game.href.indexOf('t=' + id) > -1) return;
+      alsoPanel.hidden = false;
+      var join = game.href.indexOf('?') > -1 ? '&' : '?';
+      var link = document.createElement('a');
+      link.className = 'card card-link tint-' + (game.tint || 2);
+      link.href = game.href + join + 'from=' + chapter.id;
+      link.innerHTML = '<span class="card-icon" aria-hidden="true">' + game.emoji + '</span>' +
+        '<span class="card-body"><span class="card-title">' + game.title + '</span>' +
+        '<span class="card-text">' + game.text + '</span></span>' +
+        '<span class="card-arrow" aria-hidden="true">▶</span>';
+      also.appendChild(link);
+    });
   }
 
   /* ---- steps, revealed one at a time ---- */

@@ -16,6 +16,20 @@
     drill: { label: 'Practice', emoji: '✏️' }
   };
 
+  function summary(chapter) {
+    var counts = { learn: 0, quiz: 0, drill: 0 };
+    chapter.games.forEach(function (game) { if (counts[game.kind] !== undefined) counts[game.kind]++; });
+    var bits = [];
+    if (counts.learn) bits.push('📖 ' + counts.learn + (counts.learn > 1 ? ' lessons' : ' lesson'));
+    if (counts.quiz) bits.push('⏱️ ' + counts.quiz + ' quiz');
+    if (counts.drill) bits.push('✏️ ' + counts.drill + ' practice sheet');
+    if (window.Mathly) {
+      var types = window.Mathly.byChapter(chapter.id).length;
+      if (types) bits.push('🎲 ' + types + ' kinds of question');
+    }
+    return bits.join(' · ');
+  }
+
   function stars(chapterId) {
     if (!window.Mathly || !window.Mathly.progress) return '';
     var got = window.Mathly.progress.chapter(chapterId);
@@ -37,6 +51,7 @@
           (item.id ? stars(item.id) : '') +
         '</span>' +
         '<span class="card-text">' + item.text + '</span>' +
+        (item.games && item.games.length ? '<span class="card-meta">' + summary(item) + '</span>' : '') +
       '</span>' +
       (ready ? '<span class="card-arrow" aria-hidden="true">▶</span>' : '');
     return el;
@@ -60,6 +75,14 @@
     var blurb = document.getElementById('chapterText');
     if (blurb) blurb.innerHTML = chapter.text;
 
+    var meta = document.getElementById('chapterMeta');
+    if (meta) {
+      var line = summary(chapter);
+      var got = window.Mathly ? window.Mathly.progress.chapter(chapter.id) : null;
+      if (got && got.earned) line += ' · ⭐ ' + got.earned + ' of ' + got.possible + ' stars so far';
+      meta.textContent = line;
+    }
+
     if (!chapter.games.length) {
       var soon = document.createElement('p');
       soon.className = 'hint';
@@ -67,7 +90,8 @@
       gameMenu.appendChild(soon);
     } else {
       chapter.games.forEach(function (game) {
-        gameMenu.appendChild(card(game, game.href + '?from=' + chapter.id, true));
+        var join = game.href.indexOf('?') > -1 ? '&' : '?';
+        gameMenu.appendChild(card(game, game.href + join + 'from=' + chapter.id, true));
       });
     }
   }

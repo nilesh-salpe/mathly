@@ -34,7 +34,8 @@
 
   function param(name) {
     var found = location.search.match(new RegExp('[?&]' + name + '=([^&]+)'));
-    return found ? decodeURIComponent(found[1]) : null;
+    // a stray second "?" in a shared link must not become part of the value
+    return found ? decodeURIComponent(found[1]).split(/[?#]/)[0] : null;
   }
 
   function clampInt(value, min, max, fallback) {
